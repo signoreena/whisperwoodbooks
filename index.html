@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whisperwood — Tales from the Enchanted Forest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --parchment:      #f7edd8;
+      --parchment-mid:  #ede0c4;
+      --parchment-dark: #d4c49a;
+      --ink:            #08160d;
+      --forest-deep:    #1a3d2b;
+      --forest-mid:     #2c5530;
+      --forest-sage:    #4a7c59;
+      --forest-muted:   #6b9a78;
+      --forest-pale:    #a8c9b0;
+      --gold-deep:      #7a5400;
+      --gold-rich:      #c8960c;
+      --gold-warm:      #dba820;
+      --gold-light:     #f0d060;
+      --gold-pale:      #f9eebc;
+      --text-ink:       #1a1008;
+      --text-dark:      #2a1f0e;
+      --text-mid:       #4a3220;
+      --text-muted:     #7a6040;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--parchment);
+      color: var(--text-dark);
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 18px;
+      line-height: 1.75;
+    }
+
+    /* ── NAV ── frosted glass */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.1rem 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(8, 22, 13, 0.72);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(200, 150, 12, 0.28);
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      text-decoration: none;
+      letter-spacing: 0.06em;
+    }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a {
+      color: rgba(237,224,196,0.8);
+      text-decoration: none;
+      font-size: 0.9rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold-light); }
+
+    /* ── HERO ── real photo + layered overlays */
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9rem 2rem 7rem;
+      overflow: hidden;
+
+      background-color: var(--ink);
+      background-image:
+        radial-gradient(ellipse at 50% 60%, rgba(8,22,13,0.15) 0%, rgba(8,22,13,0.75) 100%),
+        linear-gradient(to bottom, rgba(8,22,13,0.5) 0%, rgba(8,22,13,0.15) 45%, rgba(8,22,13,0.7) 100%),
+        url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center 35%;
+    }
+
+    /* Gold shimmer overlay */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 20%, rgba(200,150,12,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    /* Wave at bottom */
+    .hero-wave {
+      position: absolute;
+      bottom: -2px; left: 0; right: 0;
+      line-height: 0;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 780px;
+    }
+    .series-badge {
+      display: inline-block;
+      border: 1px solid rgba(200,150,12,0.6);
+      color: var(--gold-warm);
+      font-size: 0.8rem;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      padding: 0.35rem 1.4rem;
+      margin-bottom: 2rem;
+      background: rgba(8,22,13,0.3);
+    }
+    .hero-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(4.5rem, 11vw, 8.5rem);
+      font-weight: 700;
+      color: var(--gold-light);
+      letter-spacing: 0.04em;
+      line-height: 1;
+      margin-bottom: 0.6rem;
+      text-shadow: 0 4px 60px rgba(200,150,12,0.3), 0 2px 8px rgba(0,0,0,0.6);
+    }
+    .hero-subtitle {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+      font-style: italic;
+      color: var(--forest-pale);
+      letter-spacing: 0.03em;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    }
+    .ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.9rem;
+      margin: 1.8rem 0;
+    }
+    .ornament-line { height: 1px; width: 70px; background: var(--gold-rich); opacity: 0.5; }
+    .ornament-diamond { width: 7px; height: 7px; background: var(--gold-rich); transform: rotate(45deg); }
+    .hero-desc {
+      color: rgba(237, 224, 196, 0.88);
+      font-size: 1.12rem;
+      line-height: 1.85;
+      max-width: 540px;
+      margin: 0 auto 2.8rem;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.4);
+    }
+    .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      background: var(--gold-rich);
+      color: var(--ink);
+      border: none;
+      font-family: 'EB Garamond', serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.85rem 2.6rem;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-primary:hover { background: var(--gold-light); transform: translateY(-1px); }
+    .btn-ghost {
+      background: rgba(8,22,13,0.3);
+      color: rgba(237,224,196,0.88);
+      border: 1px solid rgba(237,224,196,0.3);
+      font-family: 'EB Garamond', serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.85rem 2.6rem;
+      text-decoration: none;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+      backdrop-filter: blur(6px);
+    }
+    .btn-ghost:hover { border-color: var(--gold-warm); color: var(--gold-light); background: rgba(200,150,12,0.1); }
+
+    /* ── QUOTE STRIP ── parallax photo */
+    .quote-strip {
+      padding: 5rem 2rem 6rem;
+      text-align: center;
+      background-color: var(--forest-deep);
+      background-image:
+        linear-gradient(rgba(26,61,43,0.88), rgba(26,61,43,0.92)),
+        url('https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .quote-text {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(1.2rem, 2.8vw, 1.65rem);
+      color: var(--gold-pale);
+      max-width: 680px;
+      margin: 0 auto;
+      line-height: 1.6;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    }
+    .quote-attr {
+      margin-top: 1.2rem;
+      font-size: 0.82rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--forest-muted);
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 6rem 2rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.8rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--forest-sage);
+      margin-bottom: 0.6rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 600;
+      color: var(--forest-deep);
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+    .section-rule {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 1.5rem 0 3rem;
+    }
+    .section-rule-line { height: 1px; flex: 1; background: var(--parchment-dark); }
+
+    /* ── CHARACTERS ── photo bg + glass cards + portrait photos */
+    .characters {
+      background-color: var(--ink);
+      background-image:
+        linear-gradient(rgba(8,22,13,0.78), rgba(8,22,13,0.85)),
+        url('https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .characters .section-label { color: var(--gold-warm); }
+    .characters .section-title { color: var(--gold-light); }
+    .characters .section-rule-line { background: rgba(200,150,12,0.22); }
+
+    .char-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 2rem;
+    }
+    .char-card {
+      background: rgba(8, 22, 13, 0.42);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(200,150,12,0.22);
+      padding: 2.5rem 2rem 2rem;
+      text-align: center;
+      transition: border-color 0.3s, background 0.3s, transform 0.25s;
+    }
+    .char-card:hover {
+      border-color: rgba(200,150,12,0.55);
+      background: rgba(8,22,13,0.55);
+      transform: translateY(-3px);
+    }
+
+    /* Portrait with decorative ring */
+    .portrait-wrap {
+      position: relative;
+      width: 168px;
+      height: 168px;
+      margin: 0 auto 1.8rem;
+    }
+    .portrait-ring {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+    .portrait-photo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
+      filter: sepia(0.25) saturate(1.3) brightness(0.88) contrast(1.06);
+      border: 2.5px solid var(--gold-rich);
+      box-shadow: 0 0 0 4px rgba(200,150,12,0.14), 0 0 32px rgba(0,0,0,0.5);
+    }
+
+    .char-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--gold-light);
+      margin-bottom: 0.2rem;
+    }
+    .char-species {
+      font-size: 0.78rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--forest-muted);
+      margin-bottom: 1.1rem;
+    }
+    .char-tagline {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--parchment-mid);
+      border-top: 1px solid rgba(200,150,12,0.18);
+      border-bottom: 1px solid rgba(200,150,12,0.18);
+      padding: 0.7rem 0;
+      margin-bottom: 1rem;
+    }
+    .char-desc { font-size: 0.98rem; color: rgba(237,224,196,0.68); line-height: 1.65; }
+
+    /* ── BOOKS ── parchment texture */
+    .books {
+      background-color: var(--parchment-mid);
+      background-image:
+        linear-gradient(rgba(237,224,196,0.9), rgba(237,224,196,0.93)),
+        url('https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .featured-book {
+      display: grid;
+      grid-template-columns: 175px 1fr;
+      gap: 3rem;
+      align-items: start;
+      background: rgba(247,237,216,0.8);
+      backdrop-filter: blur(6px);
+      border: 1px solid var(--parchment-dark);
+      border-left: 4px solid var(--gold-rich);
+      padding: 2.5rem;
+      margin-bottom: 4rem;
+    }
+    .avail-label {
+      display: inline-block;
+      background: var(--forest-deep);
+      color: var(--gold-pale);
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .featured-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--forest-deep);
+      line-height: 1.2;
+      margin-bottom: 0.3rem;
+    }
+    .featured-series { font-style: italic; color: var(--text-muted); margin-bottom: 1.1rem; font-size: 1rem; }
+    .featured-desc { font-size: 1.05rem; color: var(--text-mid); line-height: 1.7; max-width: 500px; }
+
+    /* Book cover — photo collage feel */
+    .book-cover {
+      width: 150px;
+      height: 210px;
+      position: relative;
+      box-shadow: -4px 4px 20px rgba(0,0,0,0.3), 4px 0 0 rgba(0,0,0,0.15);
+      border-radius: 2px 4px 4px 2px;
+      overflow: hidden;
+      background-color: var(--forest-deep);
+    }
+    .book-cover img {
+      width: 100%;
+      height: 65%;
+      object-fit: cover;
+      object-position: center 60%;
+      filter: sepia(0.35) saturate(0.9) brightness(0.75);
+    }
+    .book-cover-title {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(rgba(26,61,43,0), rgba(26,61,43,1) 30%);
+      padding: 1.8rem 0.75rem 0.8rem;
+      text-align: center;
+    }
+    .book-cover-series {
+      font-family: 'EB Garamond', serif;
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-warm);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .book-cover-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.85rem;
+      font-style: italic;
+      color: var(--gold-pale);
+      line-height: 1.25;
+    }
+    .book-cover-spine {
+      position: absolute;
+      left: 0; top: 0; bottom: 0;
+      width: 10px;
+      background: var(--forest-mid);
+      border-right: 1px solid rgba(200,150,12,0.3);
+    }
+
+    .coming-soon-header {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--forest-deep);
+      margin-bottom: 1.5rem;
+      font-style: italic;
+    }
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+      gap: 1.25rem;
+    }
+    .book-card {
+      background: rgba(247,237,216,0.75);
+      backdrop-filter: blur(4px);
+      border: 1px solid var(--parchment-dark);
+      border-left: 3px solid rgba(200,150,12,0.35);
+      padding: 1.4rem 1.2rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .book-card:hover { border-left-color: var(--gold-rich); transform: translateX(2px); }
+    .cs-badge {
+      display: inline-block;
+      background: var(--forest-sage);
+      color: var(--parchment);
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.2rem 0.65rem;
+      margin-bottom: 0.7rem;
+      border-radius: 1px;
+    }
+    .book-num { font-size: 0.78rem; color: var(--text-muted); letter-spacing: 0.08em; margin-bottom: 0.25rem; }
+    .book-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 600; color: var(--forest-deep); line-height: 1.3; }
+
+    /* ── WORLD ── */
+    .world {
+      background-color: var(--parchment);
+      background-image:
+        linear-gradient(rgba(247,237,216,0.87), rgba(247,237,216,0.92)),
+        url('https://images.unsplash.com/photo-1425913397330-cf8af2ff40a1?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .world-lead { font-size: 1.12rem; color: var(--text-mid); max-width: 660px; line-height: 1.85; }
+    .world-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .world-feature {
+      background: rgba(247,237,216,0.55);
+      backdrop-filter: blur(8px);
+      border-top: 2px solid var(--gold-rich);
+      border-left: 1px solid rgba(200,150,12,0.15);
+      padding: 1.3rem 1.2rem 1.2rem;
+    }
+    .world-feature-title { font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--forest-deep); margin-bottom: 0.45rem; }
+    .world-feature-text { font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; }
+
+    /* ── FOOTER ── */
+    footer {
+      background-color: var(--ink);
+      background-image:
+        linear-gradient(rgba(8,22,13,0.84), rgba(8,22,13,0.9)),
+        url('https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center top;
+      border-top: 2px solid rgba(200,150,12,0.5);
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+    }
+    .footer-tagline { font-style: italic; color: var(--forest-muted); margin-bottom: 1.8rem; }
+    .footer-copy { font-size: 0.82rem; color: rgba(237,224,196,0.28); }
+
+    @media (max-width: 640px) {
+      nav { padding: 1rem 1.2rem; }
+      .nav-links { gap: 1.2rem; }
+      .nav-links a { font-size: 0.8rem; }
+      .featured-book { grid-template-columns: 1fr; }
+      .book-cover { margin: 0 auto; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav>
+  <a href="#" class="nav-logo">Whisperwood</a>
+  <ul class="nav-links">
+    <li><a href="#characters">Characters</a></li>
+    <li><a href="#books">Books</a></li>
+    <li><a href="#world">The Forest</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="series-badge">A Children's Book Series · Ages 4–6</div>
+    <h1 class="hero-title">Whisperwood</h1>
+    <p class="hero-subtitle">Tales from the Enchanted Forest</p>
+    <div class="ornament">
+      <span class="ornament-line"></span>
+      <span class="ornament-diamond"></span>
+      <span class="ornament-line"></span>
+    </div>
+    <p class="hero-desc">
+      Deep in a forest where trees know secret paths and the mushrooms have magic to spare, three friends are about to discover that every big problem can be solved — if you know who to ask.
+    </p>
+    <div class="cta-group">
+      <a href="#books" class="btn-primary">Discover the Books</a>
+      <a href="#characters" class="btn-ghost">Meet the Characters</a>
+    </div>
+  </div>
+
+  <!-- Organic wave transition to quote -->
+  <div class="hero-wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 70" preserveAspectRatio="none" style="display:block;width:100%;height:70px;">
+      <path d="M0,20 C240,70 480,0 720,35 C960,70 1200,10 1440,40 L1440,70 L0,70 Z" fill="#1a3d2b"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ══════════════ QUOTE ══════════════ -->
+<div class="quote-strip">
+  <p class="quote-text">"Nothing runs on spells here. The forest has systems — and every creature has a part to play."</p>
+  <p class="quote-attr">— Whisperwood</p>
+</div>
+
+<!-- ══════════════ CHARACTERS ══════════════ -->
+<section class="characters" id="characters">
+  <div class="section-inner">
+    <p class="section-label">The Trio</p>
+    <h2 class="section-title" style="color:var(--gold-light);">Meet Your Forest Friends</h2>
+    <div class="section-rule">
+      <span class="section-rule-line"></span>
+      <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 1 L9.2 6.2 L14 8 L9.2 9.8 L8 15 L6.8 9.8 L2 8 L6.8 6.2 Z" fill="#c8960c" opacity="0.75"/>
+      </svg>
+      <span class="section-rule-line"></span>
+    </div>
+
+    <div class="char-grid">
+
+      <!-- VERA — Fox -->
+      <div class="char-card">
+        <div class="portrait-wrap">
+          <svg class="portrait-ring" viewBox="0 0 168 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="84" cy="84" r="81" stroke="#c8960c" stroke-width="1" stroke-dasharray="6 4" opacity="0.65"/>
+            <circle cx="84" cy="84" r="75" stroke="#c8960c" stroke-width="0.5" opacity="0.25"/>
+            <polygon points="84,2 87,8 84,14 81,8"   fill="#c8960c" opacity="0.75"/>
+            <polygon points="166,84 160,87 154,84 160,81" fill="#c8960c" opacity="0.75"/>
+            <polygon points="84,166 81,160 84,154 87,160" fill="#c8960c" opacity="0.75"/>
+            <polygon points="2,84 8,81 14,84 8,87"   fill="#c8960c" opacity="0.75"/>
+          </svg>
+          <img class="portrait-photo"
+               src="Vera.png"
+               alt="Vera the Fox"
+               style="object-position: center 15%;">
+        </div>
+        <h3 class="char-name">Vera</h3>
+        <p class="char-species">The Fox · Systems Thinker</p>
+        <p class="char-tagline">"I know exactly what to do."</p>
+        <p class="char-desc">Vera always knows who to ask and what order things go in. Brilliant at untangling big problems — but her greatest challenge is learning to listen before she decides she already has the answer.</p>
+      </div>
+
+      <!-- PIP — Squirrel -->
+      <div class="char-card">
+        <div class="portrait-wrap">
+          <svg class="portrait-ring" viewBox="0 0 168 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="84" cy="84" r="81" stroke="#c8960c" stroke-width="1" stroke-dasharray="6 4" opacity="0.65"/>
+            <circle cx="84" cy="84" r="75" stroke="#c8960c" stroke-width="0.5" opacity="0.25"/>
+            <polygon points="84,2 87,8 84,14 81,8"   fill="#c8960c" opacity="0.75"/>
+            <polygon points="166,84 160,87 154,84 160,81" fill="#c8960c" opacity="0.75"/>
+            <polygon points="84,166 81,160 84,154 87,160" fill="#c8960c" opacity="0.75"/>
+            <polygon points="2,84 8,81 14,84 8,87"   fill="#c8960c" opacity="0.75"/>
+          </svg>
+          <img class="portrait-photo"
+               src="Pip.png"
+               alt="Pip the Squirrel"
+               style="object-position: center 25%;">
+        </div>
+        <h3 class="char-name">Pip</h3>
+        <p class="char-species">The Squirrel · First to Jump In</p>
+        <p class="char-tagline">"I'll help! I'll help! I'll help!"</p>
+        <p class="char-desc">Pip is always first to leap into action — full of energy and the very best of intentions. He's learning that rushing in with the wrong plan can make a problem bigger before it gets smaller.</p>
+      </div>
+
+      <!-- SAGE — Turtle -->
+      <div class="char-card">
+        <div class="portrait-wrap">
+          <svg class="portrait-ring" viewBox="0 0 168 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="84" cy="84" r="81" stroke="#c8960c" stroke-width="1" stroke-dasharray="6 4" opacity="0.65"/>
+            <circle cx="84" cy="84" r="75" stroke="#c8960c" stroke-width="0.5" opacity="0.25"/>
+            <polygon points="84,2 87,8 84,14 81,8"   fill="#c8960c" opacity="0.75"/>
+            <polygon points="166,84 160,87 154,84 160,81" fill="#c8960c" opacity="0.75"/>
+            <polygon points="84,166 81,160 84,154 87,160" fill="#c8960c" opacity="0.75"/>
+            <polygon points="2,84 8,81 14,84 8,87"   fill="#c8960c" opacity="0.75"/>
+          </svg>
+          <img class="portrait-photo"
+               src="Sage.png"
+               alt="Sage the Turtle"
+               style="object-position: center 30%;">
+        </div>
+        <h3 class="char-name">Sage</h3>
+        <p class="char-species">The Turtle · Deep Listener</p>
+        <p class="char-tagline">"Wait. Did you hear that?"</p>
+        <p class="char-desc">Sage notices what others rush past. Her steady, unhurried pace through Whisperwood means she catches the clues everyone else misses — and reminds her friends that slow isn't the same as behind.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ BOOKS ══════════════ -->
+<section class="books" id="books">
+  <div class="section-inner">
+    <p class="section-label">The Collection</p>
+    <h2 class="section-title">Stories from the Forest</h2>
+    <div class="section-rule">
+      <span class="section-rule-line"></span>
+      <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 2 Q10 8 8 14 Q6 8 8 2Z" fill="#4a7c59" opacity="0.7"/>
+        <path d="M2 8 Q8 6 14 8 Q8 10 2 8Z" fill="#4a7c59" opacity="0.7"/>
+      </svg>
+      <span class="section-rule-line"></span>
+    </div>
+
+    <!-- Featured Book 1 -->
+    <div class="featured-book">
+      <div class="book-cover">
+        <div class="book-cover-spine"></div>
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=300&h=200&q=80"
+             alt="Forest path illustration for The Rushing River">
+        <div class="book-cover-title">
+          <span class="book-cover-series">Whisperwood · Book One</span>
+          <span class="book-cover-name">The Rushing River</span>
+        </div>
+      </div>
+      <div>
+        <span class="avail-label">Book One · Available Now</span>
+        <h3 class="featured-title">The Rushing River</h3>
+        <p class="featured-series">A Whisperwood Adventure</p>
+        <p class="featured-desc">When the river rises too fast, Vera has a plan, Pip has energy, and Sage has a question no one else thought to ask. But solving a problem in Whisperwood takes more than one kind of thinking — and the beavers, glow moss, and singing mud all have a part to play.</p>
+      </div>
+    </div>
+
+    <!-- Coming soon -->
+    <p class="coming-soon-header">Coming soon to Whisperwood…</p>
+    <div class="books-grid">
+      <div class="book-card"><span class="cs-badge">Coming Soon</span><p class="book-num">Book Two</p><p class="book-title">The Noisy Night</p></div>
+      <div class="book-card"><span class="cs-badge">Coming Soon</span><p class="book-num">Book Three</p><p class="book-title">The Missing Acorns</p></div>
+      <div class="book-card"><span class="cs-badge">Coming Soon</span><p class="book-num">Book Four</p><p class="book-title">The Broken Path</p></div>
+      <div class="book-card"><span class="cs-badge">Coming Soon</span><p class="book-num">Book Five</p><p class="book-title">The Too-Busy Beaver</p></div>
+      <div class="book-card"><span class="cs-badge">Coming Soon</span><p class="book-num">Book Six</p><p class="book-title">Otter Won't Help</p></div>
+      <div class="book-card"><span class="cs-badge">Coming Soon</span><p class="book-num">Book Seven</p><p class="book-title">Deer Says Yes</p></div>
+      <div class="book-card"><span class="cs-badge">Coming Soon</span><p class="book-num">Book Eight</p><p class="book-title">Squirrel's Big Idea</p></div>
+      <div class="book-card"><span class="cs-badge">Coming Soon</span><p class="book-num">Book Nine</p><p class="book-title">The New Dam</p></div>
+      <div class="book-card"><span class="cs-badge">Coming Soon</span><p class="book-num">Book Ten</p><p class="book-title">When Plans Fail</p></div>
+      <div class="book-card"><span class="cs-badge">Coming Soon</span><p class="book-num">Book Eleven</p><p class="book-title">The Quiet Argument</p></div>
+      <div class="book-card"><span class="cs-badge">Coming Soon</span><p class="book-num">Book Twelve</p><p class="book-title">The Forest Holds Its Breath</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ WORLD ══════════════ -->
+<section class="world" id="world">
+  <div class="section-inner">
+    <p class="section-label">The Setting</p>
+    <h2 class="section-title">Step Inside the Forest</h2>
+    <div class="section-rule">
+      <span class="section-rule-line"></span>
+      <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="8" cy="8" r="3.5" fill="none" stroke="#c8960c" stroke-width="1.2"/>
+        <circle cx="8" cy="8" r="1.4" fill="#c8960c"/>
+      </svg>
+      <span class="section-rule-line"></span>
+    </div>
+    <p class="world-lead">
+      Whisperwood is an enchanted village ecosystem where nothing runs on feelings or spells alone. The forest is full of remarkable systems — and every creature knows their part. No single thing solves a whole problem. Everything is partial. Everything has limits. That's what makes it magic.
+    </p>
+    <div class="world-grid">
+      <div class="world-feature">
+        <p class="world-feature-title">Mapleaf Trees</p>
+        <p class="world-feature-text">Their veins trace the paths and hidden structures of the forest. Vera reads them like maps — if you know how to look.</p>
+      </div>
+      <div class="world-feature">
+        <p class="world-feature-title">Glow Moss &amp; Mushrooms</p>
+        <p class="world-feature-text">The forest floor lights up when it's needed. Every mushroom does one thing: air, warmth, silence, glue, light. Not two things. One.</p>
+      </div>
+      <div class="world-feature">
+        <p class="world-feature-title">Talking Rocks</p>
+        <p class="world-feature-text">They speak one word at a time, very slowly. Sage is usually the only one patient enough to hear the whole sentence.</p>
+      </div>
+      <div class="world-feature">
+        <p class="world-feature-title">Songbirds &amp; Raccoons</p>
+        <p class="world-feature-text">News travels fast through the songbird network — but fast and accurate aren't the same thing. The raccoons fact-check everything.</p>
+      </div>
+      <div class="world-feature">
+        <p class="world-feature-title">Singing Mud</p>
+        <p class="world-feature-text">Hum the right note and the mud shapes itself into walls. The beavers taught Pip three tunes. He's only supposed to use two of them.</p>
+      </div>
+      <div class="world-feature">
+        <p class="world-feature-title">Bellflowers</p>
+        <p class="world-feature-text">Three rings means "come quickly — don't panic." The whole forest knows the call. But ringing them for nothing has consequences.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <p class="footer-logo">Whisperwood</p>
+  <p class="footer-tagline">Tales from the Enchanted Forest</p>
+  <div class="ornament" style="justify-content: center; margin-bottom: 1.5rem;">
+    <span class="ornament-line"></span>
+    <span class="ornament-diamond"></span>
+    <span class="ornament-line"></span>
+  </div>
+  <p class="footer-copy">© 2026 Whisperwood Series. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
