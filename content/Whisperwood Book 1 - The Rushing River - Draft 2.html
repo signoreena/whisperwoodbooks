@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whisperwood Book 1: The Rushing River — Draft 2</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 16px;
+    line-height: 1.85;
+    color: #1a1a1a;
+    background: #f9f7f4;
+  }
+  .page {
+    max-width: 720px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 0;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+  }
+
+  /* Cover */
+  .cover {
+    background: linear-gradient(160deg, #1e4020 0%, #2d5a27 60%, #4a7c59 100%);
+    color: #fff;
+    text-align: center;
+    padding: 80px 60px 60px;
+    position: relative;
+  }
+  .cover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 5px;
+    background: #c8860a;
+  }
+  .cover .series { font-size: 13px; letter-spacing: 4px; text-transform: uppercase; color: #a8d4a0; margin-bottom: 20px; }
+  .cover .title { font-size: 42px; font-weight: bold; color: #fce070; margin-bottom: 10px; text-shadow: 0 2px 12px rgba(0,0,0,0.4); }
+  .cover .subtitle { font-size: 22px; font-style: italic; color: #c8e6c2; margin-bottom: 30px; }
+  .cover .meta { font-size: 13px; color: #a8d4a0; letter-spacing: 1px; }
+
+  /* Draft notice */
+  .draft-notice {
+    background: #fdf3e7;
+    border-left: 4px solid #c8860a;
+    padding: 16px 24px;
+    font-size: 13px;
+    color: #7a4a28;
+    line-height: 1.6;
+  }
+  .draft-notice strong { color: #c8860a; }
+
+  /* Chapter headers */
+  .chapter-header {
+    padding: 40px 60px 10px;
+    border-top: 3px solid #2d5a27;
+    margin-top: 40px;
+  }
+  .chapter-header:first-of-type { margin-top: 0; }
+  .chapter-num {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4a7c59;
+    margin-bottom: 4px;
+  }
+  .chapter-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d5a27;
+  }
+
+  /* Story text */
+  .prose {
+    padding: 20px 60px 0;
+  }
+  .prose p {
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  .prose p.beat {
+    text-indent: 0;
+    margin-bottom: 6px;
+  }
+
+  /* Illustration note */
+  .illo {
+    margin: 28px 40px;
+    background: #f0f5ef;
+    border: 1.5px dashed #4a7c59;
+    border-radius: 6px;
+    padding: 16px 20px;
+  }
+  .illo-label {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4a7c59;
+    margin-bottom: 8px;
+  }
+  .illo-num {
+    display: inline-block;
+    background: #2d5a27;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-right: 8px;
+  }
+  .illo p {
+    font-size: 13.5px;
+    color: #2d4a2a;
+    line-height: 1.65;
+    font-style: italic;
+    margin-bottom: 6px;
+  }
+  .illo p:last-child { margin-bottom: 0; }
+  .illo .mouse-note {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px dotted #4a7c59;
+    font-size: 12px;
+    color: #5a7a5a;
+  }
+  .illo .mouse-note strong { color: #4a7c59; font-style: normal; }
+
+  /* Change notes */
+  .change {
+    font-size: 11.5px;
+    color: #b5651d;
+    font-style: normal;
+    border-left: 2px solid #c8860a;
+    padding-left: 10px;
+    margin: -8px 60px 16px;
+    opacity: 0.8;
+  }
+
+  /* End matter */
+  .end {
+    text-align: center;
+    padding: 60px 60px 40px;
+    border-top: 2px solid #c8e6c2;
+    margin-top: 40px;
+  }
+  .end .end-title { font-size: 22px; font-weight: bold; color: #2d5a27; margin-bottom: 8px; }
+  .end .end-sub { font-size: 14px; font-style: italic; color: #777; }
+
+  /* Footer */
+  .doc-footer {
+    background: #2d5a27;
+    color: #a8d4a0;
+    text-align: center;
+    padding: 18px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  @media (max-width: 600px) {
+    .chapter-header, .prose { padding-left: 24px; padding-right: 24px; }
+    .illo { margin-left: 16px; margin-right: 16px; }
+    .change { margin-left: 24px; margin-right: 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="cover">
+  <div class="series">Whisperwood · Book One</div>
+  <div class="title">The Rushing River</div>
+  <div class="subtitle">A Whisperwood Story</div>
+  <div class="meta">Draft 2 — Revised May 2026</div>
+</div>
+
+<div class="draft-notice">
+  <strong>Draft 2 revision notes:</strong> Internal monologue removed throughout and replaced with physical action. Character body language made consistent with Bible signatures (Vera's ears, Pip's props, Sage's hand-on-surface). Pip's "does she know why?" moment expanded. Sage given a crowd moment in Ch. 7. Illustration spots added for every facing-page spread. Mouse family planted in background of four spots. Original draft preserved in the .rtfd folder.
+</div>
+
+
+<!-- ═══════════════════════════════════ -->
+<!-- CHAPTER 1                          -->
+<!-- ═══════════════════════════════════ -->
+
+<div class="chapter-header">
+  <div class="chapter-num">Chapter 1</div>
+  <div class="chapter-title">The Mapleaf Knows</div>
+</div>
+
+<div class="illo">
+  <div class="illo-label"><span class="illo-num">1</span>Illustration — Right page, full spread</div>
+  <p>An establishing shot of an ordinary Tuesday morning in Whisperwood. Three things happening at once: Sage sitting perfectly still at the river's edge, watching tadpoles — she is the calmest thing in the image. Above her, Pip mid-fall from a branch, arms windmilling, a snapped branch falling with him. Across the clearing, Vera sits with her back against the great Mapleaf tree, writing in her list — the list is visibly very long. The forest is warm and golden. Everything is fine.</p>
+  <div class="mouse-note"><strong>Mouse family:</strong> In the far background, barely visible — their small cottage with Pa Mouse sitting outside on a stump, completely calm. Baby asleep in a bundle in a basket beside him. A perfectly ordinary Tuesday for them too.</div>
+</div>
+
+<div class="prose">
+  <p>It was an ordinary Tuesday in Whisperwood.</p>
+  <p>By the river, Sage was watching tadpoles. She did this most mornings. She never got bored of it.</p>
+  <p>In the branches above her, Pip was trying to leap from one tree to the next without using his hands. He had already fallen twice. The second time, he had taken a large branch with him.</p>
+  <p>He was going to try a third time.</p>
+  <p>Nearby, Vera sat with her back against the Mapleaf tree, adding to her list. It was a very long list. Today's entries so far included: river current (normal), beaver morning shift (started), and Pip (falling, probably fine).</p>
+  <p>She glanced up at the Mapleaf's veins the way she always did — just to check. They were golden and calm.</p>
+  <p>Good.</p>
+  <p>She looked back at her list.</p>
+  <p>Then she looked up again.</p>
+  <p>The veins had gone dark.</p>
+</div>
+
+<div class="illo">
+  <div class="illo-label"><span class="illo-num">2</span>Illustration — Left page, or inset panel</div>
+  <p>Close on the Mapleaf's veins — dark and branching like cracks. Below, Vera is already on her feet, list still in her paw, already facing the direction of the beavers' dam. In the same image or an adjacent panel: Pip landing on her head from above, tail flicking.</p>
+</div>
+
+<div class="prose">
+  <p>The village of Whisperwood had a rule. When the Mapleaf tree's veins turned dark, something was coming.</p>
+  <p>Vera was already on her feet — list still in her paw, already facing the direction of the beavers' dam — when Pip landed on her head.</p>
+  <p class="beat">"Something is coming," said Pip.</p>
+  <p class="beat">"I know," said Vera. She did not stop facing the direction of the dam.</p>
+  <p class="beat">"The Mapleaf—"</p>
+  <p class="beat">"I know."</p>
+  <p class="beat">"But did you see how dark the veins are? They're almost—"</p>
+  <p class="beat">"Pip."</p>
+  <p class="beat">"Yes?"</p>
+  <p class="beat">"I know."</p>
+  <p>Pip flicked his tail. He did not look convinced.</p>
+</div>
+
+
+<!-- ═══════════════════════════════════ -->
+<!-- CHAPTER 2                          -->
+<!-- ═══════════════════════════════════ -->
+
+<div class="chapter-header">
+  <div class="chapter-num">Chapter 2</div>
+  <div class="chapter-title">Wait</div>
+</div>
+
+<div class="prose">
+  <p>Sage was no longer watching tadpoles.</p>
+  <p>She was watching the water.</p>
+  <p>It was moving faster than it should.</p>
+  <p>She placed one foot in the current. Then she took it back out.</p>
+  <p>She reached for a bellflower growing near the bank.</p>
+  <p>She rang it once. Twice. Three times.</p>
+  <p>In Whisperwood, three rings meant: <em>come quickly, but don't panic.</em></p>
+</div>
+
+<div class="illo">
+  <div class="illo-label"><span class="illo-num">3</span>Illustration — Right page, full</div>
+  <p>Sage at the water's edge, one hand wrapped around the bellflower stem, mid-ring. She is very still — the stillness contrasts with the fast-moving water behind her. The river is visibly rushing. Sound lines or visual bells showing the rings going out across the forest. Her expression is calm but certain.</p>
+  <div class="mouse-note"><strong>Mouse family:</strong> In the background across the river — Ma Mouse has paused hanging a tiny curtain in their doorway. She and Pa Mouse are both looking toward the sound of the bells. Middle Son is already craning toward the action.</div>
+</div>
+
+
+<!-- ═══════════════════════════════════ -->
+<!-- CHAPTER 3                          -->
+<!-- ═══════════════════════════════════ -->
+
+<div class="chapter-header">
+  <div class="chapter-num">Chapter 3</div>
+  <div class="chapter-title">I Already Know the Plan</div>
+</div>
+
+<div class="prose">
+  <p>Vera arrived first.</p>
+  <p>She was already talking before she reached the bank. "Flooding. The Mapleaf showed dark veins. River's rising — we need the beavers." She was already turning to go.</p>
+  <p>Sage opened her mouth.</p>
+  <p class="beat">"I'll go find them," said Vera.</p>
+  <p>Sage closed her mouth.</p>
+  <p>Pip arrived second. He was out of breath and had a leaf stuck to his ear and was already holding a large stick he'd found on the way over, in case it was useful.</p>
+  <p class="beat">"What did I miss?" he said.</p>
+  <p class="beat">"Vera already knows the plan," said Sage.</p>
+  <p>Pip looked at the river. He looked at his stick. He looked at the direction Vera had already run.</p>
+  <p class="beat">"Does she know <em>why</em> the river is fast?"</p>
+  <p>Sage went still.</p>
+  <p>She looked at the water. She looked at where Vera had been.</p>
+  <p class="beat">"…I don't think she asked," said Sage.</p>
+</div>
+
+<div class="illo">
+  <div class="illo-label"><span class="illo-num">4</span>Illustration — Right page, full</div>
+  <p>Pip standing at the river's edge with his enormous stick, completely earnest, leaf on his ear. Sage beside him — she has gone very still in that particular Sage way, hand resting on a riverside rock. The fast river behind them. At the edge of the image, just disappearing around a bend: Vera's retreating shape, already gone, already sure.</p>
+</div>
+
+
+<!-- ═══════════════════════════════════ -->
+<!-- CHAPTER 4                          -->
+<!-- ═══════════════════════════════════ -->
+
+<div class="chapter-header">
+  <div class="chapter-num">Chapter 4</div>
+  <div class="chapter-title">What the Rock Remembered</div>
+</div>
+
+<div class="prose">
+  <p>The beavers were busy. They were always busy.</p>
+  <p class="beat">"Flooding?" said Bram. He had a hard hat made of bark and an expression that suggested he had seen many floods. "Where?"</p>
+  <p class="beat">"The burrows," said Vera. "River's rising. We need to redirect it."</p>
+  <p>Bram stroked his chin.</p>
+  <p class="beat">"Can't," he said. "Not safely. Not quickly. Something's come down at the river bend — blocking the channel. Until we can get eyes on it in daylight, we don't touch a thing."</p>
+  <p>Vera's mouth opened. Then it closed.</p>
+  <p>Her ears went back. Just slightly.</p>
+  <p>She stood very still for exactly one breath.</p>
+  <p class="beat">"What if we—"</p>
+  <p class="beat">"Not safely," said Bram. "Not tonight."</p>
+</div>
+
+<div class="illo">
+  <div class="illo-label"><span class="illo-num">5</span>Illustration — Left page</div>
+  <p>Vera standing very still in front of Bram, who is solid and immovable in his bark hat. Vera's ears at half-mast — the first time we've seen them anywhere but forward. The contrast between her usual forward-lean and this stillness should be visible. Bram's expression is not unkind — just certain.</p>
+</div>
+
+<div class="prose">
+  <p>Back at the river, Pip was doing what Pip always did when there was a problem.</p>
+  <p>He was trying to help.</p>
+  <p>He had his large stick. He had wedged one end in the bank. He was not entirely sure what he expected to happen next. But it felt better than standing still.</p>
+  <p class="beat">"Pip," said Sage. "What are you doing?"</p>
+  <p class="beat">"Helping," said Pip.</p>
+  <p class="beat">"With a stick."</p>
+  <p class="beat">"It's a big stick."</p>
+  <p>Sage watched the water rise another inch.</p>
+  <p class="beat">"Come with me," she said.</p>
+</div>
+
+<div class="prose">
+  <p>She led him to the oldest boulder at the river's edge. It was round and grey and covered in soft moss. It had been sitting in the same spot since before anyone in Whisperwood could remember.</p>
+  <p>Sage pressed her hand flat against it.</p>
+  <p class="beat">"Excuse me," she said quietly.</p>
+  <p>The boulder was silent.</p>
+  <p>Pip leaned in. His nose was almost touching the rock.</p>
+  <p>The river crept higher. A mouse family hurried past with bundles on their backs, moving fast and quiet.</p>
+  <p>Then the boulder spoke.</p>
+  <p class="beat">"…Tree."</p>
+  <p class="beat">"Tree?" said Pip. "What tree?"</p>
+  <p>He leaned in further. Sage put one hand on his shoulder, very gently, and he went still.</p>
+  <p>They waited.</p>
+  <p class="beat">"…Fell."</p>
+</div>
+
+<div class="illo">
+  <div class="illo-label"><span class="illo-num">6</span>Illustration — Right page, full spread — KEY IMAGE</div>
+  <p>Pip nose-to-boulder, leaning so far forward he is nearly falling over, every part of him straining toward the rock. Sage's hand on his shoulder — the only thing keeping him still. The boulder vast and unhurried and covered in soft moss. The river rising behind them. This image is the whole book: Pip's coiled energy held by Sage's steadiness. The contrast should be funny and warm at once.</p>
+  <div class="mouse-note"><strong>Mouse family:</strong> Visible mid-crossing behind Sage and Pip — Ma Mouse with the framed painting tucked under one arm, Pa Mouse carrying Baby (still asleep), Big Daughter writing in her notebook while walking, Middle Son looking directly at Pip and the rock with intense interest. Ma Mouse has a firm hand on Middle Son's collar.</div>
+</div>
+
+
+<!-- ═══════════════════════════════════ -->
+<!-- CHAPTER 5                          -->
+<!-- ═══════════════════════════════════ -->
+
+<div class="chapter-header">
+  <div class="chapter-num">Chapter 5</div>
+  <div class="chapter-title">Fox Was Wrong (Sort Of)</div>
+</div>
+
+<div class="prose">
+  <p>Vera came back without the beavers.</p>
+  <p>She stood at the river's edge and looked at it.</p>
+  <p class="beat">"There's a fallen tree," said Sage. "At the river bend. Blocking the channel. That's why it's rising."</p>
+  <p>Vera's ears went back.</p>
+  <p>Just slightly.</p>
+  <p class="beat">"I knew it was flooding," she said.</p>
+  <p class="beat">"You did," said Sage.</p>
+  <p class="beat">"I just didn't know why."</p>
+  <p class="beat">"No," said Sage. "You didn't ask."</p>
+  <p>A silence.</p>
+  <p class="beat">"…I should have asked," said Vera.</p>
+  <p>Pip patted her on the shoulder. "You got us to the beavers though! That's still good."</p>
+  <p class="beat">"The beavers said they can't help yet."</p>
+  <p class="beat">"Oh." Pip thought about this. "Well. You got us <em>to</em> the beavers. That counts."</p>
+  <p>Vera looked at him.</p>
+  <p>Pip smiled his enormous Pip smile.</p>
+  <p>Vera sighed. But her ears came back up.</p>
+</div>
+
+<div class="illo">
+  <div class="illo-label"><span class="illo-num">7</span>Illustration — Left page</div>
+  <p>The three of them at the river's edge. Pip beaming with complete sincerity. Vera's ears caught mid-rise — not all the way up yet, but coming. Sage looking at the water, already thinking ahead. The mood: we got something wrong, and we are still okay. The river rising visibly in the background.</p>
+</div>
+
+
+<!-- ═══════════════════════════════════ -->
+<!-- CHAPTER 6                          -->
+<!-- ═══════════════════════════════════ -->
+
+<div class="chapter-header">
+  <div class="chapter-num">Chapter 6</div>
+  <div class="chapter-title">Night Work</div>
+</div>
+
+<div class="prose">
+  <p>By the time the sun went down, the burrows were knee-deep in water.</p>
+  <p>The bunnies had already begun.</p>
+  <p>They moved fast and quiet through their underground tunnels, guiding mouse families out one by one. No panic. No pushing. Just small paws and calm voices and knowing exactly where to go.</p>
+  <p class="beat">"This way, please."</p>
+  <p class="beat">"Mind your step."</p>
+  <p class="beat">"You're safe now."</p>
+  <p>Above ground, Vera looked up at the Mapleaf.</p>
+  <p>Its veins were still dark — but one branch pointed slightly left. Toward the mossy clearing.</p>
+  <p>She was already walking toward Pip before she finished looking.</p>
+  <p class="beat">"Pip," she said. "I need everyone who can sing."</p>
+  <p class="beat">Pip's eyes went wide. "Everyone?"</p>
+  <p class="beat">"Everyone."</p>
+  <p>Pip was already gone before she finished the sentence.</p>
+</div>
+
+<div class="illo">
+  <div class="illo-label"><span class="illo-num">8</span>Illustration — Right page, two-panel or split</div>
+  <p>Top panel or left half: underground cross-section of the bunny tunnels — calm, efficient, small paws guiding smaller creatures through warm-lit passages. The sense of a well-practiced system. Bottom panel or right half: above ground, Vera looking up at the Mapleaf's pointing branch, and in the far distance Pip already a blur between the trees, mid-sprint.</p>
+</div>
+
+
+<!-- ═══════════════════════════════════ -->
+<!-- CHAPTER 7                          -->
+<!-- ═══════════════════════════════════ -->
+
+<div class="chapter-header">
+  <div class="chapter-num">Chapter 7</div>
+  <div class="chapter-title">Singing to the Mud</div>
+</div>
+
+<div class="prose">
+  <p>They gathered at the river's edge.</p>
+  <p>Vera. Pip. Sage. Bram and two other beavers. A family of deer. Three raccoons. The otter from the slide, who had been asked twice and complained once and showed up anyway.</p>
+  <p>It was loud. It was a lot of creatures moving in a lot of directions at once.</p>
+  <p>At the back of the crowd, Sage took a slow breath. She took a step back from the noise.</p>
+  <p>Then she looked at the mud. She looked at where the water needed to go.</p>
+  <p>She took a step forward.</p>
+  <p>She knew what her part was.</p>
+  <p class="beat">"We're going to redirect the water," said Vera, at the front. "Just to the mossy clearing. Just for tonight. The beavers will fix the tree tomorrow when it's safe."</p>
+  <p class="beat">Bram nodded. "We'll be there at first light."</p>
+  <p class="beat">"Low and slow," said Vera. "On my count. Like this—"</p>
+  <p>She hummed a single note.</p>
+  <p>The deer picked it up. Then the raccoons. Then Pip — loudly and slightly to the left of the correct note, but with his whole entire body.</p>
+  <p>The mud at the river's edge began to shift.</p>
+  <p>Slowly at first. Then more.</p>
+  <p>A small channel opened, curving left toward the clearing.</p>
+  <p>The water followed.</p>
+  <p>It was not elegant. It was not permanent.</p>
+  <p>But the river slowed.</p>
+  <p>And the burrows held.</p>
+</div>
+
+<div class="illo">
+  <div class="illo-label"><span class="illo-num">9</span>Illustration — Right page, full spread — COMMUNITY IMAGE</div>
+  <p>The whole community singing together at the river's edge. Pip in the foreground, mouth wide open, clearly giving everything he has to this note. The mud is visibly moving — channelling left, shifting and curving. Vera at the front conducting with one paw. Sage at the back of the crowd — present, steady, mouth open and singing quietly. The otter somewhere in the middle, arms crossed but mouth open. The feeling should be warm, slightly chaotic, and communal.</p>
+  <div class="mouse-note"><strong>Mouse family:</strong> Just above ground at the edge of their flooded burrow entrance — Ma Mouse watching the water level, Pa Mouse standing beside her looking calm, Middle Son watching Pip's singing technique with intense focus. Big Daughter is writing. Baby is asleep.</div>
+</div>
+
+<div class="illo">
+  <div class="illo-label"><span class="illo-num">10</span>Illustration — Left page, quieter</div>
+  <p>The redirect working: the new channel carved through the bank, water flowing left into the mossy clearing. The crowd watching, some sitting, some standing. A feeling of collective exhale. Glow moss on the path lights the scene warmly. The river behind them, visibly calmer now.</p>
+  <div class="mouse-note"><strong>Mouse family:</strong> Above ground near their burrow entrance — the water level is dropping. Pa Mouse is watching it with great calm. He gives Ma Mouse a single nod. She nods back. This is the most that happens to them and it is enough.</div>
+</div>
+
+
+<!-- ═══════════════════════════════════ -->
+<!-- CHAPTER 8                          -->
+<!-- ═══════════════════════════════════ -->
+
+<div class="chapter-header">
+  <div class="chapter-num">Chapter 8</div>
+  <div class="chapter-title">Good Morning</div>
+</div>
+
+<div class="prose">
+  <p>By midnight, the mouse families were safe in temporary nests above ground.</p>
+  <p>When morning came, Bram and three other beavers arrived at the river bend at first light. The fallen tree — a great old oak, broken at the root — lay heavy across the channel.</p>
+  <p>It took four beavers and two hours.</p>
+  <p>But they moved it.</p>
+  <p>The water rushed through the cleared channel with a sound like relief. The singing mud settled quietly back into the riverbank, as if it had never moved. The redirect was gone.</p>
+  <p>By the time the sun was fully up, the burrows were draining.</p>
+</div>
+
+<div class="illo">
+  <div class="illo-label"><span class="illo-num">11</span>Illustration — Right page, full</div>
+  <p>The beavers at the river bend working on the fallen oak in early morning light. The tree is enormous — the scale matters. Four small beavers against a great old oak. Bram in his bark hard hat directing. Dawn colours. The sense that this is hard, satisfying, permanent work. In the channel, the water beginning to move freely again.</p>
+</div>
+
+<div class="prose">
+  <p>Vera sat on a rock by the river, watching the water run clear and calm.</p>
+  <p>Pip flopped down next to her. He had mud on his nose and a glow mushroom in each paw, held up like tiny torches. It was broad daylight.</p>
+  <p>Sage settled beside them both, slowly, the way Sage did everything.</p>
+  <p class="beat">"We fixed it," said Pip.</p>
+  <p class="beat">"We fixed it," said Vera. "Properly."</p>
+  <p>Sage was quiet for a moment. She was looking back toward the river bend.</p>
+  <p class="beat">"The tree," she said. "Did it fall on its own?"</p>
+  <p>Bram, still at the water's edge, turned back toward them.</p>
+  <p class="beat">"Hard to say. The roots let go. But the damage to those roots was old. Very old." He shook his head slowly. "I'll remember it."</p>
+  <p>Sage nodded. She filed it away.</p>
+  <p class="beat">"Next time," said Vera quietly, "I'll ask why first."</p>
+  <p>Pip looked at her.</p>
+  <p class="beat">"You say that every time something goes wrong," he said cheerfully.</p>
+  <p class="beat">Vera stared at him. "This is the first time something has gone wrong."</p>
+  <p class="beat">"I know," said Pip. "But I have a feeling it won't be the last."</p>
+  <p>He held up both glowing mushrooms like tiny torches and marched off down the path toward home.</p>
+  <p>Vera and Sage looked at each other.</p>
+  <p>Then they followed him.</p>
+  <p>Because in Whisperwood, that was usually the right thing to do.</p>
+</div>
+
+<div class="illo">
+  <div class="illo-label"><span class="illo-num">12</span>Illustration — FINAL SPREAD, full two pages</div>
+  <p>The trio walking home on the forest path in morning light. Pip in front, both glow mushrooms held high like torches — completely unnecessarily, it is fully day. Vera and Sage behind him, walking together. The path is warm and dappled. The forest has exhaled.</p>
+  <p>And in the far background, almost hidden between the trees: the mouse family's temporary shelter. Ma Mouse is outside, hanging their small framed painting on the exterior wall — a portrait of their old home. Pa Mouse sits beside the door on a stump. Completely calm. Baby is asleep in Pa's arms. Big Daughter is on the step, writing. Middle Son is watching the trio walk away, still hoping something interesting will happen. Nothing will. Not today.</p>
+  <div class="mouse-note"><strong>Mouse family Book 1 arc complete:</strong> Displaced → evacuated → safe above ground → the painting is out. They are making the best of it. This is where we leave them until Book 2.</div>
+</div>
+
+
+<!-- ═══════════════════════════════════ -->
+<!-- END                                -->
+<!-- ═══════════════════════════════════ -->
+
+<div class="end">
+  <div class="end-title">The End of Book One</div>
+  <div class="end-sub">The Rushing River</div>
+</div>
+
+<div class="doc-footer">
+  Whisperwood Book 1 — Draft 2 &nbsp;·&nbsp; Confidential &nbsp;·&nbsp; © Reena Gellerup 2026
+</div>
+
+</div>
+</body>
+</html>
