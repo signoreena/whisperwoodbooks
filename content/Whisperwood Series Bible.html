@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whisperwood Series Bible</title>
+<style>
+  /* ── Reset & Base ─────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #1a1a1a;
+    background: #f9f7f4;
+  }
+
+  /* ── Page wrapper ─────────────────────────────── */
+  .page {
+    max-width: 820px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 0;
+    box-shadow: 0 2px 24px rgba(0,0,0,0.10);
+  }
+
+  /* ── Cover ────────────────────────────────────── */
+  .cover {
+    background: linear-gradient(160deg, #1e4020 0%, #2d5a27 60%, #4a7c59 100%);
+    color: #fff;
+    text-align: center;
+    padding: 100px 60px 80px;
+    position: relative;
+  }
+  .cover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 6px;
+    background: #b5651d;
+  }
+  .cover .series-name {
+    font-size: 58px;
+    font-weight: bold;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .cover .subtitle {
+    font-size: 26px;
+    font-style: italic;
+    color: #c8e6c2;
+    margin-bottom: 10px;
+  }
+  .cover .tagline {
+    font-size: 16px;
+    color: #a8d4a0;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+  }
+  .cover .author {
+    margin-top: 48px;
+    font-size: 18px;
+    color: #e8f5e4;
+    letter-spacing: 1px;
+  }
+  .cover .date {
+    font-size: 14px;
+    color: #a8d4a0;
+    font-style: italic;
+    margin-top: 6px;
+  }
+
+  /* ── Table of Contents ────────────────────────── */
+  .toc {
+    background: #f0f5ef;
+    border-left: 5px solid #2d5a27;
+    padding: 40px 50px;
+    margin: 0;
+  }
+  .toc h2 {
+    font-size: 13px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4a7c59;
+    margin-bottom: 20px;
+  }
+  .toc ol {
+    list-style: none;
+    counter-reset: toc-counter;
+  }
+  .toc ol li {
+    counter-increment: toc-counter;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    padding: 5px 0;
+    border-bottom: 1px dotted #ccc;
+    font-size: 15px;
+  }
+  .toc ol li::before {
+    content: counter(toc-counter) ".";
+    color: #4a7c59;
+    font-weight: bold;
+    min-width: 22px;
+  }
+  .toc ol li span { color: #555; font-size: 13px; margin-left: auto; }
+
+  /* ── Content area ─────────────────────────────── */
+  .content { padding: 50px 60px; }
+
+  /* ── Section headers ──────────────────────────── */
+  .section-header {
+    margin: 0 -60px 40px;
+    padding: 28px 60px 22px;
+    background: linear-gradient(90deg, #2d5a27 0%, #4a7c59 100%);
+    color: #fff;
+  }
+  .section-header .sec-number {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #a8d4a0;
+    margin-bottom: 4px;
+  }
+  .section-header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #2d5a27;
+    margin: 36px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #c8e6c2;
+  }
+  h3 {
+    font-size: 17px;
+    color: #b5651d;
+    margin: 28px 0 10px;
+    font-style: italic;
+  }
+
+  p { margin-bottom: 14px; }
+
+  /* ── Callout boxes ────────────────────────────── */
+  .callout {
+    border-left: 4px solid #4a7c59;
+    background: #eaf4e8;
+    border-radius: 0 6px 6px 0;
+    padding: 18px 22px;
+    margin: 22px 0;
+  }
+  .callout.amber {
+    border-left-color: #b5651d;
+    background: #fdf3e7;
+  }
+  .callout.slate {
+    border-left-color: #4a5568;
+    background: #eef0f3;
+  }
+  .callout .callout-label {
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    color: #2d5a27;
+  }
+  .callout.amber .callout-label { color: #b5651d; }
+  .callout.slate .callout-label { color: #4a5568; }
+  .callout p { margin-bottom: 8px; font-size: 14px; }
+  .callout p:last-child { margin-bottom: 0; }
+
+  /* ── Quote / Book excerpt ─────────────────────── */
+  .excerpt {
+    border-left: 3px solid #c8e6c2;
+    padding: 14px 20px;
+    margin: 16px 0;
+    font-style: italic;
+    color: #3a5a3a;
+    background: #f7fbf6;
+    font-size: 14px;
+  }
+
+  /* ── Tables ───────────────────────────────────── */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0 24px;
+    font-size: 14px;
+  }
+  th {
+    background: #2d5a27;
+    color: #fff;
+    text-align: left;
+    padding: 10px 14px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #ddd;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: #f4faf3; }
+  tr:hover td { background: #eaf4e8; }
+  .col-label { font-weight: bold; color: #2d5a27; width: 170px; }
+
+  /* ── Character profile tables ─────────────────── */
+  .char-table td:first-child {
+    font-weight: bold;
+    color: #4a5568;
+    background: #eef0f3;
+    width: 140px;
+    font-size: 13px;
+  }
+  .char-table tr:nth-child(even) td:first-child { background: #e6e9ef; }
+
+  /* ── Arc table ────────────────────────────────── */
+  .arc-table th:first-child { width: 36px; }
+  .arc-table th:nth-child(2) { width: 180px; }
+  .arc-table td:first-child { text-align: center; font-weight: bold; color: #4a7c59; }
+
+  /* ── Book outline blocks ──────────────────────── */
+  .book-block {
+    background: #f9f7f4;
+    border: 1px solid #dde8db;
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin: 18px 0;
+  }
+  .book-block .book-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #2d5a27;
+    margin-bottom: 4px;
+  }
+  .book-block .book-meta {
+    font-size: 12px;
+    color: #777;
+    font-style: italic;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dde8db;
+  }
+  .book-block p { font-size: 14px; margin-bottom: 8px; }
+  .book-block p:last-child { margin-bottom: 0; }
+
+  /* ── Bullet lists ─────────────────────────────── */
+  ul.wb {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 18px;
+  }
+  ul.wb li {
+    padding: 4px 0 4px 22px;
+    position: relative;
+    font-size: 14.5px;
+    line-height: 1.6;
+    border-bottom: 1px dotted #e0e0e0;
+  }
+  ul.wb li:last-child { border-bottom: none; }
+  ul.wb li::before {
+    content: '▸';
+    color: #4a7c59;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    font-size: 12px;
+  }
+
+  /* ── Section divider ──────────────────────────── */
+  .page-break { page-break-after: always; }
+  hr.section { border: none; border-top: 3px solid #4a7c59; margin: 40px 0 30px; opacity: 0.3; }
+
+  /* ── Pattern steps ────────────────────────────── */
+  .pattern-step {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 14px;
+    align-items: flex-start;
+  }
+  .step-num {
+    background: #2d5a27;
+    color: #fff;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 2px;
+  }
+  .step-body strong { color: #2d5a27; }
+
+  /* ── Footer ───────────────────────────────────── */
+  .doc-footer {
+    background: #2d5a27;
+    color: #a8d4a0;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  /* ── Print styles ─────────────────────────────── */
+  @media print {
+    body { background: #fff; font-size: 13px; }
+    .page { box-shadow: none; max-width: 100%; }
+    .content { padding: 30px 40px; }
+    .section-header { margin: 0 -40px 30px; padding: 20px 40px; }
+    .page-break { page-break-after: always; }
+    .cover { padding: 60px 40px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- ══════════════════════════════════════════════ -->
+<!--  COVER                                         -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="cover">
+  <div class="series-name">Whisperwood</div>
+  <div class="subtitle">Series Bible</div>
+  <div class="tagline">A 12-Book Early-Reader Series &nbsp;·&nbsp; Ages 4–6 &nbsp;·&nbsp; KDP Publication</div>
+  <div class="author">By Reena Gellerup</div>
+  <div class="date">Draft — April 2026</div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--  TABLE OF CONTENTS                             -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="toc">
+  <h2>Contents</h2>
+  <ol>
+    <li>Series Overview <span>p. 1</span></li>
+    <li>The World of Whisperwood <span>p. 2</span></li>
+    <li>Main Characters <span>p. 3</span></li>
+    <li>Per-Book Story Structure <span>p. 5</span></li>
+    <li>The 12-Book Arc <span>p. 6</span></li>
+    <li>World Canon Quick-Reference <span>p. 9</span></li>
+    <li>KDP &amp; Production Notes <span>p. 10</span></li>
+  </ol>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--  SECTION 1: SERIES OVERVIEW                    -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="content page-break">
+  <div class="section-header">
+    <div class="sec-number">Section 1</div>
+    <h1>Series Overview</h1>
+  </div>
+
+  <p><em>Whisperwood</em> is a 12-book early-reader series for ages 4–6, built around three anthropomorphic child companions who live in an enchanted forest village where the enchantment is part of everyday life. Every book follows the same reassuring rhythm — a problem arrives, the trio investigates using the systems of the forest, a partial solution is found — but the specific crisis, creatures, and lesson are always fresh.</p>
+
+  <p>The series is designed in the tradition of <em>The Princess in Black</em>: short declarative sentences, repeated structural patterns within and across books, chapter-length hooks, and illustrations that carry world detail the prose cannot. Parents and children return to these books because the rhythm feels safe while the story still surprises.</p>
+
+  <div class="callout">
+    <div class="callout-label">The Series Promise</div>
+    <p>Every problem in Whisperwood requires more than one creature, more than one resource, and more than one attempt to solve. Some fixes are permanent. Some hold until a permanent solution arrives. Either way, nothing is ever fixed by one creature working alone. That is the whole engine of the series.</p>
+  </div>
+
+  <h2>Series-Level Themes</h2>
+  <ul class="wb">
+    <li>Kindness and empathy are the foundation of every book.</li>
+    <li>No single thing — no single creature, no single resource, no single plan — can solve a whole problem.</li>
+    <li>Emotions affect judgment, not outcomes. Feelings are real; they just don't change how mud behaves.</li>
+    <li>Some problems are fixed completely. Some fixes are temporary bridges to a permanent solution. Either way, the work requires the whole community — and that is never failure.</li>
+    <li>Every member of the community has a role. Nobody is unnecessary.</li>
+  </ul>
+
+  <h2>Market Position</h2>
+  <p><strong>Target:</strong> Ages 4–6 (early readers). <strong>Platform:</strong> Amazon KDP. <strong>Comp titles:</strong> <em>The Princess in Black</em> series (Hale/Ostertag), <em>Frog and Toad</em> (Lobel), <em>Owl at Home</em> (Lobel).</p>
+  <p>Whisperwood's edge: an internally consistent world system gives parents talking points after the book closes ("Why did Sage slow everyone down?"), driving repeat reads and series loyalty.</p>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--  SECTION 2: THE WORLD                          -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="content page-break">
+  <div class="section-header">
+    <div class="sec-number">Section 2</div>
+    <h1>The World of Whisperwood</h1>
+  </div>
+
+  <p>Whisperwood is an enchanted village ecosystem nestled deep in an ancient forest. The enchantment is not dramatic or spell-like — it is simply the way things work here. The forest has systems. Those systems have rules. The trio's job is to understand the rules well enough to use them.</p>
+
+  <div class="callout amber">
+    <div class="callout-label">The Golden Rule of Whisperwood</div>
+    <p>No single thing in Whisperwood can solve a whole problem. Everything is partial. Everything has limits. The solution is always: find the right resource, ask the right creature, use things in the right order, and accept that some solutions are temporary.</p>
+  </div>
+
+  <h2>Infrastructure: Guidance &amp; Information</h2>
+  <table>
+    <thead><tr><th>Element</th><th>What It Does / Rules</th></tr></thead>
+    <tbody>
+      <tr><td class="col-label">Mapleaf Trees</td><td>Giant leaves whose veins glow and shift to show nearby paths, water routes, and structural changes in the forest. Read like a living map. Veins darkening = something is coming.</td></tr>
+      <tr><td class="col-label">Talking Rocks</td><td>Ancient boulders that can speak, but only one word at a time, very slowly. They remember events from long ago. Patience required. They never lie, but rarely give complete information on their own.</td></tr>
+      <tr><td class="col-label">Songbirds</td><td>A fast-moving gossip and news network. Useful for speed, unreliable for accuracy. Reports travel quickly but lose detail along the chain.</td></tr>
+      <tr><td class="col-label">Raccoons</td><td>The journalists and fact-checkers of Whisperwood. They investigate, verify, and remember past events. The corrective layer to the songbird network.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Infrastructure: Tools &amp; Materials</h2>
+  <table>
+    <thead><tr><th>Element</th><th>What It Does / Rules</th></tr></thead>
+    <tbody>
+      <tr><td class="col-label">Glow Moss</td><td>Spanish-moss-like growth that provides soft light along paths and in caves. Can be gathered and used as a portable light source. Naturally reveals things that are hard to see in daylight.</td></tr>
+      <tr><td class="col-label">Mushrooms</td><td>Each variety has exactly one purpose: air (freshens stale spaces), glue (bonding), silence (quietcap — absorbs sound), warmth, sealing (waterproofing gaps), lantern (portable light). Cannot be used outside their single purpose.</td></tr>
+      <tr><td class="col-label">Singing Mud</td><td>Mud that responds to collective, coordinated singing. When a group hums or sings together in a low, sustained tone, the mud shifts, piles, or channels itself into walls, barriers, or redirects. One voice is not enough — it takes community.</td></tr>
+      <tr><td class="col-label">Bellflowers</td><td>Communication device. <strong>Three rings = "come quickly, but don't panic."</strong> Other patterns exist for other messages. Range is limited to the forest; cannot summon creatures from very far away without relay.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Infrastructure: Specialists</h2>
+  <table>
+    <thead><tr><th>Creature</th><th>Role &amp; Limits</th></tr></thead>
+    <tbody>
+      <tr><td class="col-label">Beavers</td><td>Master builders and long-term planners. Can design and execute permanent structural fixes. Slow — they will not rush a job and risk making it worse. Head beaver: <strong>Bram</strong> (hard hat of bark, veteran of many floods).</td></tr>
+      <tr><td class="col-label">Owls</td><td>Librarians and scientists. Run the forest library. Can brew potions, provide wisdom, and research solutions to unusual problems. Consulted for especially tough questions; they do not volunteer information without being asked.</td></tr>
+      <tr><td class="col-label">Antlered Animals (Deer)</td><td>Vibration and danger sensors. Their antlers detect tremors, underground movement, and approaching disturbances before anyone else can perceive them. Early warning system.</td></tr>
+      <tr><td class="col-label">Bunnies</td><td>Underground transit and evacuation specialists. Maintain a network of tunnels throughout Whisperwood. Move calmly and efficiently in a crisis. Cannot solve above-ground problems but are irreplaceable for below-ground or mass-movement situations.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>What Whisperwood Is Not</h2>
+  <ul class="wb">
+    <li><strong>Not a place where feelings create outcomes.</strong> Emotions affect judgment — Vera rushing because she's overconfident, Sage freezing because she's overwhelmed — but the mud does not move faster because someone is brave.</li>
+    <li><strong>Not a place with villains.</strong> Conflict comes from natural systems under stress, creatures with competing needs, and the limits of partial solutions.</li>
+    <li><strong>Not a place where one hero saves the day.</strong> Community effort is always required.</li>
+  </ul>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--  SECTION 3: CHARACTERS                         -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="content page-break">
+  <div class="section-header">
+    <div class="sec-number">Section 3</div>
+    <h1>Main Characters</h1>
+  </div>
+
+  <p>The trio are all approximately 8 years old, anthropomorphic animal children who live in the village of Whisperwood. They are not the only characters who matter — each book brings in a different supporting forest creature whose role is central to that book's solution — but Vera, Pip, and Sage appear in every book and hold consistent narrative roles.</p>
+
+  <!-- VERA -->
+  <h2>Vera — The Fox</h2>
+  <table class="char-table">
+    <tbody>
+      <tr><td>Species</td><td>Fox</td></tr>
+      <tr><td>Gender</td><td>Girl</td></tr>
+      <tr><td>Age</td><td>About 8</td></tr>
+      <tr><td>Role</td><td>Systems thinker. Knows who to ask, what order things go in, and how the pieces connect.</td></tr>
+      <tr><td>Gift</td><td>Pattern recognition. She sees the structure of a problem faster than anyone else. She knows which resource to reach for and which creature to consult.</td></tr>
+      <tr><td>Flaw</td><td>Overconfidence. She decides the answer before she has heard the whole problem. She is brilliant at solving the wrong thing perfectly.</td></tr>
+      <tr><td>Arc (per book)</td><td>Vera rushes to a solution → hits a wall → pauses, listens, adjusts → finds the real fix. Each book ends with a small, quiet version of: "I should have asked why first."</td></tr>
+      <tr><td>Name note</td><td>"Vera" means truth / certainty. She is always sure she is right. The name telegraphs her gift and ironizes her flaw.</td></tr>
+      <tr><td>Voice</td><td>Clipped and declarative. "I know." "We need the beavers." "It's flooding." Does not waste words. Slightly arch.</td></tr>
+    </tbody>
+  </table>
+  <div class="excerpt">
+    "Flooding," she said, before Sage could speak. "The Mapleaf showed dark veins this morning. The river is rising. We need the beavers." Sage opened her mouth. "I'll go find them," said Vera. Sage closed her mouth.
+  </div>
+
+  <!-- PIP -->
+  <h2>Pip — The Squirrel</h2>
+  <table class="char-table">
+    <tbody>
+      <tr><td>Species</td><td>Squirrel</td></tr>
+      <tr><td>Gender</td><td>Boy</td></tr>
+      <tr><td>Age</td><td>About 8</td></tr>
+      <tr><td>Role</td><td>Momentum keeper. First to jump in, first to help, first to arrive with something to do — even if he doesn't know what to do with it yet.</td></tr>
+      <tr><td>Gift</td><td>Earnest action and rallying energy. He can mobilize the entire forest community with a smile and a bellflower. When something needs to start moving, Pip starts it.</td></tr>
+      <tr><td>Flaw</td><td>Impulsivity. He can make problems worse by acting before understanding. His help can accidentally be unhelpful.</td></tr>
+      <tr><td>Arc (per book)</td><td>Pip acts immediately → sometimes usefully, sometimes not → gets redirected by Sage or corrected by Vera → finds the exact moment where his momentum is the right tool.</td></tr>
+      <tr><td>Name note</td><td>"Pip" suggests a small burst of energy: a seed, a squeak, a pop. Forward motion in one syllable.</td></tr>
+      <tr><td>Voice</td><td>Enthusiastic, slightly breathless. Big feelings, short sentences. "What did I miss?" "It's a big stick." "We fixed it enough!"</td></tr>
+    </tbody>
+  </table>
+  <div class="excerpt">
+    Pip was doing what Pip always did when there was a problem. He was trying to help. He had found a large stick. He was not entirely sure what to do with the large stick. But it felt better than standing still.
+  </div>
+
+  <!-- SAGE -->
+  <h2>Sage — The Turtle</h2>
+  <table class="char-table">
+    <tbody>
+      <tr><td>Species</td><td>Turtle</td></tr>
+      <tr><td>Gender</td><td>Girl</td></tr>
+      <tr><td>Age</td><td>About 8</td></tr>
+      <tr><td>Role</td><td>Pace-setter. Knows when to slow down, when to step away, when to stop and listen before anyone else is ready to stop.</td></tr>
+      <tr><td>Gift</td><td>Deep listening. Because she moves slowly and takes everything in, she notices what others rush past: a detail, a tone, a small movement in the water. Her deliberateness is her superpower.</td></tr>
+      <tr><td>Flaw</td><td>Easily overwhelmed by too much stimuli. Crowds, noise, and chaos can freeze her or cause her to retreat. Her exquisite sensitivity to the world has a cost.</td></tr>
+      <tr><td>Arc (per book)</td><td>Sage hangs back → is overlooked or dismissed → notices the crucial detail no one else caught → the quiet thing she saw becomes the turning point.</td></tr>
+      <tr><td>Name note</td><td>"Sage" suggests wisdom, slowness, groundedness, and the herb: something quiet that has a strong effect. Her name does the work her voice does not have to.</td></tr>
+      <tr><td>Voice</td><td>Spare, considered, unhurried. Often asks one question that reframes everything. "…I don't think she asked." Long pauses in dialogue are part of her character.</td></tr>
+    </tbody>
+  </table>
+  <div class="excerpt">
+    She led him to the oldest boulder at the river's edge. Sage pressed her hand against it. "Excuse me," she said quietly. The boulder was silent for a long moment. Then, very slowly, it said: "…Tree."
+  </div>
+
+  <!-- RECURRING SUPPORTING CHARACTERS -->
+  <h2>Recurring Supporting Characters</h2>
+  <table>
+    <thead><tr><th>Character</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td class="col-label">Bram (Beaver)</td><td>Head beaver. Hard hat made of bark. Veteran of many floods. Practical, unhurried, refuses to rush a fix and make it worse. Appears in Books 1, 4, 5, 9.</td></tr>
+      <tr><td class="col-label">The Otter</td><td>Lives near the river slide. Reluctant helper — has to be asked twice, complains once, then shows up anyway. Comic relief with a soft heart. Introduced in Book 1.</td></tr>
+      <tr><td class="col-label">The Talking Rock</td><td>Oldest boulder at the river's edge. Speaks one word at a time, very slowly. Always truthful. Infinite patience required. Introduced in Book 1; reappears when historical memory is needed.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--  SECTION 4: STORY STRUCTURE                    -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="content page-break">
+  <div class="section-header">
+    <div class="sec-number">Section 4</div>
+    <h1>Per-Book Story Structure</h1>
+  </div>
+
+  <p>Every Whisperwood book follows the same structural rhythm, in the tradition of <em>The Princess in Black</em>. Children aged 4–6 find deep comfort in knowing the shape of what is coming while still being surprised by the specific story inside it. This rhythm is the series' most important commercial asset: it is what makes kids ask for the next book.</p>
+
+  <h2>The Whisperwood Pattern</h2>
+
+  <div class="pattern-step">
+    <div class="step-num">1</div>
+    <div class="step-body"><strong>SIGNAL:</strong> Something in the forest indicates a problem is coming (Mapleaf veins, songbird news, a strange vibration). Chapter ends on a hook.</div>
+  </div>
+  <div class="pattern-step">
+    <div class="step-num">2</div>
+    <div class="step-body"><strong>THE PROBLEM:</strong> The problem arrives in full. A community member or part of the ecosystem is in trouble.</div>
+  </div>
+  <div class="pattern-step">
+    <div class="step-num">3</div>
+    <div class="step-body"><strong>VERA RUSHES:</strong> Vera identifies the problem type and immediately starts solving it — often without asking why or listening first.</div>
+  </div>
+  <div class="pattern-step">
+    <div class="step-num">4</div>
+    <div class="step-body"><strong>THE WALL:</strong> Her solution hits a limit. The problem is more complicated than she assumed. The book's featured resource or specialist says: <em>not yet</em>, or <em>not that way</em>.</div>
+  </div>
+  <div class="pattern-step">
+    <div class="step-num">5</div>
+    <div class="step-body"><strong>PIP ACTS:</strong> Pip attempts to help directly — sometimes usefully, sometimes comically not.</div>
+  </div>
+  <div class="pattern-step">
+    <div class="step-num">6</div>
+    <div class="step-body"><strong>SAGE NOTICES:</strong> Sage, moving slowly or hanging back, observes the detail that changes everything.</div>
+  </div>
+  <div class="pattern-step">
+    <div class="step-num">7</div>
+    <div class="step-body"><strong>COMMUNITY GATHERS:</strong> The trio, plus the featured creature(s) of this book, attempt a partial solution together.</div>
+  </div>
+  <div class="pattern-step">
+    <div class="step-num">8</div>
+    <div class="step-body"><strong>RESOLUTION:</strong> The immediate problem is solved. Sometimes completely and permanently. Sometimes well enough to hold until a proper fix can be made. Either way, the forest is safe — because everyone worked together.</div>
+  </div>
+  <div class="pattern-step">
+    <div class="step-num">9</div>
+    <div class="step-body"><strong>REFLECTION:</strong> A quiet moment where each character has grown one small degree. Vera says some version of "I should have asked first." Pip's enthusiasm is validated as the thing that actually worked. Sage's patience is the reason anything was noticed at all.</div>
+  </div>
+
+  <h2>Narrative Voice &amp; Tone</h2>
+  <p>Tone reference: <em>The Princess in Black</em> by Shannon Hale and Dean Hale. Key techniques to maintain across all 12 books:</p>
+  <ul class="wb">
+    <li>Short, declarative sentences. Subject. Verb. Done.</li>
+    <li>Repeated verbal patterns that become running jokes or anchors across the series (e.g., "Vera knew most things"; "Pip was already gone before she finished the sentence").</li>
+    <li>Chapter breaks that function as micro-cliffhangers even when nothing dramatic is happening. The chapter ends on a small question, a single word, a held breath.</li>
+    <li>The narrator is warm and slightly wry — not sarcastic, not condescending. The humor is in understatement and in Pip.</li>
+    <li>Illustrations carry world detail. Prose does not need to describe the forest exhaustively; that is the illustrator's job.</li>
+  </ul>
+
+  <h2>Chapter Length Guide</h2>
+  <p>Each book: <strong>7 chapters</strong>, approximately <strong>150–250 words per chapter</strong>. Total per book: <strong>1,200–1,800 words</strong>. This places the series firmly in early-reader / chapter-book bridge territory, appropriate for ages 4–6 reading with a parent and ages 6–8 reading independently.</p>
+
+  <h2>Illustration Style Notes</h2>
+  <p>Style direction: sharper and more editorial than soft cozy watercolor. Clean linework, rich color, still magical. Characters should read clearly at thumbnail size (crucial for KDP browsing). The world detail lives in the illustrations — the singing mud, the glow moss paths, the mapleaf veins — so the illustrator must understand the world rules well enough to visualize systems, not just scenes. The final spread of every book should echo the final page of Book 1: the trio walking home together, glow mushrooms lighting the path.</p>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--  SECTION 5: THE 12-BOOK ARC                    -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="content page-break">
+  <div class="section-header">
+    <div class="sec-number">Section 5</div>
+    <h1>The 12-Book Arc</h1>
+  </div>
+
+  <p>Resources are assigned deliberately across the arc so that no element feels random or exhausted too quickly. Early books introduce core infrastructure. Middle books complicate and stress those systems. The final book brings every element back under maximum strain.</p>
+
+  <h2>Arc at a Glance</h2>
+  <table class="arc-table">
+    <thead>
+      <tr><th>#</th><th>Title</th><th>Core Resources</th><th>Theme / Lesson</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>1</td><td>The Rushing River</td><td>Glow moss, Mapleaf, Singing mud, Beavers, Bunnies</td><td>Ask why before solving. A problem fully understood can be fully fixed — but there are always more questions to ask.</td></tr>
+      <tr><td>2</td><td>The Noisy Night</td><td>Quietcap mushrooms, Songbirds, Owls (sleep potion)</td><td>Noise and overwhelm. Sage's sensitivity as a gift.</td></tr>
+      <tr><td>3</td><td>The Missing Acorns</td><td>Raccoons, Mapleaf, Underground tunnels</td><td>Fact-checking. Rumors are not truth.</td></tr>
+      <tr><td>4</td><td>The Broken Path</td><td>Singing mud, Beavers, Talking rocks</td><td>Structural failure. Old repairs eventually give way.</td></tr>
+      <tr><td>5</td><td>The Too-Busy Beaver</td><td>Construction limits, Structural failure</td><td>Overextension. Even the best builders have limits.</td></tr>
+      <tr><td>6</td><td>Otter Won't Help</td><td>River routes, Raccoons</td><td>Reluctance has reasons. Understanding why matters.</td></tr>
+      <tr><td>7</td><td>Deer Says Yes</td><td>Antler vibrations, Evacuation routes</td><td>Overcommitment strains the whole system.</td></tr>
+      <tr><td>8</td><td>Squirrel's Big Idea</td><td>Flash-growing plants</td><td>Good intentions + unchecked enthusiasm = consequences.</td></tr>
+      <tr><td>9</td><td>The New Dam</td><td>Beavers, Community vote</td><td>Permanent vs. temporary. Not everyone agrees.</td></tr>
+      <tr><td>10</td><td>When Plans Fail</td><td>Mapleaf (changed), Old maps</td><td>The forest changes. Old knowledge can mislead.</td></tr>
+      <tr><td>11</td><td>The Quiet Argument</td><td>Songbirds (misreport), Raccoons (correct)</td><td>Misinformation causes real harm. Speed ≠ accuracy.</td></tr>
+      <tr><td>12</td><td>The Forest Holds Its Breath</td><td>All resources &amp; all specialists</td><td>Everyone's role matters. Nothing solved alone.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="callout amber">
+    <div class="callout-label">Series Arc Design Principle</div>
+    <p>Books 1–4 introduce core resources and establish the pattern. Books 5–8 complicate the trio's individual flaws at larger scale. Books 9–11 shift conflict from crisis to community disagreement and consequence. Book 12 brings all threads together. No resource introduced in an early book is wasted — it will return in a later book with new meaning.</p>
+  </div>
+
+  <h2>Book-by-Book Story Outlines</h2>
+
+  <div class="book-block">
+    <div class="book-title">Book 1: The Rushing River</div>
+    <div class="book-meta">Resources: Glow moss · Mapleaf · Singing mud · Beavers · Bunnies &nbsp;|&nbsp; Lesson: Ask why before solving. A problem fully understood can be fully fixed.</div>
+    <p><strong>Opening:</strong> An ordinary Tuesday — Sage watching tadpoles at the river, Pip leaping between branches, Vera checking the Mapleaf as morning routine. Then the veins go dark. The river begins to rise, and mouse family burrows are flooding.</p>
+    <p><strong>Complication:</strong> Vera rushes to the beavers before asking why the river is rising. Bram tells her: a tree has come down at the river bend, blocking the channel — can't safely move it in the dark. Pip finds a large stick and tries to help.</p>
+    <p><strong>Turn:</strong> Sage takes Pip to the oldest talking rock. Slowly: "…Tree." Pause. "…Fell." The fallen tree is the blockage. Now Vera has the real problem — and a plan for tonight.</p>
+    <p><strong>Solution:</strong> Vera uses the Mapleaf's branch-pointing to identify a redirect path. Pip rallies the forest to sing to the mud together — a channel opens, curving water toward the mossy clearing. Bunnies evacuate the mice underground. At dawn, the beavers remove the fallen tree and restore the channel.</p>
+    <p><strong>Resolution:</strong> The burrows drain. The redirect dissolves. Everything is back the way it should be — properly fixed. But Sage notices: the tree's roots showed old damage. Bram files it away. A seed planted for Book 12.</p>
+  </div>
+
+  <div class="book-block">
+    <div class="book-title">Book 2: The Noisy Night</div>
+    <div class="book-meta">Resources: Quietcap mushrooms · Songbirds · Owls (sleep potion) &nbsp;|&nbsp; Lesson: Sage's sensitivity is a feature, not a flaw.</div>
+    <p>A creature in the village cannot sleep — the forest is too loud. The songbird news chain has grown louder and louder as each bird tries to be heard over the last. Sage, deeply sensitive to sound, is the first to understand how overwhelming it is.</p>
+    <p>The fix requires quietcap mushrooms placed strategically (absorbs sound), an owl-brewed calming potion, and Sage helping the songbirds agree to relay news in quieter shifts rather than all at once. The solution requires Sage to step into the noise long enough to organize it — her hardest moment in the series so far.</p>
+  </div>
+
+  <div class="book-block">
+    <div class="book-title">Book 3: The Missing Acorns</div>
+    <div class="book-meta">Resources: Raccoons · Mapleaf · Underground tunnels &nbsp;|&nbsp; Lesson: Check facts before acting on rumors.</div>
+    <p>Songbirds report that someone is stealing acorns from the village stores. Pip immediately suspects a character and begins "helping" by following them. Vera builds a whole investigation plan. Sage is quiet.</p>
+    <p>The raccoons, when finally consulted, find that the acorns were moved by the bunnies through the underground tunnels to protect them from an incoming weather event — a decision no one communicated upward. No theft. Just a communication gap. Pip nearly caused a serious injustice.</p>
+  </div>
+
+  <div class="book-block">
+    <div class="book-title">Book 4: The Broken Path</div>
+    <div class="book-meta">Resources: Singing mud · Beavers · Talking rocks &nbsp;|&nbsp; Lesson: Temporary repairs do not last forever.</div>
+    <p>A path through Whisperwood — patched with singing mud years ago — has given way. The mud has dried and cracked and the path is now impassable, cutting off part of the forest from the rest. The talking rocks remember the original collapse that made the first patch necessary. This time the beavers must build a permanent stone-and-wood structure, which takes longer than anyone wants.</p>
+  </div>
+
+  <div class="book-block">
+    <div class="book-title">Book 5: The Too-Busy Beaver</div>
+    <div class="book-meta">Resources: Construction limits, Structural failure &nbsp;|&nbsp; Lesson: Even experts have limits. A pacing lesson — with Sage teaching Bram.</div>
+    <p>Bram has taken on too many construction projects at once. One of his builds fails — a storage structure collapses because he didn't have time to properly cure the materials. For the first time, it is Sage who must sit with Bram and help him understand what "enough" looks like. Vera wants to schedule him efficiently. Pip wants to help do the work. Sage just asks: "When did you last stop?"</p>
+  </div>
+
+  <div class="book-block">
+    <div class="book-title">Book 6: Otter Won't Help</div>
+    <div class="book-meta">Resources: River routes · Raccoons &nbsp;|&nbsp; Lesson: Reluctance has reasons. Understanding why matters as much as solving the problem.</div>
+    <p>A river route is blocked and only the otter knows the safe alternate path. The otter refuses to help. Vera tries logic. Pip tries enthusiasm. Nothing works. The raccoons, investigating, uncover that the otter had a bad experience on that route and blames herself for something that happened there. The solution is not persuasion — it is acknowledgment. Pip's heart is the right tool here, not Vera's system.</p>
+  </div>
+
+  <div class="book-block">
+    <div class="book-title">Book 7: Deer Says Yes</div>
+    <div class="book-meta">Resources: Antler vibrations · Evacuation routes &nbsp;|&nbsp; Lesson: Overcommitment strains the whole system.</div>
+    <p>The deer who serves as the forest's vibration-sensor has agreed to help with so many different community tasks that she is exhausted and her attention is divided. When a real tremor comes, she almost misses it. Evacuation is delayed. No one is hurt, but it's close. The book explores what happens when the community's early-warning system is too tired to function.</p>
+  </div>
+
+  <div class="book-block">
+    <div class="book-title">Book 8: Squirrel's Big Idea</div>
+    <div class="book-meta">Resources: Flash-growing plants &nbsp;|&nbsp; Lesson: Good intentions without restraint create unintended consequences. Pip's flaw at full scale.</div>
+    <p>Pip discovers a patch of flash-growing plants and, delighted, plants them everywhere to "help" the forest grow faster. Within days, the plants are crowding out native growth, clogging paths, and blocking light. The fix is as much work as the planting was. Pip must sit with the consequences of his enthusiasm — the hardest book for him, and the one where he grows the most.</p>
+  </div>
+
+  <div class="book-block">
+    <div class="book-title">Book 9: The New Dam</div>
+    <div class="book-meta">Resources: Beavers · Community vote &nbsp;|&nbsp; Lesson: Permanent changes require community buy-in.</div>
+    <p>Bram proposes a new permanent dam to replace the temporary mud redirects from Book 1. Half the forest community supports it. Half does not — worried it will change the flow of the river in ways that affect their homes. The trio must facilitate a community conversation, not just solve an engineering problem. First book in the series where the conflict is not a crisis but a disagreement.</p>
+  </div>
+
+  <div class="book-block">
+    <div class="book-title">Book 10: When Plans Fail</div>
+    <div class="book-meta">Resources: Mapleaf (changed readings) · Old maps &nbsp;|&nbsp; Lesson: Update what you know. Vera's flaw at maximum consequence.</div>
+    <p>Vera has memorized the Mapleaf's patterns. But the Mapleaf has changed — a seasonal shift, or a deeper change in the forest's structure — and her assumptions lead the trio in the wrong direction at a critical moment. She trusted what she already knew instead of reading what was in front of her. The forest pays the price.</p>
+  </div>
+
+  <div class="book-block">
+    <div class="book-title">Book 11: The Quiet Argument</div>
+    <div class="book-meta">Resources: Songbirds (misreport) · Raccoons (correct) &nbsp;|&nbsp; Lesson: Misinformation causes real harm. Speed is not the same as accuracy.</div>
+    <p>A songbird misreport spreads through the network fast enough that a community member is blamed for something they didn't do. The raccoons work to correct it, but the damage is done quickly and the repair is slow. The book explores the emotional weight of being wrongly accused and the effort required to restore someone's reputation.</p>
+  </div>
+
+  <div class="book-block">
+    <div class="book-title">Book 12: The Forest Holds Its Breath</div>
+    <div class="book-meta">Resources: All resources · All specialists &nbsp;|&nbsp; Lesson: Everyone's role matters. Nothing solved alone. The culmination.</div>
+    <p>An event places simultaneous stress on every Whisperwood system. The Mapleaf reads in ways no one has seen. The talking rocks are speaking more than usual. Songbirds are overwhelmed. Bunnies are running. Every specialist is needed, every resource is deployed, every lesson the trio has learned across 11 books is called upon. The forest holds its breath. And then it exhales.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--  SECTION 6: CANON QUICK-REFERENCE              -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="content page-break">
+  <div class="section-header">
+    <div class="sec-number">Section 6</div>
+    <h1>World Canon Quick-Reference</h1>
+  </div>
+
+  <p>Use this section when writing or reviewing any Whisperwood book to ensure internal consistency.</p>
+
+  <h2>What Each Character Always Does</h2>
+  <table>
+    <thead>
+      <tr><th></th><th>Vera</th><th>Pip</th><th>Sage</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="col-label">First move</td><td>Identifies the system and the fix</td><td>Tries to help immediately</td><td>Watches and listens</td></tr>
+      <tr><td class="col-label">Middle</td><td>Hits a wall; her plan was incomplete</td><td>Gets redirected or complicates things</td><td>Notices the detail that turns everything</td></tr>
+      <tr><td class="col-label">End</td><td>Leads the final effort; grows one degree</td><td>His momentum is the right tool at last</td><td>Her patience is vindicated quietly</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Rules That Cannot Be Broken</h2>
+  <ul class="wb">
+    <li>No single creature or resource solves a whole problem. Always partial. Always collaborative.</li>
+    <li>Emotions do not change physical outcomes. They change what characters decide to do.</li>
+    <li>The bellflower signal: three rings = come quickly, do not panic. Do not change this across books.</li>
+    <li>Talking rocks speak one word at a time. Never complete sentences. Never fast.</li>
+    <li>Singing mud requires group singing. One voice does nothing.</li>
+    <li>Each mushroom variety has exactly one purpose. It cannot do anything else.</li>
+    <li>Beavers will not rush a job. Bram will not be hurried by urgency alone.</li>
+    <li>Raccoons verify. Songbirds transmit. Do not swap these roles.</li>
+  </ul>
+
+  <h2>Terminology &amp; Spelling</h2>
+  <table>
+    <thead><tr><th>Term</th><th>Correct Usage</th></tr></thead>
+    <tbody>
+      <tr><td class="col-label">Whisperwood</td><td>The name of the forest village. Always capitalized. Not "the Whisperwood."</td></tr>
+      <tr><td class="col-label">Mapleaf</td><td>One word. Capitalized. "The Mapleaf tree" on first mention; "the Mapleaf" thereafter.</td></tr>
+      <tr><td class="col-label">Glow moss</td><td>Two words, lowercase unless starting a sentence.</td></tr>
+      <tr><td class="col-label">Quietcap mushrooms</td><td>The silence-absorbing variety. Lowercase except at sentence start.</td></tr>
+      <tr><td class="col-label">Singing mud</td><td>Two words. Always lowercase.</td></tr>
+      <tr><td class="col-label">Bellflower</td><td>One word. Lowercase.</td></tr>
+      <tr><td class="col-label">Bram</td><td>Head beaver. Always "Bram." His hard hat is made of bark.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--  SECTION 7: KDP & PRODUCTION NOTES             -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="content">
+  <div class="section-header">
+    <div class="sec-number">Section 7</div>
+    <h1>KDP &amp; Production Notes</h1>
+  </div>
+
+  <h2>Format Specifications</h2>
+  <p>Each book targets <strong>32–40 interior pages</strong> including illustrations, consistent with standard picture book / early-reader KDP trim sizes. Recommended trim: <strong>8.5" × 8.5"</strong> (square) or <strong>6" × 9"</strong> (portrait). Bleed: 0.125" on all sides if using full-bleed illustration spreads.</p>
+
+  <h2>Series Branding</h2>
+  <p>Every cover should carry the <strong>WHISPERWOOD</strong> series name prominently above or below the book title, with consistent typography and color palette across all 12 books. A numbered series identifier ("A Whisperwood Story · Book 1") appears on the cover and spine.</p>
+
+  <h2>Illustration Brief Summary</h2>
+  <p>The following applies to all 12 books:</p>
+  <ul class="wb">
+    <li>Sharp, editorial linework. Not soft watercolor. Rich color, clean edges.</li>
+    <li>Characters are anthropomorphic but maintain animal silhouettes — Vera reads as a fox, Pip as a squirrel, Sage as a turtle from across a thumbnail.</li>
+    <li>The world detail lives in illustration: the veins of the Mapleaf, the texture of singing mud, the glow of moss. The prose does not describe these; the illustrator must know the world rules.</li>
+    <li>Each book's featured creature gets a character-defining illustration moment in the book.</li>
+    <li>The final spread of every book should echo Book 1's closing image: the trio walking home together, glow mushrooms lighting the path.</li>
+  </ul>
+
+  <h2>Series Bible Maintenance</h2>
+  <div class="callout slate">
+    <div class="callout-label">Canon Rule</div>
+    <p>This document is the canonical reference for the Whisperwood series. Any changes to character traits, world rules, or the 12-book arc should be updated here first before being reflected in individual book drafts. When in doubt, the Bible wins.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════ -->
+<!--  FOOTER                                        -->
+<!-- ══════════════════════════════════════════════ -->
+<div class="doc-footer">
+  WHISPERWOOD Series Bible &nbsp;·&nbsp; Confidential &nbsp;·&nbsp; © Reena Gellerup 2026
+</div>
+
+</div><!-- /page -->
+</body>
+</html>

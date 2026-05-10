@@ -1,0 +1,516 @@
+Want to start on the children's book idea in the meantime? We could build out the concept here in chat, and then you can use Cowork to format and organize the drafts once you have the desktop app installed.
+
+
+
+
+
+You said: Yes!
+Yes!
+Apr 4
+
+
+
+
+
+Claude responded: I love this — let's build something real.
+I love this — let's build something real. A few quick questions to get the foundation right:
+Let's figure out the heart of this series! Three quick questions:
+
+
+
+
+
+You said: Q: What's the vibe you're going for?
+Q: What's the vibe you're going for? A: Magical & wonder-filled
+Q: Who's the hero of the series? A: An animal
+Q: Is there a theme or value you want the series to be rooted in? A: Kindness & empathy
+Apr 4
+
+
+
+
+
+Claude responded: Perfect foundation.
+Perfect foundation. One more to help me get specific:
+Two more quick ones:
+
+
+
+
+
+You said: Q: What age range are you writing for?
+Q: What age range are you writing for? A: Early readers (4-6)
+Q: Do you have an animal in mind, or want me to suggest some? A: A specific animal I have in mind
+Apr 4
+
+
+
+
+
+Claude responded: What animal did you have in mind?
+What animal did you have in mind?
+
+
+
+
+
+You said: I already have the backbone built.
+
+
+I already have the backbone built. The series is called Whisperwood, named after the location where the series will take place.
+It follows three anthropomorphic child companions: a fox who is clever and finds unique solutions, a squirrel who is impulsive and can make problems worse, but is always the first to jump in and help a community member in need, and a turtle who is slow to think through problems and gets easily overwhelmed with too much stimuli. Each has a positive and negative trait, but I haven’t figured out the negative for Fox and the positive for turtle. I also need to decide on their names.
+The three companions live in Whisperwood, an enchanted forest where the enchantment is part of everyday life. They use bellflowers to call friends who are far away, can sing to mud and wood to build structures, mushrooms that glow at night and line paths, but also can be plucked and used as a lantern in caves or dark spaces.
+Birds tend to be messengers or mail carriers, beavers tend to be the architects and builders, owls run the library and are consulted for especially tough questions.
+The images attached are kind of the illustrative style I’m going for, but maybe I want something a little more sharper looking than the animals depicted, not that cozy.
+
+Show more
+Apr 4
+
+
+
+
+
+Claude responded: Oh this is already so good.
+Oh this is already so good. You've clearly been thinking about this. The world-building is rich and internally consistent — the bellflowers, the singing to build, the glowing mushrooms as lanterns — that's the kind of detail that makes a series feel alive and real to kids.
+Let me help you fill in the gaps and then we can lock in the full series bible.
+
+On Fox and Turtle's missing traits:
+Fox is clever and finds unique solutions — the natural shadow side of that is overconfidence. She assumes she's already figured it out before she's heard the whole problem, which sometimes means she solves the wrong thing brilliantly. That's a really rich flaw for a 4-6 year old to recognize and grow with.
+Turtle's positive trait could be deep listening. He notices things others miss — a sad tone in someone's voice, a detail everyone else rushed past — precisely because he moves slowly and takes everything in. His overwhelm isn't just a weakness, it's the cost of being exquisitely tuned to the world. That reframe could be beautiful for kids who see themselves in him.
+
+On names — I want to suggest names that feel like they belong in an enchanted forest, not too cutesy, but warm and memorable for little kids:
+Fox: Fern, Flick, Wren (gender neutral), Calla, Sable
+Squirrel: Pip, Cleo, Twig, Bramble, Cora
+Turtle: Moss, Sage, Edmund, Cove, Reed
+
+On illustration style — you want sharper than what you shared, less painterly-soft, more defined linework with that same warmth. Think closer to the character portraits in your second image (the fox, squirrel, turtle close-ups) than the map's loose watercolor feel. Almost like a slightly more editorial woodland illustration — clean edges, rich color, still magical.
+
+A few questions before I draft the full series bible:
+Do you want the three companions to be a specific gender, or keep some flexible?
+Is there a fourth recurring character — like a wise elder they go to, or a younger one they look after?
+Do you have a first book concept in mind, or do you want me to suggest the first three story arcs?
+
+
+
+
+
+You said: The Forrest also has boulders that can talk, but very very slowly.
+The Forrest also has boulders that can talk, but very very slowly.
+Perfect — I’ll give you all four, but in a way that’s usable, not overwhelming. Think of this as a working series bible + Book 1 revision, not a giant info dump.
+I’ll break this into four clean sections so you can lift pieces directly into your project.
+⸻
+How Whisperwood Works
+(One-page canon guide — this replaces “magic system” entirely)
+Whisperwood is an enchanted village ecosystem
+Nothing runs on spells. Nothing runs on feelings. Things work because the forest has systems.
+Every problem is solved by: • Finding the right resource • Asking the right creature • Using things in the right order • Accepting that some solutions are temporary
+The Golden Rule
+No single thing in Whisperwood can solve a whole problem.
+Everything is partial. Everything has limits.
+⸻
+🧱 Infrastructure of Whisperwood
+Guidance & Information • Mapleaf Trees – giant leaves whose veins show nearby paths and structures • Talking Rocks – ancient, slow-speaking stones (one word at a time) • Songbirds – fast-moving gossip network (imperfect but useful) • Raccoons – journalists who verify facts and remember past events
+Tools & Materials • Glow Moss – lights the way (Spanish moss) • Mushrooms – single-purpose tools (air, glue, silence, warmth, sealing, lanterns) • Singing Mud – can form walls or barriers when sung to together
+Specialists • Beavers – builders and long-term planners • Owls – librarians and scientists- can make potions or provide wisdom or advice. • Antlered animals – vibration and danger sensors • Bunnies – underground transit and evacuation
+⸻
+The Trio’s Role (not magical) • Fox: Systems thinker — knows who to ask and what order things go in • Turtle: Pace-setter — knows when to pause or step away • Squirrel: Momentum — starts action and keeps it moving
+Their emotions don’t power anything. Their emotions affect their judgment.
+That’s it. That’s the whole engine.
+⸻
+Book 1 — Rewritten Using the Enchanted Ecology
+(High-level story pass; you can plug this into prose)
+Opening Spotlight (Chapter 1) • Mice storing food near the burrows • Songbirds mention heavy rain upstream • A Mapleaf nearby shows veins thickening near the river • Thunder rolls — end chapter
+⸻
+The Problem • River rises too fast • Burrows flood • Paths disappear
+⸻
+Investigation (not magic) • Songbirds report noise and movement upriver • Antlered deer feel strange vibrations through their antlers • Mapleaf Tree shows a blockage forming • Talking Rock remembers a fallen tree from long ago (It says: “Tree.” … later: “Fell.”)
+Fox pieces this together.
+⸻
+Attempted Fixes • Beavers inspect and confirm: too dangerous to remove quickly • Bunnies evacuate mice through underground tunnels • Squirrel rushes to help and slips — Turtle insists on slowing down
+⸻
+Night Solution • Glow Moss reveals hidden debris only visible after dark • Mushrooms seal small gaps temporarily • Singing mud, sung to together, redirects water just enough • Beavers plan the permanent fix for later
+⸻
+Resolution • River slows • Burrows safe (for now) • Forest returns to calm • Everyone knows the fix isn’t forever — but it’s enough
+That’s Whisperwood logic in action.
+⸻
+Enchanted Resources Assigned Across Books
+(So nothing feels random later)
+Book-by-Book Core Elements
+Book 1 – Rushing River Glow moss • Mapleaf • Singing mud • Beavers • Bunnies
+Book 2 – The Noisy Night Quietcap mushrooms • Songbirds • Owls (sleep potion)
+Book 3 – The Missing Acorns Raccoons • Mapleaf • Underground tunnels
+Book 4 – The Broken Path Singing mud • Beavers • Talking rocks
+Book 5 – The Too-Busy Beaver Construction limits • Structural failure • Turtle pacing lesson
+Book 6 – Otter Won’t Help River routes • Journalists • Responsibility arc
+Book 7 – Deer Says Yes Antler vibrations • Overcommitment • Evacuation strain
+Book 8 – Squirrel’s Big Idea Flash-growing plants • Overuse consequences
+Book 9 – The New Dam Permanent vs temporary solutions • Community disagreement
+Book 10 – When Plans Fail Mapleaf changes • Old assumptions break
+Book 11 – The Quiet Argument Songbirds misreport • Raccoons correct
+Book 12 – The Forest Holds Its Breath All systems strained • Everyone’s role matters
+.
+This was the concept I built in ChatGPT
+
+Show more
+Apr 4
+
+
+
+
+
+Claude responded: Okay wow — this is genuinely impressive.
+Okay wow — this is genuinely impressive. You didn't just have a cute idea, you built a coherent world with internal logic. The "emotions affect judgment, not outcomes" design principle alone is sophisticated children's lit thinking. Most published series don't have this level of rigor underneath them.
+Let me be honest about what's already strong and what still needs work before we go further.
+
+What's excellent and keep as-is:
+The resource system is airtight. Partial solutions, no single fix, systems over magic — that's both philosophically rich and practically useful for plotting. Every book will feel earned rather than convenient.
+The trio's roles as systems thinker / pace-setter / momentum are more interesting than clever / cautious / brave (the usual formula). They're functional archetypes, not just personality types.
+The 12-book arc with resources assigned per book is smart series planning. You won't accidentally burn your best elements in Book 2.
+
+What still needs to be decided before writing Book 1:
+Names — we can't write prose without them. Want to pick from my suggestions or riff further?
+Fox's flaw and Turtle's gift — I proposed overconfidence for Fox and deep listening for Turtle. Do those land for you, or do you want alternatives?
+Age/gender of the trio — are they kids? Ageless? Any specific genders you want?
+Tone of the narrator's voice — warm and close like a parent telling a bedtime story, or a little more wry and observational like classic Frog and Toad?
+
+Once you answer those four things, I can write you a complete Book 1 prose draft — not an outline, the actual book — ready to hand off to Cowork for formatting. Want to tackle those now?
+
+
+
+
+
+You said: Yes.
+Yes. I like fox’s flaw and turtles gift you suggested. I like Pip for squirrel and Sage for turtle. Still debating on a name for fox, I didn’t like the ones you suggested. Let’s say they’re around 8ish. Turtle is a boy, fox is a girl, squirrel is a girl. They bring in other members of the forest for each book.
+Narrators tone: I want something like The Princess in Black. Meaning, where the writing has patterns and each book has a repetitive plot. The illustrations can fill in gaps where the words can’t for 4-6year old readers.
+Does this seem like something 4-6 year olds and their parent would want to read to their kids?
+Apr 4
+
+
+
+
+
+Claude responded: Yes — and here's why it works specifically for that age and that reading dynamic:
+Yes — and here's why it works specifically for that age and that reading dynamic:
+For the 4-6 year old: The repetitive plot pattern is exactly right. That age craves the comfort of knowing what's coming structurally while still being surprised by the specific story. Princess in Black nails this — kids ask for it again and again because the rhythm feels safe. Your trio filling a consistent role each book (Fox figures out the system, Pip jumps in, Sage slows things down) gives kids that same anchor.
+The enchanted ecology also works beautifully for this age because it's concrete. Glowing mushrooms, singing mud, bellflowers — these are tactile and visual. Kids don't need to understand magic rules, they just need to see and feel them. The illustrations carrying the world-building load is exactly the right instinct.
+For the parent reading aloud: This is where your series has a real edge. The internal logic — emotions affect judgment, not outcomes; no single fix solves everything — gives parents something to talk about after the book closes. "Why do you think Sage slowed everyone down?" That's the kind of book parents recommend to other parents.
+The one thing to be thoughtful about: Princess in Black skews slightly younger in vocabulary and sentence length than where you might naturally write. For 4-6, sentences should be short, punchy, and rhythmic. The illustrations genuinely do the heavy lifting on world detail — the prose just needs to move.
+
+Now — Fox's name. Tell me what you didn't like about my suggestions and I'll get closer. Too soft? Too nature-y? Too common? Too short?
+
+
+
+
+
+You said: Pip and Sage hint at their personalities.
+Pip and Sage hint at their personalities. I want something similar for Fox
+Apr 4
+
+
+
+
+
+Claude responded: Love that constraint — it makes the name do real work.
+Love that constraint — it makes the name do real work.
+Fox's trait is cleverness + overconfidence. She sees the whole system, knows who to ask, knows the order things go in — but assumes she already has the answer before she's heard the whole problem.
+Some directions:
+Names that suggest sharpness / quick thinking:
+Flint — strikes fast, makes sparks, can start fires accidentally
+Swift — speed of thought, but speed also overshoots
+Keen — literally means sharp perception
+Names that suggest certainty / someone who "knows":
+Vera — truth, certainty (she's always sure she's right)
+Clair / Clare — clarity, clear-sightedness
+Coda — the one who ties things together, has the last word
+Names that feel clever and a little brass:
+Zinnia / Zin — bright, bold, slightly show-offy
+Willa — willful, determined, confident
+Reva — to move, to solve, forward motion
+My instinct is Flint or Willa — both hint at her gift and her flaw without spelling it out. Flint especially: brilliant spark, but can catch the wrong thing on fire.
+Which direction feels closest?
+
+
+
+
+
+You said: Squirrel already has the impulsivity.
+Squirrel already has the impulsivity. I’m thinking Willa or Vera
+Apr 4
+
+
+
+
+
+Claude responded: Both are strong.
+Both are strong. Here's how I'd differentiate them for your specific character:
+Vera — feels like a fox who knows things. Her overconfidence reads as certainty, almost academic. She's the one who says "I already know what this is" before you finish the sentence. There's a slight air of authority to it — which makes it funnier and more poignant when she's wrong.
+Willa — feels like a fox who does things. Her overconfidence reads as momentum, almost heroic. She's already three steps into her solution plan while you're still explaining the problem. More kinetic, slightly warmer.
+Given that Pip already brings the impulsive energy and momentum — I'd lean Vera. It differentiates her. Pip acts before thinking. Vera thinks before listening. Two different flavors of getting ahead of yourself, which means they'll bounce off each other in really interesting ways throughout the series.
+Vera, Pip, and Sage.
+That's a strong trio. Each name is one syllable or two, easy for little kids to say, and each quietly telegraphs the character. Want to lock that in and move to the Book 1 prose draft?
+
+
+
+
+
+You said: Yes
+Yes
+Apr 4
+
+
+
+
+
+Claude responded: Let's do it.
+Let's do it. One last thing before I write:
+Book 1 is the Rushing River story from your outline. I want to make sure I nail the Princess in Black rhythm before writing the whole thing — that series uses a very specific technique: short declarative sentences, a repeated phrase or pattern that becomes a running joke or anchor, and chapter breaks that feel like little cliffhangers even though they're only a page long.
+Let me draft Chapter 1 first so you can react to the voice before I write the whole book. That way we don't have to redo 2,000 words if the tone is slightly off.
+
+Chapter 1: The Mapleaf Knows
+The village of Whisperwood had a rule.
+When the Mapleaf tree's veins turned dark, something was coming.
+Vera knew this. Vera knew most things.
+She was sitting outside her den, making a list of everything she knew, when Pip landed on her head.
+"Something is coming," said Pip.
+"I know," said Vera.
+"The Mapleaf—"
+"I know," said Vera.
+"But did you see how dark the veins are? They're almost—"
+"Pip."
+"Yes?"
+"I know."
+Pip flicked her tail. She did not look convinced.
+Down by Turtle's Pond, Sage was watching the water.
+Sage watched things slowly. He thought about things slowly. He was very good at noticing things that moved fast — because he moved slowly himself.
+Right now, the water was moving faster than usual.
+Sage did not like that.
+He placed one foot in the current. Then he took it back out.
+Too fast, he thought. Something upstream.
+He reached for a bellflower.
+
+How does that feel? Too slow? Right pace? I want your gut reaction before I continue.
+
+
+
+
+
+You said: Oh this is good.
+Oh this is good. I want to switch pip and sage’s genders.
+Apr 4
+
+
+
+
+
+Claude responded: Easy fix — Pip is a boy, Sage is a girl.
+Easy fix — Pip is a boy, Sage is a girl.
+That's actually a lovely dynamic. Sage as a girl who is slow, deliberate, and easily overwhelmed pushes back against the usual "calm wise girl" trope — her overwhelm is real and valid, not just a personality quirk. And Pip as an impulsive, big-hearted boy who jumps in first is a refreshing counter to how boys are often written in kids' lit (either the hero or the troublemaker — Pip is neither, he's just earnest).
+Vera, Pip, Sage. Locked.
+Continuing from where we left off —
+
+Chapter 1 continued:
+Sage placed one foot in the current. Then she took it back out.
+Too fast, she thought. Something upstream.
+She reached for a bellflower growing near the bank.
+She rang it once. Twice. Three times.
+In Whisperwood, three rings meant: come quickly, but don't panic.
+
+Chapter 2: I Already Know the Plan
+Vera arrived first.
+This was not surprising. Vera always arrived first. She had usually already decided what to do before she got there.
+"Flooding," she said, before Sage could speak. "The Mapleaf showed dark veins this morning. The river is rising. We need the beavers."
+Sage opened her mouth.
+"I'll go find them," said Vera.
+Sage closed her mouth.
+Pip arrived second. He was out of breath and had a leaf stuck to his ear.
+"What did I miss?" he said.
+"Vera already knows the plan," said Sage.
+Pip looked at the river. Then at Sage. Then at the direction Vera had already run.
+"Does she know why the river is fast?"
+Sage looked at the water.
+"...I don't think she asked," said Sage.
+
+Shall I keep going through to the end, or do you want to react first?
+
+
+
+
+
+You said: Nope perfect continue
+Nope perfect continue
+Apr 4
+
+
+
+
+
+Claude responded: Chapter 3: What the Rock Remembered
+Chapter 3: What the Rock Remembered
+The beavers were busy.
+They were always busy.
+"Flooding?" said the head beaver. His name was Bram. He had a hard hat made of bark and an expression that suggested he had seen many floods. "Where?"
+"The burrows," said Vera. "River's rising. We need to redirect it."
+Bram stroked his chin.
+"Can't," he said. "Not safely. Not quickly."
+Vera blinked.
+This was not part of her plan.
+"What do you mean you can't—"
+"I mean," said Bram slowly, "that if we touch that river wrong, we make it worse. Something's blocking it upstream. Until we know what, we don't touch anything."
+Vera opened her mouth. Then closed it.
+This had never happened before.
+
+Back at the river, Pip was doing what Pip always did when there was a problem.
+He was trying to help.
+He had found a large stick. He was not entirely sure what to do with the large stick. But it felt better than standing still.
+"Pip," said Sage. "What are you doing?"
+"Helping," said Pip.
+"With a stick."
+"It's a big stick."
+Sage watched the water rise another inch.
+"Come with me," she said.
+She led him to the oldest boulder at the river's edge. It was round and grey and covered in soft moss. It had been sitting in the same spot since before anyone in Whisperwood could remember.
+Sage pressed her hand against it.
+"Excuse me," she said quietly.
+The boulder was silent for a long moment.
+Then, very slowly, it said:
+"...Tree."
+Pip leaned in. "Tree? What tree?"
+They waited.
+The river crept higher.
+A mouse family hurried past with bundles on their backs.
+Finally the boulder spoke again.
+"...Fell."
+
+Chapter 4: Fox Was Wrong (Sort Of)
+Vera came back without the beavers.
+She did not say anything at first. She just stood at the river's edge and looked at it.
+Sage and Pip looked at her.
+"There's a fallen tree upstream," said Sage. "Blocking the water. That's why it's rising."
+Vera was quiet for a moment.
+"I knew it was flooding," she said finally.
+"You did," said Sage.
+"I just didn't know why."
+"No," said Sage. "You didn't ask."
+Vera's ears went back slightly.
+Just slightly.
+"...I should have asked," she said.
+Pip patted her on the shoulder. "You got us the beavers though! That's still good."
+"The beavers said they can't help yet."
+"Oh." Pip thought about this. "Well. You got us to the beavers. That counts."
+Vera looked at him.
+Pip smiled his enormous Pip smile.
+Vera sighed. But her ears came back up.
+
+Chapter 5: Night Work
+By the time the sun went down, the burrows were knee-deep in water.
+The bunnies had already begun.
+They moved fast and quiet through their underground tunnels, guiding mouse families out one by one. No panic. No pushing. Just small paws and calm voices and knowing exactly where to go.
+"This way, please." "Mind your step." "You're safe now."
+Above ground, Vera watched and thought.
+Beavers can't move the tree. Not tonight. But the water needs somewhere to go.
+She looked at the Mapleaf.
+Its veins were still dark — but one branch pointed slightly left. Toward the mossy clearing.
+A redirect, she thought. Not a fix. Just enough.
+"Pip," she said. "I need you to get everyone who can sing."
+Pip's eyes went wide. "Everyone?"
+"Everyone."
+Pip was already gone before she finished the sentence.
+
+Chapter 6: Singing to the Mud
+They gathered at the river's edge.
+Vera. Pip. Sage. Bram and two other beavers. A family of deer. Three raccoons. The otter from the slide, who had been asked twice and complained once and showed up anyway.
+Sage stood at the back.
+There were a lot of creatures. A lot of sounds. A lot of movement.
+She took a slow breath.
+It's okay, she thought. I know what my part is.
+Vera stood at the front.
+"We're going to redirect the water," she said. "Just to the mossy clearing. Just for tonight. The beavers will fix the tree tomorrow when it's safe."
+Bram nodded. "We'll be there at first light."
+"We sing to the mud on my count," said Vera. "Low and slow. Like this—"
+She hummed a single note.
+The deer picked it up. Then the raccoons. Then Pip, loudly and slightly off-key but with great enthusiasm.
+The mud at the river's edge began to shift.
+Slowly at first. Then more.
+A small channel opened, curving left toward the clearing.
+The water followed.
+It was not elegant. It was not permanent.
+But the river slowed.
+And the burrows held.
+
+Chapter 7: Enough
+By midnight, the mouse families were safe in temporary nests above ground.
+The bunnies had done their job perfectly. The mud had done its job well enough. The beavers would do their job in the morning.
+Vera sat on a rock by the river.
+Pip flopped down next to her. He had mud on his nose and a glow mushroom in each paw that he was using as tiny lanterns for no particular reason.
+Sage settled beside them both, slowly, the way Sage did everything.
+The three of them looked at the water.
+It was calmer now.
+"We didn't fix it," said Pip.
+"No," said Vera.
+"But we fixed it enough," said Pip.
+Vera thought about that.
+About how she had run to the beavers without asking why. About how Sage had stopped to listen to a boulder. About how Pip had gathered half the forest with a smile and a bellflower.
+"Yes," she said. "Enough."
+Sage looked up at the glowing mushrooms lining the path home.
+"Bram will fix the tree tomorrow," she said.
+"And the burrows will dry," said Pip.
+"And next time," said Vera quietly, "I'll ask why first."
+Pip looked at her.
+"You say that every time something goes wrong," he said cheerfully.
+Vera stared at him.
+"This is the first time something has gone wrong."
+"I know," said Pip. "But I have a feeling it won't be the last."
+He held up both glowing mushrooms like tiny torches and marched off down the path toward home.
+Vera and Sage looked at each other.
+Then they followed him.
+Because in Whisperwood, that was usually the right thing to do.
+
+The End of Book One: The Rushing River
+
+That's your complete Book 1. Want me to now write the series bible as a clean document — characters, world rules, the 12-book arc — so you have one reference file to take into Cowork for formatting?
+
+
+
+
+
+You said: Can I have cowork build the bible and the drafts of the books?
+Can I have cowork build the bible and the drafts of the books?
+Apr 4
+
+
+
+
+
+Claude responded: Yes — and it's actually a perfect use of Cowork.
+Yes — and it's actually a perfect use of Cowork. Here's exactly how to do it:
+
+Step 1: Get the raw material out of this chat
+Before you open Cowork, you need your source material as files on your computer. The easiest way:
+Copy this entire conversation and paste it into a Word doc or text file
+Save it somewhere easy to find, like a folder called Whisperwood on your Desktop
+
+Step 2: Set up your Cowork project
+Once you have the desktop app installed:
+Open Claude Desktop → click Cowork
+Create a New Project and call it Whisperwood
+Point it at your Whisperwood folder
+In the Global Instructions field, write something like: "This is a children's book series for ages 4-6. Maintain the voice and world rules established in the source document at all times."
+
+Step 3: Tell Cowork what to build
+Give it this as your first task:
+"Using the attached conversation as source material, build a Whisperwood Series Bible as a Word document. Include: world rules, enchanted ecology, character profiles for Vera, Pip, and Sage, the 12-book arc with resources per book, and illustration style notes."
+Then for Book 1:
+"Format the Book 1 draft from the source material into a clean Word document with chapter breaks, ready for illustration notes to be added."
+
+Step 4: Let it run
+Cowork will handle the formatting, structure, and document creation while you do something else entirely. Come back to finished files.
+
+Want me to write you the exact prompt text for each Cowork task so you can just copy and paste them in?
+
+
+
+
+
+
+
+

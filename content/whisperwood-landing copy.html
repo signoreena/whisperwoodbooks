@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whisperwood — Enchanted Forest Stories</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #0c1a14;
+  --forest: #1a3d2b;
+  --gold: #e6c15a;
+  --parchment: #f4ead2;
+}
+
+* { box-sizing: border-box; margin: 0; }
+
+body {
+  font-family: 'EB Garamond', serif;
+  background: var(--bg);
+  color: var(--parchment);
+  overflow-x: hidden;
+}
+
+/* TEXTURE */
+body::after {
+  content:"";
+  position:fixed;
+  inset:0;
+  background:url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  opacity:.2;
+  pointer-events:none;
+}
+
+/* HERO */
+.hero {
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  position:relative;
+  overflow:hidden;
+}
+
+/* layered forest */
+.layer {
+  position:absolute;
+  width:100%;
+  bottom:0;
+}
+
+.layer.back { opacity:.3; transform:scale(1.2); }
+.layer.mid { opacity:.6; }
+.layer.front { opacity:.9; }
+
+/* glow */
+.hero::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 50% 40%, rgba(230,193,90,0.15), transparent 60%);
+}
+
+/* fireflies */
+.firefly {
+  position:absolute;
+  width:6px;
+  height:6px;
+  background:radial-gradient(circle, var(--gold), transparent);
+  border-radius:50%;
+  animation:float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform:translateY(0); opacity:.5;}
+  50% { transform:translateY(-20px); opacity:1;}
+  100% { transform:translateY(0); opacity:.5;}
+}
+
+/* hero text */
+.hero h1 {
+  font-family:'Playfair Display';
+  font-size:clamp(4rem,10vw,7rem);
+  color:var(--gold);
+}
+
+.hero p {
+  max-width:500px;
+  margin:20px auto;
+  font-size:1.2rem;
+}
+
+.btn {
+  display:inline-block;
+  padding:12px 28px;
+  margin:10px;
+  border:1px solid var(--gold);
+  color:var(--gold);
+  text-decoration:none;
+  letter-spacing:.1em;
+}
+
+.btn:hover {
+  background:var(--gold);
+  color:#000;
+}
+
+/* SECTION */
+section {
+  padding:80px 20px;
+  text-align:center;
+}
+
+/* CHARACTERS */
+.characters {
+  background:#12261c;
+}
+
+.cards {
+  display:flex;
+  gap:30px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+.card {
+  background:rgba(255,255,255,0.05);
+  padding:30px;
+  border-radius:20px;
+  width:260px;
+  transition:.3s;
+}
+
+.card:hover {
+  transform:translateY(-8px) scale(1.03);
+}
+
+/* BOOKS */
+.books {
+  background:var(--parchment);
+  color:#2b1f0f;
+}
+
+.book {
+  margin:20px auto;
+  max-width:500px;
+}
+
+/* PARENT SECTION */
+.parents {
+  background:#0f241b;
+}
+
+/* FOOTER */
+footer {
+  padding:40px;
+  text-align:center;
+  border-top:1px solid rgba(255,255,255,.1);
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+
+<div class="layer back">
+  <svg viewBox="0 0 1440 300"><polygon points="0,300 200,50 400,300" fill="#0a1810"/></svg>
+</div>
+
+<div class="layer mid">
+  <svg viewBox="0 0 1440 300"><polygon points="200,300 500,30 800,300" fill="#0f2419"/></svg>
+</div>
+
+<div class="layer front">
+  <svg viewBox="0 0 1440 300"><polygon points="600,300 900,20 1200,300" fill="#163528"/></svg>
+</div>
+
+<div>
+  <h1>Whisperwood</h1>
+  <p>A magical forest where every creature plays a part.</p>
+  <a href="#books" class="btn">Explore Books</a>
+</div>
+
+<div class="firefly" style="top:60%;left:30%"></div>
+<div class="firefly" style="top:70%;left:70%;animation-delay:2s"></div>
+<div class="firefly" style="top:50%;left:50%;animation-delay:4s"></div>
+
+</section>
+
+<!-- CHARACTERS -->
+<section class="characters">
+<h2>Meet the Friends</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Vera</h3>
+<p>The clever fox who solves problems.</p>
+</div>
+
+<div class="card">
+<h3>Pip</h3>
+<p>The energetic squirrel who jumps in first.</p>
+</div>
+
+<div class="card">
+<h3>Sage</h3>
+<p>The thoughtful turtle who listens deeply.</p>
+</div>
+
+</div>
+</section>
+
+<!-- BOOKS -->
+<section class="books" id="books">
+<h2>The Stories</h2>
+
+<div class="book">
+<h3>The Rushing River</h3>
+<p>Three friends must solve a growing problem together.</p>
+</div>
+
+<h3>Coming Soon</h3>
+<p>The Noisy Night · The Missing Acorns · The Broken Path</p>
+</section>
+
+<!-- PARENTS -->
+<section class="parents">
+<h2>Built for Growing Minds</h2>
+<p>
+Whisperwood stories help children develop problem-solving,
+emotional awareness, and cooperation — all wrapped in magical adventures.
+</p>
+</section>
+
+<footer>
+<p>© 2026 Whisperwood</p>
+</footer>
+
+</body>
+</html>
