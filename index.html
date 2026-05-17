@@ -656,7 +656,7 @@
 <body>
 
 <!-- ══════════════ NAV ══════════════ -->
-<nav>
+<nav aria-label="Site navigation">
   <a href="#" class="nav-logo">
     <img src="assets/logo.png" alt="Whisperwood Books">
   </a>
@@ -668,20 +668,20 @@
 </nav>
 
 <!-- ══════════════ HERO ══════════════ -->
-<section class="hero">
+<section class="hero" aria-labelledby="hero-title">
 
   <!-- floating sparkles -->
-  <span class="sparkle" style="top:28%;left:12%;animation-delay:0s">✦</span>
-  <span class="sparkle" style="top:22%;right:14%;animation-delay:1.1s">✦</span>
-  <span class="sparkle" style="top:42%;left:7%;animation-delay:2.3s;font-size:0.7rem">✦</span>
-  <span class="sparkle" style="top:38%;right:9%;animation-delay:0.6s;font-size:0.7rem">✦</span>
-  <span class="sparkle" style="top:55%;left:18%;animation-delay:1.7s;font-size:0.55rem">✦</span>
-  <span class="sparkle" style="top:50%;right:20%;animation-delay:3.1s;font-size:0.55rem">✦</span>
+  <span class="sparkle" aria-hidden="true" style="top:28%;left:12%;animation-delay:0s">✦</span>
+  <span class="sparkle" aria-hidden="true" style="top:22%;right:14%;animation-delay:1.1s">✦</span>
+  <span class="sparkle" aria-hidden="true" style="top:42%;left:7%;animation-delay:2.3s;font-size:0.7rem">✦</span>
+  <span class="sparkle" aria-hidden="true" style="top:38%;right:9%;animation-delay:0.6s;font-size:0.7rem">✦</span>
+  <span class="sparkle" aria-hidden="true" style="top:55%;left:18%;animation-delay:1.7s;font-size:0.55rem">✦</span>
+  <span class="sparkle" aria-hidden="true" style="top:50%;right:20%;animation-delay:3.1s;font-size:0.55rem">✦</span>
 
   <div class="hero-content">
     <div class="series-badge">A Children's Book Series &nbsp;·&nbsp; Ages 4–6</div>
 
-    <div class="hero-eyebrow">
+    <div class="hero-eyebrow" aria-hidden="true">
       <span class="hero-eyebrow-line"></span>
       <span class="hero-eyebrow-leaf">
         <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -691,23 +691,23 @@
       <span class="hero-eyebrow-line"></span>
     </div>
 
-    <h1 class="hero-title">Whisperwood</h1>
+    <h1 class="hero-title" id="hero-title">Whisperwood</h1>
 
     <p class="hero-subtitle">
-      <span class="subtitle-leaf">
+      <span class="subtitle-leaf" aria-hidden="true">
         <svg width="18" height="11" viewBox="0 0 18 11" fill="none">
           <path d="M1 10 C3 6 8 1 17 1 C13 5 8 8 1 10Z" fill="#f5c850" opacity="0.6"/>
         </svg>
       </span>
       Tales from the Enchanted Forest
-      <span class="subtitle-leaf" style="transform: scaleX(-1); display:inline-block;">
+      <span class="subtitle-leaf" aria-hidden="true" style="transform: scaleX(-1); display:inline-block;">
         <svg width="18" height="11" viewBox="0 0 18 11" fill="none">
           <path d="M1 10 C3 6 8 1 17 1 C13 5 8 8 1 10Z" fill="#f5c850" opacity="0.6"/>
         </svg>
       </span>
     </p>
 
-    <div class="ornament">
+    <div class="ornament" aria-hidden="true">
       <span class="ornament-line"></span>
       <span class="ornament-diamond"></span>
       <span class="ornament-line"></span>
@@ -723,7 +723,7 @@
     </div>
   </div>
 
-  <div class="hero-wave">
+  <div class="hero-wave" aria-hidden="true">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 90" preserveAspectRatio="none" style="display:block;width:100%;height:90px;">
       <path d="M0,40 C200,90 400,5 720,50 C1000,88 1240,12 1440,55 L1440,90 L0,90 Z" fill="#244e18"/>
     </svg>
@@ -731,13 +731,13 @@
 </section>
 
 <!-- ══════════════ QUOTE ══════════════ -->
-<div class="quote-strip">
+<div class="quote-strip" role="region" aria-label="Featured quote">
   <div class="quote-inner">
-    <span class="quote-mark">"</span>
+    <span class="quote-mark" aria-hidden="true">"</span>
     <p class="quote-text">Nothing runs on spells here. The forest has systems — and every creature has a part to play.</p>
     <p class="quote-attr">— Whisperwood</p>
   </div>
-  <div class="quote-wave-bottom" style="margin-top: 3.5rem;">
+  <div class="quote-wave-bottom" aria-hidden="true" style="margin-top: 3.5rem;">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:60px;">
       <path d="M0,20 C360,60 720,0 1080,40 C1260,58 1380,20 1440,30 L1440,60 L0,60 Z" fill="#f5e6c8"/>
     </svg>
@@ -749,7 +749,7 @@
   <div class="section-inner">
     <p class="section-label">The Trio</p>
     <h2 class="section-title">Meet Your Forest Friends</h2>
-    <div class="section-rule">
+    <div class="section-rule" aria-hidden="true">
       <span class="section-rule-line"></span>
       <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
         <path d="M9 1 L10.5 7 L16 9 L10.5 11 L9 17 L7.5 11 L2 9 L7.5 7 Z" fill="#c8860a" opacity="0.7"/>
@@ -762,7 +762,7 @@
       <!-- VERA — Fox -->
       <div class="char-card">
         <div class="portrait-wrap">
-          <svg class="portrait-ring" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="portrait-ring" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <circle cx="86" cy="86" r="82" stroke="#c8860a" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.4"/>
             <polygon points="86,2 89,9 86,16 83,9"   fill="#c8860a" opacity="0.6"/>
             <polygon points="170,86 163,89 156,86 163,83" fill="#c8860a" opacity="0.6"/>
@@ -780,7 +780,7 @@
       <!-- PIP — Squirrel -->
       <div class="char-card">
         <div class="portrait-wrap">
-          <svg class="portrait-ring" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="portrait-ring" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <circle cx="86" cy="86" r="82" stroke="#c8860a" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.4"/>
             <polygon points="86,2 89,9 86,16 83,9"   fill="#c8860a" opacity="0.6"/>
             <polygon points="170,86 163,89 156,86 163,83" fill="#c8860a" opacity="0.6"/>
@@ -798,7 +798,7 @@
       <!-- SAGE — Turtle -->
       <div class="char-card">
         <div class="portrait-wrap">
-          <svg class="portrait-ring" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="portrait-ring" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <circle cx="86" cy="86" r="82" stroke="#c8860a" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.4"/>
             <polygon points="86,2 89,9 86,16 83,9"   fill="#c8860a" opacity="0.6"/>
             <polygon points="170,86 163,89 156,86 163,83" fill="#c8860a" opacity="0.6"/>
@@ -822,7 +822,7 @@
   <div class="section-inner">
     <p class="section-label">The Collection</p>
     <h2 class="section-title">Stories from the Forest</h2>
-    <div class="section-rule">
+    <div class="section-rule" aria-hidden="true">
       <span class="section-rule-line"></span>
       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
         <path d="M8 2 Q10 8 8 14 Q6 8 8 2Z" fill="#5a8a46" opacity="0.7"/>
@@ -851,7 +851,7 @@
   <div class="section-inner">
     <p class="section-label">The Setting</p>
     <h2 class="section-title">Step Inside the Forest</h2>
-    <div class="section-rule">
+    <div class="section-rule" aria-hidden="true">
       <span class="section-rule-line"></span>
       <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
         <circle cx="8" cy="8" r="3.5" fill="none" stroke="#c8860a" stroke-width="1.2"/>
@@ -874,7 +874,7 @@
     <img src="assets/logo.png" alt="Whisperwood Books">
   </div>
   <p class="footer-tagline">Tales from the Enchanted Forest</p>
-  <div class="footer-ornament">
+  <div class="footer-ornament" aria-hidden="true">
     <span class="footer-ornament-line"></span>
     <span class="footer-ornament-diamond"></span>
     <span class="footer-ornament-line"></span>
