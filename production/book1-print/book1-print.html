@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Whisperwood Book 1: The Rising River — Print Interior</title>
+<!--
+  ══════════════════════════════════════════════════════════
+  KDP PRINT INTERIOR — Whisperwood Book 1: The Rising River
+  ══════════════════════════════════════════════════════════
+  Trim size:    8.5" × 8.5"
+  Bleed:        0.125" on all sides (set file to 8.75" × 8.75")
+  Gutter:       0.5" (spine side — left on right pages, right on left pages)
+  Safe zone:    All text/important content 0.375" from trim edge
+  Resolution:   300 DPI for images
+  Color:        RGB (KDP Print converts; no CMYK needed)
+  Page count:   32 pages (including cover — cover submitted separately)
+
+  HOW TO EXPORT TO PDF:
+  1. Open this file in Google Chrome
+  2. File → Print (Cmd+P / Ctrl+P)
+  3. Destination: Save as PDF
+  4. Paper size: Custom — 8.75 in × 8.75 in
+  5. Margins: None
+  6. Options: Background graphics ON
+  7. Save the PDF — this is your KDP interior file
+
+  COVER: Submit separately via KDP's cover creator or a separate
+  8.75" × 8.75" + spine PDF. KDP calculates spine width from page count.
+  For 32 pages on white paper: spine ≈ 0.08". Use KDP's cover calculator.
+
+  REPLACING PLACEHOLDERS: When final artwork is ready, replace each
+  .illo-placeholder div with an <img> tag:
+    <img src="illo-01.jpg" class="illo-img" alt="..."/>
+  Images must be 300 DPI at print size. For a full-page image on an
+  8.5" × 8.5" page with bleed: 2625 × 2625 px minimum at 300 DPI.
+  For a full spread: 5250 × 2625 px minimum.
+  ══════════════════════════════════════════════════════════
+-->
+<style>
+  /* ── Reset ─────────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #ccc; font-family: Georgia, 'Times New Roman', serif; }
+
+  /* ── Page setup ─────────────────────────────── */
+  @page {
+    size: 8.75in 8.75in; /* trim + bleed */
+    margin: 0;
+  }
+
+  /* ── Single page container ───────────────────── */
+  /* Each .pg-container is one physical page */
+  .pg-container {
+    width: 8.75in;
+    height: 8.75in;
+    position: relative;
+    overflow: hidden;
+    background: #f9f3e8;
+    page-break-after: always;
+    display: block;
+  }
+
+  /* ── Right-hand page (odd) ───────────────────── */
+  /* Gutter on left, fore-edge on right */
+  .pg-right .text-safe {
+    position: absolute;
+    top: 0.375in; right: 0.375in; bottom: 0.375in; left: 0.5in;
+  }
+
+  /* ── Left-hand page (even) ────────────────────── */
+  /* Gutter on right, fore-edge on left */
+  .pg-left .text-safe {
+    position: absolute;
+    top: 0.375in; right: 0.5in; bottom: 0.375in; left: 0.375in;
+  }
+
+  /* ── Illustration placeholder ────────────────── */
+  /* Remove these and replace with <img> tags for final version */
+  .illo-placeholder {
+    position: absolute;
+    background: #2d5a27;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.15in;
+    text-align: center;
+    padding: 0.3in;
+  }
+  .illo-placeholder .illo-num {
+    font-family: Georgia, serif;
+    font-size: 28pt;
+    color: #fce070;
+    font-weight: bold;
+  }
+  .illo-placeholder .illo-desc {
+    font-family: Georgia, serif;
+    font-size: 12pt;
+    color: #c8e6c2;
+    line-height: 1.5;
+    max-width: 90%;
+  }
+  .illo-placeholder .illo-note {
+    font-family: Georgia, serif;
+    font-size: 10pt;
+    color: #4a7c59;
+    font-style: italic;
+  }
+
+  /* ── Final artwork image ─────────────────────── */
+  .illo-img {
+    position: absolute;
+    object-fit: cover;
+  }
+
+  /* ── Text typography ─────────────────────────── */
+  .chapter-label {
+    font-size: 9pt;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4a7c59;
+    margin-bottom: 6pt;
+  }
+  .chapter-title {
+    font-size: 26pt;
+    font-weight: bold;
+    color: #2d5a27;
+    margin-bottom: 18pt;
+    line-height: 1.15;
+  }
+  .story-text {
+    font-size: 16pt;
+    line-height: 1.7;
+    color: #1a1a1a;
+  }
+  .story-text p { margin-bottom: 12pt; }
+  .story-text p:last-child { margin-bottom: 0; }
+
+  /* ── Spread: two pages side by side in a single .pg-container ── */
+  /* For print, spreads are treated as two separate pages in sequence.
+     The left page runs to bleed on the right edge; the right page
+     runs to bleed on the left edge. They're printed facing each other.
+     Mark them .pg-left and .pg-right, both with page-break-after:always */
+
+  /* ── Cover page ─────────────────────────────── */
+  .pg-cover {
+    background: linear-gradient(160deg, #1e4020 0%, #2d5a27 60%, #4a7c59 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  /* Note: the cover is submitted as a SEPARATE file to KDP.
+     This page is the INTERIOR cover (p.1 / half-title page).
+     Adjust or remove as needed. */
+
+  /* ── End page ──────────────────────────────── */
+  .pg-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #f9f3e8;
+  }
+
+  /* ── Print: hide screen chrome ─────────────── */
+  @media print {
+    body { background: none; }
+    .print-note { display: none; }
+  }
+
+  /* ── Screen preview (non-print) ─────────────── */
+  @media screen {
+    body { padding: 0.5in; }
+    .pg-container {
+      margin: 0 auto 0.3in;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+    }
+    .print-note {
+      max-width: 8.75in;
+      margin: 0 auto 0.3in;
+      background: #fdf3e7;
+      border-left: 4px solid #c8860a;
+      padding: 14px 20px;
+      font-family: Georgia, serif;
+      font-size: 13px;
+      color: #7a4a28;
+      line-height: 1.6;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="print-note">
+  <strong>Print preview:</strong> This file renders each page as a card on screen. To export to PDF for KDP, open in Chrome → File → Print → Save as PDF → Custom paper size 8.75&quot; &times; 8.75&quot; → Margins: None → Background graphics: ON. See the file header comments for full submission guidance.
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE 1 — Half-title (right-hand page)
+     Note: True front cover submitted separately to KDP.
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-right" style="background:#f9f3e8;">
+  <div class="text-safe" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+    <div style="font-size:9pt;letter-spacing:4px;text-transform:uppercase;color:#4a7c59;margin-bottom:16pt;">Whisperwood &middot; Book One</div>
+    <div style="font-size:52pt;font-weight:bold;color:#2d5a27;line-height:1.1;margin-bottom:12pt;">The Rising<br/>River</div>
+    <div style="font-size:20pt;font-style:italic;color:#4a7c59;">A Whisperwood Story</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE 2 — Title page (left-hand, verso)
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left" style="background:#f9f3e8;">
+  <div class="text-safe" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+    <div style="font-size:9pt;letter-spacing:4px;text-transform:uppercase;color:#4a7c59;margin-bottom:20pt;">Whisperwood &middot; Book One</div>
+    <div style="font-size:48pt;font-weight:bold;color:#2d5a27;line-height:1.1;margin-bottom:12pt;">The Rising<br/>River</div>
+    <div style="font-size:18pt;font-style:italic;color:#4a7c59;margin-bottom:50pt;">A Whisperwood Story</div>
+    <div style="width:1.5in;height:2pt;background:#c8860a;margin-bottom:50pt;"></div>
+    <div style="font-size:16pt;color:#1a1a1a;margin-bottom:8pt;">Reena Gellerup</div>
+    <div style="font-size:13pt;color:#777;font-style:italic;">Illustrations by [Artist Name]</div>
+    <div style="position:absolute;bottom:0.5in;font-size:10pt;color:#aaa;letter-spacing:1px;text-align:center;">Whisperwood Books &bull; whisperwoodbooks.com &bull; 2026</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 3–4 — Chapter 1 opening spread
+     Illo 1 (left) + text (right)
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <!-- Illo 1: full bleed left page -->
+  <!-- TO REPLACE: <img src="illo-01-left.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Ordinary Tuesday"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 1 (left page)</div>
+    <div class="illo-desc">Full spread establishing shot &mdash; left half. Sage at river watching tadpoles. Pip mid-fall from branch. Warm golden forest morning.</div>
+    <div class="illo-note">Replace with final artwork &mdash; bleed to all edges</div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
+  <!-- Illo 1 continues (right half) with text band -->
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:5.5in;">
+    <div class="illo-num">Illustration 1 (right page)</div>
+    <div class="illo-desc">Vera writing her list against the Mapleaf tree. Forest village in background. Mouse family barely visible.</div>
+    <div class="illo-note">Bleed to top, left, right edges. Text box at bottom.</div>
+  </div>
+  <div style="position:absolute;bottom:0;left:0;width:8.75in;height:3.25in;background:rgba(249,243,232,0.97);padding:0.45in 0.5in 0.45in 0.55in;">
+    <div class="chapter-label">Chapter 1</div>
+    <div class="chapter-title">The Mapleaf Knows</div>
+    <div class="story-text">
+      <p>It was an ordinary Tuesday in Whisperwood. The herons were fishing. The hedgehog baker had her morning rolls out. Two sparrows in the upper branches were having a very loud argument that had clearly been going on since Monday.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 5–6 — Chapter 1 continued
+     Illo 2 (right) + text (left)
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <div class="text-safe">
+    <div class="story-text">
+      <p>By the river, Sage was watching tadpoles. She did this most mornings. She never got bored of it.</p>
+      <p>In the branches above her, Pip was trying to leap from one tree to the next without using his hands. He had already fallen twice. The second time, he had taken a large branch with him.</p>
+      <p>He was going to try a third time.</p>
+      <p>Nearby, Vera sat with her back against the Mapleaf tree, adding to her list. It was a very long list. Today&rsquo;s entries so far included: <em>river current (normal), beaver morning shift (started),</em> and <em>Pip (falling, probably fine).</em></p>
+      <p>She glanced up at the Mapleaf&rsquo;s veins the way she always did &mdash; just to check. They were golden and calm. Good. She looked back at her list. Then she looked up again. The veins had gone dark.</p>
+      <p>Vera was already on her feet when Pip landed on her head. &ldquo;Something is coming,&rdquo; said Pip. &ldquo;I know,&rdquo; said Vera. &ldquo;But did you see how dark the veins are?&rdquo; &ldquo;Pip.&rdquo; &ldquo;Yes?&rdquo; &ldquo;I know.&rdquo; Pip flicked his tail. He did not look convinced.</p>
+    </div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
+  <!-- Illo 2: top of right page -->
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:5in;">
+    <div class="illo-num">Illustration 2</div>
+    <div class="illo-desc">Mapleaf veins gone dark. Vera already on feet. Pip landing on her head.</div>
+    <div class="illo-note">Bleed top, left, right. Text below.</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 7–8 — Chapter 2
+     Illo 3 (right) + Chapter 2 text (left)
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <div class="text-safe">
+    <div class="chapter-label">Chapter 2</div>
+    <div class="chapter-title">Wait</div>
+    <div class="story-text">
+      <p>Sage was no longer watching tadpoles.</p>
+      <p>She was watching the water.</p>
+      <p>It was higher than it should be. Not fast. Not churning. Just&hellip; rising. Slowly and steadily and wrong.</p>
+      <p>She placed one foot in the current. Then she took it back out.</p>
+      <p>She reached for a bellflower growing near the bank and rang it.</p>
+    </div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 3</div>
+    <div class="illo-desc">Sage at river&rsquo;s edge, bellflower mid-ring. River visibly too high. Mouse family across river.</div>
+    <div class="illo-note">Full bleed. Chapter 2 text is on the facing left page.</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 9–10 — Chapter 3
+     Text (left) + Illo 4 (right)
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <div class="text-safe">
+    <div class="chapter-label">Chapter 3</div>
+    <div class="chapter-title">I Already Know the Plan</div>
+    <div class="story-text">
+      <p>Vera arrived first. She was already talking before she reached the bank. &ldquo;Flooding. The Mapleaf showed dark veins. River&rsquo;s rising &mdash; we need the beavers.&rdquo; She was already turning to go.</p>
+      <p>Sage opened her mouth. &ldquo;The mouse families&rsquo; burrows will flood,&rdquo; said Vera, before Sage could speak. &ldquo;I&rsquo;ll go find the beavers.&rdquo; Sage closed her mouth.</p>
+      <p>Pip arrived second. He was out of breath, had a leaf stuck to his ear, and was already holding a large stick he&rsquo;d found on the way over, in case it was useful. &ldquo;What did I miss?&rdquo; he said. &ldquo;Vera already knows the plan,&rdquo; said Sage.</p>
+      <p>Pip looked at the river. He looked at his stick. He looked at the direction Vera had already run. &ldquo;Does she know <em>why</em> the river is rising?&rdquo;</p>
+      <p>Sage went still. She looked at the water. She looked at where Vera had been. &ldquo;&hellip;I don&rsquo;t think she asked,&rdquo; said Sage.</p>
+    </div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 4</div>
+    <div class="illo-desc">Pip with enormous stick, leaf on ear. Sage hand on rock, gone still. Vera&rsquo;s retreating silhouette at edge of image.</div>
+    <div class="illo-note">Full bleed. Chapter 3 text is on the facing left page.</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 11–12 — Chapter 4 Part 1
+     Illo 5 (left) + text (right)
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 5</div>
+    <div class="illo-desc">Vera very still before Bram. Her ears at half-mast. Bram solid and immovable in bark hard hat.</div>
+    <div class="illo-note">Full bleed. Chapter 4 text is on the facing right page.</div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
+  <div class="text-safe">
+    <div class="chapter-label">Chapter 4</div>
+    <div class="chapter-title">What the Rock Remembered</div>
+    <div class="story-text">
+      <p>The beavers were busy. They were always busy. &ldquo;Flooding?&rdquo; said Bram. He had a hard hat made of bark and an expression that suggested he had seen many floods. &ldquo;Where?&rdquo;</p>
+      <p>&ldquo;The burrows,&rdquo; said Vera. &ldquo;River&rsquo;s rising. We need to redirect it.&rdquo; Bram stroked his chin. &ldquo;Can&rsquo;t. Not safely. Not quickly. Something&rsquo;s come down at the river bend &mdash; blocking the channel. Until we can get eyes on it in daylight, we don&rsquo;t touch a thing.&rdquo;</p>
+      <p>Vera&rsquo;s mouth opened. Then it closed. Her ears went back. Just slightly. She stood very still for exactly one breath. &ldquo;What if we&mdash;&rdquo; &ldquo;Not safely,&rdquo; said Bram. &ldquo;Not tonight.&rdquo;</p>
+      <p>Back at the river, Pip was doing what Pip always did when there was a problem. He was trying to help. He had his large stick. He had wedged one end in the bank. He was not entirely sure what he expected to happen next. But it felt better than standing still.</p>
+      <p>&ldquo;Pip,&rdquo; said Sage. &ldquo;What are you doing?&rdquo; &ldquo;Helping,&rdquo; said Pip. &ldquo;With a stick.&rdquo; &ldquo;It&rsquo;s a big stick.&rdquo; Sage watched the water rise another inch. &ldquo;Come with me,&rdquo; she said.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 13–14 — Chapter 4 Key Spread (Illo 6)
+     Full bleed across both pages — KEY IMAGE
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 6 &mdash; KEY IMAGE (left page)</div>
+    <div class="illo-desc">Sage hand flat on the great moss-covered boulder, eyes closed. Pip nose-to-rock, nearly falling, Sage&rsquo;s hand on his shoulder keeping him upright. River rising behind them.</div>
+    <div class="illo-note">Full bleed. Text is in the bottom band of the right page (p.14).</div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:5.75in;">
+    <div class="illo-num">Illustration 6 &mdash; KEY IMAGE (right page)</div>
+    <div class="illo-desc">Continuation of spread &mdash; mouse family crossing in background: Ma with framed painting, Pa carrying sleeping Baby, Big Daughter writing while walking, Middle Son staring at Pip and the rock.</div>
+    <div class="illo-note">Bleed top, left, right. Text box at bottom.</div>
+  </div>
+  <div style="position:absolute;bottom:0;left:0;width:8.75in;height:3in;background:rgba(249,243,232,0.97);padding:0.4in 0.5in 0.4in 0.55in;">
+    <div class="story-text">
+      <p>She led him to the oldest boulder at the river&rsquo;s edge. Sage pressed her hand flat against it and closed her eyes. &ldquo;Excuse me,&rdquo; she said quietly. Pip watched her face. A mouse family hurried past, bundles on their backs, moving fast and quiet.</p>
+      <p>&ldquo;&hellip;A tree,&rdquo; said Sage. Pip leaned in. His nose was now very close to the rock. &ldquo;A tree? What tree?&rdquo; Sage put one hand on his shoulder, gently. He went still. They waited. &ldquo;&hellip;It fell,&rdquo; said Sage.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 15–16 — Chapter 5
+     Text (left) + Illo 7 (right)
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <div class="text-safe">
+    <div class="chapter-label">Chapter 5</div>
+    <div class="chapter-title">Fox Was Wrong (Sort Of)</div>
+    <div class="story-text">
+      <p>Vera came back without the beavers. &ldquo;There&rsquo;s a fallen tree,&rdquo; said Sage. &ldquo;Blocking the channel. That&rsquo;s why the water can&rsquo;t go anywhere. That&rsquo;s why it&rsquo;s rising.&rdquo;</p>
+      <p>&ldquo;I knew it was flooding,&rdquo; Vera said. &ldquo;You did,&rdquo; said Sage. &ldquo;I just didn&rsquo;t know why.&rdquo; &ldquo;No,&rdquo; said Sage. &ldquo;You didn&rsquo;t ask.&rdquo;</p>
+      <p>&ldquo;&hellip;I should have asked why,&rdquo; said Vera. She looked at the water. &ldquo;I went to fix it. I didn&rsquo;t ask what was broken.&rdquo;</p>
+      <p>Pip patted her on the shoulder. &ldquo;You got us to the beavers though! That&rsquo;s still good.&rdquo; &ldquo;The beavers said they can&rsquo;t help yet.&rdquo; &ldquo;Oh.&rdquo; Pip thought about this. &ldquo;Well. You got us <em>to</em> the beavers. That counts.&rdquo;</p>
+      <p>Vera looked at him. Pip smiled his enormous Pip smile. Vera sighed. But her ears came back up.</p>
+    </div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 7</div>
+    <div class="illo-desc">Three friends at river. Pip beaming enormously. Vera&rsquo;s ears mid-rise. Sage looking at water, thinking ahead. Mood: something went wrong and we are still okay.</div>
+    <div class="illo-note">Full bleed. Chapter 5 text on facing left page.</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 17–18 — Chapter 6
+     Illo 8 (left, split panel) + text (right)
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 8</div>
+    <div class="illo-desc">Split: top &mdash; underground bunny tunnels, warm and efficient. Bottom &mdash; Vera at Mapleaf at night, pointing branch; Pip a blur in the far distance, already running.</div>
+    <div class="illo-note">Full bleed. Chapter 6 text on facing right page.</div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
+  <div class="text-safe">
+    <div class="chapter-label">Chapter 6</div>
+    <div class="chapter-title">Night Work</div>
+    <div class="story-text">
+      <p>By the time the sun went down, the burrows were knee-deep in water. The bunnies had already begun. They moved fast and quiet through their underground tunnels, guiding mouse families out one by one. No panic. No pushing. Just small paws and calm voices and knowing exactly where to go.</p>
+      <p>&ldquo;This way, please.&rdquo; &ldquo;Mind your step.&rdquo; &ldquo;You&rsquo;re safe now.&rdquo;</p>
+      <p>Above ground, Vera looked up at the Mapleaf. Its veins were still dark &mdash; but one branch pointed slightly left. Toward the mossy clearing. She was already walking toward Pip before she finished looking.</p>
+      <p>&ldquo;Pip,&rdquo; she said. &ldquo;I need everyone who can sing.&rdquo; Pip&rsquo;s eyes went wide. &ldquo;Everyone?&rdquo; &ldquo;Everyone.&rdquo; Pip was already gone before she&rsquo;d finished the word.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 19–20 — Chapter 7 Community Spread (Illo 9)
+     Full bleed across both pages
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 9 &mdash; COMMUNITY IMAGE (left page)</div>
+    <div class="illo-desc">Whole community singing at river&rsquo;s edge. Pip foreground, everything he has. Mud moving left. Vera conducting. Sage at back, singing quietly.</div>
+    <div class="illo-note">Full bleed. Text in bottom band of right page (p.20).</div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:5.5in;">
+    <div class="illo-num">Illustration 9 &mdash; COMMUNITY IMAGE (right page)</div>
+    <div class="illo-desc">Otter (arms crossed, mouth open), deer, raccoons, beavers. Mouse family at burrow: Ma watching water, Pa calm, Middle Son studying Pip&rsquo;s technique, Big Daughter writing, Baby asleep.</div>
+    <div class="illo-note">Bleed top, left, right. Text box at bottom.</div>
+  </div>
+  <div style="position:absolute;bottom:0;left:0;width:8.75in;height:3.25in;background:rgba(249,243,232,0.97);padding:0.4in 0.5in 0.4in 0.55in;">
+    <div class="chapter-label">Chapter 7</div>
+    <div class="chapter-title">Singing to the Mud</div>
+    <div class="story-text">
+      <p>They gathered at the river&rsquo;s edge. Vera. Pip. Sage. Bram and two other beavers. A family of deer. Three raccoons. The otter from the slide, who had been asked twice and complained once and showed up anyway.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 21–22 — Chapter 7 continued
+     Text (left) + Illo 10 (right)
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <div class="text-safe">
+    <div class="story-text">
+      <p>It was loud. It was a lot of creatures moving in a lot of directions at once. At the back of the crowd, Sage took a slow breath. She took a step back from the noise. Then she looked at the mud. She looked at where the water needed to go. She took a step forward. She knew what her part was.</p>
+      <p>&ldquo;We&rsquo;re going to redirect the water,&rdquo; said Vera, at the front. &ldquo;Just to the mossy clearing. Just for tonight. The beavers will fix the tree tomorrow when it&rsquo;s safe.&rdquo; Bram nodded. &ldquo;We&rsquo;ll be there at first light.&rdquo;</p>
+      <p>&ldquo;Low and slow,&rdquo; said Vera. &ldquo;On my count. Like this&mdash;&rdquo;</p>
+      <p>She hummed a single note. The deer picked it up. Then the raccoons. Then Pip &mdash; loudly and slightly to the left of the correct note, but with his whole entire body. The mud at the river&rsquo;s edge began to shift. A small channel opened, curving left toward the clearing. The water followed.</p>
+      <p>It was not elegant. It was not permanent. But the river slowed. And the burrows held.</p>
+    </div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 10</div>
+    <div class="illo-desc">The redirect working. New channel carved through bank. Collective exhale. Glow moss lighting the night. Mouse family: Pa nods to Ma. She nods back.</div>
+    <div class="illo-note">Full bleed. Chapter 7 text on facing left page.</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 23–24 — Chapter 8 Part 1
+     Illo 11 (left) + text (right)
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 11</div>
+    <div class="illo-desc">Four beavers at dawn moving the enormous fallen oak. Bram directing. Scale: beavers are tiny against the tree. Pink and gold dawn light. Water starting to move freely again.</div>
+    <div class="illo-note">Full bleed. Chapter 8 text on facing right page.</div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
+  <div class="text-safe">
+    <div class="chapter-label">Chapter 8</div>
+    <div class="chapter-title">Good Morning</div>
+    <div class="story-text">
+      <p>By midnight, the mouse families were safe in temporary nests above ground.</p>
+      <p>When morning came, Bram and three other beavers arrived at the river bend at first light. The fallen tree &mdash; a great old oak, broken at the root &mdash; lay heavy across the channel. It took four beavers and two hours. But they moved it.</p>
+      <p>The water rushed through the cleared channel with a sound like relief. The singing mud settled quietly back into the riverbank, as if it had never moved. The redirect was gone.</p>
+      <p>By the time the sun was fully up, the burrows were draining. The herons were back at their posts. The hedgehog baker had new rolls out. The sparrows had either resolved their argument or simply started a different one.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 25–26 — Chapter 8 Resolution
+     Text-forward spread, no new illustration
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <div class="text-safe">
+    <div class="story-text">
+      <p>Vera sat on a rock by the river, watching the water run clear and calm.</p>
+      <p>Pip flopped down next to her. He had mud on his nose and a lantern mushroom in each paw, held up like tiny torches. It was broad daylight.</p>
+      <p>Sage settled beside them both, slowly, the way Sage did everything.</p>
+      <p>&ldquo;We fixed it,&rdquo; said Pip. &ldquo;We fixed it,&rdquo; said Vera. &ldquo;Properly.&rdquo;</p>
+      <p>Sage was quiet for a moment. She was looking back toward the river bend. &ldquo;The tree,&rdquo; she said. &ldquo;Did it fall on its own?&rdquo;</p>
+      <p>Bram, still at the water&rsquo;s edge, turned back toward them. &ldquo;Hard to say. The roots let go. But the damage to those roots was old. Very old.&rdquo; He shook his head slowly. &ldquo;I&rsquo;ll remember it.&rdquo; Sage nodded. She filed it away.</p>
+    </div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
+  <div class="text-safe">
+    <div class="story-text">
+      <p>&ldquo;Next time,&rdquo; said Vera quietly, &ldquo;I&rsquo;ll ask why first.&rdquo;</p>
+      <p>Pip looked at her. &ldquo;You say that every time something goes wrong,&rdquo; he said cheerfully. Vera stared at him. &ldquo;This is the first time something has gone wrong.&rdquo; &ldquo;I know,&rdquo; said Pip. &ldquo;But I have a feeling it won&rsquo;t be the last.&rdquo;</p>
+      <p>He held up both lantern mushrooms and marched off down the path toward home.</p>
+      <p>Vera watched him go. It had been Pip who ran when she needed him to. Who had gathered every creature who could sing, just because she&rsquo;d asked. His legs had carried the whole plan to everyone who needed to be part of it. That was the part no plan could plan for.</p>
+      <p>Vera looked at Sage. Sage looked at Vera. They followed him.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 27–28 — Final Spread (Illo 12)
+     Full bleed across both pages
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 12 &mdash; FINAL SPREAD (left page)</div>
+    <div class="illo-desc">Trio walking home on dappled morning path. Pip leads with lantern mushrooms raised (full daylight). Vera and Sage together behind him. Forest warm and exhaled.</div>
+    <div class="illo-note">Full bleed. No text on this page. Mouse family in background of right page.</div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 12 &mdash; FINAL SPREAD (right page)</div>
+    <div class="illo-desc">In far background between trees: mouse family&rsquo;s temporary shelter. Ma hanging framed painting on the exterior wall. Pa on stump with sleeping Baby. Big Daughter writing on step. Middle Son watching trio walk away, still hoping for something interesting. Nothing will happen. Not today.</div>
+    <div class="illo-note">Full bleed. This image echoes in all 8 books &mdash; always the trio walking home.</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 29–30 — End matter
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left pg-end">
+  <div style="text-align:center;padding:1in;">
+    <div style="font-size:36pt;font-weight:bold;color:#2d5a27;margin-bottom:12pt;">The End of Book One</div>
+    <div style="font-size:20pt;font-style:italic;color:#4a7c59;margin-bottom:50pt;">The Rising River</div>
+    <div style="font-size:13pt;color:#555;line-height:2;">
+      <p>The story of Whisperwood continues in:</p>
+      <p><em>Book Two: The Noisy Night</em></p>
+      <p style="margin-top:24pt;">&mdash;</p>
+      <p>Collect all eight Whisperwood books.</p>
+    </div>
+  </div>
+</div>
+
+<div class="pg-container pg-right pg-end">
+  <div style="text-align:center;padding:1in;display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;">
+    <div style="font-size:11pt;color:#aaa;line-height:2;">
+      <p>Text &copy; 2026 Reena Gellerup</p>
+      <p>Illustrations &copy; 2026 [Artist Name]</p>
+      <p>All rights reserved.</p>
+      <p style="margin-top:20pt;">Published by Whisperwood Books</p>
+      <p>whisperwoodbooks.com</p>
+      <p style="margin-top:20pt;">First edition, 2026</p>
+      <p>Printed in the United States of America</p>
+      <p style="margin-top:20pt;">ISBN: [to be assigned via KDP]</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 31–32 — Back matter / blank
+     (Back cover submitted separately to KDP)
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left" style="background:#f9f3e8;">
+  <!-- Blank or series list / author bio page -->
+  <div class="text-safe" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+    <div style="font-size:13pt;color:#4a7c59;font-style:italic;line-height:2.2;">
+      <p>Also in the Whisperwood series:</p>
+      <p>Book 1: The Rising River</p>
+      <p>Book 2: The Noisy Night</p>
+      <p>Book 3: The Missing Acorns</p>
+      <p>Book 4: Otter Won&rsquo;t Help</p>
+      <p>Book 5: The Too-Busy Beaver</p>
+      <p>Book 6: Deer Says Yes</p>
+      <p>Book 7: The Quiet Argument</p>
+      <p>Book 8: The Forest Holds Its Breath</p>
+    </div>
+  </div>
+</div>
+
+<div class="pg-container pg-right" style="background:#f9f3e8;">
+  <!-- Final blank / barcode page — KDP adds barcode automatically for print -->
+  <!-- Leave mostly blank; KDP places ISBN barcode in lower right -->
+</div>
+
+</body>
+</html>

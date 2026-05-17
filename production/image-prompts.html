@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whisperwood Book 1 — Image Generation Prompts</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, serif; font-size: 15px; line-height: 1.75; color: #1a1a1a; background: #f9f7f4; }
+  .page { max-width: 860px; margin: 0 auto; background: #fff; padding: 0; box-shadow: 0 2px 24px rgba(0,0,0,0.10); }
+  .cover { background: linear-gradient(160deg, #1e4020 0%, #2d5a27 60%, #4a7c59 100%); color: #fff; text-align: center; padding: 70px 60px 60px; }
+  .cover h1 { font-size: 40px; color: #fce070; margin-bottom: 10px; }
+  .cover p { font-size: 18px; color: #c8e6c2; font-style: italic; }
+  .content { padding: 50px 60px; }
+  h2 { font-size: 20px; color: #2d5a27; margin: 36px 0 14px; padding-bottom: 6px; border-bottom: 2px solid #c8e6c2; }
+  h3 { font-size: 16px; color: #b5651d; margin: 28px 0 10px; font-style: italic; }
+  p { margin-bottom: 12px; font-size: 14.5px; }
+  .callout { border-left: 4px solid #4a7c59; background: #eaf4e8; border-radius: 0 6px 6px 0; padding: 18px 22px; margin: 20px 0; }
+  .callout.amber { border-left-color: #b5651d; background: #fdf3e7; }
+  .callout .label { font-weight: bold; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #2d5a27; margin-bottom: 8px; }
+  .callout.amber .label { color: #b5651d; }
+  .callout p { font-size: 13.5px; margin-bottom: 6px; }
+  .callout p:last-child { margin-bottom: 0; }
+
+  .prompt-block {
+    background: #f9f7f4;
+    border: 1px solid #dde8db;
+    border-radius: 6px;
+    padding: 22px 26px;
+    margin: 20px 0;
+  }
+  .prompt-block .prompt-header {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dde8db;
+  }
+  .prompt-num {
+    background: #2d5a27;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+  .prompt-title { font-size: 15px; font-weight: bold; color: #2d5a27; }
+  .prompt-meta { font-size: 12px; color: #777; font-style: italic; margin-left: auto; }
+  .prompt-text {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 16px 18px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    white-space: pre-wrap;
+  }
+  .mj-params {
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: #4a5568;
+    background: #eef0f3;
+    padding: 6px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 4px;
+  }
+  .char-table { width: 100%; border-collapse: collapse; margin: 14px 0 20px; font-size: 13.5px; }
+  .char-table th { background: #2d5a27; color: #fff; text-align: left; padding: 9px 12px; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+  .char-table td { padding: 9px 12px; border-bottom: 1px solid #ddd; vertical-align: top; }
+  .char-table tr:nth-child(even) td { background: #f4faf3; }
+  .char-table td:first-child { font-weight: bold; color: #2d5a27; width: 90px; }
+  .doc-footer { background: #2d5a27; color: #a8d4a0; text-align: center; padding: 18px; font-size: 12px; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="cover">
+  <h1>Image Generation Prompts</h1>
+  <p>Whisperwood Book 1: The Rising River &nbsp;&middot;&nbsp; All 12 Illustrations</p>
+</div>
+
+<div class="content">
+
+  <h2>How to Use These Prompts</h2>
+  <p>Each prompt below is self-contained and ready to paste into an image generator. Generate <strong>Illustration 1 first</strong> — use it as your style and character reference for all subsequent images to ensure consistency across the book.</p>
+
+  <div class="callout amber">
+    <div class="label">Recommended workflow</div>
+    <p><strong>DALL-E 3 (via ChatGPT):</strong> Paste the full prompt. After generating Illo 1, attach it as an image in the chat and ask "using this image as a style reference, generate the next illustration" for each subsequent prompt.</p>
+    <p><strong>Midjourney:</strong> Use the Midjourney parameters shown under each prompt. After generating character images, use <code>--cref [url]</code> to lock character appearance and <code>--sref [url]</code> to lock style across all images.</p>
+  </div>
+
+  <h2>Style Guide (applies to every illustration)</h2>
+  <p>Include this style block mentally in every prompt — it is the visual contract for the whole book:</p>
+  <div class="prompt-text">Children's picture book illustration. Sharp, editorial linework with clean edges. Rich, saturated color palette: forest greens, warm golds, deep amber, and parchment. Not soft watercolor — crisp digital illustration with strong outlines. Anthropomorphic animal characters that clearly read as their species from a distance. Warm enchanted forest setting with dappled light. Magical but grounded — no sparkles or fairy dust, just a world with its own quiet logic.</div>
+
+  <h2>Character Reference</h2>
+  <p>Paste these descriptions into your first prompt and reference characters by name in subsequent prompts.</p>
+  <table class="char-table">
+    <thead><tr><th>Character</th><th>Description (use in prompts)</th></tr></thead>
+    <tbody>
+      <tr><td>Vera</td><td>A red fox girl, approximately 8 years old, anthropomorphic and child-sized. She stands tall and purposeful. Her large ears are expressive — pricked forward when confident, folded halfway back when she is wrong or caught. She carries a long handwritten list. Her posture is decisive: already facing the direction she intends to go.</td></tr>
+      <tr><td>Pip</td><td>A grey-brown squirrel boy, approximately 8 years old, anthropomorphic and child-sized. Wide bright eyes. Large fluffy tail. Almost always in motion — mid-leap, just-landed, or holding something he found. Earnest and enthusiastic. His props are always slightly wrong for the situation (a stick, two lantern mushrooms in full daylight, etc.).</td></tr>
+      <tr><td>Sage</td><td>A green-brown turtle girl, approximately 8 years old, anthropomorphic and child-sized, with a smooth rounded shell on her back. She moves slowly and deliberately — one foot fully placed before the next begins. She frequently has one hand resting gently on a surface (rock, bark, water). Her expression is calm and watchful. She notices things no one else does.</td></tr>
+      <tr><td>Bram</td><td>An adult-sized beaver with a broad flat tail and brown fur. He wears a hard hat made from a curved piece of bark. His expression is that of someone who has seen many floods and is unmoved by urgency. Solid, immovable, kind. Built like someone who does hard, slow, permanent work.</td></tr>
+    </tbody>
+  </table>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <h2>The 12 Illustration Prompts</h2>
+
+  <!-- ILLO 1 -->
+  <div class="prompt-block">
+    <div class="prompt-header">
+      <span class="prompt-num">Illo 1</span>
+      <span class="prompt-title">Ordinary Tuesday — Establishing Shot</span>
+      <span class="prompt-meta">Full spread &nbsp;·&nbsp; Aspect 2:1</span>
+    </div>
+    <div class="prompt-text">Children's picture book illustration, sharp editorial linework, rich forest greens and warm golds, crisp digital, not watercolor.
+
+A wide establishing shot of an ordinary Tuesday morning in an enchanted forest village called Whisperwood. Three things happening simultaneously in a single composition:
+
+Left area: A turtle girl (Sage) sits perfectly still at the edge of a gently flowing river, watching tadpoles. She is the calmest thing in the image — one hand resting lightly on a mossy rock beside her.
+
+Center/above: A squirrel boy (Pip) falls from a tree branch, arms windmilling, completely undignified. A large snapped branch falls with him. His expression is surprised but not afraid — this has happened before.
+
+Right area: A red fox girl (Vera) sits with her back against a great magical tree (the Mapleaf tree — it has distinctive golden glowing veins running through its large leaves). She is writing in a very long handwritten list with total focus. The list is visibly extremely long.
+
+The forest is warm and golden. Everything is fine. The mood is: completely ordinary. Enchanted forest village visible in the background — small cottages, cozy and nestled.
+
+In the far distant background, barely visible: a small cottage with a mouse-sized father sitting on a stump outside, completely calm. A sleeping baby in a basket beside him. A perfectly ordinary Tuesday for them too.
+
+Wide horizontal composition for a two-page spread.</div>
+    <div class="mj-params">--ar 2:1 --v 6.1 --style raw</div>
+  </div>
+
+  <!-- ILLO 2 -->
+  <div class="prompt-block">
+    <div class="prompt-header">
+      <span class="prompt-num">Illo 2</span>
+      <span class="prompt-title">The Mapleaf Veins Go Dark</span>
+      <span class="prompt-meta">Single page &nbsp;·&nbsp; Aspect 1:1</span>
+    </div>
+    <div class="prompt-text">Children's picture book illustration, sharp editorial linework, rich forest greens and golds, crisp digital.
+
+Two-panel or split composition:
+
+Top/left panel: Close-up on the leaves of a great magical tree. The glowing golden veins in the leaves have turned dark — deep, ominous, branching like cracks in the earth. The darkness is spreading. This is a warning.
+
+Bottom/right panel: Below the tree, the red fox girl Vera is already on her feet — list still in her paw, body already turned and moving in a decisive direction. She didn't wait. In the same moment, the squirrel boy Pip lands directly on her head from a branch above. His tail flicks. He looks startled. She looks intensely focused despite having a squirrel on her head.
+
+The contrast between her absolute purposefulness and the absurdity of the situation (squirrel on head) is the humor of the image.</div>
+    <div class="mj-params">--ar 1:1 --v 6.1 --style raw</div>
+  </div>
+
+  <!-- ILLO 3 -->
+  <div class="prompt-block">
+    <div class="prompt-header">
+      <span class="prompt-num">Illo 3</span>
+      <span class="prompt-title">Sage Rings the Bellflower</span>
+      <span class="prompt-meta">Single page &nbsp;·&nbsp; Aspect 1:1</span>
+    </div>
+    <div class="prompt-text">Children's picture book illustration, sharp editorial linework, rich forest greens and golds, crisp digital.
+
+A turtle girl (Sage) stands at the edge of a river, completely still. She has one hand wrapped around the stem of a large bellflower — a magical flower used for communication — and she is mid-ring. The flower's rings radiate outward as visible golden sound waves spreading across the forest.
+
+The river behind her is visibly wrong: the water is higher than it should be, creeping up the muddy bank in a way that is slow and ominous rather than dramatic. Not rushing — rising. Tree roots that should be above the waterline are submerged.
+
+Sage's expression is calm and certain. She is not panicking. She is informing.
+
+Across the river in the distant background: a small family of mice. A mother mouse has paused in the middle of hanging a tiny curtain in their doorway. A father mouse and their children are all looking toward the sound of the bellflower. A young son mouse is craning forward with obvious interest.</div>
+    <div class="mj-params">--ar 1:1 --v 6.1 --style raw</div>
+  </div>
+
+  <!-- ILLO 4 -->
+  <div class="prompt-block">
+    <div class="prompt-header">
+      <span class="prompt-num">Illo 4</span>
+      <span class="prompt-title">Pip and His Stick</span>
+      <span class="prompt-meta">Single page &nbsp;·&nbsp; Aspect 1:1</span>
+    </div>
+    <div class="prompt-text">Children's picture book illustration, sharp editorial linework, rich forest greens and golds, crisp digital.
+
+A squirrel boy (Pip) stands at the edge of a rising river holding a comically large stick with total earnestness. The stick is too big for him and clearly not helping anything. He has a leaf stuck to his ear. His expression is completely sincere — he is helping, and he knows it.
+
+Beside him, a turtle girl (Sage) has gone very still. Her hand rests on a riverside rock. She is looking at something we cannot quite see. Her stillness is a different kind of presence from Pip's busy-ness.
+
+Behind them, the river is visibly higher than it should be — water lapping up the bank.
+
+At the very edge of the image, disappearing around a bend in the path, is a red fox girl (Vera) — already gone. Only the tail end of her shape and her retreating silhouette are visible. She is already running. She is already sure.</div>
+    <div class="mj-params">--ar 1:1 --v 6.1 --style raw</div>
+  </div>
+
+  <!-- ILLO 5 -->
+  <div class="prompt-block">
+    <div class="prompt-header">
+      <span class="prompt-num">Illo 5</span>
+      <span class="prompt-title">Vera Before Bram</span>
+      <span class="prompt-meta">Single page &nbsp;·&nbsp; Aspect 1:1</span>
+    </div>
+    <div class="prompt-text">Children's picture book illustration, sharp editorial linework, rich forest greens and golds, crisp digital.
+
+A red fox girl (Vera) stands very still in front of a large adult beaver (Bram). Bram wears a hard hat made from a curved piece of bark. He is solid and completely immovable — he has seen many floods and is not impressed by urgency.
+
+Vera's ears are folded halfway back. This is the first time we've seen her ears anywhere except fully upright and forward. She is caught. She is wrong. She is working out what to do with that.
+
+Bram's expression is not unkind. He is simply certain.
+
+The contrast between Vera's usual decisive forward-lean and this moment of total stillness is the heart of the image. Behind them: a beaver dam visible in the river, solid and well-built. The river visibly higher than normal.</div>
+    <div class="mj-params">--ar 1:1 --v 6.1 --style raw</div>
+  </div>
+
+  <!-- ILLO 6 -->
+  <div class="prompt-block">
+    <div class="prompt-header">
+      <span class="prompt-num">Illo 6</span>
+      <span class="prompt-title">Listening to the Boulder — KEY IMAGE</span>
+      <span class="prompt-meta">Full spread &nbsp;·&nbsp; Aspect 2:1 &nbsp;·&nbsp; Most important image in the book</span>
+    </div>
+    <div class="prompt-text">Children's picture book illustration, sharp editorial linework, rich forest greens and golds, crisp digital.
+
+A turtle girl (Sage) presses her hand flat against an enormous ancient moss-covered boulder. Her eyes are closed. She is completely still. She is listening in a way that requires her whole body.
+
+Beside her, a squirrel boy (Pip) has drifted so close to the rock — nose nearly touching its surface — that he is leaning at an absurd angle, nearly falling over. He is copying something he doesn't understand. He has been drawn in by Sage's stillness without quite knowing why. Sage's other hand rests gently on his shoulder — the only thing keeping him upright.
+
+The boulder is vast and ancient. It is covered in generations of soft green moss. It has been in this spot since before memory.
+
+The river rises behind them, visibly wrong.
+
+In the background, a family of mice cross behind them:
+- A mother mouse carrying a small framed painting tucked under one arm (a portrait of their old home)
+- A father mouse carrying a sleeping baby bundled on his back
+- An older daughter mouse writing in a small notebook while walking
+- A young son mouse staring directly at Pip and the rock with intense, unabashed curiosity
+- A mother mouse's other hand is firmly on the young son's collar
+
+This is the whole book in one image: two completely different ways of listening, held together.</div>
+    <div class="mj-params">--ar 2:1 --v 6.1 --style raw</div>
+  </div>
+
+  <!-- ILLO 7 -->
+  <div class="prompt-block">
+    <div class="prompt-header">
+      <span class="prompt-num">Illo 7</span>
+      <span class="prompt-title">Fox Was Wrong (Sort Of)</span>
+      <span class="prompt-meta">Single page &nbsp;·&nbsp; Aspect 1:1</span>
+    </div>
+    <div class="prompt-text">Children's picture book illustration, sharp editorial linework, rich forest greens and golds, crisp digital.
+
+Three friends at the edge of a rising river.
+
+The squirrel boy (Pip) is beaming. His smile is enormous and utterly sincere — the biggest thing in the image. He has just said something cheerful and slightly wrong and completely kind.
+
+The red fox girl (Vera) is caught mid-moment: her ears are not all the way back up yet, but they are rising. She has been wrong. She is finding her footing. She is going to be okay.
+
+The turtle girl (Sage) is looking at the water, not at the others. She is already thinking about what comes next.
+
+The mood is: something went wrong, and we are still okay. Not triumph — just warmth and the absence of disaster.
+
+The river rises in the background, still a problem, not yet solved.</div>
+    <div class="mj-params">--ar 1:1 --v 6.1 --style raw</div>
+  </div>
+
+  <!-- ILLO 8 -->
+  <div class="prompt-block">
+    <div class="prompt-header">
+      <span class="prompt-num">Illo 8</span>
+      <span class="prompt-title">Night Work — Split Panel</span>
+      <span class="prompt-meta">Single page &nbsp;·&nbsp; Aspect 1:1</span>
+    </div>
+    <div class="prompt-text">Children's picture book illustration, sharp editorial linework, rich forest greens and golds, crisp digital.
+
+Split composition — two scenes in one image:
+
+TOP HALF: Underground cross-section showing rabbit tunnels beneath the forest floor. The tunnels are warm and lamp-lit. Small rabbits with calm expressions guide even smaller creatures through the passages — mice with bundles, voles, small animals. No panic. Just efficient, practiced calm. The underground world is cozy and competent.
+
+BOTTOM HALF: Above ground at night. The red fox girl (Vera) stands beneath the Mapleaf tree, looking up at its glowing veins. One branch of the tree points visibly to the left. She is already walking toward where she needs to go. In the far background, through the dark trees: the squirrel boy (Pip) is a blur of motion, already sprinting away through the forest, already gone.</div>
+    <div class="mj-params">--ar 1:1 --v 6.1 --style raw</div>
+  </div>
+
+  <!-- ILLO 9 -->
+  <div class="prompt-block">
+    <div class="prompt-header">
+      <span class="prompt-num">Illo 9</span>
+      <span class="prompt-title">Singing to the Mud — Community Image</span>
+      <span class="prompt-meta">Full spread &nbsp;·&nbsp; Aspect 2:1 &nbsp;·&nbsp; The warmest image in the book</span>
+    </div>
+    <div class="prompt-text">Children's picture book illustration, sharp editorial linework, rich forest greens and warm golds, crisp digital.
+
+A large group of anthropomorphic forest animals gathered at the river's edge in the dark, all singing together. The mud at the water's edge is visibly moving — it is curving and channeling itself, shifting left toward a mossy clearing. This is magical singing mud responding to collective sound.
+
+In the foreground: the squirrel boy (Pip), mouth thrown completely open, giving everything he has to this note. His whole body is in it. He is singing with his entire self.
+
+At the front of the group: the red fox girl (Vera) with one paw raised, conducting. She is focused and purposeful.
+
+At the back of the crowd: the turtle girl (Sage), present and steady, also singing, quietly but fully there.
+
+In the middle of the crowd: an otter, arms crossed, but mouth open and singing anyway. He was asked twice. He complained once. He is here.
+
+Also visible: a family of deer, three raccoons, two other beavers.
+
+The feeling is warm, slightly chaotic, everyone together.
+
+At the edge of the image, near their flooded burrow entrance: a mouse family watching. A mother mouse watching the water level intently. A father mouse calm beside her. A young son mouse watching Pip's singing technique with deep focus. An older daughter mouse writing in her notebook. A sleeping baby.</div>
+    <div class="mj-params">--ar 2:1 --v 6.1 --style raw</div>
+  </div>
+
+  <!-- ILLO 10 -->
+  <div class="prompt-block">
+    <div class="prompt-header">
+      <span class="prompt-num">Illo 10</span>
+      <span class="prompt-title">The Redirect Works</span>
+      <span class="prompt-meta">Single page &nbsp;·&nbsp; Aspect 1:1</span>
+    </div>
+    <div class="prompt-text">Children's picture book illustration, sharp editorial linework, rich forest greens and golds, crisp digital.
+
+The mud redirect is working. A new channel has been carved through the riverbank by the singing mud — visible as a curving path of disturbed earth. Water flows left along it into a mossy clearing.
+
+The crowd of forest animals watches from the bank. Some are sitting down. Some are standing. The mood is collective exhale — relief, quiet satisfaction, tiredness.
+
+Luminescent green moss glows softly along the path and on the bank, providing warm light in the dark. The river behind them is visibly calmer.
+
+In the background: the mouse family at their burrow entrance. The water level at the burrow has dropped. A father mouse is watching it with great, studied calm. He gives a mother mouse a single nod. She nods back. This is everything.</div>
+    <div class="mj-params">--ar 1:1 --v 6.1 --style raw</div>
+  </div>
+
+  <!-- ILLO 11 -->
+  <div class="prompt-block">
+    <div class="prompt-header">
+      <span class="prompt-num">Illo 11</span>
+      <span class="prompt-title">Beavers at the River Bend — Dawn</span>
+      <span class="prompt-meta">Single page &nbsp;·&nbsp; Aspect 1:1</span>
+    </div>
+    <div class="prompt-text">Children's picture book illustration, sharp editorial linework, rich warm golds and greens, crisp digital.
+
+Early morning. Dawn light — pink and gold in the sky, long shadows, dew on everything.
+
+Four small beavers working to move an enormous fallen oak tree that lies heavy across a river channel. The tree is much, much larger than the beavers — the scale mismatch is important. Four small determined creatures against a great old tree.
+
+Bram, the head beaver, stands in his hard hat made of bark, directing. His expression is focused and unhurried. This is what he does.
+
+In the channel behind the tree, water is beginning to move again — visible as a brightening, a flow returning to the river.
+
+The sense of the image: this is hard, satisfying, permanent work. The temporary fix is being replaced by the real one.</div>
+    <div class="mj-params">--ar 1:1 --v 6.1 --style raw</div>
+  </div>
+
+  <!-- ILLO 12 -->
+  <div class="prompt-block">
+    <div class="prompt-header">
+      <span class="prompt-num">Illo 12</span>
+      <span class="prompt-title">Walking Home — Final Spread</span>
+      <span class="prompt-meta">Full spread &nbsp;·&nbsp; Aspect 2:1 &nbsp;·&nbsp; This image echoes across all 8 books</span>
+    </div>
+    <div class="prompt-text">Children's picture book illustration, sharp editorial linework, rich warm morning light, crisp digital.
+
+The three friends walking home on a dappled forest path in full morning sunshine.
+
+In front: the squirrel boy (Pip), holding one glowing lantern mushroom in each raised paw like torches — completely unnecessarily. It is broad daylight. He is marching. He is very pleased with himself.
+
+Behind him: the red fox girl (Vera) and the turtle girl (Sage) walking side by side. Vera's ears are fully upright again. Sage walks at her own pace.
+
+The path is warm. The forest has exhaled. The light is golden and full.
+
+In the far background, almost hidden between the trees: the mouse family's temporary shelter. A mother mouse is outside, hanging a small framed painting on the exterior wall — it is a portrait of their old home. A father mouse sits on a stump by the door, completely calm. A sleeping baby in his arms. An older daughter mouse sits on the step, writing in her notebook. A young son mouse watches the trio walk away, clearly still hoping something interesting will happen. Nothing will. Not today.
+
+This is the final image of the book. It will echo in all eight books — always the same path home, glow mushrooms or morning light, the trio walking together.</div>
+    <div class="mj-params">--ar 2:1 --v 6.1 --style raw</div>
+  </div>
+
+  <div class="callout">
+    <div class="label">After you have the first image</div>
+    <p>Generate Illustration 1 first and get the style and characters looking right. Then use that image as a visual reference for all subsequent prompts — in DALL-E by attaching it as a reference image, in Midjourney using <code>--sref</code> and <code>--cref</code>. Character consistency across 12 images is the main challenge. Budget extra rounds for Illustrations 6 and 9 (the key spreads) — those will take the most iteration.</p>
+  </div>
+
+</div>
+
+<div class="doc-footer">
+  Whisperwood Book 1 &nbsp;&middot;&nbsp; Image Prompts &nbsp;&middot;&nbsp; Confidential &nbsp;&middot;&nbsp; &copy; Reena Gellerup 2026
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf"
+         unique-identifier="uid" xml:lang="en">
+
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier id="uid">whisperwood-book1-rising-river</dc:identifier>
+    <dc:title>The Rising River</dc:title>
+    <dc:creator>Reena Gellerup</dc:creator>
+    <dc:language>en</dc:language>
+    <dc:publisher>Whisperwood Books</dc:publisher>
+    <dc:description>A Whisperwood Story — Book One. When the river behind Whisperwood begins to rise in the night, Vera, Pip, and Sage must work together to protect the burrows before morning.</dc:description>
+    <dc:subject>Children's Fiction</dc:subject>
+    <dc:subject>Early Reader</dc:subject>
+    <dc:subject>Ages 4-6</dc:subject>
+
+    <!-- Fixed layout metadata — required for Kindle children's books -->
+    <meta property="rendition:layout">pre-paginated</meta>
+    <meta property="rendition:spread">auto</meta>
+    <meta property="rendition:orientation">auto</meta>
+
+    <!-- Series metadata -->
+    <meta property="belongs-to-collection" id="series">Whisperwood</meta>
+    <meta refines="#series" property="collection-type">series</meta>
+    <meta refines="#series" property="group-position">1</meta>
+  </metadata>
+
+  <manifest>
+    <!-- Navigation -->
+    <item id="nav"      href="nav.xhtml"         media-type="application/xhtml+xml" properties="nav"/>
+    <!-- Stylesheet -->
+    <item id="css"      href="css/fixed.css"      media-type="text/css"/>
+    <!-- Pages -->
+    <item id="cover"    href="pages/cover.xhtml"   media-type="application/xhtml+xml" properties="svg"/>
+    <item id="titlepage"href="pages/titlepage.xhtml" media-type="application/xhtml+xml"/>
+    <item id="ch01a"    href="pages/ch01a.xhtml"   media-type="application/xhtml+xml"/>
+    <item id="ch01b"    href="pages/ch01b.xhtml"   media-type="application/xhtml+xml"/>
+    <item id="ch02"     href="pages/ch02.xhtml"    media-type="application/xhtml+xml"/>
+    <item id="ch03"     href="pages/ch03.xhtml"    media-type="application/xhtml+xml"/>
+    <item id="ch04a"    href="pages/ch04a.xhtml"   media-type="application/xhtml+xml"/>
+    <item id="ch04b"    href="pages/ch04b.xhtml"   media-type="application/xhtml+xml"/>
+    <item id="ch05"     href="pages/ch05.xhtml"    media-type="application/xhtml+xml"/>
+    <item id="ch06"     href="pages/ch06.xhtml"    media-type="application/xhtml+xml"/>
+    <item id="ch07a"    href="pages/ch07a.xhtml"   media-type="application/xhtml+xml"/>
+    <item id="ch07b"    href="pages/ch07b.xhtml"   media-type="application/xhtml+xml"/>
+    <item id="ch08a"    href="pages/ch08a.xhtml"   media-type="application/xhtml+xml"/>
+    <item id="ch08b"    href="pages/ch08b.xhtml"   media-type="application/xhtml+xml"/>
+    <item id="ch08c"    href="pages/ch08c.xhtml"   media-type="application/xhtml+xml"/>
+    <item id="endpage"  href="pages/endpage.xhtml"  media-type="application/xhtml+xml"/>
+  </manifest>
+
+  <spine>
+    <!-- Cover: right-hand page of first opening -->
+    <itemref idref="cover"     properties="rendition:page-spread-right"/>
+    <itemref idref="titlepage" properties="rendition:page-spread-right"/>
+    <!-- Ch 1 spread (Illo 1 — establishing shot) -->
+    <itemref idref="ch01a"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch01b"     properties="rendition:page-spread-right"/>
+    <itemref idref="ch02"      properties="rendition:page-spread-left"/>
+    <itemref idref="ch03"      properties="rendition:page-spread-right"/>
+    <itemref idref="ch04a"     properties="rendition:page-spread-left"/>
+    <!-- Key spread: Sage/rock (Illo 6) — full bleed two pages -->
+    <itemref idref="ch04b"     properties="rendition:page-spread-right"/>
+    <itemref idref="ch05"      properties="rendition:page-spread-left"/>
+    <itemref idref="ch06"      properties="rendition:page-spread-right"/>
+    <!-- Community spread: singing mud (Illo 9) -->
+    <itemref idref="ch07a"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch07b"     properties="rendition:page-spread-right"/>
+    <itemref idref="ch08a"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch08b"     properties="rendition:page-spread-right"/>
+    <!-- Final spread (Illo 12) -->
+    <itemref idref="ch08c"     properties="rendition:page-spread-left"/>
+    <itemref idref="endpage"   properties="rendition:page-spread-right"/>
+  </spine>
+
+</package>
