@@ -1,0 +1,193 @@
+/* Whisperwood Book 1 — Fixed Layout ePub Stylesheet */
+/* Replace placeholder SVGs with <img> tags pointing to final artwork */
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: #2d5a27;
+  overflow: hidden;
+}
+
+/* ── Single page (1700 × 1700) ─────────────────── */
+.page {
+  width: 1700px;
+  height: 1700px;
+  position: relative;
+  background: #f9f3e8;
+  overflow: hidden;
+}
+
+/* ── Spread page (3400 × 1700) ─────────────────── */
+.spread {
+  width: 3400px;
+  height: 1700px;
+  position: relative;
+  background: #f9f3e8;
+  overflow: hidden;
+}
+
+/* ── Illustration placeholder ───────────────────── */
+/* TO REPLACE: remove .illo-placeholder and swap in:
+   <img src="../images/illo-N.jpg" alt="..." class="illo-img"/> */
+.illo-placeholder {
+  position: absolute;
+  background: #2d5a27;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.illo-placeholder .illo-num {
+  font-family: Georgia, serif;
+  font-size: 72px;
+  color: #fce070;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.illo-placeholder .illo-desc {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  color: #c8e6c2;
+  text-align: center;
+  padding: 0 80px;
+  line-height: 1.5;
+  max-width: 80%;
+}
+.illo-placeholder .illo-note {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #4a7c59;
+  font-style: italic;
+}
+
+/* Final artwork image (used when real art is ready) */
+.illo-img {
+  position: absolute;
+  object-fit: cover;
+}
+
+/* ── Text panel ─────────────────────────────────── */
+.text-panel {
+  position: absolute;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 50px;
+  line-height: 1.65;
+  color: #1a1a1a;
+  background: rgba(249, 243, 232, 0.97);
+}
+
+.text-panel .chapter-label {
+  font-size: 28px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #4a7c59;
+  margin-bottom: 12px;
+}
+
+.text-panel .chapter-title {
+  font-size: 72px;
+  font-weight: bold;
+  color: #2d5a27;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.text-panel p {
+  margin-bottom: 28px;
+}
+
+.text-panel p:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Cover page ─────────────────────────────────── */
+.cover-page {
+  width: 1700px;
+  height: 1700px;
+  position: relative;
+  background: linear-gradient(160deg, #1e4020 0%, #2d5a27 60%, #4a7c59 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.cover-series {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #a8d4a0;
+  margin-bottom: 40px;
+}
+.cover-title {
+  font-family: Georgia, serif;
+  font-size: 130px;
+  font-weight: bold;
+  color: #fce070;
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 30px;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.5);
+  padding: 0 80px;
+}
+.cover-subtitle {
+  font-family: Georgia, serif;
+  font-size: 52px;
+  font-style: italic;
+  color: #c8e6c2;
+  margin-bottom: 80px;
+}
+.cover-author {
+  font-family: Georgia, serif;
+  font-size: 44px;
+  color: #e8f5e4;
+  letter-spacing: 2px;
+}
+.cover-note {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  color: #4a7c59;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+/* ── End page ───────────────────────────────────── */
+.end-page {
+  width: 1700px;
+  height: 1700px;
+  position: relative;
+  background: #f9f3e8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.end-title {
+  font-family: Georgia, serif;
+  font-size: 90px;
+  font-weight: bold;
+  color: #2d5a27;
+  margin-bottom: 20px;
+}
+.end-sub {
+  font-family: Georgia, serif;
+  font-size: 52px;
+  font-style: italic;
+  color: #4a7c59;
+  margin-bottom: 80px;
+}
+.end-series {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  color: #777;
+  line-height: 1.8;
+}
+.end-copyright {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #aaa;
+  margin-top: 60px;
+}
