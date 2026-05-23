@@ -95,13 +95,13 @@ Vera went there first, because the owls tracked the songbird network and she nee
 
 "Yes," said Oswin. "So did the last three creatures who came to me."
 
-Vera's ears went back. "What?"
+Vera's ears went back. "What have the others tried?"
 
 "The deer family tried moving away from the worst relay point. The noise followed them. The raccoons tried to intervene in the relay chain at the eastern fork." Oswin folded his wings. "It made things worse. More birds joined to correct the correction."
 
-Vera was very still.
+Vera was very still. The Mapleaf had told her nothing useful. She had thought she already knew the shape of this.
 
-"The problem is not the schedule," said Oswin. "The birds are already trying to be organized. Every bird works harder so the news reaches the next bird clearly. The harder they work, the louder it gets. The louder it gets, the harder each bird works. It is a loop." He tapped the desk. "You cannot fix a loop by adding more order to it. You need to find where the loop crosses itself — and interrupt it there."
+"The problem is not the schedule," said Oswin. "The birds are already trying to be organized. Every bird works harder so the news reaches the next bird clearly. The harder they work, the louder it gets. The louder it gets, the harder each bird works. It is a loop. Like a path that doubles back on itself — where the path crosses is where the noise stacks up. You cannot fix a loop by adding more order to it. You need to find where the loop crosses itself — and interrupt it there."
 
 Vera's list was in her paw.
 
@@ -121,7 +121,7 @@ Her head ached. Her shell felt tight.
 
 Pip found her there.
 
-"I tried something," he said, dropping onto the step beside her.
+"I tried something," he said, dropping onto the step beside her, a stick still in one paw.
 
 "What did you try?"
 
@@ -129,7 +129,7 @@ Pip looked slightly less certain than usual. "I went to the relay point at the e
 
 Sage looked at him.
 
-"It worked for about four seconds," said Pip. "And then every bird in the eastern section joined in to relay my voice as well. I think there is now a message going around the forest that says 'LOUD NOISE AT EASTERN FORK.'" He set down the stick he'd been carrying. "That is not helpful."
+"It worked for about four seconds," said Pip. "And then every bird in the eastern section joined in to relay my voice as well. I think there is now a message going around the forest that says 'LOUD NOISE AT EASTERN FORK.'" He set down the stick. "That is not helpful."
 
 Sage almost smiled.
 
@@ -161,11 +161,11 @@ It was hard.
 
 The first relay point made her stop on the path. The second made her close her eyes. At the third — the loudest, high in a forked elm above the owl's library tree — she stood with her jaw set and her hand flat on the bark for a long time.
 
-At the base of the elm, the mouse family sat in their temporary shelter. Pa Mouse was very calm. Ma Mouse held the framed painting. Big Daughter had her notebook open. Baby was asleep.
+At the base of the elm, the mouse family sat in their temporary shelter — Pa very calm, Ma holding the framed painting, Big Daughter's notebook open, Baby asleep.
 
 Sage breathed in. She breathed out. She stayed.
 
-Because here — at the loudest spot in the whole relay — she could feel something the others had missed. Three relay chains crossed at this elm. They amplified each other. Dampen this intersection, and the loop would thin.
+Because here — at the loudest spot in the whole relay — she could feel something the others had missed. Three relay chains crossed at this elm. Each one fed the others, and all three grew louder. Quiet this crossing point, and the whole loop would shrink.
 
 She opened her eyes.
 
@@ -187,7 +187,7 @@ Oswin knew where the quietcap mushrooms grew.
 
 Of course he did.
 
-He led them to the quietcap grove — Vera, Pip, Sage, two apprentice owls, three raccoons. The mushrooms were pale and round. Each one absorbed sound the way wool absorbs water: quietly, completely.
+He led them to the quietcap grove — Vera, Pip, Sage, two apprentice owls, and the same three raccoons who had tried the eastern fork. The mushrooms were pale and round. Each one absorbed sound the way wool absorbs water: quietly, completely.
 
 "Three locations," said Vera. She looked at Sage. "You're certain?"
 
@@ -213,11 +213,13 @@ Pip stood in the path and listened.
 
 "Oh," he said softly.
 
+It had been Pip who knew where every relay point was. Without his scouting, Sage could not have found what she was listening for.
+
 From the bakery, a light came on. Hazel was starting her dough.
 
 "She's making rolls," Pip whispered. "Sage. Rolls."
 
-"I'll be there first thing," said Pip.
+Sage looked at the light in the bakery window.
 
 "You always are," said Sage.
 
@@ -247,11 +249,14 @@ Whisperwood is an enchanted forest where the enchantment is part of everyday lif
 **Quietcap Mushrooms**
 Round, pale mushrooms that absorb sound. Each one works quietly and completely. They cannot make noise; they can only take it away.
 *Rule: They absorb. They do not produce. Place them where the noise is worst.*
+*Illustrator note: Pale, dome-shaped, growing in tight clusters; soft-edged and matte, as though they absorb light as well as sound.*
 
 **Songbirds**
 The news network of Whisperwood. Fast, wide-ranging, and not always accurate. A message grows louder with each relay — useful for speed, unreliable for quiet.
 *Rule: Songbirds transmit. They do not verify.*
+*Illustrator note: Small and quick-moving; a dozen overlapping in mid-flight, each one slightly smaller and higher than the last.*
 
 **Owls**
 The librarians and scientists of Whisperwood. They know where things are, what things do, and why things are the way they are. They will not give you answers you have not asked for.
 *Rule: You have to ask the right question.*
+*Illustrator note: Oswin wears bark spectacles and is surrounded by shelves; the library tree is enormous inside, slightly overwhelming in scale.*

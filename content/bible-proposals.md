@@ -160,3 +160,22 @@ The following changes have already been made to `content/Whisperwood Series Bibl
 2. **Section 2, Infrastructure: Specialists table, Owls row** — head owl Oswin added: "Head owl: Oswin (reading spectacles made of two curved pieces of bark; introduced in Book 2)."
 
 3. **Section 3, Recurring Supporting Characters table** — new row added for Hazel (Hedgehog): village baker who makes rolls before dawn; her inability to bake is the community signal that something has gone badly wrong; introduced in Book 2.
+
+---
+
+## Proposal 8 — 2026-05-23
+
+**Proposed by:** Clara (cross-consistency review)
+**Regarding:** Section 2 Specialists table (Bunnies row) and Section 5 Book 1 outline
+**Summary of change:** Correct the bunny description and the Book 1 outline to match the finished Book 1 text, which shows bunnies guiding the mouse evacuation along high paths above ground, not through underground tunnels.
+**Reason given:** During a flood, underground tunnels would be flooded and unusable. The finished Book 1 text (Chapter 6 and the back matter "The Bunny Network") correctly depicts bunnies moving along high paths. The bible was never updated to match the finished manuscript.
+
+**Emily's decision:** APPROVED
+
+**Reasoning:** This is an internally consistent correction. The world physics are sound: underground tunnels are a flood casualty, so bunnies routing along the forest's high paths during a flood evacuation is the only logical option. The finished book got this right. The bible had not been updated to match. Correcting the bible eliminates a contradiction that could send a future writer down the wrong path — depicting bunnies routing through tunnels during Book 8's flood-adjacent crisis (which references Book 1) would be a world-physics error. The correction also enriches the bunnies' profile: they are path-knowledge specialists in all terrain, not merely underground specialists, which makes them a more flexible and interesting resource for Books 2–8 without weakening anything. Book 3's arc table entry ("Underground tunnels") is deliberately left unchanged — that entry refers to bunnies routing winter stores through tunnels in a non-flood scenario, which is entirely consistent with the updated rule.
+
+**What was changed:**
+
+1. **Section 2, Infrastructure: Specialists table, Bunnies row** — description rewritten from "Underground transit and evacuation specialists. Maintain a network of tunnels throughout Whisperwood. Move calmly and efficiently in a crisis. Cannot solve above-ground problems but are irreplaceable for below-ground or mass-movement situations." to "Evacuation and transit specialists. They know every safe path — above ground and below — throughout Whisperwood. Move calmly and efficiently in a crisis. In above-ground evacuations, they guide along the forest's high paths. In non-flood scenarios, they can also route through their underground tunnel network."
+
+2. **Section 5, Book 1 outline, Solution paragraph** — "Bunnies evacuate the mice underground." changed to "Bunnies guide the mice along the high paths to safety above ground (tunnels would be flooded)."
