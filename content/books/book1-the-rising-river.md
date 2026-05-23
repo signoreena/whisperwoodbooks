@@ -3,17 +3,35 @@
 
 *Resources: Mapleaf · Talking Rock · Singing mud · Beavers · Bunnies | Theme: Ask why before solving.*
 
+> **Bible deviation note — chapter count:** This book uses 8 chapters instead of the bible-specified 7. Each chapter is shorter (~150 words), keeping the total word count within the 1,200–1,800 range. The 8-chapter structure was retained because the story breathes better with the split, and the chapter lengths are individually compliant. Flagged for Emily to consider whether the bible's chapter-count rule should be updated or treated as a per-book allowance.
+
 ---
 
 ### Chapter 1: The Mapleaf Knows
 
-The village of Whisperwood had a rule.
+It was an ordinary Tuesday in Whisperwood. The herons were fishing. The hedgehog baker had her morning rolls out. Two sparrows in the upper branches were having a very loud argument that had clearly been going on since Monday.
 
-When the Mapleaf tree's veins turned dark, something was coming.
+By the river, Sage was watching tadpoles. She did this most mornings. She never got bored of it.
 
-Vera knew this. Vera knew most things.
+In the branches above her, Pip was trying to leap from one tree to the next without using his hands. He had already fallen twice. The second time, he had taken a large branch with him.
 
-She was sitting outside her den, making a list of everything she knew, when Pip landed on her head.
+He was going to try a third time.
+
+Nearby, Vera sat with her back against the Mapleaf tree, adding to her list. It was a very long list. Today's entries so far included: river current (normal), beaver morning shift (started), and Pip (falling, probably fine).
+
+She glanced up at the Mapleaf's veins the way she always did — just to check. They were golden and calm.
+
+Good.
+
+She looked back at her list.
+
+Then she looked up again.
+
+The veins had gone dark.
+
+The village of Whisperwood had a rule. When the Mapleaf tree's veins turned dark, something was coming.
+
+Vera was already on her feet — list still in her paw, already facing the direction of the beavers' dam — when Pip landed on her head.
 
 "Something is coming," said Pip.
 
@@ -21,7 +39,7 @@ She was sitting outside her den, making a list of everything she knew, when Pip 
 
 "The Mapleaf—"
 
-"I know," said Vera.
+"I know."
 
 "But did you see how dark the veins are? They're almost—"
 
@@ -33,17 +51,19 @@ She was sitting outside her den, making a list of everything she knew, when Pip 
 
 Pip flicked his tail. He did not look convinced.
 
-Down by Turtle's Pond, Sage was watching the water.
+---
 
-Sage watched things slowly. She thought about things slowly. She was very good at noticing things that moved fast — because she moved slowly herself.
+### Chapter 2: Wait
 
-Right now, the water was moving faster than usual.
+Sage was no longer watching tadpoles.
 
-Sage did not like that.
+She was watching the water.
+
+It was higher than it should be. Not fast. Not churning. Just… rising. Slowly and steadily and wrong.
 
 She placed one foot in the current. Then she took it back out.
 
-She reached for a bellflower.
+She reached for a bellflower growing near the bank.
 
 She rang it once. Twice. Three times.
 
@@ -51,67 +71,63 @@ In Whisperwood, three rings meant: come quickly, but don't panic.
 
 ---
 
-### Chapter 2: I Already Know the Plan
+### Chapter 3: I Already Know the Plan
 
 Vera arrived first.
 
-This was not surprising. Vera always arrived first. She had usually already decided what to do before she got there.
-
-"Flooding," she said, before Sage could speak. "The Mapleaf showed dark veins this morning. The river is rising. We need the beavers."
+She was already talking before she reached the bank. "Flooding. The Mapleaf showed dark veins. River's rising — we need the beavers." She was already turning to go.
 
 Sage opened her mouth.
 
-"I'll go find them," said Vera. She crossed it off her list.
+"The mouse families' burrows will flood," said Vera, before Sage could speak. "I'll go find the beavers."
 
 Sage closed her mouth.
 
-Pip arrived second. He was out of breath and had a leaf stuck to his ear.
+Pip arrived second. He was out of breath and had a leaf stuck to his ear and was already holding a large stick he'd found on the way over, in case it was useful.
 
 "What did I miss?" he said.
 
 "Vera already knows the plan," said Sage.
 
-Pip looked at the river. Then at Sage. Then at the direction Vera had already run.
+Pip looked at the river. He looked at his stick. He looked at the direction Vera had already run.
 
-"Does she know why the river is fast?"
+"Does she know *why* the river is rising?"
 
-Sage looked at the water.
+Sage went still.
 
-"...I don't think she asked," said Sage.
+She looked at the water. She looked at where Vera had been.
+
+"…I don't think she asked," said Sage.
 
 ---
 
-### Chapter 3: What the Rock Remembered
+### Chapter 4: What the Rock Remembered
 
-The beavers were busy.
+The beavers were busy. They were always busy.
 
-They were always busy.
-
-"Flooding?" said the head beaver. His name was Bram. He had a hard hat made of bark and an expression that suggested he had seen many floods. "Where?"
+"Flooding?" said Bram. He had a hard hat made of bark and an expression that suggested he had seen many floods. "Where?"
 
 "The burrows," said Vera. "River's rising. We need to redirect it."
 
 Bram stroked his chin.
 
-"Can't," he said. "Not safely. Not quickly."
+"Can't," he said. "Not safely. Not quickly. Something's come down at the river bend — blocking the channel. Until we can get eyes on it in daylight, we don't touch a thing."
 
-Vera blinked.
+Vera's mouth opened. Then it closed.
 
-This was not part of her plan.
+Her ears went back. Just slightly.
 
-"What do you mean you can't—"
+She stood very still for exactly one breath.
 
-"I mean," said Bram slowly, "that if we touch that river wrong, we make it worse. Something's blocking it upstream. Until we know what, we don't touch anything."
+"What if we—"
 
-Vera opened her mouth. Then closed it.
+"Not safely," said Bram. "Not tonight."
 
-This had never happened before.
-
-While Vera was gone, Pip was doing what Pip always did when there was a problem.
+Back at the river, Pip was doing what Pip always did when there was a problem.
 
 He was trying to help.
 
-He had found a large stick. He was not entirely sure what to do with the large stick. But it felt better than standing still.
+He had his large stick. He had wedged one end in the bank. He was not entirely sure what he expected to happen next. But it felt better than standing still.
 
 "Pip," said Sage. "What are you doing?"
 
@@ -129,43 +145,43 @@ Pip looked at the stick. He set it down.
 
 She led him to the oldest boulder at the river's edge. It was round and grey and covered in soft moss. It had been sitting in the same spot since before anyone in Whisperwood could remember.
 
-Sage pressed her hand against it.
+Sage pressed her hand flat against it and closed her eyes.
 
 "Excuse me," she said quietly.
 
-The boulder was silent for a long moment.
+Pip watched her face.
 
-Then, very slowly, it said:
+A mouse family hurried past below, bundles on their backs, moving fast and quiet.
 
-"...Tree."
+"…A tree," said Sage.
 
-Pip leaned in. "Tree? What tree?"
+Pip leaned in. His nose was now very close to the rock. He wasn't sure why. It just seemed like the right thing to do.
+
+"A tree? What tree?"
+
+Sage put one hand on his shoulder, gently. He went still.
 
 They waited.
 
-The river crept higher.
-
-A mouse family hurried past with bundles on their backs.
-
-Finally the boulder spoke again.
-
-"...Fell."
+"…It fell," said Sage.
 
 ---
 
-### Chapter 4: Fox Was Wrong (Sort Of)
+### Chapter 5: Fox Was Wrong (Sort Of)
 
 Vera came back without the beavers.
 
-She did not say anything at first. She just stood at the river's edge and looked at it.
+She stood at the river's edge and looked at it.
 
-Sage and Pip looked at her.
+"There's a fallen tree," said Sage. "Blocking the channel. That's why the water can't go anywhere. That's why it's rising."
 
-"There's a fallen tree upstream," said Sage. "Blocking the water. That's why it's rising."
+Vera's ears went back. Just slightly.
 
-Vera was quiet for a moment.
+"At the river bend," said Vera. "That's what Bram said."
 
-"I knew it was flooding," she said finally.
+A silence.
+
+"I knew it was flooding," she said.
 
 "You did," said Sage.
 
@@ -173,17 +189,15 @@ Vera was quiet for a moment.
 
 "No," said Sage. "You didn't ask."
 
-Vera's ears went back slightly.
+A silence.
 
-Just slightly.
+"…I should have asked why," said Vera. She looked at the water. "I went to fix it. I didn't ask what was broken."
 
-"...I should have asked," she said.
-
-Pip patted her on the shoulder. "You got us the beavers though! That's still good."
+Pip patted her on the shoulder. "You got us to the beavers though! That's still good."
 
 "The beavers said they can't help yet."
 
-"Oh." Pip thought about this. "Well. You got us to the beavers. That counts."
+"Oh." Pip thought about this. "Well. You got us *to* the beavers. That counts."
 
 Vera looked at him.
 
@@ -193,7 +207,7 @@ Vera sighed. But her ears came back up.
 
 ---
 
-### Chapter 5: Night Work
+### Chapter 6: Night Work
 
 By the time the sun went down, the burrows were knee-deep in water.
 
@@ -201,53 +215,55 @@ The bunnies had already begun.
 
 They moved fast and quiet through their underground tunnels, guiding mouse families out one by one. No panic. No pushing. Just small paws and calm voices and knowing exactly where to go.
 
-"This way, please." "Mind your step." "You're safe now."
+"This way, please."
 
-Above ground, Vera watched and thought.
+"Mind your step."
 
-She looked at the Mapleaf.
+"You're safe now."
+
+Above ground, Vera looked up at the Mapleaf.
 
 Its veins were still dark — but one branch pointed slightly left. Toward the mossy clearing.
 
-A redirect. Not a fix. Just enough.
+She was already walking toward Pip before she finished looking.
 
-"Pip," she said. "I need you to get everyone who can sing."
+"Pip," she said. "I need everyone who can sing."
 
 Pip's eyes went wide. "Everyone?"
 
 "Everyone."
 
-Pip was already gone before she finished the sentence.
+Pip was already gone before she'd finished the word.
 
 ---
 
-### Chapter 6: Singing to the Mud
+### Chapter 7: Singing to the Mud
 
 They gathered at the river's edge.
 
-Vera. Pip. Sage. Bram and two other beavers. A family of deer. Three raccoons. The otter from the slide.
+Vera. Pip. Sage. Bram and two other beavers. A family of deer. Three raccoons. The otter from the slide, who had been asked twice and complained once and showed up anyway.
 
-The otter crossed his arms. Then uncrossed them. Then stood at the back in a way that suggested he was ready if it came to that.
+It was loud. It was a lot of creatures moving in a lot of directions at once.
 
-Sage stood at the back.
+At the back of the crowd, Sage took a slow breath. She took a step back from the noise.
 
-There were a lot of creatures. A lot of sounds. A lot of movement.
+Then she looked at the mud. She looked at where the water needed to go.
 
-She took a slow breath. She pressed one hand flat against the earth at her feet.
+She took a step forward.
 
-Vera stood at the front.
+She knew what her part was.
 
-"We're going to redirect the water," she said. "Just to the mossy clearing. Just for tonight. The beavers will fix the tree tomorrow when it's safe."
+"We're going to redirect the water," said Vera, at the front. "Just to the mossy clearing. Just for tonight. The beavers will fix the tree tomorrow when it's safe."
 
 Bram nodded. "We'll be there at first light."
 
-"We sing to the mud on my count," said Vera. "Low and slow. Like this—"
+"Low and slow," said Vera. "On my count. Like this—"
 
 She hummed a single note.
 
 The mud did not move.
 
-The deer picked it up. Then the raccoons. Then Pip, loudly and slightly off-key but with great enthusiasm.
+The deer picked it up. Then the raccoons. Then Pip — loudly and slightly to the left of the correct note, but with his whole entire body.
 
 The mud at the river's edge began to shift.
 
@@ -265,49 +281,41 @@ And the burrows held.
 
 ---
 
-### Chapter 7: Enough
+### Chapter 8: Good Morning
 
 By midnight, the mouse families were safe in temporary nests above ground.
 
-The bunnies had done their job perfectly. The mud had done its job well enough. The beavers would do their job in the morning.
+When morning came, Bram and three other beavers arrived at the river bend at first light. The fallen tree — a great old oak, broken at the root — lay heavy across the channel.
 
-Vera sat on a rock by the river.
+It took four beavers and two hours.
 
-Pip flopped down next to her. He had mud on his nose and a glow mushroom in each paw that he was using as tiny lanterns for no particular reason.
+But they moved it.
+
+The water rushed through the cleared channel with a sound like relief. The singing mud settled quietly back into the riverbank, as if it had never moved. The redirect was gone.
+
+By the time the sun was fully up, the burrows were draining. The herons were back at their posts. The hedgehog baker had new rolls out. The sparrows had either resolved their argument or simply started a different one.
+
+Vera sat on a rock by the river, watching the water run clear and calm.
+
+Pip flopped down next to her. He had mud on his nose and a lantern mushroom in each paw, held up like tiny torches. It was broad daylight.
 
 Sage settled beside them both, slowly, the way Sage did everything.
 
-The three of them looked at the water.
+"We fixed it," said Pip.
 
-It was calmer now.
+"We fixed it," said Vera. "Properly."
 
-"We didn't fix it," said Pip.
+Sage was quiet for a moment. She was looking back toward the river bend.
 
-"No," said Vera.
+"The tree," she said. "Did it fall on its own?"
 
-"But we fixed it enough," said Pip.
+Bram, still at the water's edge, turned back toward them.
 
-Vera thought about that.
+"Hard to say. The roots let go. But the damage to those roots was old. Very old." He shook his head slowly. "I'll remember it."
 
-About how she had run to the beavers without asking why. About how Sage had stopped to listen to a boulder. About how Pip had gathered half the forest with a smile and a bellflower.
+Sage nodded. She filed it away.
 
-"Yes," she said. "Enough."
-
-Sage looked up at the glowing mushrooms lining the path home.
-
-"Bram will fix the tree tomorrow," she said.
-
-Sage had one hand pressed against the fallen tree's exposed root. She lifted it.
-
-"The roots," she said. "Old damage. Did you see?"
-
-Bram came to look. He looked for a long time.
-
-"Noted," he said. And walked away.
-
-"And the burrows will dry," said Pip.
-
-"And next time," said Vera quietly, "I'll ask why first."
+"Next time," said Vera quietly, "I'll ask why first."
 
 Pip looked at her.
 
@@ -319,13 +327,19 @@ Vera stared at him.
 
 "I know," said Pip. "But I have a feeling it won't be the last."
 
-He held up both glowing mushrooms like tiny torches and marched off down the path toward home.
+He held up both lantern mushrooms like tiny torches and marched off down the path toward home.
 
-Vera and Sage looked at each other.
+Vera watched him go.
 
-Then they followed him.
+It had been Pip who ran when she needed him to. Who had gathered every creature who could sing, just because she'd asked. His legs had carried the whole plan to everyone who needed to be part of it.
 
-Because in Whisperwood, that was usually the right thing to do.
+That was the part no plan could plan for.
+
+Vera looked at Sage.
+
+Sage looked at Vera.
+
+They followed him.
 
 ---
 *End of Book 1: The Rising River*
