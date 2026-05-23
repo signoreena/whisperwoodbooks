@@ -43,8 +43,6 @@ Sage did not like that.
 
 She placed one foot in the current. Then she took it back out.
 
-Too fast, she thought. Something upstream.
-
 She reached for a bellflower.
 
 She rang it once. Twice. Three times.
@@ -205,13 +203,11 @@ They moved fast and quiet through their underground tunnels, guiding mouse famil
 
 Above ground, Vera watched and thought.
 
-Beavers can't move the tree. Not tonight. But the water needs somewhere to go.
-
 She looked at the Mapleaf.
 
 Its veins were still dark — but one branch pointed slightly left. Toward the mossy clearing.
 
-A redirect, she thought. Not a fix. Just enough.
+A redirect. Not a fix. Just enough.
 
 "Pip," she said. "I need you to get everyone who can sing."
 
@@ -233,9 +229,7 @@ Sage stood at the back.
 
 There were a lot of creatures. A lot of sounds. A lot of movement.
 
-She took a slow breath.
-
-It's okay, she thought. I know what my part is.
+She took a slow breath. She pressed one hand flat against the earth at her feet.
 
 Vera stood at the front.
 
@@ -297,6 +291,14 @@ Sage looked up at the glowing mushrooms lining the path home.
 
 "Bram will fix the tree tomorrow," she said.
 
+Sage had one hand pressed against the fallen tree's exposed root. She lifted it.
+
+"The roots," she said. "Old damage. Did you see?"
+
+Bram came to look. He looked for a long time.
+
+"Noted," he said. And walked away.
+
 "And the burrows will dry," said Pip.
 
 "And next time," said Vera quietly, "I'll ask why first."
@@ -323,4 +325,34 @@ Because in Whisperwood, that was usually the right thing to do.
 *End of Book 1: The Rising River*
 
 ---
-*Production note: Sage notices the fallen tree's roots show old damage. Bram files it away. Seed planted for Book 8.*
+
+## About Whisperwood
+
+Whisperwood is an enchanted forest where the enchantment is part of everyday life. Three friends — Vera the fox, Pip the squirrel, and Sage the turtle — solve problems the only way anything ever gets solved here: together, with the right creature, in the right order, one careful step at a time.
+
+---
+
+## Coming Next
+
+**Book 2: The Noisy Night**
+
+*Something has made Whisperwood too loud to sleep. Sage feels it first — she always does. But this time, her greatest weakness might be the only thing that can fix it.*
+
+---
+
+## The World of Whisperwood
+
+**The Mapleaf Tree**
+A giant tree whose leaves glow faintly and shift to show paths and changes in the forest. When the veins go dark — something is coming.
+*Rule: It shows you what is there. It does not tell you what to do.*
+
+**Singing Mud**
+Mud that responds to voices — but only many voices, all together, low and slow. One voice does nothing.
+*Rule: It takes the whole community.*
+
+**The Talking Rock**
+The oldest boulder at the river's edge. It remembers everything. It speaks one word at a time, very slowly.
+*Rule: Patience required. It has never lied.*
+
+**Bellflowers**
+Delicate flowers that ring when shaken. Three rings means: come quickly, but don't panic.
