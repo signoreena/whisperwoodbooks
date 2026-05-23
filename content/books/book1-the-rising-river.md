@@ -125,6 +125,8 @@ Sage watched the water rise another inch.
 
 "Come with me," she said.
 
+Pip looked at the stick. He set it down.
+
 She led him to the oldest boulder at the river's edge. It was round and grey and covered in soft moss. It had been sitting in the same spot since before anyone in Whisperwood could remember.
 
 Sage pressed her hand against it.
@@ -223,7 +225,9 @@ Pip was already gone before she finished the sentence.
 
 They gathered at the river's edge.
 
-Vera. Pip. Sage. Bram and two other beavers. A family of deer. Three raccoons. The otter from the slide, who had been asked twice and complained once and showed up anyway.
+Vera. Pip. Sage. Bram and two other beavers. A family of deer. Three raccoons. The otter from the slide.
+
+The otter crossed his arms. Then uncrossed them. Then stood at the back in a way that suggested he was ready if it came to that.
 
 Sage stood at the back.
 
@@ -240,6 +244,8 @@ Bram nodded. "We'll be there at first light."
 "We sing to the mud on my count," said Vera. "Low and slow. Like this—"
 
 She hummed a single note.
+
+The mud did not move.
 
 The deer picked it up. Then the raccoons. Then Pip, loudly and slightly off-key but with great enthusiasm.
 
@@ -305,7 +311,7 @@ Bram came to look. He looked for a long time.
 
 Pip looked at her.
 
-"You say that every time something goes wrong," he said cheerfully.
+"I have a feeling you'll be saying that a lot," he said cheerfully.
 
 Vera stared at him.
 
