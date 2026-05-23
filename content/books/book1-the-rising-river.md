@@ -61,7 +61,7 @@ This was not surprising. Vera always arrived first. She had usually already deci
 
 Sage opened her mouth.
 
-"I'll go find them," said Vera.
+"I'll go find them," said Vera. She crossed it off her list.
 
 Sage closed her mouth.
 
@@ -107,7 +107,7 @@ Vera opened her mouth. Then closed it.
 
 This had never happened before.
 
-Back at the river, Pip was doing what Pip always did when there was a problem.
+While Vera was gone, Pip was doing what Pip always did when there was a problem.
 
 He was trying to help.
 
