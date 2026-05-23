@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="3.0" xmlns="http://www.idpf.org/2007/opf"
+         unique-identifier="uid" xml:lang="en">
+
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:identifier id="uid">whisperwood-book2-noisy-night</dc:identifier>
+    <dc:title>The Noisy Night</dc:title>
+    <dc:creator>Reena Gellerup</dc:creator>
+    <dc:language>en</dc:language>
+    <dc:publisher>Whisperwood Books</dc:publisher>
+    <dc:description>A Whisperwood Story &#x2014; Book Two. When the songbirds of Whisperwood can&#x2019;t stop relaying the news, the whole forest can&#x2019;t sleep. Vera has a plan. But it will take Sage &#x2014; and her gift for listening through noise &#x2014; to find where the loop is breaking the forest apart.</dc:description>
+    <dc:subject>Children&#x2019;s Fiction</dc:subject>
+    <dc:subject>Early Reader</dc:subject>
+    <dc:subject>Ages 4-6</dc:subject>
+
+    <!-- Fixed layout metadata &#x2014; required for Kindle children&#x2019;s books -->
+    <meta property="rendition:layout">pre-paginated</meta>
+    <meta property="rendition:spread">auto</meta>
+    <meta property="rendition:orientation">auto</meta>
+
+    <!-- Series metadata -->
+    <meta property="belongs-to-collection" id="series">Whisperwood</meta>
+    <meta refines="#series" property="collection-type">series</meta>
+    <meta refines="#series" property="group-position">2</meta>
+  </metadata>
+
+  <manifest>
+    <!-- Navigation -->
+    <item id="nav"          href="nav.xhtml"                    media-type="application/xhtml+xml" properties="nav"/>
+    <!-- Stylesheet -->
+    <item id="css"          href="css/fixed.css"                media-type="text/css"/>
+    <!-- Pages -->
+    <item id="cover"        href="pages/cover.xhtml"            media-type="application/xhtml+xml" properties="svg"/>
+    <item id="titlepage"    href="pages/titlepage.xhtml"        media-type="application/xhtml+xml"/>
+
+    <!-- Ch 1: full-bleed establishing spread (3400px) + text right -->
+    <item id="ch01a"        href="pages/ch01a.xhtml"            media-type="application/xhtml+xml"/>
+    <item id="ch01b"        href="pages/ch01b.xhtml"            media-type="application/xhtml+xml"/>
+
+    <!-- Ch 2: illo 2 (left) + Ch 2 text (right) -->
+    <item id="ch02a"        href="pages/ch02a.xhtml"            media-type="application/xhtml+xml"/>
+    <item id="ch02b"        href="pages/ch02b.xhtml"            media-type="application/xhtml+xml"/>
+
+    <!-- Ch 3: illo 3 (left) + Ch 3 text (right) -->
+    <item id="ch03a"        href="pages/ch03a.xhtml"            media-type="application/xhtml+xml"/>
+    <item id="ch03b"        href="pages/ch03b.xhtml"            media-type="application/xhtml+xml"/>
+
+    <!-- Ch 4: full-bleed library tree spread (3400px) + Ch 4 text continuation (right) -->
+    <item id="ch04a"        href="pages/ch04a.xhtml"            media-type="application/xhtml+xml"/>
+    <item id="ch04b"        href="pages/ch04b.xhtml"            media-type="application/xhtml+xml"/>
+
+    <!-- Ch 5: illo 5 (left) + Ch 5 text (right) -->
+    <item id="ch05a"        href="pages/ch05a.xhtml"            media-type="application/xhtml+xml"/>
+    <item id="ch05b"        href="pages/ch05b.xhtml"            media-type="application/xhtml+xml"/>
+
+    <!-- Ch 6: KEY IMAGE full-bleed spread (3400px) + Ch 6 text continuation (right) -->
+    <item id="ch06a"        href="pages/ch06a.xhtml"            media-type="application/xhtml+xml"/>
+    <item id="ch06b"        href="pages/ch06b.xhtml"            media-type="application/xhtml+xml"/>
+
+    <!-- Ch 7: illo 7 (left) + Ch 7 text part 1 (right) -->
+    <item id="ch07a"        href="pages/ch07a.xhtml"            media-type="application/xhtml+xml"/>
+    <item id="ch07b"        href="pages/ch07b.xhtml"            media-type="application/xhtml+xml"/>
+
+    <!-- Ch 7: COMMUNITY IMAGE full-bleed spread (3400px) + Ch 7 text part 2 (right) -->
+    <item id="ch07c"        href="pages/ch07c.xhtml"            media-type="application/xhtml+xml"/>
+    <item id="ch07d"        href="pages/ch07d.xhtml"            media-type="application/xhtml+xml"/>
+
+    <!-- Ch 7: FINAL SPREAD full-bleed (3400px) -->
+    <item id="ch07e"        href="pages/ch07e.xhtml"            media-type="application/xhtml+xml"/>
+
+    <!-- End page -->
+    <item id="endpage"      href="pages/endpage.xhtml"          media-type="application/xhtml+xml"/>
+
+    <!-- Back matter -->
+    <item id="backmatter01" href="pages/backmatter01.xhtml"     media-type="application/xhtml+xml"/>
+    <item id="backmatter02" href="pages/backmatter02.xhtml"     media-type="application/xhtml+xml"/>
+    <item id="backmatter03" href="pages/backmatter03.xhtml"     media-type="application/xhtml+xml"/>
+  </manifest>
+
+  <spine>
+    <!-- Cover: right-hand page of first opening -->
+    <itemref idref="cover"        properties="rendition:page-spread-right"/>
+    <itemref idref="titlepage"    properties="rendition:page-spread-right"/>
+
+    <!-- Ch 1 &#x2014; OPENING KEY SPREAD: full-bleed establishing (3400px, left) + text right -->
+    <itemref idref="ch01a"        properties="rendition:page-spread-left"/>
+    <itemref idref="ch01b"        properties="rendition:page-spread-right"/>
+
+    <!-- Ch 2 &#x2014; illo left / Ch 2 text right -->
+    <itemref idref="ch02a"        properties="rendition:page-spread-left"/>
+    <itemref idref="ch02b"        properties="rendition:page-spread-right"/>
+
+    <!-- Ch 3 &#x2014; illo left / Ch 3 text right -->
+    <itemref idref="ch03a"        properties="rendition:page-spread-left"/>
+    <itemref idref="ch03b"        properties="rendition:page-spread-right"/>
+
+    <!-- Ch 4 &#x2014; KEY SPREAD: library tree full-bleed (3400px, left) + Ch 4 text continuation right -->
+    <itemref idref="ch04a"        properties="rendition:page-spread-left"/>
+    <itemref idref="ch04b"        properties="rendition:page-spread-right"/>
+
+    <!-- Ch 5 &#x2014; illo left / Ch 5 text right -->
+    <itemref idref="ch05a"        properties="rendition:page-spread-left"/>
+    <itemref idref="ch05b"        properties="rendition:page-spread-right"/>
+
+    <!-- Ch 6 &#x2014; KEY IMAGE: forked elm full-bleed (3400px, left) + Ch 6 text continuation right -->
+    <itemref idref="ch06a"        properties="rendition:page-spread-left"/>
+    <itemref idref="ch06b"        properties="rendition:page-spread-right"/>
+
+    <!-- Ch 7 &#x2014; illo left / Ch 7 text part 1 right -->
+    <itemref idref="ch07a"        properties="rendition:page-spread-left"/>
+    <itemref idref="ch07b"        properties="rendition:page-spread-right"/>
+
+    <!-- Ch 7 &#x2014; COMMUNITY IMAGE: mushrooms placed full-bleed (3400px, left) + Ch 7 text part 2 right -->
+    <itemref idref="ch07c"        properties="rendition:page-spread-left"/>
+    <itemref idref="ch07d"        properties="rendition:page-spread-right"/>
+
+    <!-- FINAL SPREAD &#x2014; trio walking home, full-bleed (3400px, left) -->
+    <itemref idref="ch07e"        properties="rendition:page-spread-left"/>
+
+    <!-- End page -->
+    <itemref idref="endpage"      properties="rendition:page-spread-right"/>
+
+    <!-- Back matter -->
+    <itemref idref="backmatter01" properties="rendition:page-spread-left"/>
+    <itemref idref="backmatter02" properties="rendition:page-spread-right"/>
+    <itemref idref="backmatter03" properties="rendition:page-spread-left"/>
+  </spine>
+
+</package>
