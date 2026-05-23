@@ -285,7 +285,7 @@ And the burrows held.
 
 ---
 
-### Chapter 8: Good Morning
+### Chapter 8: First Light
 
 By midnight, the mouse families were safe in temporary nests above ground.
 
@@ -301,7 +301,7 @@ By the time the sun was fully up, the burrows were draining. The herons were bac
 
 ---
 
-### Chapter 9: That Was the Part
+### Chapter 9: The River Runs
 
 Vera sat on a rock by the river, watching the water run clear and calm.
 
