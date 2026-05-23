@@ -32,6 +32,19 @@ echo "================================================"
 echo ""
 
 # Expected files
+# Book 1 has 12 illustration slots across 9 chapters:
+#   illo-01  Ch1 full-bleed establishing spread (KEY SPREAD)
+#   illo-02  Ch1 continued — Mapleaf veins dark / Pip lands on Vera
+#   illo-03  Ch2 — Sage at river ringing bellflower
+#   illo-04  Ch3 — Pip with stick, Vera's retreating silhouette
+#   illo-05  Ch4 — Vera before Bram the beaver
+#   illo-06  Ch4 — Sage and the boulder full-bleed spread (KEY SPREAD)
+#   illo-07  Ch5 — Three friends, Vera's ears coming back up
+#   illo-08  Ch6 — Split panel: bunnies underground / Vera at Mapleaf by night
+#   illo-09  Ch7 — Community singing full-bleed spread (COMMUNITY IMAGE)
+#   illo-10  Ch7 — The redirect working, collective exhale
+#   illo-11  Ch8 — Four beavers moving the fallen oak at dawn
+#   illo-12  Ch9 — Final spread: trio walking home (FINAL SPREAD)
 declare -a NAMES=(
   "cover"
   "illo-01" "illo-02" "illo-03" "illo-04"

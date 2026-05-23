@@ -137,3 +137,26 @@ Section 4, Chapter Length Guide paragraph:
 
 Section 2, Tools & Materials table, Singing Mud row:
 - Added to end of cell: "When the community stops singing, the mud settles slowly back to its resting state. No counter-action is required."
+
+---
+
+## Proposal 7 — 2026-05-23
+
+**Proposed by:** Beatrice (book written) + Vera and Sage arc reviewers (flagged discrepancy)
+**Regarding:** Section 5, Book 2 outline — resolution description; Section 2 Specialists table — Owls row; Section 3 Recurring Supporting Characters table
+**Summary of change:** (1) Update the Book 2 outline resolution to match the finished manuscript: quietcap mushrooms placed at three relay intersection points identified by Sage through bark-touch, replacing the erroneous "owl-brewed settling potion" and "Sage negotiating with the songbirds to relay news in quieter shifts." (2) Add Oswin (head owl) to the Owls row in the Specialists table. (3) Add Hazel (hedgehog baker) to the Recurring Supporting Characters table.
+**Reason given:** The finished Book 2 manuscript contains neither a settling potion nor a songbird negotiation. The arc reviewers flagged the contradiction. Oswin and Hazel are named characters in the finished book not yet recorded in the bible.
+
+**Emily's decision:** APPROVED
+
+**Reasoning:** The finished manuscript's resolution is more internally consistent with world rules than the bible's outline. The series canon states that each mushroom variety has exactly one purpose, and quietcap mushrooms absorb sound — placing them at the noise's crossing points is a clean application of that rule. A "settling potion" brewed by owls appears nowhere else in the world and sits uneasily against the mushroom-variety rule (sound dampening is quietcap's job, not a potion's). "Sage negotiating with the songbirds" reads as a persuasion/leadership beat that does not belong to Sage's character profile (her gift is listening and noticing, not organizing or negotiating — that is Vera's register). The finished solution — Sage feeling through bark to locate intersection nodes, then the community placing mushrooms together — is better aligned with Sage's profile, the community-effort theme, and established world mechanics. Adding Oswin and Hazel to the bible prevents future writers from inventing incompatible names or ignoring these characters.
+
+**What Reena must do:**
+
+The following changes have already been made to `content/Whisperwood Series Bible.html`:
+
+1. **Section 5, Book 2 block** — second paragraph replaced. The old text ("The fix requires quietcap mushrooms placed at key relay points, an owl-brewed settling potion, and Sage negotiating with the songbirds to relay news in quieter shifts. The solution requires her to step into the noise long enough to organize it — her hardest moment so far.") has been replaced with an accurate description of the finished resolution: Sage identifies three relay intersection nodes by pressing her hand against bark at each relay point (the forked elm above the owl's library tree, the western oak, and the path bend by the brook); the trio and Oswin's owl apprentices place quietcap mushrooms at all three, dampening the feedback loop at its crossing points.
+
+2. **Section 2, Infrastructure: Specialists table, Owls row** — head owl Oswin added: "Head owl: Oswin (reading spectacles made of two curved pieces of bark; introduced in Book 2)."
+
+3. **Section 3, Recurring Supporting Characters table** — new row added for Hazel (Hedgehog): village baker who makes rolls before dawn; her inability to bake is the community signal that something has gone badly wrong; introduced in Book 2.

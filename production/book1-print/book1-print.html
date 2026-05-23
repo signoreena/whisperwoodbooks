@@ -13,7 +13,7 @@
   Safe zone:    All text/important content 0.375" from trim edge
   Resolution:   300 DPI for images
   Color:        RGB (KDP Print converts; no CMYK needed)
-  Page count:   32 pages (including cover — cover submitted separately)
+  Page count:   ~40 pages (cover submitted separately)
 
   HOW TO EXPORT TO PDF:
   1. Open this file in Google Chrome
@@ -26,11 +26,11 @@
 
   COVER: Submit separately via KDP's cover creator or a separate
   8.75" × 8.75" + spine PDF. KDP calculates spine width from page count.
-  For 32 pages on white paper: spine ≈ 0.08". Use KDP's cover calculator.
+  Use KDP's cover calculator for spine width.
 
   REPLACING PLACEHOLDERS: When final artwork is ready, replace each
   .illo-placeholder div with an <img> tag:
-    <img src="illo-01.jpg" class="illo-img" alt="..."/>
+    <img src="images/illo-01.jpg" class="illo-img" alt="..."/>
   Images must be 300 DPI at print size. For a full-page image on an
   8.5" × 8.5" page with bleed: 2625 × 2625 px minimum at 300 DPI.
   For a full spread: 5250 × 2625 px minimum.
@@ -48,7 +48,6 @@
   }
 
   /* ── Single page container ───────────────────── */
-  /* Each .pg-container is one physical page */
   .pg-container {
     width: 8.75in;
     height: 8.75in;
@@ -60,21 +59,18 @@
   }
 
   /* ── Right-hand page (odd) ───────────────────── */
-  /* Gutter on left, fore-edge on right */
   .pg-right .text-safe {
     position: absolute;
     top: 0.375in; right: 0.375in; bottom: 0.375in; left: 0.5in;
   }
 
   /* ── Left-hand page (even) ────────────────────── */
-  /* Gutter on right, fore-edge on left */
   .pg-left .text-safe {
     position: absolute;
     top: 0.375in; right: 0.5in; bottom: 0.375in; left: 0.375in;
   }
 
   /* ── Illustration placeholder ────────────────── */
-  /* Remove these and replace with <img> tags for final version */
   .illo-placeholder {
     position: absolute;
     background: #2d5a27;
@@ -135,25 +131,6 @@
   .story-text p { margin-bottom: 12pt; }
   .story-text p:last-child { margin-bottom: 0; }
 
-  /* ── Spread: two pages side by side in a single .pg-container ── */
-  /* For print, spreads are treated as two separate pages in sequence.
-     The left page runs to bleed on the right edge; the right page
-     runs to bleed on the left edge. They're printed facing each other.
-     Mark them .pg-left and .pg-right, both with page-break-after:always */
-
-  /* ── Cover page ─────────────────────────────── */
-  .pg-cover {
-    background: linear-gradient(160deg, #1e4020 0%, #2d5a27 60%, #4a7c59 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  /* Note: the cover is submitted as a SEPARATE file to KDP.
-     This page is the INTERIOR cover (p.1 / half-title page).
-     Adjust or remove as needed. */
-
   /* ── End page ──────────────────────────────── */
   .pg-end {
     display: flex;
@@ -194,7 +171,7 @@
 <body>
 
 <div class="print-note">
-  <strong>Print preview:</strong> This file renders each page as a card on screen. To export to PDF for KDP, open in Chrome → File → Print → Save as PDF → Custom paper size 8.75&quot; &times; 8.75&quot; → Margins: None → Background graphics: ON. See the file header comments for full submission guidance.
+  <strong>Print preview:</strong> This file renders each page as a card on screen. To export to PDF for KDP, open in Chrome &rarr; File &rarr; Print &rarr; Save as PDF &rarr; Custom paper size 8.75&quot; &times; 8.75&quot; &rarr; Margins: None &rarr; Background graphics: ON. See the file header comments for full submission guidance.
 </div>
 
 <!-- ══════════════════════════════════════
@@ -225,25 +202,27 @@
 </div>
 
 <!-- ══════════════════════════════════════
-     PAGES 3–4 — Chapter 1 opening spread
-     Illo 1 (left) + text (right)
+     PAGES 3–4 — Chapter 1 opening spread (Illo 1, full bleed)
+     Both pages are illustration — text band at bottom of right page
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
   <!-- Illo 1: full bleed left page -->
-  <!-- TO REPLACE: <img src="illo-01-left.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Ordinary Tuesday"/> -->
+  <!-- TO REPLACE: <img src="images/illo-01-left.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Ordinary Tuesday in Whisperwood (left)"/> -->
   <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
     <div class="illo-num">Illustration 1 (left page)</div>
-    <div class="illo-desc">Full spread establishing shot &mdash; left half. Sage at river watching tadpoles. Pip mid-fall from branch. Warm golden forest morning.</div>
-    <div class="illo-note">Replace with final artwork &mdash; bleed to all edges</div>
+    <div class="illo-desc">Full spread establishing shot &mdash; left half. Sage at river watching tadpoles, bare foot dipped in water. Pip mid-fall from branch, arms windmilling. Forest warm and golden, herons fishing in background.</div>
+    <!-- Mouse family: barely visible at river's edge — Ma with framed painting, Pa with Baby -->
+    <div class="illo-note">Bleed to all edges. Mouse family barely visible at river&rsquo;s edge.</div>
   </div>
 </div>
 
 <div class="pg-container pg-right">
-  <!-- Illo 1 continues (right half) with text band -->
+  <!-- Illo 1 continues (right half) with text band at bottom -->
   <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:5.5in;">
     <div class="illo-num">Illustration 1 (right page)</div>
-    <div class="illo-desc">Vera writing her list against the Mapleaf tree. Forest village in background. Mouse family barely visible.</div>
-    <div class="illo-note">Bleed to top, left, right edges. Text box at bottom.</div>
+    <div class="illo-desc">Vera writing her very long list against the Mapleaf tree. Forest village in background. Two sparrows arguing in upper branches. Hedgehog baker&rsquo;s stall just visible.</div>
+    <!-- Mouse family: Middle Son visible in background watching Pip fall, mouth open -->
+    <div class="illo-note">Bleed to top, left, right edges. Text box at bottom. Middle Son watching Pip fall.</div>
   </div>
   <div style="position:absolute;bottom:0;left:0;width:8.75in;height:3.25in;background:rgba(249,243,232,0.97);padding:0.45in 0.5in 0.45in 0.55in;">
     <div class="chapter-label">Chapter 1</div>
@@ -256,35 +235,54 @@
 
 <!-- ══════════════════════════════════════
      PAGES 5–6 — Chapter 1 continued
-     Illo 2 (right) + text (left)
+     Illo 2 (left) + Chapter 1 remaining text (right)
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
+  <!-- Illo 2: full bleed left page -->
+  <!-- TO REPLACE: <img src="images/illo-02.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Mapleaf veins go dark; Pip lands on Vera"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 2</div>
+    <div class="illo-desc">Close on the Mapleaf tree: veins gone dark like cracks. Below: Vera already on feet, list in paw, facing the dam direction. Pip dropping from above, landing on her head, tail flicking. Vera&rsquo;s expression: not alarmed. Already thinking.</div>
+    <div class="illo-note">Bleed to all edges. Facing page (right) carries Chapter 1 remaining text.</div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
   <div class="text-safe">
     <div class="story-text">
       <p>By the river, Sage was watching tadpoles. She did this most mornings. She never got bored of it.</p>
       <p>In the branches above her, Pip was trying to leap from one tree to the next without using his hands. He had already fallen twice. The second time, he had taken a large branch with him.</p>
       <p>He was going to try a third time.</p>
       <p>Nearby, Vera sat with her back against the Mapleaf tree, adding to her list. It was a very long list. Today&rsquo;s entries so far included: <em>river current (normal), beaver morning shift (started),</em> and <em>Pip (falling, probably fine).</em></p>
-      <p>She glanced up at the Mapleaf&rsquo;s veins the way she always did &mdash; just to check. They were golden and calm. Good. She looked back at her list. Then she looked up again. The veins had gone dark.</p>
-      <p>Vera was already on her feet when Pip landed on her head. &ldquo;Something is coming,&rdquo; said Pip. &ldquo;I know,&rdquo; said Vera. &ldquo;But did you see how dark the veins are?&rdquo; &ldquo;Pip.&rdquo; &ldquo;Yes?&rdquo; &ldquo;I know.&rdquo; Pip flicked his tail. He did not look convinced.</p>
+      <p>She glanced up at the Mapleaf&rsquo;s veins the way she always did &mdash; just to check. They were golden and calm.</p>
+      <p>Good.</p>
+      <p>She looked back at her list.</p>
+      <p>Then she looked up again.</p>
+      <p>The veins had gone dark.</p>
+      <p>The village of Whisperwood had a rule. When the Mapleaf tree&rsquo;s veins turned dark, something was coming.</p>
+      <p>Vera was already on her feet &mdash; list still in her paw, already facing the direction of the beavers&rsquo; dam &mdash; when Pip landed on her head.</p>
+      <p>&ldquo;Something is coming,&rdquo; said Pip. &ldquo;I know,&rdquo; said Vera. &ldquo;The Mapleaf&mdash;&rdquo; &ldquo;I know.&rdquo; &ldquo;But did you see how dark the veins are? They&rsquo;re almost&mdash;&rdquo; &ldquo;Pip.&rdquo; &ldquo;Yes?&rdquo; &ldquo;I know.&rdquo;</p>
+      <p>Pip flicked his tail. He did not look convinced.</p>
     </div>
-  </div>
-</div>
-
-<div class="pg-container pg-right">
-  <!-- Illo 2: top of right page -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:5in;">
-    <div class="illo-num">Illustration 2</div>
-    <div class="illo-desc">Mapleaf veins gone dark. Vera already on feet. Pip landing on her head.</div>
-    <div class="illo-note">Bleed top, left, right. Text below.</div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
      PAGES 7–8 — Chapter 2
-     Illo 3 (right) + Chapter 2 text (left)
+     Illo 3 (left) + Chapter 2 text (right)
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
+  <!-- Illo 3: Sage at river, bellflower -->
+  <!-- TO REPLACE: <img src="images/illo-03.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Sage rings the bellflower"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 3</div>
+    <div class="illo-desc">Sage at the river&rsquo;s edge. Water visibly too high, cresting near the bank. Sage holds a bellflower mid-ring, eyes serious. Just-submerged grass shows how much the water has risen.</div>
+    <!-- Mouse family: across the river on higher ground, bundles at feet, watching nervously. Ma has framed painting leaning against her leg. -->
+    <div class="illo-note">Bleed to all edges. Mouse family across river with bundles ready. Facing page (right) carries Chapter 2 text.</div>
+  </div>
+</div>
+
+<div class="pg-container pg-right">
   <div class="text-safe">
     <div class="chapter-label">Chapter 2</div>
     <div class="chapter-title">Wait</div>
@@ -293,54 +291,60 @@
       <p>She was watching the water.</p>
       <p>It was higher than it should be. Not fast. Not churning. Just&hellip; rising. Slowly and steadily and wrong.</p>
       <p>She placed one foot in the current. Then she took it back out.</p>
-      <p>She reached for a bellflower growing near the bank and rang it.</p>
+      <p>She reached for a bellflower growing near the bank.</p>
+      <p>She rang it.</p>
+      <p>And kept ringing until they came.</p>
     </div>
-  </div>
-</div>
-
-<div class="pg-container pg-right">
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
-    <div class="illo-num">Illustration 3</div>
-    <div class="illo-desc">Sage at river&rsquo;s edge, bellflower mid-ring. River visibly too high. Mouse family across river.</div>
-    <div class="illo-note">Full bleed. Chapter 2 text is on the facing left page.</div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
      PAGES 9–10 — Chapter 3
-     Text (left) + Illo 4 (right)
+     Illo 4 (left) + Chapter 3 text (right)
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
-  <div class="text-safe">
-    <div class="chapter-label">Chapter 3</div>
-    <div class="chapter-title">I Already Know the Plan</div>
-    <div class="story-text">
-      <p>Vera arrived first. She was already talking before she reached the bank. &ldquo;Flooding. The Mapleaf showed dark veins. River&rsquo;s rising &mdash; we need the beavers.&rdquo; She was already turning to go.</p>
-      <p>Sage opened her mouth. &ldquo;The mouse families&rsquo; burrows will flood,&rdquo; said Vera, before Sage could speak. &ldquo;I&rsquo;ll go find the beavers.&rdquo; Sage closed her mouth.</p>
-      <p>Pip arrived second. He was out of breath, had a leaf stuck to his ear, and was already holding a large stick he&rsquo;d found on the way over, in case it was useful. &ldquo;What did I miss?&rdquo; he said. &ldquo;Vera already knows the plan,&rdquo; said Sage.</p>
-      <p>Pip looked at the river. He looked at his stick. He looked at the direction Vera had already run. &ldquo;Does she know <em>why</em> the river is rising?&rdquo;</p>
-      <p>Sage went still. She looked at the water. She looked at where Vera had been. &ldquo;&hellip;I don&rsquo;t think she asked,&rdquo; said Sage.</p>
-    </div>
+  <!-- Illo 4: Pip with stick, Vera's retreating silhouette, Sage going still -->
+  <!-- TO REPLACE: <img src="images/illo-04.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Pip with stick; Vera's retreating silhouette; Sage gone still"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 4</div>
+    <div class="illo-desc">Pip holding an enormous stick, leaf on his ear, slightly out of breath. Sage beside him, having gone very still, looking at the water with that thinking expression. At the far edge: Vera&rsquo;s retreating tail and back legs, already running toward the beavers&rsquo; dam.</div>
+    <!-- Mouse family: Middle Son in background watching Pip hold the stick with obvious fascination. Ma pulling him away. -->
+    <div class="illo-note">Bleed to all edges. Middle Son watching Pip with the stick; Ma pulling him along. Facing page (right) carries Chapter 3 text.</div>
   </div>
 </div>
 
 <div class="pg-container pg-right">
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
-    <div class="illo-num">Illustration 4</div>
-    <div class="illo-desc">Pip with enormous stick, leaf on ear. Sage hand on rock, gone still. Vera&rsquo;s retreating silhouette at edge of image.</div>
-    <div class="illo-note">Full bleed. Chapter 3 text is on the facing left page.</div>
+  <div class="text-safe">
+    <div class="chapter-label">Chapter 3</div>
+    <div class="chapter-title">I Already Know the Plan</div>
+    <div class="story-text">
+      <p>Vera arrived first.</p>
+      <p>She was already talking before she reached the bank. &ldquo;Flooding. The Mapleaf showed dark veins. River&rsquo;s rising &mdash; we need the beavers.&rdquo; She was already turning to go.</p>
+      <p>Sage opened her mouth.</p>
+      <p>&ldquo;The mouse families&rsquo; burrows will flood,&rdquo; said Vera, before Sage could speak. &ldquo;I&rsquo;ll go find the beavers.&rdquo;</p>
+      <p>Sage closed her mouth.</p>
+      <p>Pip arrived second. He was out of breath and had a leaf stuck to his ear and was already holding a large stick he&rsquo;d found on the way over, in case it was useful.</p>
+      <p>&ldquo;What did I miss?&rdquo; he said.</p>
+      <p>&ldquo;Vera already knows the plan,&rdquo; said Sage.</p>
+      <p>Pip looked at the river. He looked at his stick. He looked at the direction Vera had already run.</p>
+      <p>&ldquo;Does she know <em>why</em> the river is rising?&rdquo;</p>
+      <p>Sage went still. She looked at the water. She looked at where Vera had been.</p>
+      <p>&ldquo;&hellip;I don&rsquo;t think she asked,&rdquo; said Sage.</p>
+    </div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     PAGES 11–12 — Chapter 4 Part 1
-     Illo 5 (left) + text (right)
+     PAGES 11–12 — Chapter 4 opening
+     Illo 5 (left) + Chapter 4 text (right)
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
+  <!-- Illo 5: Vera before Bram -->
+  <!-- TO REPLACE: <img src="images/illo-05.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Vera stands before Bram the beaver"/> -->
   <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
     <div class="illo-num">Illustration 5</div>
-    <div class="illo-desc">Vera very still before Bram. Her ears at half-mast. Bram solid and immovable in bark hard hat.</div>
-    <div class="illo-note">Full bleed. Chapter 4 text is on the facing right page.</div>
+    <div class="illo-desc">Vera standing very still before Bram the beaver. Bram in bark hard hat, solid and immovable, seen-many-floods expression. Vera&rsquo;s ears back just slightly, mouth mid-close, the moment between arguing and accepting. Beaver dam and busy construction behind them.</div>
+    <div class="illo-note">Bleed to all edges. Facing page (right) carries Chapter 4 opening text.</div>
   </div>
 </div>
 
@@ -349,76 +353,124 @@
     <div class="chapter-label">Chapter 4</div>
     <div class="chapter-title">What the Rock Remembered</div>
     <div class="story-text">
-      <p>The beavers were busy. They were always busy. &ldquo;Flooding?&rdquo; said Bram. He had a hard hat made of bark and an expression that suggested he had seen many floods. &ldquo;Where?&rdquo;</p>
-      <p>&ldquo;The burrows,&rdquo; said Vera. &ldquo;River&rsquo;s rising. We need to redirect it.&rdquo; Bram stroked his chin. &ldquo;Can&rsquo;t. Not safely. Not quickly. Something&rsquo;s come down at the river bend &mdash; blocking the channel. Until we can get eyes on it in daylight, we don&rsquo;t touch a thing.&rdquo;</p>
-      <p>Vera&rsquo;s mouth opened. Then it closed. Her ears went back. Just slightly. She stood very still for exactly one breath. &ldquo;What if we&mdash;&rdquo; &ldquo;Not safely,&rdquo; said Bram. &ldquo;Not tonight.&rdquo;</p>
-      <p>Back at the river, Pip was doing what Pip always did when there was a problem. He was trying to help. He had his large stick. He had wedged one end in the bank. He was not entirely sure what he expected to happen next. But it felt better than standing still.</p>
-      <p>&ldquo;Pip,&rdquo; said Sage. &ldquo;What are you doing?&rdquo; &ldquo;Helping,&rdquo; said Pip. &ldquo;With a stick.&rdquo; &ldquo;It&rsquo;s a big stick.&rdquo; Sage watched the water rise another inch. &ldquo;Come with me,&rdquo; she said.</p>
+      <p>The beavers were busy. They were always busy.</p>
+      <p>&ldquo;Flooding?&rdquo; said Bram. He had a hard hat made of bark and an expression that suggested he had seen many floods. &ldquo;Where?&rdquo;</p>
+      <p>&ldquo;The burrows,&rdquo; said Vera. &ldquo;River&rsquo;s rising. We need to redirect it.&rdquo;</p>
+      <p>Bram stroked his chin.</p>
+      <p>&ldquo;Can&rsquo;t,&rdquo; he said. &ldquo;Not safely. Not quickly. Something&rsquo;s come down at the river bend &mdash; blocking the channel. Until we can get eyes on it in daylight, we don&rsquo;t touch a thing.&rdquo;</p>
+      <p>Vera&rsquo;s mouth opened. Then it closed.</p>
+      <p>Her ears went back. Just slightly.</p>
+      <p>She stood very still for exactly one breath.</p>
+      <p>&ldquo;What if we&mdash;&rdquo;</p>
+      <p>&ldquo;Not safely,&rdquo; said Bram. &ldquo;Not tonight.&rdquo;</p>
     </div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     PAGES 13–14 — Chapter 4 Key Spread (Illo 6)
-     Full bleed across both pages — KEY IMAGE
+     PAGES 13–14 — Chapter 4 KEY SPREAD (Illo 6)
+     Full bleed across both pages — KEY IMAGE: Sage and the boulder
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
+  <!-- Illo 6 KEY IMAGE: left page -->
+  <!-- TO REPLACE: <img src="images/illo-06-left.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Sage hand on boulder; Pip nose-first"/> -->
   <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
     <div class="illo-num">Illustration 6 &mdash; KEY IMAGE (left page)</div>
-    <div class="illo-desc">Sage hand flat on the great moss-covered boulder, eyes closed. Pip nose-to-rock, nearly falling, Sage&rsquo;s hand on his shoulder keeping him upright. River rising behind them.</div>
-    <div class="illo-note">Full bleed. Text is in the bottom band of the right page (p.14).</div>
+    <div class="illo-desc">Sage with hand pressed flat against the oldest boulder at the river&rsquo;s edge. The boulder is enormous &mdash; round, grey, covered in soft deep moss, ancient. Sage&rsquo;s eyes are closed. Pip leans in from the right, nose nearly touching the rock, almost falling over, everything focused on that stone. Sage&rsquo;s other hand rests on Pip&rsquo;s shoulder, keeping him still. River rising behind them. Night beginning to fall.</div>
+    <div class="illo-note">Bleed to all edges. Text box at bottom of right page (p.14).</div>
   </div>
 </div>
 
 <div class="pg-container pg-right">
+  <!-- Illo 6 KEY IMAGE: right page with text band -->
+  <!-- TO REPLACE: <img src="images/illo-06-right.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:5.75in;" alt="Mouse family hurrying past"/> -->
   <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:5.75in;">
     <div class="illo-num">Illustration 6 &mdash; KEY IMAGE (right page)</div>
-    <div class="illo-desc">Continuation of spread &mdash; mouse family crossing in background: Ma with framed painting, Pa carrying sleeping Baby, Big Daughter writing while walking, Middle Son staring at Pip and the rock.</div>
-    <div class="illo-note">Bleed top, left, right. Text box at bottom.</div>
+    <div class="illo-desc">Continuation &mdash; the mouse family hurries past in the background: bundles on backs, moving fast and quiet. Ma carries framed painting. Pa has sleeping Baby. Big Daughter writes while walking. Middle Son is staring directly at Pip and the rock, mouth open. His father tugs his arm.</div>
+    <!-- Mouse family note: Middle Son staring at Pip and the rock. His father tugs his arm. Ma has framed painting. Big Daughter writing while walking. Baby asleep on Pa. -->
+    <div class="illo-note">Bleed top, left, right. Text box at bottom. Mouse family: Middle Son staring at Pip/rock. Pa tugging Middle Son&rsquo;s arm.</div>
   </div>
   <div style="position:absolute;bottom:0;left:0;width:8.75in;height:3in;background:rgba(249,243,232,0.97);padding:0.4in 0.5in 0.4in 0.55in;">
     <div class="story-text">
-      <p>She led him to the oldest boulder at the river&rsquo;s edge. Sage pressed her hand flat against it and closed her eyes. &ldquo;Excuse me,&rdquo; she said quietly. Pip watched her face. A mouse family hurried past, bundles on their backs, moving fast and quiet.</p>
-      <p>&ldquo;&hellip;A tree,&rdquo; said Sage. Pip leaned in. His nose was now very close to the rock. &ldquo;A tree? What tree?&rdquo; Sage put one hand on his shoulder, gently. He went still. They waited. &ldquo;&hellip;It fell,&rdquo; said Sage.</p>
+      <p>Back at the river, Pip was doing what Pip always did when there was a problem. He was trying to help. He had his large stick. He had wedged one end in the bank. He was not entirely sure what he expected to happen next. But it felt better than standing still.</p>
+      <p>&ldquo;Pip,&rdquo; said Sage. &ldquo;What are you doing?&rdquo; &ldquo;Helping,&rdquo; said Pip. &ldquo;With a stick.&rdquo; &ldquo;It&rsquo;s a big stick.&rdquo; Sage watched the water rise another inch. &ldquo;Come with me,&rdquo; she said. Pip looked at the stick. He set it down.</p>
+      <p>She led him to the oldest boulder at the river&rsquo;s edge. Sage pressed her hand flat against it and closed her eyes. &ldquo;Excuse me,&rdquo; she said quietly.</p>
     </div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     PAGES 15–16 — Chapter 5
-     Text (left) + Illo 7 (right)
+     PAGES 15–16 — Chapter 4 boulder scene continued
+     Text (left) + padding/blank (right)
      ══════════════════════════════════════ -->
+<div class="pg-container pg-left">
+  <div class="text-safe">
+    <div class="story-text">
+      <p>Pip watched her face.</p>
+      <p>A mouse family hurried past below, bundles on their backs, moving fast and quiet.</p>
+      <p>&ldquo;&hellip;Tree,&rdquo; said the boulder, very slowly.</p>
+      <p>Pip leaned in. His nose was now very close to the rock. He wasn&rsquo;t sure why. It just seemed like the right thing to do.</p>
+      <p>&ldquo;Tree? What tree?&rdquo;</p>
+      <p>Sage put one hand on his shoulder, gently. He went still.</p>
+      <p>They waited.</p>
+      <p>&ldquo;&hellip;Fell,&rdquo; said the boulder.</p>
+      <p>Sage lifted her hand. &ldquo;A tree fell,&rdquo; she said. &ldquo;That&rsquo;s why the water can&rsquo;t go anywhere.&rdquo;</p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 16–17 — Chapter 5
+     Illo 7 (right) + Chapter 5 text (left on next spread)
+     Using right-page illo, left-page text for variety
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-right">
+  <!-- Illo 7: three friends at river, Vera's ears coming back up -->
+  <!-- TO REPLACE: <img src="images/illo-07.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Three friends; Pip beaming; Vera's ears mid-rise"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+    <div class="illo-num">Illustration 7</div>
+    <div class="illo-desc">Three friends at the river. Pip beaming his enormous Pip smile &mdash; ears forward, whole body cheerful. Vera&rsquo;s ears caught mid-rise. Sage slightly behind them, looking at the water with that quiet ahead-thinking look. Mood: something went wrong and we are still okay.</div>
+    <div class="illo-note">Bleed to all edges. Facing page (left, next spread) carries Chapter 5 text.</div>
+  </div>
+</div>
+
 <div class="pg-container pg-left">
   <div class="text-safe">
     <div class="chapter-label">Chapter 5</div>
     <div class="chapter-title">Fox Was Wrong (Sort Of)</div>
     <div class="story-text">
-      <p>Vera came back without the beavers. &ldquo;There&rsquo;s a fallen tree,&rdquo; said Sage. &ldquo;Blocking the channel. That&rsquo;s why the water can&rsquo;t go anywhere. That&rsquo;s why it&rsquo;s rising.&rdquo;</p>
-      <p>&ldquo;I knew it was flooding,&rdquo; Vera said. &ldquo;You did,&rdquo; said Sage. &ldquo;I just didn&rsquo;t know why.&rdquo; &ldquo;No,&rdquo; said Sage. &ldquo;You didn&rsquo;t ask.&rdquo;</p>
+      <p>Vera came back without the beavers.</p>
+      <p>She stood at the river&rsquo;s edge and looked at it.</p>
+      <p>&ldquo;There&rsquo;s a fallen tree,&rdquo; said Sage. &ldquo;Blocking the channel. That&rsquo;s why the water can&rsquo;t go anywhere. That&rsquo;s why it&rsquo;s rising.&rdquo;</p>
+      <p>Vera&rsquo;s ears went back. Just slightly.</p>
+      <p>&ldquo;At the river bend,&rdquo; said Vera. &ldquo;That&rsquo;s what Bram said.&rdquo;</p>
+      <p>A silence.</p>
+      <p>&ldquo;I knew it was flooding,&rdquo; she said.</p>
+      <p>&ldquo;You did,&rdquo; said Sage.</p>
+      <p>&ldquo;I just didn&rsquo;t know why.&rdquo;</p>
+      <p>&ldquo;No,&rdquo; said Sage. &ldquo;You didn&rsquo;t ask.&rdquo;</p>
+      <p>A silence.</p>
       <p>&ldquo;&hellip;I should have asked why,&rdquo; said Vera. She looked at the water. &ldquo;I went to fix it. I didn&rsquo;t ask what was broken.&rdquo;</p>
-      <p>Pip patted her on the shoulder. &ldquo;You got us to the beavers though! That&rsquo;s still good.&rdquo; &ldquo;The beavers said they can&rsquo;t help yet.&rdquo; &ldquo;Oh.&rdquo; Pip thought about this. &ldquo;Well. You got us <em>to</em> the beavers. That counts.&rdquo;</p>
+      <p>Pip patted her on the shoulder. &ldquo;You got us to the beavers though! That&rsquo;s still good.&rdquo;</p>
+      <p>&ldquo;The beavers said they can&rsquo;t help yet.&rdquo;</p>
+      <p>&ldquo;Oh.&rdquo; Pip thought about this. &ldquo;Well. You got us <em>to</em> the beavers. That counts.&rdquo;</p>
       <p>Vera looked at him. Pip smiled his enormous Pip smile. Vera sighed. But her ears came back up.</p>
     </div>
   </div>
 </div>
 
-<div class="pg-container pg-right">
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
-    <div class="illo-num">Illustration 7</div>
-    <div class="illo-desc">Three friends at river. Pip beaming enormously. Vera&rsquo;s ears mid-rise. Sage looking at water, thinking ahead. Mood: something went wrong and we are still okay.</div>
-    <div class="illo-note">Full bleed. Chapter 5 text on facing left page.</div>
-  </div>
-</div>
-
 <!-- ══════════════════════════════════════
-     PAGES 17–18 — Chapter 6
-     Illo 8 (left, split panel) + text (right)
+     PAGES 19–20 — Chapter 6
+     Illo 8 (left, split panel) + Chapter 6 text (right)
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
+  <!-- Illo 8: split panel — bunnies underground / Vera at Mapleaf by night -->
+  <!-- TO REPLACE: <img src="images/illo-08.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Bunnies guiding mouse families; Vera at Mapleaf by night"/> -->
   <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
     <div class="illo-num">Illustration 8</div>
-    <div class="illo-desc">Split: top &mdash; underground bunny tunnels, warm and efficient. Bottom &mdash; Vera at Mapleaf at night, pointing branch; Pip a blur in the far distance, already running.</div>
-    <div class="illo-note">Full bleed. Chapter 6 text on facing right page.</div>
+    <div class="illo-desc">SPLIT PANEL: TOP &mdash; underground bunny tunnels, warm lantern light, bunnies guiding mouse families single-file along dry high paths. Calm, efficient, no panic. BOTTOM &mdash; above ground at night: Vera at the Mapleaf, looking up at a branch pointing slightly left. In the far distance, Pip is already a blur of motion, already running.</div>
+    <!-- Mouse family: TOP PANEL: bunny helper carries Ma's framed painting carefully. Middle Son counting the bunnies. Pa has Baby asleep on his back. Big Daughter still writing by lantern. -->
+    <div class="illo-note">Bleed to all edges. TOP: bunny carries Ma&rsquo;s painting; Middle Son counting bunnies. Facing page (right) carries Chapter 6 text.</div>
   </div>
 </div>
 
@@ -427,84 +479,120 @@
     <div class="chapter-label">Chapter 6</div>
     <div class="chapter-title">Night Work</div>
     <div class="story-text">
-      <p>By the time the sun went down, the burrows were knee-deep in water. The bunnies had already begun. They moved fast and quiet through their underground tunnels, guiding mouse families out one by one. No panic. No pushing. Just small paws and calm voices and knowing exactly where to go.</p>
-      <p>&ldquo;This way, please.&rdquo; &ldquo;Mind your step.&rdquo; &ldquo;You&rsquo;re safe now.&rdquo;</p>
-      <p>Above ground, Vera looked up at the Mapleaf. Its veins were still dark &mdash; but one branch pointed slightly left. Toward the mossy clearing. She was already walking toward Pip before she finished looking.</p>
-      <p>&ldquo;Pip,&rdquo; she said. &ldquo;I need everyone who can sing.&rdquo; Pip&rsquo;s eyes went wide. &ldquo;Everyone?&rdquo; &ldquo;Everyone.&rdquo; Pip was already gone before she&rsquo;d finished the word.</p>
+      <p>By the time the sun went down, the burrows were knee-deep in water.</p>
+      <p>The bunnies had already begun.</p>
+      <p>They moved fast and quiet along the high paths, guiding mouse families out one by one &mdash; every safe step, every dry patch of ground, every piece of higher land known. No panic. No pushing. Just small paws and calm voices and knowing exactly where to go.</p>
+      <p>&ldquo;This way, please.&rdquo;</p>
+      <p>&ldquo;Mind your step.&rdquo;</p>
+      <p>&ldquo;You&rsquo;re safe now.&rdquo;</p>
+      <p>Above ground, Vera looked up at the Mapleaf.</p>
+      <p>Its veins were still dark &mdash; but one branch pointed slightly left. Toward the mossy clearing.</p>
+      <p>A redirect. The mud at the bank &mdash; if everyone sang, they could open a channel pointing that way.</p>
+      <p>She was already walking toward Pip before she finished looking.</p>
+      <p>&ldquo;Pip,&rdquo; she said. &ldquo;I need everyone who can sing.&rdquo;</p>
+      <p>Pip&rsquo;s eyes went wide. &ldquo;Everyone?&rdquo;</p>
+      <p>&ldquo;Everyone.&rdquo;</p>
+      <p>Pip was already gone before she&rsquo;d finished the word.</p>
     </div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     PAGES 19–20 — Chapter 7 Community Spread (Illo 9)
-     Full bleed across both pages
+     PAGES 21–22 — Chapter 7 COMMUNITY SPREAD (Illo 9)
+     Full bleed across both pages — COMMUNITY IMAGE: singing to the mud
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
+  <!-- Illo 9 COMMUNITY IMAGE: left page -->
+  <!-- TO REPLACE: <img src="images/illo-09-left.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Community singing at river; Pip foreground; mud moving"/> -->
   <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
     <div class="illo-num">Illustration 9 &mdash; COMMUNITY IMAGE (left page)</div>
-    <div class="illo-desc">Whole community singing at river&rsquo;s edge. Pip foreground, everything he has. Mud moving left. Vera conducting. Sage at back, singing quietly.</div>
-    <div class="illo-note">Full bleed. Text in bottom band of right page (p.20).</div>
+    <div class="illo-desc">Whole community at the river&rsquo;s edge at night. Pip foreground, everything he has, slightly off-note but whole-body committed. Vera at front conducting, humming the first note. Mud at bank beginning to shift left. A new channel forming, glowmoss lighting it from below.</div>
+    <div class="illo-note">Bleed to all edges. Text box at bottom of right page (p.22).</div>
   </div>
 </div>
 
 <div class="pg-container pg-right">
+  <!-- Illo 9 COMMUNITY IMAGE: right page with text band -->
+  <!-- TO REPLACE: <img src="images/illo-09-right.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:5.5in;" alt="Otter, deer, raccoons, beavers singing; mouse family watching"/> -->
   <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:5.5in;">
     <div class="illo-num">Illustration 9 &mdash; COMMUNITY IMAGE (right page)</div>
-    <div class="illo-desc">Otter (arms crossed, mouth open), deer, raccoons, beavers. Mouse family at burrow: Ma watching water, Pa calm, Middle Son studying Pip&rsquo;s technique, Big Daughter writing, Baby asleep.</div>
-    <div class="illo-note">Bleed top, left, right. Text box at bottom.</div>
+    <div class="illo-desc">Crowd: Bram and two beavers; deer with heads lowered; three raccoons. The otter &mdash; arms still half-crossed but mouth open and singing. Sage at the very back, one quiet step forward, singing exactly the right note, barely visible. Just above text band: Pa nods to Ma; she nods back. Baby asleep in Pa&rsquo;s arms. Middle Son studying Pip&rsquo;s technique. Big Daughter writing by lantern.</div>
+    <!-- Mouse family: Pa nods to Ma. She nods back. Baby asleep. Middle Son studying Pip's technique. Big Daughter writing. -->
+    <div class="illo-note">Bleed top, left, right. Mouse family: Pa nods to Ma. Middle Son studying Pip. Big Daughter writing. Text box at bottom.</div>
   </div>
   <div style="position:absolute;bottom:0;left:0;width:8.75in;height:3.25in;background:rgba(249,243,232,0.97);padding:0.4in 0.5in 0.4in 0.55in;">
     <div class="chapter-label">Chapter 7</div>
     <div class="chapter-title">Singing to the Mud</div>
     <div class="story-text">
-      <p>They gathered at the river&rsquo;s edge. Vera. Pip. Sage. Bram and two other beavers. A family of deer. Three raccoons. The otter from the slide, who had been asked twice and complained once and showed up anyway.</p>
+      <p>They gathered at the river&rsquo;s edge.</p>
+      <p>Vera. Pip. Sage. Bram and two other beavers. A family of deer. Three raccoons. The otter from the slide, who had been asked twice and complained once and showed up anyway.</p>
     </div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     PAGES 21–22 — Chapter 7 continued
-     Text (left) + Illo 10 (right)
+     PAGES 23–24 — Chapter 7 continued
+     Chapter 7 remaining text (left) + Illo 10 (right)
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
   <div class="text-safe">
     <div class="story-text">
-      <p>It was loud. It was a lot of creatures moving in a lot of directions at once. At the back of the crowd, Sage took a slow breath. She took a step back from the noise. Then she looked at the mud. She looked at where the water needed to go. She took a step forward. She knew what her part was.</p>
-      <p>&ldquo;We&rsquo;re going to redirect the water,&rdquo; said Vera, at the front. &ldquo;Just to the mossy clearing. Just for tonight. The beavers will fix the tree tomorrow when it&rsquo;s safe.&rdquo; Bram nodded. &ldquo;We&rsquo;ll be there at first light.&rdquo;</p>
+      <p>It was loud. It was a lot of creatures moving in a lot of directions at once.</p>
+      <p>At the back of the crowd, Sage took a slow breath. She took a step back from the noise.</p>
+      <p>Then she looked at the mud. She looked at where the water needed to go.</p>
+      <p>She took a step forward.</p>
+      <p>She knew what her part was.</p>
+      <p>&ldquo;We&rsquo;re going to redirect the water,&rdquo; said Vera, at the front. &ldquo;Just to the mossy clearing. Just for tonight. The beavers will fix the tree tomorrow when it&rsquo;s safe.&rdquo;</p>
+      <p>Bram nodded. &ldquo;We&rsquo;ll be there at first light.&rdquo;</p>
       <p>&ldquo;Low and slow,&rdquo; said Vera. &ldquo;On my count. Like this&mdash;&rdquo;</p>
-      <p>She hummed a single note. The deer picked it up. Then the raccoons. Then Pip &mdash; loudly and slightly to the left of the correct note, but with his whole entire body. The mud at the river&rsquo;s edge began to shift. A small channel opened, curving left toward the clearing. The water followed.</p>
-      <p>It was not elegant. It was not permanent. But the river slowed. And the burrows held.</p>
+      <p>She hummed a single note.</p>
+      <p>The mud did not move.</p>
+      <p>The deer picked it up. Then the raccoons. Then Pip &mdash; loudly and slightly to the left of the correct note, but with his whole entire body.</p>
+      <p>The mud at the river&rsquo;s edge began to shift.</p>
+      <p>Slowly at first. Then more.</p>
+      <p>A small channel opened, curving left toward the clearing.</p>
+      <p>The water followed.</p>
+      <p>It was not elegant. It was not permanent.</p>
+      <p>But the river slowed.</p>
+      <p>And the burrows held.</p>
     </div>
   </div>
 </div>
 
 <div class="pg-container pg-right">
+  <!-- Illo 10: the redirect working, collective exhale -->
+  <!-- TO REPLACE: <img src="images/illo-10.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Redirect working; new channel glowing; collective exhale"/> -->
   <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
     <div class="illo-num">Illustration 10</div>
-    <div class="illo-desc">The redirect working. New channel carved through bank. Collective exhale. Glow moss lighting the night. Mouse family: Pa nods to Ma. She nods back.</div>
-    <div class="illo-note">Full bleed. Chapter 7 text on facing left page.</div>
+    <div class="illo-desc">The redirect is working. New channel carved through the bank, curving left, glowmoss lighting it golden-green from below. The water follows. The crowd&rsquo;s shoulders are lowering. Collective exhale. River has slowed. Pip&rsquo;s mouth still open, eyes gone wide with amazement.</div>
+    <!-- Mouse family: Pa nods slowly to Ma. She nods back, just once. Baby still asleep. Middle Son has grabbed Big Daughter's arm; she does not look up from her writing. -->
+    <div class="illo-note">Bleed to all edges. Mouse family: Pa nods to Ma; she nods back. Baby asleep. Middle Son grabs Big Daughter&rsquo;s arm; she doesn&rsquo;t look up. Facing page (left) carries Chapter 7 remaining text.</div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     PAGES 23–24 — Chapter 8 Part 1
-     Illo 11 (left) + text (right)
+     PAGES 25–26 — Chapter 8
+     Illo 11 (left) + Chapter 8 text (right)
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
+  <!-- Illo 11: four beavers moving the fallen oak at dawn -->
+  <!-- TO REPLACE: <img src="images/illo-11.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Four beavers moving the great fallen oak at first light"/> -->
   <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
     <div class="illo-num">Illustration 11</div>
-    <div class="illo-desc">Four beavers at dawn moving the enormous fallen oak. Bram directing. Scale: beavers are tiny against the tree. Pink and gold dawn light. Water starting to move freely again.</div>
-    <div class="illo-note">Full bleed. Chapter 8 text on facing right page.</div>
+    <div class="illo-desc">Four beavers at the river bend at first light, moving the enormous fallen oak. The tree is ancient, heavy, spanning the channel. Bram directs. Beavers are visibly small against it &mdash; scale matters. Pink and gold dawn light. Water beginning to push through a gap as they shift the tree. Channel almost clear.</div>
+    <div class="illo-note">Bleed to all edges. Scale: beavers tiny against the great oak. Facing page (right) carries Chapter 8 text.</div>
   </div>
 </div>
 
 <div class="pg-container pg-right">
   <div class="text-safe">
     <div class="chapter-label">Chapter 8</div>
-    <div class="chapter-title">Good Morning</div>
+    <div class="chapter-title">First Light</div>
     <div class="story-text">
       <p>By midnight, the mouse families were safe in temporary nests above ground.</p>
-      <p>When morning came, Bram and three other beavers arrived at the river bend at first light. The fallen tree &mdash; a great old oak, broken at the root &mdash; lay heavy across the channel. It took four beavers and two hours. But they moved it.</p>
+      <p>When morning came, Bram and three other beavers arrived at the river bend at first light. The fallen tree &mdash; a great old oak, broken at the root &mdash; lay heavy across the channel.</p>
+      <p>It took four beavers and two hours.</p>
+      <p>But they moved it.</p>
       <p>The water rushed through the cleared channel with a sound like relief. The singing mud settled quietly back into the riverbank, as if it had never moved. The redirect was gone.</p>
       <p>By the time the sun was fully up, the burrows were draining. The herons were back at their posts. The hedgehog baker had new rolls out. The sparrows had either resolved their argument or simply started a different one.</p>
     </div>
@@ -512,18 +600,24 @@
 </div>
 
 <!-- ══════════════════════════════════════
-     PAGES 25–26 — Chapter 8 Resolution
-     Text-forward spread, no new illustration
+     PAGES 27–28 — Chapter 9
+     Chapter 9 text part 1 (left) + Chapter 9 text part 2 (right)
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
   <div class="text-safe">
+    <div class="chapter-label">Chapter 9</div>
+    <div class="chapter-title">The River Runs</div>
     <div class="story-text">
       <p>Vera sat on a rock by the river, watching the water run clear and calm.</p>
       <p>Pip flopped down next to her. He had mud on his nose and a lantern mushroom in each paw, held up like tiny torches. It was broad daylight.</p>
       <p>Sage settled beside them both, slowly, the way Sage did everything.</p>
-      <p>&ldquo;We fixed it,&rdquo; said Pip. &ldquo;We fixed it,&rdquo; said Vera. &ldquo;Properly.&rdquo;</p>
-      <p>Sage was quiet for a moment. She was looking back toward the river bend. &ldquo;The tree,&rdquo; she said. &ldquo;Did it fall on its own?&rdquo;</p>
-      <p>Bram, still at the water&rsquo;s edge, turned back toward them. &ldquo;Hard to say. The roots let go. But the damage to those roots was old. Very old.&rdquo; He shook his head slowly. &ldquo;I&rsquo;ll remember it.&rdquo; Sage nodded. She filed it away.</p>
+      <p>&ldquo;We fixed it,&rdquo; said Pip.</p>
+      <p>&ldquo;We fixed it,&rdquo; said Vera. &ldquo;Properly.&rdquo;</p>
+      <p>Sage was quiet for a moment. She was looking back toward the river bend.</p>
+      <p>&ldquo;The tree,&rdquo; she said. &ldquo;Did it fall on its own?&rdquo;</p>
+      <p>Bram, still at the water&rsquo;s edge, turned back toward them.</p>
+      <p>&ldquo;Hard to say. The roots let go. But the damage to those roots was old. Very old.&rdquo; He shook his head slowly. &ldquo;I&rsquo;ll remember it.&rdquo;</p>
+      <p>Sage nodded. She filed it away.</p>
     </div>
   </div>
 </div>
@@ -532,36 +626,50 @@
   <div class="text-safe">
     <div class="story-text">
       <p>&ldquo;Next time,&rdquo; said Vera quietly, &ldquo;I&rsquo;ll ask why first.&rdquo;</p>
-      <p>Pip looked at her. &ldquo;You say that every time something goes wrong,&rdquo; he said cheerfully. Vera stared at him. &ldquo;This is the first time something has gone wrong.&rdquo; &ldquo;I know,&rdquo; said Pip. &ldquo;But I have a feeling it won&rsquo;t be the last.&rdquo;</p>
-      <p>He held up both lantern mushrooms and marched off down the path toward home.</p>
-      <p>Vera watched him go. It had been Pip who ran when she needed him to. Who had gathered every creature who could sing, just because she&rsquo;d asked. His legs had carried the whole plan to everyone who needed to be part of it. That was the part no plan could plan for.</p>
-      <p>Vera looked at Sage. Sage looked at Vera. They followed him.</p>
+      <p>Pip looked at her.</p>
+      <p>&ldquo;I have a feeling you&rsquo;ll be saying that a lot,&rdquo; he said cheerfully.</p>
+      <p>Vera stared at him.</p>
+      <p>&ldquo;This is the first time something has gone wrong.&rdquo;</p>
+      <p>&ldquo;I know,&rdquo; said Pip. &ldquo;But I have a feeling it won&rsquo;t be the last.&rdquo;</p>
+      <p>He held up both lantern mushrooms like tiny torches and marched off down the path toward home.</p>
+      <p>Vera watched him go.</p>
+      <p>It had been Pip who ran when she needed him to. Who had gathered every creature who could sing, just because she&rsquo;d asked. His legs had carried the whole plan to everyone who needed to be part of it.</p>
+      <p>That was the part no plan could plan for.</p>
+      <p>Vera looked at Sage.</p>
+      <p>Sage looked at Vera.</p>
+      <p>They followed him.</p>
     </div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     PAGES 27–28 — Final Spread (Illo 12)
-     Full bleed across both pages
+     PAGES 29–30 — FINAL SPREAD (Illo 12)
+     Full bleed across both pages — FINAL IMAGE: trio walking home
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
+  <!-- Illo 12 FINAL SPREAD: left page -->
+  <!-- TO REPLACE: <img src="images/illo-12-left.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Trio walking home; Pip leads with lantern mushrooms"/> -->
   <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
     <div class="illo-num">Illustration 12 &mdash; FINAL SPREAD (left page)</div>
-    <div class="illo-desc">Trio walking home on dappled morning path. Pip leads with lantern mushrooms raised (full daylight). Vera and Sage together behind him. Forest warm and exhaled.</div>
-    <div class="illo-note">Full bleed. No text on this page. Mouse family in background of right page.</div>
+    <div class="illo-desc">Trio walking home on the morning forest path. Pip leads &mdash; both lantern mushrooms raised like tiny torches, mud still on his nose, marching cheerfully. Vera and Sage walk together behind him. Canopy casts dappled shade so the lantern mushrooms glow warmly even in daylight. Forest exhaled, calm, alive.</div>
+    <!-- Illustrator note: the closing image uses morning forest-path light with canopy shade, so lantern mushrooms glow warmly even though the prose is set in full morning sun. This is the iconic closing image for the series — always the trio walking home. -->
+    <div class="illo-note">Bleed to all edges. No text on this page or next. Lantern mushrooms glow via canopy shade. Series recurring final image.</div>
   </div>
 </div>
 
 <div class="pg-container pg-right">
+  <!-- Illo 12 FINAL SPREAD: right page -->
+  <!-- TO REPLACE: <img src="images/illo-12-right.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Mouse family in background; everyday life continues"/> -->
   <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
     <div class="illo-num">Illustration 12 &mdash; FINAL SPREAD (right page)</div>
-    <div class="illo-desc">In far background between trees: mouse family&rsquo;s temporary shelter. Ma hanging framed painting on the exterior wall. Pa on stump with sleeping Baby. Big Daughter writing on step. Middle Son watching trio walk away, still hoping for something interesting. Nothing will happen. Not today.</div>
-    <div class="illo-note">Full bleed. This image echoes in all 8 books &mdash; always the trio walking home.</div>
+    <div class="illo-desc">In the far background between the trees: the mouse family&rsquo;s temporary above-ground shelter. Ma is hanging the framed painting on the exterior wall. Pa sits on a stump, Baby asleep across his lap. Big Daughter writes on the step. Middle Son watches the trio walk away, still hoping something interesting will happen. Nothing will. Not today.</div>
+    <!-- Mouse family note: this echoes in all eight Whisperwood books — always the mouse family in the background, always in the middle of their own ordinary life. -->
+    <div class="illo-note">Bleed to all edges. No text. Mouse family in background: Ma hanging painting, Pa with Baby, Big Daughter writing, Middle Son watching the trio. Series recurring background.</div>
   </div>
 </div>
 
 <!-- ══════════════════════════════════════
-     PAGES 29–30 — End matter
+     PAGES 31–32 — End matter
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left pg-end">
   <div style="text-align:center;padding:1in;">
@@ -592,29 +700,74 @@
 </div>
 
 <!-- ══════════════════════════════════════
-     PAGES 31–32 — Back matter / blank
-     (Back cover submitted separately to KDP)
+     PAGES 33–34 — Back matter: About Whisperwood
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left" style="background:#f9f3e8;">
-  <!-- Blank or series list / author bio page -->
-  <div class="text-safe" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
-    <div style="font-size:13pt;color:#4a7c59;font-style:italic;line-height:2.2;">
-      <p>Also in the Whisperwood series:</p>
-      <p>Book 1: The Rising River</p>
-      <p>Book 2: The Noisy Night</p>
-      <p>Book 3: The Missing Acorns</p>
-      <p>Book 4: Otter Won&rsquo;t Help</p>
-      <p>Book 5: The Too-Busy Beaver</p>
-      <p>Book 6: Deer Says Yes</p>
-      <p>Book 7: The Quiet Argument</p>
-      <p>Book 8: The Forest Holds Its Breath</p>
+  <div class="text-safe">
+    <div style="font-size:22pt;font-weight:bold;color:#2d5a27;margin-bottom:20pt;">About Whisperwood</div>
+    <div class="story-text" style="font-size:14pt;">
+      <p>Whisperwood is an enchanted forest where the enchantment is part of everyday life. Three friends &mdash; Vera the fox, Pip the squirrel, and Sage the turtle &mdash; solve problems the only way anything ever gets solved here: together, with the right creature, in the right order, one careful step at a time.</p>
     </div>
   </div>
 </div>
 
 <div class="pg-container pg-right" style="background:#f9f3e8;">
-  <!-- Final blank / barcode page — KDP adds barcode automatically for print -->
-  <!-- Leave mostly blank; KDP places ISBN barcode in lower right -->
+  <div class="text-safe">
+    <div style="font-size:22pt;font-weight:bold;color:#2d5a27;margin-bottom:20pt;">Coming Next</div>
+    <div class="story-text" style="font-size:14pt;">
+      <p><strong>Book 2: The Noisy Night</strong></p>
+      <p><em>Something has made Whisperwood too loud to sleep. Sage feels it first &mdash; she always does. But this time, her greatest weakness might be the only thing that can fix it.</em></p>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGES 35–36 — Back matter: World of Whisperwood glossary
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left" style="background:#f9f3e8;">
+  <div class="text-safe">
+    <div style="font-size:22pt;font-weight:bold;color:#2d5a27;margin-bottom:20pt;">The World of Whisperwood</div>
+    <div class="story-text" style="font-size:13pt;line-height:1.6;">
+      <p><strong>The Mapleaf Tree</strong><br/>
+      A giant tree whose leaves glow faintly and shift to show paths and changes in the forest. When the veins go dark &mdash; something is coming.<br/>
+      <em>Rule: It shows you what is there. It does not tell you what to do.</em></p>
+      <p><strong>Singing Mud</strong><br/>
+      Mud that responds to voices &mdash; but only many voices, all together, low and slow. One voice does nothing.<br/>
+      <em>Rule: It takes the whole community.</em></p>
+      <p><strong>The Talking Rock</strong><br/>
+      The oldest boulder at the river&rsquo;s edge. It remembers everything. It speaks one word at a time, very slowly.<br/>
+      <em>Rule: Patience required. It has never lied.</em></p>
+    </div>
+  </div>
+</div>
+
+<div class="pg-container pg-right" style="background:#f9f3e8;">
+  <div class="text-safe">
+    <div class="story-text" style="font-size:13pt;line-height:1.6;margin-top:0.5in;">
+      <p><strong>Bellflowers</strong><br/>
+      Delicate flowers that ring when shaken. Ring one to reach someone &mdash; keep ringing until they come.</p>
+      <p><strong>The Bunny Network</strong><br/>
+      The bunnies know every safe path and high spot in Whisperwood. In a crisis, they guide calmly &mdash; no panic, no rushing. They know exactly where to go.<br/>
+      <em>Rule: They move above ground, fast and quiet. They always know the way out.</em></p>
+    </div>
+    <div style="position:absolute;bottom:0.5in;left:0.375in;right:0.375in;text-align:center;">
+      <div style="font-size:10pt;color:#777;font-style:italic;line-height:2;">
+        <p>Also in the Whisperwood series:</p>
+        <p>Book 1: The Rising River &bull; Book 2: The Noisy Night</p>
+        <p>Book 3: The Missing Acorns &bull; Book 4: Otter Won&rsquo;t Help</p>
+        <p>Book 5: The Too-Busy Beaver &bull; Book 6: Deer Says Yes</p>
+        <p>Book 7: The Quiet Argument &bull; Book 8: The Forest Holds Its Breath</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE 37 — Final blank / KDP barcode page
+     (KDP adds ISBN barcode automatically for print)
+     ══════════════════════════════════════ -->
+<div class="pg-container pg-left" style="background:#f9f3e8;">
+  <!-- Leave blank; KDP places ISBN barcode in lower right -->
 </div>
 
 </body>

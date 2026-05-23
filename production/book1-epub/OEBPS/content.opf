@@ -26,49 +26,107 @@
 
   <manifest>
     <!-- Navigation -->
-    <item id="nav"      href="nav.xhtml"         media-type="application/xhtml+xml" properties="nav"/>
+    <item id="nav"      href="nav.xhtml"              media-type="application/xhtml+xml" properties="nav"/>
     <!-- Stylesheet -->
-    <item id="css"      href="css/fixed.css"      media-type="text/css"/>
+    <item id="css"      href="css/fixed.css"           media-type="text/css"/>
     <!-- Pages -->
-    <item id="cover"    href="pages/cover.xhtml"   media-type="application/xhtml+xml" properties="svg"/>
-    <item id="titlepage"href="pages/titlepage.xhtml" media-type="application/xhtml+xml"/>
-    <item id="ch01a"    href="pages/ch01a.xhtml"   media-type="application/xhtml+xml"/>
-    <item id="ch01b"    href="pages/ch01b.xhtml"   media-type="application/xhtml+xml"/>
-    <item id="ch02"     href="pages/ch02.xhtml"    media-type="application/xhtml+xml"/>
-    <item id="ch03"     href="pages/ch03.xhtml"    media-type="application/xhtml+xml"/>
-    <item id="ch04a"    href="pages/ch04a.xhtml"   media-type="application/xhtml+xml"/>
-    <item id="ch04b"    href="pages/ch04b.xhtml"   media-type="application/xhtml+xml"/>
-    <item id="ch05"     href="pages/ch05.xhtml"    media-type="application/xhtml+xml"/>
-    <item id="ch06"     href="pages/ch06.xhtml"    media-type="application/xhtml+xml"/>
-    <item id="ch07a"    href="pages/ch07a.xhtml"   media-type="application/xhtml+xml"/>
-    <item id="ch07b"    href="pages/ch07b.xhtml"   media-type="application/xhtml+xml"/>
-    <item id="ch08a"    href="pages/ch08a.xhtml"   media-type="application/xhtml+xml"/>
-    <item id="ch08b"    href="pages/ch08b.xhtml"   media-type="application/xhtml+xml"/>
-    <item id="ch08c"    href="pages/ch08c.xhtml"   media-type="application/xhtml+xml"/>
-    <item id="endpage"  href="pages/endpage.xhtml"  media-type="application/xhtml+xml"/>
+    <item id="cover"    href="pages/cover.xhtml"       media-type="application/xhtml+xml" properties="svg"/>
+    <item id="titlepage"href="pages/titlepage.xhtml"   media-type="application/xhtml+xml"/>
+    <!-- Ch 1: full-bleed establishing spread (3400px) -->
+    <item id="ch01a"    href="pages/ch01a.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- Ch 1 continued: illo 2 (left) + text (right) -->
+    <item id="ch01b"    href="pages/ch01b.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch01c"    href="pages/ch01c.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- Ch 2: illo 3 (left) + Ch 2 text (right) -->
+    <item id="ch02a"    href="pages/ch02a.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch02b"    href="pages/ch02b.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- Ch 3: illo 4 (left) + Ch 3 text (right) -->
+    <item id="ch03a"    href="pages/ch03a.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch03b"    href="pages/ch03b.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- Ch 4 opening: illo 5 (left) + Ch 4 text (right) -->
+    <item id="ch04a"    href="pages/ch04a.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch04b"    href="pages/ch04b.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- Ch 4 key spread: Sage/boulder full-bleed (3400px) + text continuation -->
+    <item id="ch04c"    href="pages/ch04c.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch04d"    href="pages/ch04d.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- Ch 5: illo 7 (left) + Ch 5 text (right) -->
+    <item id="ch05a"    href="pages/ch05a.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch05b"    href="pages/ch05b.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- Ch 6: illo 8 (left) + Ch 6 text (right) -->
+    <item id="ch06a"    href="pages/ch06a.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch06b"    href="pages/ch06b.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- Ch 7: community singing full-bleed spread (3400px) + text + illo 10 -->
+    <item id="ch07a"    href="pages/ch07a.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch07b"    href="pages/ch07b.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch07c"    href="pages/ch07c.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- Ch 8: illo 11 (left) + Ch 8 text (right) -->
+    <item id="ch08a"    href="pages/ch08a.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch08b"    href="pages/ch08b.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- Ch 9: text left + text right + final full-bleed spread (3400px) -->
+    <item id="ch09a"    href="pages/ch09a.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch09b"    href="pages/ch09b.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch09c"    href="pages/ch09c.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- End page -->
+    <item id="endpage"  href="pages/endpage.xhtml"     media-type="application/xhtml+xml"/>
   </manifest>
 
   <spine>
     <!-- Cover: right-hand page of first opening -->
     <itemref idref="cover"     properties="rendition:page-spread-right"/>
     <itemref idref="titlepage" properties="rendition:page-spread-right"/>
-    <!-- Ch 1 spread (Illo 1 — establishing shot) -->
+
+    <!-- Ch 1 — full-bleed establishing spread (both pages, Illo 1) -->
     <itemref idref="ch01a"     properties="rendition:page-spread-left"/>
-    <itemref idref="ch01b"     properties="rendition:page-spread-right"/>
-    <itemref idref="ch02"      properties="rendition:page-spread-left"/>
-    <itemref idref="ch03"      properties="rendition:page-spread-right"/>
+
+    <!-- Ch 1 continued — Illo 2 left / text right -->
+    <itemref idref="ch01b"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch01c"     properties="rendition:page-spread-right"/>
+
+    <!-- Ch 2 — Illo 3 left / Ch 2 text right -->
+    <itemref idref="ch02a"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch02b"     properties="rendition:page-spread-right"/>
+
+    <!-- Ch 3 — Illo 4 left / Ch 3 text right -->
+    <itemref idref="ch03a"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch03b"     properties="rendition:page-spread-right"/>
+
+    <!-- Ch 4 opening — Illo 5 left / Ch 4 text right -->
     <itemref idref="ch04a"     properties="rendition:page-spread-left"/>
-    <!-- Key spread: Sage/rock (Illo 6) — full bleed two pages -->
     <itemref idref="ch04b"     properties="rendition:page-spread-right"/>
-    <itemref idref="ch05"      properties="rendition:page-spread-left"/>
-    <itemref idref="ch06"      properties="rendition:page-spread-right"/>
-    <!-- Community spread: singing mud (Illo 9) -->
+
+    <!-- Ch 4 KEY SPREAD — Sage/boulder full-bleed (both pages, Illo 6) -->
+    <itemref idref="ch04c"     properties="rendition:page-spread-left"/>
+
+    <!-- Ch 4 boulder scene text continuation (right page, pairs with next illo) -->
+    <itemref idref="ch04d"     properties="rendition:page-spread-right"/>
+
+    <!-- Ch 5 — Illo 7 left / Ch 5 text right -->
+    <itemref idref="ch05a"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch05b"     properties="rendition:page-spread-right"/>
+
+    <!-- Ch 6 — Illo 8 left / Ch 6 text right -->
+    <itemref idref="ch06a"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch06b"     properties="rendition:page-spread-right"/>
+
+    <!-- Ch 7 COMMUNITY SPREAD — singing mud full-bleed (both pages, Illo 9) -->
     <itemref idref="ch07a"     properties="rendition:page-spread-left"/>
-    <itemref idref="ch07b"     properties="rendition:page-spread-right"/>
+
+    <!-- Ch 7 continued — text left / Illo 10 right -->
+    <itemref idref="ch07b"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch07c"     properties="rendition:page-spread-right"/>
+
+    <!-- Ch 8 — Illo 11 left / Ch 8 text right -->
     <itemref idref="ch08a"     properties="rendition:page-spread-left"/>
     <itemref idref="ch08b"     properties="rendition:page-spread-right"/>
-    <!-- Final spread (Illo 12) -->
-    <itemref idref="ch08c"     properties="rendition:page-spread-left"/>
+
+    <!-- Ch 9 — text left / text right -->
+    <itemref idref="ch09a"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch09b"     properties="rendition:page-spread-right"/>
+
+    <!-- FINAL SPREAD — trio walking home, full-bleed (both pages, Illo 12) -->
+    <itemref idref="ch09c"     properties="rendition:page-spread-left"/>
+
+    <!-- End page -->
     <itemref idref="endpage"   properties="rendition:page-spread-right"/>
   </spine>
 
