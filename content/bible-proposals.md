@@ -44,3 +44,54 @@ Place A — Section 3, callout box:
 
 Place B — Section 6, Rules That Cannot Be Broken list:
 - Item changed from `Character motivation is shown through action, never explained through internal monologue. No italicised thought.` to `Character motivation is shown through action. Italicised internal thought may be used sparingly as texture — never as the sole or primary signal of what a character perceives or feels.`
+
+---
+
+## Proposal 3 — 2026-05-23
+
+**Proposed by:** Reena (series author — direct instruction)
+**Regarding:** Section 7, Canon Rules — bellflower mechanic
+**Summary of change:** Replace the coded three-rings signal system with a telephone-style mechanic: ring a bellflower and keep ringing until someone comes, with no coded meanings attached to ring count.
+**Reason given:** Reena has decided the telephone metaphor is simpler and more intuitive for the target age group than a coded signal system.
+
+**Emily's decision:** APPROVED — directed by Reena
+
+**Reasoning:** The telephone metaphor is more legible for ages 4–6 than a coded signal. Young readers in this age range understand "keep ringing until someone comes" from lived experience; a three-rings code requires them to remember a convention that has no real-world anchor. Removing the code also eliminates a potential source of inconsistency across books — writers no longer need to track what ring count means what. The bellflower remains a concrete, functional object in the world; its purpose (summon the community) is unchanged. No sellability risk. Consistent with the series' preference for direct, concrete mechanics over systems that require decoding.
+
+**What was changed (Emily made this edit directly per Reena's instruction):**
+
+Section 7, Rules That Cannot Be Broken list:
+- Item changed from `The bellflower signal: three rings = come quickly, do not panic. Do not change this across books.` to `Bellflowers work like a telephone — ring one and keep ringing until someone comes. No coded signals; the act of ringing is the call. Consistent across all books.`
+
+Note: Pip's Gift row in his character table (Section 3) references "a bellflower" as a generic tool and was left unchanged — it contains no mention of the three-rings code and requires no edit.
+
+**Addendum — 2026-05-23 (completing Proposal 3):**
+
+A second bellflower definition was identified in Section 2 (Infrastructure: Tools & Materials) that still carried the old coded-signal mechanic. This was a missed instance from the original Proposal 3 edit.
+
+**What was changed:**
+
+Section 2, Infrastructure: Tools & Materials table, Bellflowers row:
+- Body cell changed from: `Communication device. Three rings = "come quickly, but don't panic." Other patterns exist for other messages. Range is limited to the forest; cannot summon creatures from very far away without relay.`
+- To: `Communication device. Works like a telephone — ring one and keep ringing until someone comes. No coded signals; the act of ringing is the call. Range is limited to the forest; cannot summon creatures from very far away without relay.`
+
+The bellflower mechanic is now consistent across all three locations where it appears: Section 2 (Tools & Materials table), Section 6 (Rules That Cannot Be Broken list), and the prior Section 7 edit.
+
+---
+
+## Proposal 4 — 2026-05-23
+
+**Proposed by:** Reena (series author — direct instruction)
+**Regarding:** Section 4, Chapter Length Guide — chapter count specification
+**Summary of change:** Soften the "7 chapters per book" rule to "approximately 7 chapters" and explicitly note Book 1 as an approved 8-chapter exception. Word count range updated to 1,050–1,750 words to reflect the softened floor consistent with actual book structure.
+**Reason given:** Book 1 has 8 chapters. The previous bible language specified "7 chapters" as an absolute standard, leaving the bible in direct conflict with the actual structure of the first book in the series.
+
+**Emily's decision:** APPROVED — directed by Reena
+
+**Reasoning:** The change resolves a genuine internal contradiction between the bible's structural specification and Book 1's actual chapter count. Softening "7 chapters" to "approximately 7 chapters" with an explicit Book 1 exception is the cleanest resolution: it preserves the 7-chapter norm as the working expectation for Books 2–8 without retroactively making Book 1 non-compliant. The adjusted word-count floor (1,050 words rather than 1,200) reflects the practical range for a 7-chapter book at 150 words per chapter minimum. No sellability risk — the structural rhythm of the series is unchanged; one extra chapter in Book 1 gives the opening book slightly more space to establish the world, which is commercially reasonable for a series launch.
+
+**What was changed:**
+
+Section 4, Chapter Length Guide paragraph:
+- Changed from: `Each book: 7 chapters, approximately 150–250 words per chapter. Total per book: 1,200–1,800 words.`
+- Changed to: `Each book targets approximately 7 chapters, approximately 150–250 words per chapter. Total per book: 1,050–1,750 words. Book 1 is an approved exception at 8 chapters.`

@@ -3,8 +3,6 @@
 
 *Resources: Mapleaf · Talking Rock · Singing mud · Beavers · Bunnies | Theme: Ask why before solving.*
 
-> **Bible deviation note — chapter count:** This book uses 8 chapters instead of the bible-specified 7. Each chapter is shorter (~150 words), keeping the total word count within the 1,200–1,800 range. The 8-chapter structure was retained because the story breathes better with the split, and the chapter lengths are individually compliant. Flagged for Emily to consider whether the bible's chapter-count rule should be updated or treated as a per-book allowance.
-
 ---
 
 ### Chapter 1: The Mapleaf Knows
@@ -65,9 +63,9 @@ She placed one foot in the current. Then she took it back out.
 
 She reached for a bellflower growing near the bank.
 
-She rang it once. Twice. Three times.
+She rang it.
 
-In Whisperwood, three rings meant: come quickly, but don't panic.
+And kept ringing until they came.
 
 ---
 
@@ -375,4 +373,4 @@ The oldest boulder at the river's edge. It remembers everything. It speaks one w
 *Rule: Patience required. It has never lied.*
 
 **Bellflowers**
-Delicate flowers that ring when shaken. Three rings means: come quickly, but don't panic.
+Delicate flowers that ring when shaken. Ring one to reach someone — keep ringing until they come.
