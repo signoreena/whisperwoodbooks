@@ -95,3 +95,45 @@ The bellflower mechanic is now consistent across all three locations where it ap
 Section 4, Chapter Length Guide paragraph:
 - Changed from: `Each book: 7 chapters, approximately 150–250 words per chapter. Total per book: 1,200–1,800 words.`
 - Changed to: `Each book targets approximately 7 chapters, approximately 150–250 words per chapter. Total per book: 1,050–1,750 words. Book 1 is an approved exception at 8 chapters.`
+
+---
+
+## Proposal 5 — 2026-05-23
+
+**Proposed by:** Reena (series author — direct instruction)
+**Regarding:** Section 2 (Tools & Materials table), Section 4 (Illustration Style Notes), Section 5 (8-Book Arc callout, Book 8 outline), Section 5.5 (Mouse Family Book 8), Section 6 (Terminology table), Section 7 (Illustration Brief) — mushroom/light-source terminology
+**Summary of change:** Eliminate "glow moss" as a named element entirely. Replace all instances of "glow mushroom(s)" with "lantern mushroom(s)." Establish "lantern mushroom" as the single canonical term for the portable/ambient light fungi of Whisperwood. Absorb the meaningful glow moss attributes (path and cave illumination, reveals things hard to see in daylight, gatherable portable light) into a new dedicated Lantern mushrooms row.
+**Reason given:** Reena is consolidating all light-source fungi under one canonical term to eliminate redundancy and simplify the world for writers and the illustrator.
+
+**Emily's decision:** APPROVED — directed by Reena
+
+**Reasoning:** Consolidation is a clean editorial improvement. "Glow moss" and "glow mushroom(s)" were two overlapping names for effectively the same function, creating inconsistency across the bible that could confuse a collaborating illustrator or author. A single canonical term with a single definition is cleaner, simpler, and more consistent with the series' principle of clear, concrete world-building. All meaningful attributes of glow moss (path/cave illumination, reveals-things-in-daylight, portable) are preserved in the expanded lantern mushroom entry — nothing is lost. Appropriate for the target age group. No sellability risk.
+
+**What was changed:**
+
+1. Section 2, Tools & Materials table: "Glow Moss" row replaced with a new "Lantern mushrooms" row with expanded definition absorbing all glow moss attributes. The Mushrooms row updated to reference "lantern mushrooms (portable light — see Lantern mushrooms above)" for cross-reference clarity.
+2. Section 4, Illustration Style Notes paragraph: "glow moss paths" → "lantern mushroom paths."
+3. Section 5, Series Arc Design Principle callout (line 640): "glow mushrooms lighting the path" → "lantern mushrooms lighting the path."
+4. Section 5, Book 8 outline (line 697): "glow mushrooms lighting the path" → "lantern mushrooms lighting the path."
+5. Section 5.5, Mouse Family Book 8 (line 770): "walks home with glow mushrooms" → "walks home with lantern mushrooms."
+6. Section 6, Terminology table: "Glow moss" row removed and replaced with a "Lantern mushroom" row marking it as the canonical term and explicitly deprecating "glow moss" and "glow mushroom(s)."
+7. Section 7, Illustration Brief (line 848): "the glow of moss" → "the glow of lantern mushrooms."
+8. Section 7, Illustration Brief (line 850): "glow mushrooms lighting the path" → "lantern mushrooms lighting the path."
+
+---
+
+## Proposal 6 — 2026-05-23
+
+**Proposed by:** Florence (world-rules review) / ratified by Reena
+**Regarding:** Section 2, Tools & Materials table — Singing Mud entry
+**Summary of change:** Add a deactivation clause to the Singing Mud entry establishing that when the community stops singing, the mud settles passively back to its resting state with no counter-action required.
+**Reason given:** The existing bible entry described only activation (group singing causes the mud to shift, pile, or channel). It was silent on what happens when the singing stops. Book 1 now establishes the passive-reset behavior as canonical, and the bible must reflect it to ensure consistency across all subsequent books.
+
+**Emily's decision:** APPROVED — directed by Reena/Florence review
+
+**Reasoning:** This is a necessary gap-fill, not a creative expansion. The absence of a deactivation rule created a genuine ambiguity: future writers could reasonably guess that mud walls remain permanent, or require a counter-action to undo, or that singing in reverse collapses them. All of those interpretations would be wrong per Book 1 and could cause continuity errors in Books 2–8. The passive-reset rule ("settles slowly back to its resting state — no counter-action required") is consistent with the series' established mechanics: the mud responds to the community's collective action, and when that action ends, the system returns naturally to equilibrium. This is also consistent with the series theme that solutions can be temporary and that the world self-regulates. No sellability risk — if anything, it reinforces the sense of a coherent, physics-like system that makes Whisperwood feel trustworthy to re-reading parents.
+
+**What was changed:**
+
+Section 2, Tools & Materials table, Singing Mud row:
+- Added to end of cell: "When the community stops singing, the mud settles slowly back to its resting state. No counter-action is required."

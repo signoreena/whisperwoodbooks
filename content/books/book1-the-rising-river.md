@@ -121,6 +121,8 @@ She stood very still for exactly one breath.
 
 "Not safely," said Bram. "Not tonight."
 
+---
+
 Back at the river, Pip was doing what Pip always did when there was a problem.
 
 He was trying to help.
@@ -151,17 +153,19 @@ Pip watched her face.
 
 A mouse family hurried past below, bundles on their backs, moving fast and quiet.
 
-"…A tree," said Sage.
+"…Tree," said the boulder, very slowly.
 
 Pip leaned in. His nose was now very close to the rock. He wasn't sure why. It just seemed like the right thing to do.
 
-"A tree? What tree?"
+"Tree? What tree?"
 
 Sage put one hand on his shoulder, gently. He went still.
 
 They waited.
 
-"…It fell," said Sage.
+"…Fell," said the boulder.
+
+Sage lifted her hand. "A tree fell," she said. "That's why the water can't go anywhere."
 
 ---
 
@@ -211,7 +215,7 @@ By the time the sun went down, the burrows were knee-deep in water.
 
 The bunnies had already begun.
 
-They moved fast and quiet through their underground tunnels, guiding mouse families out one by one. No panic. No pushing. Just small paws and calm voices and knowing exactly where to go.
+They moved fast and quiet along the high paths, guiding mouse families out one by one — every safe step, every dry patch of ground, every piece of higher land known. No panic. No pushing. Just small paws and calm voices and knowing exactly where to go.
 
 "This way, please."
 
@@ -222,6 +226,8 @@ They moved fast and quiet through their underground tunnels, guiding mouse famil
 Above ground, Vera looked up at the Mapleaf.
 
 Its veins were still dark — but one branch pointed slightly left. Toward the mossy clearing.
+
+A redirect. The mud at the bank — if everyone sang, they could open a channel pointing that way.
 
 She was already walking toward Pip before she finished looking.
 
@@ -293,6 +299,10 @@ The water rushed through the cleared channel with a sound like relief. The singi
 
 By the time the sun was fully up, the burrows were draining. The herons were back at their posts. The hedgehog baker had new rolls out. The sparrows had either resolved their argument or simply started a different one.
 
+---
+
+### Chapter 9: That Was the Part
+
 Vera sat on a rock by the river, watching the water run clear and calm.
 
 Pip flopped down next to her. He had mud on his nose and a lantern mushroom in each paw, held up like tiny torches. It was broad daylight.
@@ -344,6 +354,10 @@ They followed him.
 
 ---
 
+*Illustrator note — closing spread: The final illustration should be set in morning forest-path light with canopy shade, so that the lantern mushrooms the trio carry glow warmly even in daylight. Though the prose is set in full morning sun, the iconic closing image for the series uses warm lantern-mushroom light along the path.*
+
+---
+
 ## About Whisperwood
 
 Whisperwood is an enchanted forest where the enchantment is part of everyday life. Three friends — Vera the fox, Pip the squirrel, and Sage the turtle — solve problems the only way anything ever gets solved here: together, with the right creature, in the right order, one careful step at a time.
@@ -374,3 +388,7 @@ The oldest boulder at the river's edge. It remembers everything. It speaks one w
 
 **Bellflowers**
 Delicate flowers that ring when shaken. Ring one to reach someone — keep ringing until they come.
+
+**The Bunny Network**
+The bunnies know every safe path and high spot in Whisperwood. In a crisis, they guide calmly — no panic, no rushing. They know exactly where to go.
+*Rule: They move above ground, fast and quiet. They always know the way out.*
