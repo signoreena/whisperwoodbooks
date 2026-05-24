@@ -138,6 +138,8 @@ watching something.
 **Clothing:** Simple tunic, likely blue-green or grey-green tones. No elaborate accessories.
 Her shell is always visible from an angle — it is part of her silhouette.
 
+**Femininity marker:** Long eyelashes only — no hair, ribbons, or accessories. Her eyelashes are the sole visual indicator of her gender. They must be visible in any close or mid-range view of her face.
+
 **Signature props:**
 - One hand flat on a surface — rock, tree bark, water, ground, wood. This is her canonical
   gesture: she listens through surfaces, and her hand placement tells the reader she is learning
