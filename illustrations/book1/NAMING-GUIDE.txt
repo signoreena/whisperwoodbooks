@@ -11,18 +11,16 @@ NAMING CONVENTION
 Name files exactly as shown. The script matches by filename.
 
   cover.jpg       Front cover art
-  illo-01.jpg     Ch 1 — Ordinary Tuesday (establishing shot)
-  illo-02.jpg     Ch 1 — Mapleaf veins go dark + Pip lands on Vera
-  illo-03.jpg     Ch 2 — Sage rings the bellflower at the rising river
-  illo-04.jpg     Ch 3 — Pip with enormous stick, Vera already gone
-  illo-05.jpg     Ch 4 — Vera very still before Bram
-  illo-06.jpg     Ch 4 — KEY SPREAD: Sage hand on boulder, Pip nose-to-rock
-  illo-07.jpg     Ch 5 — Three friends at river, Pip beaming, Vera ears mid-rise
-  illo-08.jpg     Ch 6 — Split: bunny tunnels below / Vera at Mapleaf above
-  illo-09.jpg     Ch 7 — COMMUNITY SPREAD: whole forest singing to the mud
-  illo-10.jpg     Ch 7 — The redirect working, collective exhale, glow moss
-  illo-11.jpg     Ch 8 — Beavers moving the fallen oak at dawn
-  illo-12.jpg     Ch 8 — FINAL SPREAD: trio walks home, mouse family in background
+  illo-01.jpg     Ch 1 — Ordinary Tuesday establishing shot (Vera writes, Pip leaps, Sage watches tadpoles)
+  illo-02.jpg     Ch 1 — Mapleaf veins go dark; Pip falls toward Vera
+  illo-03.jpg     Ch 2 — Sage alone at rising river, bellflower mid-ring
+  illo-04.jpg     Ch 3/4 — Pip leans into useless stick; Sage perfectly still beside him
+  illo-05.jpg     Ch 4 — KEY SPREAD: Sage hands on ancient boulder, Pip nose-to-rock
+  illo-06.jpg     Ch 4 — Vera's ears go back before Bram at the beaver dam
+  illo-07.jpg     Ch 7 — COMMUNITY SPREAD: whole forest singing to the mud, channel forming
+  illo-08.jpg     Ch 8 — Beavers working the fallen oak at dawn; river beginning to run free
+  illo-09.jpg     Ch 8 — Mouse family in above-ground shelter; Ma hanging framed painting
+  illo-10.jpg     Ch 9 — FINAL SPREAD: trio walks home, lantern mushrooms, mouse family shelter in background
 
 
 FILE FORMAT
@@ -34,12 +32,12 @@ FILE FORMAT
 
 SIZE REQUIREMENTS
 -----------------
-Single-page illustrations (illos 02–05, 07–08, 10–11):
+Single-page illustrations (illos 02, 03, 04, 06, 08, 09):
   Minimum for ebook:  1700 × 1700 px  (200 ppi at 8.5")
   Minimum for print:  2625 × 2625 px  (300 ppi at 8.75" with bleed)
   → If generating at print size (2625×2625), the ebook copy will scale down fine.
 
-Full-spread illustrations (illos 01, 06, 09, 12) — TWO PAGES WIDE:
+Full-spread illustrations (illos 01, 05, 07, 10) — TWO PAGES WIDE:
   Minimum for ebook:  3400 × 1700 px  (200 ppi across two 8.5" pages)
   Minimum for print:  5250 × 2625 px  (300 ppi across two 8.75" pages)
   → Same file used for both formats. The print layout crops each half
@@ -52,9 +50,33 @@ Cover (cover.jpg) — single square page:
   This file is the FRONT COVER only, used inside the ebook as well.
 
 
+SPREAD NOTES
+------------
+illo-05 (KEY SPREAD) and illo-07 (COMMUNITY SPREAD) are the two
+emotionally critical full-spreads. If generating in batches, prioritize
+these. The key visual in illo-05: Sage's hands flat on the boulder,
+eyes closed; Pip's nose millimeters from the rock, holding his breath.
+
+illo-06 contains Vera's most important physical character moment in
+Book 1: her ears going back (not flat, just moved from their usual
+forward-alert position) as she stands before Bram. Must read clearly
+but subtly — she is caught, not defeated.
+
+illo-08 (beavers at the fallen oak): the root ball of the fallen oak
+must show old, weathered damage — this detail pays off in Book 8.
+Show it clearly enough that a reader returning to Book 1 after Book 8
+would notice it.
+
+illo-10 (FINAL SPREAD) establishes the series' closing visual: trio
+on the path, lantern mushrooms lining both edges, home ahead. This
+composition recurs in every subsequent book. The Mapleaf tree in the
+far background should show veins returned to gold-green — bookend to
+the dark veins of illo-02.
+
+
 PARTIAL DROPS ARE FINE
 -----------------------
-You don't need all 13 files at once. Drop what you have, tell Claude,
+You don't need all 11 files at once. Drop what you have, tell Claude,
 and the script will place whatever is available. Missing images stay
 as placeholders. Run placement again when more images are ready.
 

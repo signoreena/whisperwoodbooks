@@ -1,0 +1,113 @@
+WHISPERWOOD BOOK 2 — ILLUSTRATION DROP FOLDER
+==============================================
+
+Drop your finished illustration files here.
+Once all (or some) images are in place, tell Claude and the placement
+script will copy them into the ePub and print files automatically.
+
+
+NAMING CONVENTION
+-----------------
+Name files exactly as shown. The script matches by filename.
+
+  cover.jpg       Front cover art — Sage alone at forked elm, canopy erupting in visual noise above her
+  illo-01.jpg     Ch 1 — OPENING SPREAD: Whisperwood at rest; songbird relay running; Sage's lit window
+  illo-02.jpg     Ch 2 — Pip crouches at Hazel's closed bakery; Hazel on step, exhausted, apron untied
+  illo-03.jpg     Ch 3 — Vera mid-stride toward canopy, Pip running to keep up, list in paw
+  illo-04.jpg     Ch 4 — Library tree interior; Vera before Oswin, ears back, list folded in half
+  illo-05.jpg     Ch 5 — Pip on Sage's step, stick beside him; Sage hands flat on boards, almost-smiling
+  illo-06.jpg     Ch 6 — KEY SPREAD: Sage at forked elm, hand on bark, jaw set; three relay chains crossing
+  illo-07.jpg     Ch 7 — Oswin leads group through quietcap mushroom grove; Sage breathing at grove edge
+  illo-08.jpg     Ch 7 — Final cluster placed at path bend; canopy thinning; Sage leads, Vera follows
+  illo-09.jpg     Ch 7 — FINAL SPREAD: trio walks home at night, lantern mushrooms, forked elm sleeping
+
+
+FILE FORMAT
+-----------
+  Format:   JPG or PNG (JPG preferred for final art — smaller file size)
+  Color:    RGB (not CMYK — KDP handles conversion)
+  Bit depth: 8-bit
+
+
+SIZE REQUIREMENTS
+-----------------
+Single-page illustrations (illos 02, 03, 04, 05, 07, 08):
+  Minimum for ebook:  1700 × 1700 px  (200 ppi at 8.5")
+  Minimum for print:  2625 × 2625 px  (300 ppi at 8.75" with bleed)
+  → If generating at print size (2625×2625), the ebook copy will scale down fine.
+
+Full-spread illustrations (illos 01, 06, 09) — TWO PAGES WIDE:
+  Minimum for ebook:  3400 × 1700 px  (200 ppi across two 8.5" pages)
+  Minimum for print:  5250 × 2625 px  (300 ppi across two 8.75" pages)
+  → Same file used for both formats. The print layout crops each half
+    onto its own page automatically.
+
+Cover (cover.jpg) — single square page:
+  Minimum:  2625 × 2625 px  (300 ppi at 8.75" with bleed)
+  Note: KDP also requires a separate cover file for the back cover +
+  spine. That is handled via KDP's Cover Creator tool at upload time.
+  This file is the FRONT COVER only, used inside the ebook as well.
+
+
+SPREAD NOTES
+------------
+COVER: The visual argument of the whole book in one image — chaos
+above the elm fork (overlapping songbird relay arcs in amber and
+orange), absolute stillness below (Sage, hand flat on bark, jaw set,
+eyes closed). The break between the two zones happens exactly at the
+elm fork where Sage's hand is placed. At thumbnail size this must read
+immediately: loud above, still below.
+
+illo-06 (KEY SPREAD) is the book's emotionally critical full-spread.
+Three relay chains — arriving from upper-left, upper-right, and far
+center — must visibly converge at the elm fork. The visual argument is
+the mechanism: the reader should understand from the image alone why
+this is the crossing point and why Sage's hand is here. The mouse
+family is unusually foregrounded in this spread: Pa's stillness echoes
+Sage's, Middle Son looks directly up at her, Ma holds the framed
+painting to her chest.
+
+illo-04: Vera's ears back (the involuntary tell) + the folded list are
+her two key physical tells in Book 2. The folded list is important: she
+has not put it away, she has folded it in half. She is not ready to
+abandon it; she just cannot look at it right now.
+
+illo-09 (FINAL SPREAD) is the Book 2 instance of the series' closing
+image. It must be recognizably the same composition as Book 1's final
+spread (path, trio, lantern mushrooms, home ahead) with Book 2's
+specific notes: it is night, not morning; Pip is not carrying anything
+(no mushrooms held aloft); the forked elm is visible upper-left with a
+single bird folded in sleep; the bakery window glows in the far right.
+Trio expressions are one degree forward from Book 1: Vera changed
+(not catching herself), Sage at rest (not quietly vindicated), Pip
+present (not exuberant).
+
+
+MOUSE FAMILY ARC IN BOOK 2
+---------------------------
+Temporary shelter near the forked elm, above the owl's library tree.
+Appears in: cover (background), illo-01, illo-06, illo-08, illo-09.
+
+  cover      Background note only — Pa with Baby asleep, framed painting propped
+  illo-01    Settling into shelter for what will be a loud night; Middle Son's head tilted toward canopy
+  illo-06    Most foregrounded appearance — Pa calm echoing Sage; Middle Son looking directly up at her
+  illo-08    Middle Son and Big Daughter both looking up at thinning relay; Pa calm, Baby asleep
+  illo-09    Family settled inside for the night; painting on the bark wall; Middle Son not at entrance
+
+Baby is asleep in all spreads.
+
+
+PARTIAL DROPS ARE FINE
+-----------------------
+You don't need all 10 files at once. Drop what you have, tell Claude,
+and the script will place whatever is available. Missing images stay
+as placeholders. Run placement again when more images are ready.
+
+
+HOW TO TRIGGER PLACEMENT
+-------------------------
+1. Drop image files here (named exactly as above)
+2. Commit and push to git
+3. Tell Claude: "images are ready, please place them"
+4. Claude runs: production/place-illustrations.sh
+5. Both formats update automatically. ePub is rebuilt and ready to upload.
