@@ -31,12 +31,12 @@ FILE FORMAT
 
 SIZE REQUIREMENTS
 -----------------
-Single-page illustrations (illos 02, 03, 04, 05, 07, 08):
+Single-page illustrations (illos 02, 03, 05, 07):
   Minimum for ebook:  1700 × 1700 px  (200 ppi at 8.5")
   Minimum for print:  2625 × 2625 px  (300 ppi at 8.75" with bleed)
   → If generating at print size (2625×2625), the ebook copy will scale down fine.
 
-Full-spread illustrations (illos 01, 06, 09) — TWO PAGES WIDE:
+Full-spread illustrations (illos 01, 04, 06, 08, 09) — TWO PAGES WIDE:
   Minimum for ebook:  3400 × 1700 px  (200 ppi across two 8.5" pages)
   Minimum for print:  5250 × 2625 px  (300 ppi across two 8.75" pages)
   → Same file used for both formats. The print layout crops each half
@@ -67,10 +67,16 @@ family is unusually foregrounded in this spread: Pa's stillness echoes
 Sage's, Middle Son looks directly up at her, Ma holds the framed
 painting to her chest.
 
-illo-04: Vera's ears back (the involuntary tell) + the folded list are
-her two key physical tells in Book 2. The folded list is important: she
-has not put it away, she has folded it in half. She is not ready to
-abandon it; she just cannot look at it right now.
+illo-04 is a full-bleed double-page spread: the interior of the library
+tree dwarfs both Vera and Oswin — the scale is the point. Vera's ears
+back (the involuntary tell) + the folded list are her two key physical
+tells in Book 2. The folded list is important: she has not put it away,
+she has folded it in half. She is not ready to abandon it; she just
+cannot look at it right now.
+
+illo-08 is a full-bleed double-page spread: the final quietcap cluster
+placed at the path bend; canopy thinning above; Sage leads with
+certainty while Vera follows.
 
 illo-09 (FINAL SPREAD) is the Book 2 instance of the series' closing
 image. It must be recognizably the same composition as Book 1's final

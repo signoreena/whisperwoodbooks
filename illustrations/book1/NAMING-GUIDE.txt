@@ -32,12 +32,12 @@ FILE FORMAT
 
 SIZE REQUIREMENTS
 -----------------
-Single-page illustrations (illos 02, 03, 04, 06, 08, 09):
+Single-page illustrations (illos 02, 04, 06, 08):
   Minimum for ebook:  1700 × 1700 px  (200 ppi at 8.5")
   Minimum for print:  2625 × 2625 px  (300 ppi at 8.75" with bleed)
   → If generating at print size (2625×2625), the ebook copy will scale down fine.
 
-Full-spread illustrations (illos 01, 05, 07, 10) — TWO PAGES WIDE:
+Full-spread illustrations (illos 01, 03, 05, 07, 09, 10) — TWO PAGES WIDE:
   Minimum for ebook:  3400 × 1700 px  (200 ppi across two 8.5" pages)
   Minimum for print:  5250 × 2625 px  (300 ppi across two 8.75" pages)
   → Same file used for both formats. The print layout crops each half
@@ -56,6 +56,13 @@ illo-05 (KEY SPREAD) and illo-07 (COMMUNITY SPREAD) are the two
 emotionally critical full-spreads. If generating in batches, prioritize
 these. The key visual in illo-05: Sage's hands flat on the boulder,
 eyes closed; Pip's nose millimeters from the rock, holding his breath.
+
+illo-03 is also a full-bleed double-page spread: Sage alone at the
+rising river, holding the bellflower mid-ring. The river's wrong-ness
+is visible but not yet dramatic — still water, just too high.
+
+illo-09 is a full-bleed double-page spread: the mouse family in their
+above-ground shelter, Ma hanging the framed painting on the bark wall.
 
 illo-06 contains Vera's most important physical character moment in
 Book 1: her ears going back (not flat, just moved from their usual
