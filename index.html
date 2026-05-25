@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Whisperwood — Tales from the Enchanted Forest</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="assets/Book1pic2.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Nunito:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Nunito:wght@400;600;700;800&display=swap"></noscript>
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -658,7 +661,7 @@
 <!-- ══════════════ NAV ══════════════ -->
 <nav aria-label="Site navigation">
   <a href="#" class="nav-logo">
-    <img src="assets/logo.png" alt="Whisperwood Books">
+    <img src="assets/logo.png" alt="Whisperwood Books" width="56" height="56">
   </a>
   <ul class="nav-links">
     <li><a href="#characters">Characters</a></li>
@@ -769,7 +772,7 @@
             <polygon points="86,170 83,163 86,156 89,163" fill="#c8860a" opacity="0.6"/>
             <polygon points="2,86 9,83 16,86 9,89"   fill="#c8860a" opacity="0.6"/>
           </svg>
-          <img class="portrait-photo" src="Vera.png" alt="Vera the Fox" style="object-position: center 15%;">
+          <img class="portrait-photo" src="Vera.png" alt="Vera the Fox" width="140" height="140" loading="lazy" style="object-position: center 15%;">
         </div>
         <h3 class="char-name">Vera</h3>
         <p class="char-species">The Fox · Systems Thinker</p>
@@ -787,7 +790,7 @@
             <polygon points="86,170 83,163 86,156 89,163" fill="#c8860a" opacity="0.6"/>
             <polygon points="2,86 9,83 16,86 9,89"   fill="#c8860a" opacity="0.6"/>
           </svg>
-          <img class="portrait-photo" src="Pip.png" alt="Pip the Squirrel" style="object-position: center 25%;">
+          <img class="portrait-photo" src="Pip.png" alt="Pip the Squirrel" width="140" height="140" loading="lazy" style="object-position: center 25%;">
         </div>
         <h3 class="char-name">Pip</h3>
         <p class="char-species">The Squirrel · First to Jump In</p>
@@ -805,7 +808,7 @@
             <polygon points="86,170 83,163 86,156 89,163" fill="#c8860a" opacity="0.6"/>
             <polygon points="2,86 9,83 16,86 9,89"   fill="#c8860a" opacity="0.6"/>
           </svg>
-          <img class="portrait-photo" src="Sage.png" alt="Sage the Turtle" style="object-position: center 30%;">
+          <img class="portrait-photo" src="Sage.png" alt="Sage the Turtle" width="140" height="140" loading="lazy" style="object-position: center 30%;">
         </div>
         <h3 class="char-name">Sage</h3>
         <p class="char-species">The Turtle · Deep Listener</p>
@@ -833,7 +836,7 @@
 
     <div class="featured-book">
       <div class="book-cover">
-        <img src="assets/book1coverart.png" alt="Whisperwood Book One: The Rising River">
+        <img src="assets/book1coverart.png" alt="Whisperwood Book One: The Rising River" width="180" height="270" loading="lazy">
       </div>
       <div>
         <span class="avail-label">Book One · Coming Soon</span>
@@ -863,7 +866,7 @@
       Whisperwood is an enchanted village ecosystem where nothing runs on feelings or spells alone. The forest is full of remarkable systems — and every creature knows their part. No single thing solves a whole problem. Everything is partial. Everything has limits. That's what makes it magic.
     </p>
     <div class="world-map-wrap">
-      <img src="assets/whisperwoodmap.png" alt="Map of the Village of Whisperwood">
+      <img src="assets/whisperwoodmap.png" alt="Map of the Village of Whisperwood" width="1536" height="1024" loading="lazy">
     </div>
   </div>
 </section>
@@ -871,7 +874,7 @@
 <!-- ══════════════ FOOTER ══════════════ -->
 <footer>
   <div class="footer-logo">
-    <img src="assets/logo.png" alt="Whisperwood Books">
+    <img src="assets/logo.png" alt="Whisperwood Books" width="90" height="90" loading="lazy">
   </div>
   <p class="footer-tagline">Tales from the Enchanted Forest</p>
   <div class="footer-ornament" aria-hidden="true">
