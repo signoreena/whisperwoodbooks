@@ -1,0 +1,241 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+
+import logoImg       from '../assets/logo.png';
+import veraImg       from '../assets/Vera.png';
+import pipImg        from '../assets/Pip.png';
+import sageImg       from '../assets/Sage.png';
+import bookCoverImg  from '../assets/book1coverart.png';
+import worldMapImg   from '../assets/whisperwoodmap.png';
+---
+
+<Layout>
+
+<!-- ══════════════ NAV ══════════════ -->
+<nav aria-label="Site navigation">
+  <a href="#" class="nav-logo">
+    <Image src={logoImg} alt="Whisperwood Books" width={56} height={56} loading="eager" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="#characters">Characters</a></li>
+    <li><a href="#books">Books</a></li>
+    <li><a href="#world">The Forest</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════ HERO ══════════════ -->
+<section class="hero" aria-labelledby="hero-title">
+
+  <span class="sparkle" aria-hidden="true" style="top:28%;left:12%;animation-delay:0s">✦</span>
+  <span class="sparkle" aria-hidden="true" style="top:22%;right:14%;animation-delay:1.1s">✦</span>
+  <span class="sparkle" aria-hidden="true" style="top:42%;left:7%;animation-delay:2.3s;font-size:0.7rem">✦</span>
+  <span class="sparkle" aria-hidden="true" style="top:38%;right:9%;animation-delay:0.6s;font-size:0.7rem">✦</span>
+  <span class="sparkle" aria-hidden="true" style="top:55%;left:18%;animation-delay:1.7s;font-size:0.55rem">✦</span>
+  <span class="sparkle" aria-hidden="true" style="top:50%;right:20%;animation-delay:3.1s;font-size:0.55rem">✦</span>
+
+  <div class="hero-content">
+    <div class="series-badge">A Children's Book Series &nbsp;·&nbsp; Ages 4–6</div>
+
+    <div class="hero-eyebrow" aria-hidden="true">
+      <span class="hero-eyebrow-line"></span>
+      <span class="hero-eyebrow-leaf">
+        <svg width="22" height="14" viewBox="0 0 22 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 13 C4 8 10 2 21 1 C16 6 10 10 1 13Z" fill="#f5c850" opacity="0.7"/>
+        </svg>
+      </span>
+      <span class="hero-eyebrow-line"></span>
+    </div>
+
+    <h1 class="hero-title" id="hero-title">Whisperwood</h1>
+
+    <p class="hero-subtitle">
+      <span class="subtitle-leaf" aria-hidden="true">
+        <svg width="18" height="11" viewBox="0 0 18 11" fill="none">
+          <path d="M1 10 C3 6 8 1 17 1 C13 5 8 8 1 10Z" fill="#f5c850" opacity="0.6"/>
+        </svg>
+      </span>
+      Tales from the Enchanted Forest
+      <span class="subtitle-leaf" aria-hidden="true" style="transform: scaleX(-1); display:inline-block;">
+        <svg width="18" height="11" viewBox="0 0 18 11" fill="none">
+          <path d="M1 10 C3 6 8 1 17 1 C13 5 8 8 1 10Z" fill="#f5c850" opacity="0.6"/>
+        </svg>
+      </span>
+    </p>
+
+    <div class="ornament" aria-hidden="true">
+      <span class="ornament-line"></span>
+      <span class="ornament-diamond"></span>
+      <span class="ornament-line"></span>
+    </div>
+
+    <p class="hero-desc">
+      Deep in a forest where trees know secret paths and the mushrooms have magic to spare, three friends are about to discover that every big problem can be solved — if you know who to ask.
+    </p>
+
+    <div class="cta-group">
+      <a href="#books" class="btn-primary">Discover the Books</a>
+      <a href="#characters" class="btn-ghost">Meet the Characters</a>
+    </div>
+  </div>
+
+  <div class="hero-wave" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 90" preserveAspectRatio="none" style="display:block;width:100%;height:90px;">
+      <path d="M0,40 C200,90 400,5 720,50 C1000,88 1240,12 1440,55 L1440,90 L0,90 Z" fill="#244e18"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ══════════════ QUOTE ══════════════ -->
+<div class="quote-strip" role="region" aria-label="Featured quote">
+  <div class="quote-inner">
+    <span class="quote-mark" aria-hidden="true">"</span>
+    <p class="quote-text">Nothing runs on spells here. The forest has systems — and every creature has a part to play.</p>
+    <p class="quote-attr">— Whisperwood</p>
+  </div>
+  <div class="quote-wave-bottom" aria-hidden="true" style="margin-top: 3.5rem;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 60" preserveAspectRatio="none" style="display:block;width:100%;height:60px;">
+      <path d="M0,20 C360,60 720,0 1080,40 C1260,58 1380,20 1440,30 L1440,60 L0,60 Z" fill="#f5e6c8"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ══════════════ CHARACTERS ══════════════ -->
+<section class="characters" id="characters">
+  <div class="section-inner">
+    <p class="section-label">The Trio</p>
+    <h2 class="section-title">Meet Your Forest Friends</h2>
+    <div class="section-rule" aria-hidden="true">
+      <span class="section-rule-line"></span>
+      <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 1 L10.5 7 L16 9 L10.5 11 L9 17 L7.5 11 L2 9 L7.5 7 Z" fill="#c8860a" opacity="0.7"/>
+      </svg>
+      <span class="section-rule-line"></span>
+    </div>
+
+    <div class="char-grid">
+
+      <!-- VERA -->
+      <div class="char-card">
+        <div class="portrait-wrap">
+          <svg class="portrait-ring" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="86" cy="86" r="82" stroke="#c8860a" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.4"/>
+            <polygon points="86,2 89,9 86,16 83,9"   fill="#c8860a" opacity="0.6"/>
+            <polygon points="170,86 163,89 156,86 163,83" fill="#c8860a" opacity="0.6"/>
+            <polygon points="86,170 83,163 86,156 89,163" fill="#c8860a" opacity="0.6"/>
+            <polygon points="2,86 9,83 16,86 9,89"   fill="#c8860a" opacity="0.6"/>
+          </svg>
+          <Image class="portrait-photo" src={veraImg} alt="Vera the Fox" width={140} height={140} loading="lazy" style="object-position: center 15%" />
+        </div>
+        <h3 class="char-name">Vera</h3>
+        <p class="char-species">The Fox · Systems Thinker</p>
+        <p class="char-tagline">"I know exactly what to do."</p>
+        <p class="char-desc">Vera always knows who to ask and what order things go in. Brilliant at untangling big problems — but her greatest challenge is learning to listen before she decides she already has the answer.</p>
+      </div>
+
+      <!-- PIP -->
+      <div class="char-card">
+        <div class="portrait-wrap">
+          <svg class="portrait-ring" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="86" cy="86" r="82" stroke="#c8860a" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.4"/>
+            <polygon points="86,2 89,9 86,16 83,9"   fill="#c8860a" opacity="0.6"/>
+            <polygon points="170,86 163,89 156,86 163,83" fill="#c8860a" opacity="0.6"/>
+            <polygon points="86,170 83,163 86,156 89,163" fill="#c8860a" opacity="0.6"/>
+            <polygon points="2,86 9,83 16,86 9,89"   fill="#c8860a" opacity="0.6"/>
+          </svg>
+          <Image class="portrait-photo" src={pipImg} alt="Pip the Squirrel" width={140} height={140} loading="lazy" style="object-position: center 25%" />
+        </div>
+        <h3 class="char-name">Pip</h3>
+        <p class="char-species">The Squirrel · First to Jump In</p>
+        <p class="char-tagline">"I'll help! I'll help! I'll help!"</p>
+        <p class="char-desc">Pip is always first to leap into action — full of energy and the very best of intentions. When something needs to start moving, Pip starts it: he can rally the whole forest with a smile and a bellflower. He's also learning that rushing in with the wrong plan can make a problem bigger before it gets smaller.</p>
+      </div>
+
+      <!-- SAGE -->
+      <div class="char-card">
+        <div class="portrait-wrap">
+          <svg class="portrait-ring" viewBox="0 0 172 172" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="86" cy="86" r="82" stroke="#c8860a" stroke-width="1.5" stroke-dasharray="5 4" opacity="0.4"/>
+            <polygon points="86,2 89,9 86,16 83,9"   fill="#c8860a" opacity="0.6"/>
+            <polygon points="170,86 163,89 156,86 163,83" fill="#c8860a" opacity="0.6"/>
+            <polygon points="86,170 83,163 86,156 89,163" fill="#c8860a" opacity="0.6"/>
+            <polygon points="2,86 9,83 16,86 9,89"   fill="#c8860a" opacity="0.6"/>
+          </svg>
+          <Image class="portrait-photo" src={sageImg} alt="Sage the Turtle" width={140} height={140} loading="lazy" style="object-position: center 30%" />
+        </div>
+        <h3 class="char-name">Sage</h3>
+        <p class="char-species">The Turtle · Deep Listener</p>
+        <p class="char-tagline">"Wait. Did you hear that?"</p>
+        <p class="char-desc">Sage notices what others rush past. Her steady, unhurried pace through Whisperwood means she catches the clues everyone else misses. She also feels everything more intensely than anyone else — which can be its own kind of hard, but turns out to be its own kind of gift.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ BOOKS ══════════════ -->
+<section class="books" id="books">
+  <div class="section-inner">
+    <p class="section-label">The Collection</p>
+    <h2 class="section-title">Stories from the Forest</h2>
+    <div class="section-rule" aria-hidden="true">
+      <span class="section-rule-line"></span>
+      <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 2 Q10 8 8 14 Q6 8 8 2Z" fill="#5a8a46" opacity="0.7"/>
+        <path d="M2 8 Q8 6 14 8 Q8 10 2 8Z" fill="#5a8a46" opacity="0.7"/>
+      </svg>
+      <span class="section-rule-line"></span>
+    </div>
+
+    <div class="featured-book">
+      <div class="book-cover">
+        <Image src={bookCoverImg} alt="Whisperwood Book One: The Rising River" width={180} height={270} loading="lazy" />
+      </div>
+      <div>
+        <span class="avail-label">Book One · Coming Soon</span>
+        <h3 class="featured-title">The Rising River</h3>
+        <p class="featured-series">A Whisperwood Adventure</p>
+        <p class="featured-desc">When the river rises too fast, Vera has a plan, Pip has energy, and Sage has a question no one else thought to ask. But solving a problem in Whisperwood takes more than one kind of thinking — and the beavers, the singing mud, the lantern mushrooms, and one very reluctant otter all have a part to play.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════ WORLD / MAP ══════════════ -->
+<section class="world" id="world">
+  <div class="section-inner">
+    <p class="section-label">The Setting</p>
+    <h2 class="section-title">Step Inside the Forest</h2>
+    <div class="section-rule" aria-hidden="true">
+      <span class="section-rule-line"></span>
+      <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="8" cy="8" r="3.5" fill="none" stroke="#c8860a" stroke-width="1.2"/>
+        <circle cx="8" cy="8" r="1.4" fill="#c8860a"/>
+      </svg>
+      <span class="section-rule-line"></span>
+    </div>
+    <p class="world-lead">
+      Whisperwood is an enchanted village ecosystem where nothing runs on feelings or spells alone. The forest is full of remarkable systems — and every creature knows their part. No single thing solves a whole problem. Everything is partial. Everything has limits. That's what makes it magic.
+    </p>
+    <div class="world-map-wrap">
+      <Image src={worldMapImg} alt="Map of the Village of Whisperwood" width={1536} height={1024} loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════ FOOTER ══════════════ -->
+<footer>
+  <div class="footer-logo">
+    <Image src={logoImg} alt="Whisperwood Books" width={90} height={90} loading="lazy" />
+  </div>
+  <p class="footer-tagline">Tales from the Enchanted Forest</p>
+  <div class="footer-ornament" aria-hidden="true">
+    <span class="footer-ornament-line"></span>
+    <span class="footer-ornament-diamond"></span>
+    <span class="footer-ornament-line"></span>
+  </div>
+  <p class="footer-copy">© 2026 Whisperwood Series. All rights reserved.</p>
+</footer>
+
+</Layout>
