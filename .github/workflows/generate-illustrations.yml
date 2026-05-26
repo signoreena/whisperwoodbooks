@@ -1,0 +1,46 @@
+name: Generate Illustrations
+
+on:
+  workflow_dispatch:
+    inputs:
+      book:
+        description: 'Book identifier (book1–book8)'
+        required: true
+        type: choice
+        options: [book1, book2, book3, book4, book5, book6, book7, book8]
+      spread:
+        description: 'Spread name (e.g. illo-01, cover) or "all"'
+        required: true
+        default: 'all'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - run: pip install openai
+
+      - name: Generate illustrations
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          python scripts/generate-illustrations.py \
+            --book "${{ inputs.book }}" \
+            --spread "${{ inputs.spread }}"
+
+      - name: Commit and push images
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add illustrations/
+          git diff --cached --quiet && echo "Nothing new to commit." || \
+            git commit -m "Generate ${{ inputs.book }} ${{ inputs.spread }} illustrations (Nell)" && \
+            git push origin main
