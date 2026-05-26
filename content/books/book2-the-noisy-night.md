@@ -23,7 +23,7 @@ She could feel the vibration even through the bark.
 
 Something was wrong.
 
-Something had been wrong all week.
+Something had been wrong since Wednesday.
 
 But no one else seemed to have noticed yet.
 
@@ -93,15 +93,19 @@ Vera went there first, because the owls tracked the songbird network and she nee
 
 "The relay problem," said Vera. "I have a plan—"
 
-"Yes," said Oswin. "So did the last three creatures who came to me."
+"What did you plan to do?" said Oswin.
 
-Vera's ears went back. "What have the others tried?"
+Vera's ears went back. "Schedule the relay. Northern canopy first, then eastern, then southern. Built-in rest hours."
+
+"Mm," said Oswin. "What have the others tried?"
 
 "The deer family tried moving away from the worst relay point. The noise followed them. The raccoons tried to intervene in the relay chain at the eastern fork." Oswin folded his wings. "It made things worse. More birds joined to correct the correction."
 
-Vera was very still. The Mapleaf had told her nothing useful. She had thought she already knew the shape of this.
+Vera was very still. The Mapleaf had shown her something wrong, but not why. She had thought she already knew the shape of this.
 
-"The problem is not the schedule," said Oswin. "The birds are already trying to be organized. Every bird works harder so the news reaches the next bird clearly. The harder they work, the louder it gets. The louder it gets, the harder each bird works. It is a loop. Like a path that doubles back on itself — where the path crosses is where the noise stacks up. You cannot fix a loop by adding more order to it. You need to find where the loop crosses itself — and interrupt it there."
+"The problem is not the schedule," said Oswin. "The birds are already trying to be organized. Every bird works harder so the news reaches the next bird clearly. The harder they work, the louder it gets. The louder it gets, the harder each bird works. It is a loop. You cannot fix a loop by adding more order to it. You need to find where the loop crosses itself — and interrupt it there."
+
+*Illustrator note: Show the relay loop as a circular chain of birds, each one slightly louder than the last, arrows flowing around and back. The crossing point where the chain overlaps should be visually distinct — a tangle or knot in the line.*
 
 Vera's list was in her paw.
 
@@ -125,17 +129,19 @@ Pip found her there.
 
 "What did you try?"
 
-Pip looked slightly less certain than usual. "I went to the relay point at the eastern fork — the loudest one — and I sang louder than all the birds. To kind of break it up."
+Pip looked slightly less certain than usual. "I went to the relay point at the northern hollow — the loud one by the ridge — and I sang louder than all the birds. To kind of break it up."
 
 Sage looked at him.
 
-"It worked for about four seconds," said Pip. "And then every bird in the eastern section joined in to relay my voice as well. I think there is now a message going around the forest that says 'LOUD NOISE AT EASTERN FORK.'" He set down the stick. "That is not helpful."
+"It worked for about four seconds," said Pip. "And then every bird in the northern section joined in to relay my voice as well. I think there is now a message going around the forest that says 'LOUD NOISE AT THE RIDGE.'" He set down the stick. "That is not helpful."
 
 Sage almost smiled.
 
 "No," she said. "But you found the loudest point."
 
 Pip looked at her. "…I did, didn't I."
+
+Pip went still for one beat. Then his tail flicked.
 
 Sage pressed her hands flat on the step again. She was listening.
 
@@ -149,6 +155,10 @@ Pip hesitated. "It's pretty loud up there."
 
 "I know," said Sage.
 
+She did not move for a moment. Then she placed both hands on the doorframe and pushed herself to standing. She stepped off the step onto the path. Her jaw was set. She did not look up at the canopy yet. She just stood there, on the ground, feet planted, until she was ready.
+
+"All right," she said.
+
 ---
 
 ### Chapter 6: What Sage Heard
@@ -161,11 +171,15 @@ It was hard.
 
 The first relay point made her stop on the path. The second made her close her eyes. At the third — the loudest, high in a forked elm above the owl's library tree — she stood with her jaw set and her hand flat on the bark for a long time.
 
-At the base of the elm, the mouse family sat in their temporary shelter — Pa very calm, Ma holding the framed painting, Big Daughter's notebook open, Baby asleep.
+At the base of the forked elm, Pip had stopped leaping between branches. He stood still on the path below, both paws around the same stick, not saying anything.
+
+At the base of the elm, the mouse family had made a small shelter for the night.
+
+*Illustrator note: Pa is very calm; Ma holds a framed painting close. Big Daughter has her notebook open. Baby is asleep.*
 
 Sage breathed in. She breathed out. She stayed.
 
-Because here — at the loudest spot in the whole relay — she could feel something the others had missed. Three relay chains crossed at this elm. Each one fed the others, and all three grew louder. Quiet this crossing point, and the whole loop would shrink.
+Because here — at the loudest spot in the whole relay — she could feel something the others had missed. Three relay chains crossed at this elm. Each one fed the others, and all three grew louder. She could feel where two of those chains began: one pulling from the west, one from the direction of the brook. Quiet this crossing point, and the whole loop would shrink.
 
 She opened her eyes.
 
@@ -199,7 +213,13 @@ He led them to the quietcap grove — Vera, Pip, Sage, two apprentice owls, and 
 
 "I didn't ask," said Vera.
 
-"Let's place them," said Sage.
+"She stood in the loudest spot in the forest," said Pip. "On purpose. For a long time."
+
+Sage looked at the path. "There are rolls to think about."
+
+"Let's place them," said Vera.
+
+She folded her list once more, small and flat, and tucked it not in her bag but into the notch of a nearby tree — where someone else might find it, or where the bark might keep it.
 
 They moved through Whisperwood in the dark, quietcap mushrooms in their arms. Sage led to each spot. Oswin's apprentices arranged them at the forked elm, the western oak, the path bend by the brook.
 
@@ -220,6 +240,8 @@ From the bakery, a light came on. Hazel was starting her dough.
 "She's making rolls," Pip whispered. "Sage. Rolls."
 
 Sage looked at the light in the bakery window.
+
+"I'll be there first thing," said Pip.
 
 "You always are," said Sage.
 
