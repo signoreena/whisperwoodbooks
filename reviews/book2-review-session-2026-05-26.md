@@ -255,4 +255,10 @@ Clara verified the following are consistent and rule-compliant across both books
 
 ## Outcome
 
-*Pending Beatrice and Emily responses. To be updated.*
+**Beatrice — Book 2 revised** ✓ All 15 fixes applied in one pass. Book committed to main.
+
+**Emily — Bible changes:**
+- Book 2 solution outline: MOOT (already corrected in a previous proposal)
+- Book 1 chapter count: APPROVED — bible updated from 8 to 9 chapters. Committed.
+
+**Jeanine — Revised ad budget:** ⏳ Pending (user requested $100/month ceiling; revised strategy in progress)
