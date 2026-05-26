@@ -179,3 +179,20 @@ The following changes have already been made to `content/Whisperwood Series Bibl
 1. **Section 2, Infrastructure: Specialists table, Bunnies row** — description rewritten from "Underground transit and evacuation specialists. Maintain a network of tunnels throughout Whisperwood. Move calmly and efficiently in a crisis. Cannot solve above-ground problems but are irreplaceable for below-ground or mass-movement situations." to "Evacuation and transit specialists. They know every safe path — above ground and below — throughout Whisperwood. Move calmly and efficiently in a crisis. In above-ground evacuations, they guide along the forest's high paths. In non-flood scenarios, they can also route through their underground tunnel network."
 
 2. **Section 5, Book 1 outline, Solution paragraph** — "Bunnies evacuate the mice underground." changed to "Bunnies guide the mice along the high paths to safety above ground (tunnels would be flooded)."
+
+---
+
+## Proposal 9 — 2026-05-26
+
+**Proposed by:** Clara (cross-consistency review)
+**Regarding:** Section 5, Book 2 outline — resolution description (owl-brewed settling potion and songbird-negotiation references)
+**Summary of change:** Remove the "owl-brewed settling potion" and "Sage negotiating with the songbirds to relay news in quieter shifts" references from the Book 2 outline and replace with accurate descriptions of the actual resolution: quietcap mushrooms placed at three relay intersection nodes identified by Sage through bark-touch.
+**Reason given:** The finished book `content/books/book2-the-noisy-night.md` contains neither element. The finished book is canonical (it went through the full Beatrice/review pipeline). The bible outline must match it.
+
+**Emily's decision:** NO CHANGE REQUIRED — already resolved
+
+**Reasoning:** This proposal duplicates Proposal 7 (logged 2026-05-23), which covered the identical discrepancy and was approved and applied at that time. A review of the current `content/Whisperwood Series Bible.html` confirms the Book 2 outline already contains the correct language: Sage identifies three relay intersection nodes (the forked elm above the owl's library tree, the western oak, the path bend by the brook) by pressing her hand against the bark at each relay point, and the trio together with Oswin's owl apprentices place quietcap mushrooms at all three intersections. Neither the owl-brewed settling potion nor the songbird-negotiation appears in the current bible. The Owls Specialist row correctly names Oswin, and Hazel appears in the Recurring Supporting Characters table — both additions made under Proposal 7.
+
+Clara's flag was accurate as a historical discrepancy, but the correction was already in place before this proposal arrived. No further editorial action is required.
+
+**What Reena must do:** Nothing. The bible is already correct. Clara's pipeline may need to be updated to re-read the current bible state before filing future flags.
