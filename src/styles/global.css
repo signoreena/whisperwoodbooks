@@ -453,6 +453,7 @@ section { padding: 6rem 2rem; }
 }
 .featured-series { font-style: italic; color: var(--text-muted); margin-bottom: 1.1rem; }
 .featured-desc { font-size: 1.05rem; color: var(--text-mid); line-height: 1.72; max-width: 500px; }
+.featured-meta { font-size: 0.9rem; color: var(--text-muted); margin-top: 0.8rem; }
 
 .book-cover {
   width: 180px;

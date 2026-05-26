@@ -7,9 +7,12 @@ interface Props {
 }
 
 const {
-  title = 'Whisperwood — Tales from the Enchanted Forest',
-  description = 'Deep in a forest where trees know secret paths and the mushrooms have magic to spare, three friends are about to discover that every big problem can be solved — if you know who to ask.',
+  title = 'Whisperwood Books | Early Reader Series for Ages 4–6',
+  description = 'Enchanted forest read-aloud series for ages 4–6. Vera the fox, Pip the squirrel, and Sage the turtle solve every problem together. No villains. 8 books.',
 } = Astro.props;
+
+const SITE_URL = 'https://whisperwoodbooks.com';
+const OG_IMAGE = `${SITE_URL}/assets/book1coverart.png`;
 
 const FONTS_URL = 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Nunito:wght@400;600;700;800&display=swap';
 ---
@@ -20,11 +23,66 @@ const FONTS_URL = 'https://fonts.googleapis.com/css2?family=Playfair+Display:ita
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content={description}>
   <title>{title}</title>
+  <link rel="canonical" href={`${SITE_URL}/`}>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Whisperwood Books">
+  <meta property="og:url" content={`${SITE_URL}/`}>
+  <meta property="og:title" content={title}>
+  <meta property="og:description" content="An enchanted forest read-aloud series for ages 4–6. Three animal friends solve every problem together — no villains, all heart. 8 books by Reena Gellerup.">
+  <meta property="og:image" content={OG_IMAGE}>
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content={title}>
+  <meta name="twitter:description" content="Enchanted forest read-aloud series for ages 4–6. Three animal friends. No villains. 8 books.">
+  <meta name="twitter:image" content={OG_IMAGE}>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="/assets/Book1pic2.png">
   <link rel="stylesheet" href={FONTS_URL} media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href={FONTS_URL}></noscript>
+
+  <!-- Structured data: Book Series (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BookSeries",
+    "name": "Whisperwood",
+    "alternateName": "Whisperwood Books",
+    "description": "An 8-book early-reader series for ages 4–6, set in an enchanted forest village. Three animal friends — Vera the fox, Pip the squirrel, and Sage the turtle — solve every problem together using the systems of the forest.",
+    "author": {
+      "@type": "Person",
+      "name": "Reena Gellerup"
+    },
+    "audience": {
+      "@type": "Audience",
+      "suggestedMinAge": 4,
+      "suggestedMaxAge": 6
+    },
+    "numberOfVolumes": 8,
+    "url": "https://whisperwoodbooks.com/",
+    "hasPart": [
+      {
+        "@type": "Book",
+        "name": "The Rising River",
+        "bookEdition": "Book 1",
+        "inSeries": "Whisperwood",
+        "author": {
+          "@type": "Person",
+          "name": "Reena Gellerup"
+        },
+        "audience": {
+          "@type": "Audience",
+          "suggestedMinAge": 4,
+          "suggestedMaxAge": 6
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <slot />
