@@ -9,13 +9,25 @@
 
 It was an ordinary Tuesday in Whisperwood. The herons were fishing. The hedgehog baker had her morning rolls out. Two sparrows in the upper branches were having a very loud argument that had clearly been going on since Monday.
 
-By the river, Sage was watching tadpoles. She did this most mornings. She never got bored of it.
+By the river, Sage was watching tadpoles.
 
-In the branches above her, Pip was trying to leap from one tree to the next without using his hands. He had already fallen twice. The second time, he had taken a large branch with him.
+She did this most mornings.
+
+She never got bored of it.
+
+In the branches above her, Pip was trying to leap from one tree to the next without using his hands.
+
+He had already fallen twice.
+
+The second time, he had taken a large branch with him.
 
 He was going to try a third time.
 
-Nearby, Vera sat with her back against the Mapleaf tree, adding to her list. It was a very long list. Today's entries so far included: river current (normal), beaver morning shift (started), and Pip (falling, probably fine).
+Nearby, Vera sat with her back against the Mapleaf tree, adding to her list.
+
+It was a very long list.
+
+Today's entries so far included: river current (normal), beaver morning shift (started), and Pip (falling, probably fine).
 
 She glanced up at the Mapleaf's veins the way she always did — just to check. They were golden and calm.
 
@@ -193,7 +205,11 @@ A silence.
 
 A silence.
 
-"…I should have asked why," said Vera. She looked at the water. "I went to fix it. I didn't ask what was broken."
+"…I should have asked why," said Vera.
+
+She looked at the water. Her ears stayed back.
+
+Then, quietly: "I was already running."
 
 Pip patted her on the shoulder. "You got us to the beavers though! That's still good."
 
@@ -336,12 +352,6 @@ Vera stared at him.
 "I know," said Pip. "But I have a feeling it won't be the last."
 
 He held up both lantern mushrooms like tiny torches and marched off down the path toward home.
-
-Vera watched him go.
-
-It had been Pip who ran when she needed him to. Who had gathered every creature who could sing, just because she'd asked. His legs had carried the whole plan to everyone who needed to be part of it.
-
-That was the part no plan could plan for.
 
 Vera looked at Sage.
 
