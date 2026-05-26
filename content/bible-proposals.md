@@ -196,3 +196,40 @@ The following changes have already been made to `content/Whisperwood Series Bibl
 Clara's flag was accurate as a historical discrepancy, but the correction was already in place before this proposal arrived. No further editorial action is required.
 
 **What Reena must do:** Nothing. The bible is already correct. Clara's pipeline may need to be updated to re-read the current bible state before filing future flags.
+
+---
+
+## Proposal 10 — 2026-05-26
+
+**Proposed by:** Post-Book-2-review (agent-submitted)
+**Regarding:** Section 5, Book 2 outline — resolution description (owl-brewed settling potion and songbird-negotiation references)
+**Summary of change:** Remove "owl-brewed settling potion" and "Sage negotiating with the songbirds to relay news in quieter shifts" from the Book 2 outline; replace with the finished book's actual resolution (Sage identifies three relay intersection nodes by bark-touch; quietcap mushrooms placed at those three points by the trio and Oswin's owl apprentices).
+**Reason given:** The finished book uses a different and superior solution that is more consistent with Sage's gift (physical listening, not persuasion), more consistent with world physics (tools with rules, not behavioral negotiation), and makes Sage's overwhelm narratively essential.
+
+**Emily's decision:** NO CHANGE REQUIRED — already resolved
+
+**Reasoning:** This proposal is a third filing of the same discrepancy, following Proposal 7 (2026-05-23, approved and applied) and Proposal 9 (2026-05-26, flagged as already resolved). The current `content/Whisperwood Series Bible.html` already contains the correct language at the Book 2 outline block: Sage identifies three relay-chain intersection nodes by pressing her hand against bark (the forked elm above the owl's library tree, the western oak, the path bend by the brook); the trio and Oswin's owl apprentices place quietcap mushrooms at all three crossings. Neither the owl-brewed settling potion nor the songbird-negotiation appears anywhere in the current bible. I verified this directly against the live file before ruling. The sellability analysis offered by the proposing agent is sound and correct — the finished solution is indeed better aligned with Sage's profile and with world mechanics — but it is already the version in the bible. No editorial action required.
+
+**What Reena must do:** Nothing. The bible is already correct.
+
+---
+
+## Proposal 11 — 2026-05-26
+
+**Proposed by:** Post-Book-2-review (agent-submitted)
+**Regarding:** Section 4, Chapter Length Guide — Book 1 chapter count exception
+**Summary of change:** Correct "Book 1 is an approved exception at 8 chapters" to "Book 1 is an approved exception at 9 chapters."
+**Reason given:** The finished Book 1 has 9 chapters (Chapter 1: The Mapleaf Knows through Chapter 9: The River Runs). The bible records 8 as the exception, which is factually wrong by one chapter.
+
+**Emily's decision:** APPROVED — escalated to Reena for sign-off
+
+**Reasoning:** I verified the finished Book 1 manuscript at `content/books/book1-the-rising-river.md`. It contains exactly 9 chapters (Chapter 1 through Chapter 9: The River Runs). The bible currently records "Book 1 is an approved exception at 8 chapters," which is incorrect by one chapter. This is a straightforward factual correction of an internal contradiction between the bible and the completed first book. It does not change the series norm (approximately 7 chapters for Books 2–8), does not alter any character, world rule, or arc structure, and carries no sellability risk. An opening book with 9 chapters is commercially appropriate — it gives Book 1 slightly more room to establish the world and the pattern for new readers, which is a reasonable series-launch choice. The note in Proposal 4's log (which introduced the 8-chapter exception) should be understood as having recorded the wrong figure; the spirit of that proposal (resolving a contradiction between the bible and the actual book) is correct, but the number was wrong. This proposal corrects the number.
+
+**If approved — what Reena must do:**
+
+In `content/Whisperwood Series Bible.html`, Section 4, Chapter Length Guide paragraph (currently at the sentence reading "Book 1 is an approved exception at 8 chapters."):
+
+Change: `Book 1 is an approved exception at 8 chapters.`
+To: `Book 1 is an approved exception at 9 chapters.`
+
+No other changes are required. The word-count range (1,050–1,750 words) and the "approximately 7 chapters" norm for the series are unchanged.
