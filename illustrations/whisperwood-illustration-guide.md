@@ -384,13 +384,27 @@ greens makes them immediately legible as different from the forest's usual color
 
 ### Bellflowers
 
-Delicate, bell-shaped flowers on long thin stems. Several grow in clusters along riverbanks.
-The bells are proportionally large for the stem — this is why they ring when shaken.
+Characters always call these "bellflowers." Illustrate them as **wood anemones** — small,
+upward-facing cup-shaped flowers that open toward the sky. Never draw them as drooping
+downward-hanging bells.
 
-**Color:** White to very pale lavender or cream. Delicate. Long green stems.
+**Shape:** 5–7 rounded petals arranged around a pale yellow centre. The flower face opens
+upward and slightly outward, like a shallow cup held open to the sun. When a character holds
+one to their ear or mouth, the flower face naturally cups inward toward their face because
+it already faces upward.
 
-**In use:** When rung, the bell is shown mid-sway with a small implied motion line around it —
-the visual equivalent of a single clear note.
+**Color:** Pale purple-white to soft lavender. Petals slightly translucent at the edges.
+Pale yellow-cream centre. Delicate green stems — thinner than a pencil, slightly fuzzy.
+
+**Growing habit:** Clusters of 3–6 flowers along riverbanks and forest floor. Stems are
+short to medium length (6–10 inches). They do not droop; they stand upright and face the sky.
+
+**In use (held as telephone):** When Sage holds two stems together, each flower face cups
+naturally toward her because of the upward-facing orientation — no rotation or inversion
+needed. One flower cups her ear; one cups the corner of her mouth.
+
+**When rung/signalled:** The stem shakes, the flower trembles — a small motion line implies
+the ring. The upward-open cup makes the sound visible, like a tiny satellite dish.
 
 ---
 
