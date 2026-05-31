@@ -31,7 +31,7 @@
 **Style note:** Sharp editorial linework, rich forest colors, clean edges, anthropomorphic animals legible at thumbnail size.
 
 **Full prompt:**
-A warm morning in Whisperwood enchanted forest. Full-bleed double-page spread. A young female fox in a satchel (Vera) sits against the trunk of an enormous tree with golden-veined luminous leaves, writing on a long list. Upper left, a young male grey squirrel (Pip) is mid-leap between branches, arms wide, bushy tail arcing, mouth open in concentration. Lower left, a young female turtle (Sage) crouches at a clear river's edge, one hand flat on a mossy stone, watching tadpoles — the stillest figure in the scene; long eyelashes, her only feminine marker. Morning sunlight filters through a dense forest canopy. Clusters of small amber-glowing lantern mushrooms dot the base of the great tree. In the far background, a mouse family walks a high path — the mother carrying a tiny framed painting, the father calm, a daughter writing in a notebook, a young son craning to watch the squirrel, a baby asleep on the father's back. Sharp editorial linework, rich forest greens and gold, painterly, clean edges, characters clearly readable as their animal species.
+A warm morning in Whisperwood enchanted forest. Full-bleed double-page spread. A young female fox in a satchel (Vera) sits against the trunk of an enormous tree with golden-veined luminous leaves, writing on a long list. Upper left, a young male warm brown squirrel (Pip) is mid-leap between branches, arms wide, bushy tail arcing, mouth open in concentration. Lower left, a young female turtle (Sage) crouches at a clear river's edge, one hand flat on a mossy stone, watching tadpoles — the stillest figure in the scene; long eyelashes, her only feminine marker. Morning sunlight filters through a dense forest canopy. Clusters of small amber-glowing lantern mushrooms dot the base of the great tree. In the far background, a mouse family walks a high path — the mother carrying a tiny framed painting, the father calm, a daughter writing in a notebook, a young son craning to watch the squirrel, a baby asleep on the father's back. Sharp editorial linework, rich forest greens and gold, painterly, clean edges, characters clearly readable as their animal species.
 
 ---
 
@@ -61,7 +61,7 @@ A warm morning in Whisperwood enchanted forest. Full-bleed double-page spread. A
 **Style note:** Sharp editorial linework, rich forest colors, clean edges, anthropomorphic animals legible at thumbnail size.
 
 **Full prompt:**
-A young female fox (Vera) stands at the base of an enormous magical tree, looking up at its leaves with sharp alert eyes — her list still in one paw, already turning away from the tree. The tree's leaf-veins, which were gold-green in the morning, have turned dark deep green-black, their glow extinguished — a visual warning. From above right, a young grey squirrel (Pip) is falling toward her, arms spread wide, mouth open mid-sentence. Morning forest light around them is still warm and gold, making the dark-veined tree more striking by contrast. Small clusters of amber lantern mushrooms glow at the tree's roots. Sharp editorial linework, rich greens and gold, clean edges, characters legible as their animal species at thumbnail size.
+A young female fox (Vera) stands at the base of an enormous magical tree, looking up at its leaves with sharp alert eyes — her list still in one paw, already turning away from the tree. The tree's leaf-veins, which were gold-green in the morning, have turned dark deep green-black, their glow extinguished — a visual warning. From above right, a young warm brown squirrel (Pip) is falling toward her, arms spread wide, mouth open mid-sentence. Morning forest light around them is still warm and gold, making the dark-veined tree more striking by contrast. Small clusters of amber lantern mushrooms glow at the tree's roots. Sharp editorial linework, rich greens and gold, clean edges, characters legible as their animal species at thumbnail size.
 
 ---
 
@@ -95,13 +95,14 @@ A young female turtle (Sage) stands alone at the edge of a river in a magical fo
 ## Spread 4 — Pip with the Stick; Sage Goes Still
 **Chapter 3 / Chapter 4 · Right-page spread**
 
-**Scene:** Pip has his large stick wedged in the riverbank and is trying to help with it; Sage is watching him with patient stillness, about to redirect him.
+**Scene:** Pip has his large stick wedged in the riverbank and is trying to help with it; Sage is watching him with patient stillness, about to redirect him. At the far edge of the frame, Vera's retreating form — tail and back legs — disappears in the direction of the beavers' dam.
 
 **Characters present:**
 - Pip (center-left): Leaning hard into the large stick — both hands wrapped around it, shoulder-width stance, leaning his whole body against it. His face is set with determination. The stick is wedged in the soft mud of the bank at an angle, going nowhere. His tail is arced over his head with effort. He does not look like he knows what he expects to happen, but he is committed.
 - Sage (right): Completely still. One hand resting flat on a nearby tree root. Watching Pip. Her expression is not critical — just observing. She has already decided something. Her next step is visible in how her body weight has shifted slightly toward him.
+- Vera (far right edge, retreating): Only her tail and back legs visible as she exits the frame — she has already turned and is running toward the beavers' dam. The viewer knows she was here; she is already gone.
 
-**Setting:** The river's edge — the water has risen noticeably from Spread 3. The muddy bank is soft and churned in places. Vera's footprints in the mud point away from the scene — she has already left.
+**Setting:** The river's edge — the water has risen noticeably from Spread 3. The muddy bank is soft and churned in places. Vera's footprints in the mud trace her path from where she stood toward the right edge of the frame where she exits.
 
 **World elements shown:**
 - The river: visibly higher — water lapping closer to the path than normal.
@@ -111,49 +112,18 @@ A young female turtle (Sage) stands alone at the edge of a river in a magical fo
 
 **Mood/lighting:** Afternoon light — the river crisis is in progress. Light is still warm but there is urgency in the shadows. The mud is darker, the water higher.
 
-**Action:** Pip leaning with full effort into a useless stick; Sage perfectly still beside him, having made a quiet decision.
+**Action:** Pip leaning with full effort into a useless stick; Sage perfectly still beside him, having made a quiet decision; Vera's tail and back legs just vanishing at the right edge of frame.
 
-**Illustrator flag:** The contrast between Pip's full-body effort and Sage's complete stillness is the emotional core of this spread. They should both read clearly — the comedy of the stick and the wisdom of the stillness.
-
-**Style note:** Sharp editorial linework, rich forest colors, clean edges, anthropomorphic animals legible at thumbnail size.
-
-**Full prompt:**
-At a river's edge in an enchanted forest, a young grey squirrel (Pip) leans his whole body into a large stick wedged in the muddy bank at an angle — both hands gripping it, tail arced overhead with effort, face set in pure determination, the stick going nowhere. Beside him stands a young turtle (Sage), completely still, one hand resting flat on a tree root, watching him with calm patient eyes and long eyelashes — the most motionless creature in the image. The river behind them has risen noticeably, water lapping close to the path. The mud of the bank is dark and rich, slightly reflective. In the far background, a mouse family moves with bundles toward higher ground — the mother holding a small framed painting to her chest, the father with a baby asleep on his back, a daughter writing in a notebook while walking, a young son looking back at the squirrel. Late afternoon forest light, warm but urgent. Sharp editorial linework, rich forest greens and gold, clean edges, characters legible as their species at thumbnail size.
-
----
-
-## Spread 5 — KEY IMAGE: Sage Hand on Boulder, Pip Nose-to-Rock
-**Chapter 4 · Full-bleed double-page spread**
-
-**Scene:** Sage has her hand flat on the oldest boulder at the river's edge, eyes closed, asking it a question; Pip has leaned in until his nose almost touches the rock — waiting, listening.
-
-**Characters present:**
-- Sage (left, foreground): Both hands now flat on the great boulder, eyes closed, face angled slightly down toward the rock. Her expression is one of deep focused listening — the most intent she has been in the book. She is in the boulder's world now. Her shell, with its pattern, is visible from the side. She is the stillest thing in the image.
-- Pip (right, foreground): Crouched low, nose millimeters from the boulder's surface, eyes very wide. He has leaned in without knowing why — it just seems right. His tail is low and still for once. He is holding his breath. His earlier stick is on the ground behind him, forgotten.
-
-**Setting:** The oldest boulder at the river's edge — large, round, covered in deep green and grey moss. It has been in this spot since before anyone can remember. It radiates age. The river flows behind it. The water level here is higher; the ground around the boulder's base is damp.
-
-**World elements shown:**
-- The talking rock: round, massive, entirely moss-covered. Ancient. The moss is soft and layered — it has the quality of something very old and very patient. There is a faint warmth to the stone that the illustrator should suggest through color: the moss closest to the rock's surface has a very slightly warmer tone than the moss at the edges.
-- The river: visible behind the boulder, higher than normal. The singing mud of the bank nearby is dark.
-- Lantern mushrooms: one small cluster growing at the boulder's base, adding a warm amber point of light.
-
-**Mouse family placement:** Visible in the background, moving past in the middle distance — the mouse family hurrying past below, bundles on their backs, quiet and fast. This is their "hurried past" moment from the prose. They are not looking at the rock — they have their own problem. Baby is asleep. Middle Son is the only one who glances toward the boulder as they pass.
-
-**Mood/lighting:** Dusk approaching — the light is lower and more directional, coming from the right (west). The forest has darkened slightly. The lantern mushrooms at the boulder's base glow more visibly now that the ambient light has softened. The scene has a hush to it — the visual quiet of the moment before a rock speaks.
-
-**Action:** Sage hands flat, eyes closed; Pip nose-close, eyes open wide.
-
-**Illustrator flag:** This is the book's key image — the one that should carry emotional weight on its own, without text. The two characters' relationship with the rock is different: Sage is communicating; Pip is witnessing. The rock is not showing a face or expression — it is just a rock, old and huge and slightly warm. The weight of the moment is entirely in the two children leaning toward it.
+**Illustrator flag:** The contrast between Pip's full-body effort and Sage's complete stillness is the emotional core of this spread. They should both read clearly — the comedy of the stick and the wisdom of the stillness. Vera's retreating form at the frame edge makes visible what the text says directly: she was already running before anyone else had a plan.
 
 **Style note:** Sharp editorial linework, rich forest colors, clean edges, anthropomorphic animals legible at thumbnail size.
 
 **Full prompt:**
-The most important image in the book. A young turtle girl (Sage) stands with both hands pressed flat against a massive ancient moss-covered boulder at a river's edge, eyes closed, long eyelashes visible, face angled toward the rock in deep concentrated listening. Beside her, a young grey squirrel boy (Pip) has crouched low and leaned in until his nose nearly touches the moss — eyes enormous and wide, tail stilled for once, holding his breath. The boulder is enormous, round, layered in deep green-grey moss, clearly ancient — it radiates patience and age. A single small cluster of amber lantern mushrooms glows at its base. The river flows behind them, noticeably high. In the middle distance, a mouse family hurries past in the background with bundles on their backs — one young son glancing back at the boulder as they go, baby asleep on father's back. Dusk light from the right, forest deepening, the lantern mushrooms warm against the cooling air. Hush and stillness. Sharp editorial linework, rich forest greens and amber, clean edges, characters fully legible as their species.
+At a river's edge in an enchanted forest, a young warm brown squirrel (Pip) leans his whole body into a large stick wedged in the muddy bank at an angle — both hands gripping it, tail arced overhead with effort, face set in pure determination, the stick going nowhere. Beside him stands a young turtle (Sage), completely still, one hand resting flat on a tree root, watching him with calm patient eyes and long eyelashes — the most motionless creature in the image. At the far right edge of the frame, only a red-orange fox tail and back legs are visible — Vera, already running, already exiting the scene toward the beavers' dam; her muddy footprints trace her path away. The river behind them has risen noticeably, water lapping close to the path. The mud of the bank is dark and rich, slightly reflective. In the far background, a mouse family moves with bundles toward higher ground — the mother holding a small framed painting to her chest, the father with a baby asleep on his back, a daughter writing in a notebook while walking, a young son looking back at the squirrel. Late afternoon forest light, warm but urgent. Sharp editorial linework, rich forest greens and gold, clean edges, characters legible as their species at thumbnail size.
 
 ---
 
-## Spread 6 — The Wall: Vera's Ears Go Back
+## Spread 5 — The Wall: Vera's Ears Go Back
 **Chapter 4 · Right-page spread**
 
 **Scene:** Vera stands in front of Bram at the beavers' work area by the river, trying to get his help — and he has just said no. Her ears have gone back.
@@ -180,6 +150,37 @@ The most important image in the book. A young turtle girl (Sage) stands with bot
 
 **Full prompt:**
 Evening at a beaver's work dam in an enchanted forest. A young female fox (Vera) stands with her satchel on her shoulder and a list in her paw, facing a large beaver (Bram) who wears a practical bark hard hat. Her fox ears have moved back — not flat, just slightly pinned — the involuntary tell of being caught wrong. Her mouth is open mid-argument; her eyes have gone still and calculating. Bram strokes his chin with one broad paw, expression patient and unmovable — a creature who has seen many floods and knows what cannot be rushed. Behind them, the beaver dam rises — interlocked branches and log, well-built, professional. Small clusters of amber lantern mushrooms hang from the dam structure, casting warm working light against the blue-grey evening sky. Sharp editorial linework, rich forest colors, clean edges, fox and beaver clearly legible as their species at thumbnail size.
+
+---
+
+## Spread 6 — KEY IMAGE: Sage Hand on Boulder, Pip Nose-to-Rock
+**Chapter 4 · Full-bleed double-page spread**
+
+**Scene:** Sage has one hand pressed flat on the oldest boulder at the river's edge, eyes closed, asking it a question; Pip has leaned in until his nose almost touches the rock — waiting, listening. Her other hand rests lightly on Pip's shoulder, stilling him.
+
+**Characters present:**
+- Sage (left, foreground): One hand flat on the great boulder, eyes closed, face angled slightly down toward the rock. Her other hand is placed gently on Pip's shoulder — stilling him, the way the story describes. Her expression is one of deep focused listening — the most intent she has been in the book. She is in the boulder's world now. Her shell, with its pattern, is visible from the side. She is the stillest thing in the image.
+- Pip (right, foreground): Crouched low, nose millimeters from the boulder's surface, eyes very wide. He has leaned in without knowing why — it just seems right. His tail is low and still for once. He is holding his breath. His earlier stick is on the ground behind him, forgotten. Sage's hand rests on his shoulder.
+
+**Setting:** The oldest boulder at the river's edge — large, round, covered in deep green and grey moss. It has been in this spot since before anyone can remember. It radiates age. The river flows behind it. The water level here is higher; the ground around the boulder's base is damp.
+
+**World elements shown:**
+- The talking rock: round, massive, entirely moss-covered. Ancient. The moss is soft and layered — it has the quality of something very old and very patient. There is a faint warmth to the stone that the illustrator should suggest through color: the moss closest to the rock's surface has a very slightly warmer tone than the moss at the edges.
+- The river: visible behind the boulder, higher than normal. The singing mud of the bank nearby is dark.
+- Lantern mushrooms: one small cluster growing at the boulder's base, adding a warm amber point of light.
+
+**Mouse family placement:** Visible in the background, moving past in the middle distance — the mouse family hurrying past below, bundles on their backs, quiet and fast. This is their "hurried past" moment from the prose. They are not looking at the rock — they have their own problem. Baby is asleep. Middle Son is the only one who glances toward the boulder as they pass.
+
+**Mood/lighting:** Dusk approaching — the light is lower and more directional, coming from the right (west). The forest has darkened slightly. The lantern mushrooms at the boulder's base glow more visibly now that the ambient light has softened. The scene has a hush to it — the visual quiet of the moment before a rock speaks.
+
+**Action:** Sage one hand flat on rock, other hand on Pip's shoulder, eyes closed; Pip nose-close, eyes open wide, stilled.
+
+**Illustrator flag:** This is the book's key image — the one that should carry emotional weight on its own, without text. The two characters' relationship with the rock is different: Sage is communicating; Pip is witnessing. The rock is not showing a face or expression — it is just a rock, old and huge and slightly warm. The weight of the moment is entirely in the two children leaning toward it. Sage's hand on Pip's shoulder is not a comfort gesture — it is a request for stillness, and it works.
+
+**Style note:** Sharp editorial linework, rich forest colors, clean edges, anthropomorphic animals legible at thumbnail size.
+
+**Full prompt:**
+The most important image in the book. A young turtle girl (Sage) stands with one hand pressed flat against a massive ancient moss-covered boulder at a river's edge, eyes closed, long eyelashes visible, face angled toward the rock in deep concentrated listening. Her other hand rests gently on the shoulder of the squirrel beside her — stilling him. Beside her, a young warm brown squirrel boy (Pip) has crouched low and leaned in until his nose nearly touches the moss — eyes enormous and wide, tail stilled for once, holding his breath, Sage's hand on his shoulder keeping him quiet. The boulder is enormous, round, layered in deep green-grey moss, clearly ancient — it radiates patience and age. A single small cluster of amber lantern mushrooms glows at its base. The river flows behind them, noticeably high. In the middle distance, a mouse family hurries past in the background with bundles on their backs — one young son glancing back at the boulder as they go, baby asleep on father's back. Dusk light from the right, forest deepening, the lantern mushrooms warm against the cooling air. Hush and stillness. Sharp editorial linework, rich forest greens and amber, clean edges, characters fully legible as their species.
 
 ---
 
@@ -216,7 +217,7 @@ Evening at a beaver's work dam in an enchanted forest. A young female fox (Vera)
 **Style note:** Sharp editorial linework, rich forest colors, clean edges, anthropomorphic animals legible at thumbnail size.
 
 **Full prompt:**
-Night at a river's edge in an enchanted forest. A large community of forest animals sings together in warm amber lantern-mushroom light. In front: a young female fox (Vera) coordinates with open mouth, ears forward; beside her a young grey squirrel (Pip) sings with his whole body, mouth wide, tail raised, utterly committed. At the right edge, a young turtle (Sage) stands one step back from the crowd, eyes fixed on the mud — long eyelashes, her only feminine marker — choosing her moment. A large beaver in a bark hard hat (Bram) sings steadily beside two other beavers. An otter sings with arms crossed and an expression of pure reluctant participation. Two deer raise their heads and antlers behind the crowd. Three raccoons sing in unison. The dark rich mud at the water's edge is in motion — low curved walls forming, a small channel beginning to open toward the left. Lantern mushrooms on stems and carried by creatures light the whole scene in warm amber. In the background on higher ground, a mouse family watches: the mother's hand on her young son's shoulder, the father holding a sleeping baby, the daughter writing in a notebook. Framed painting propped against a tree root. Night forest, chaotic and warm, community magic. Sharp editorial linework, rich colors, clean edges.
+Night at a river's edge in an enchanted forest. A large community of forest animals sings together in warm amber lantern-mushroom light. In front: a young female fox (Vera) coordinates with open mouth, ears forward; beside her a young warm brown squirrel (Pip) sings with his whole body, mouth wide, tail raised, utterly committed. At the right edge, a young turtle (Sage) stands one step back from the crowd, eyes fixed on the mud — long eyelashes, her only feminine marker — choosing her moment. A large beaver in a bark hard hat (Bram) sings steadily beside two other beavers. An otter sings with arms crossed and an expression of pure reluctant participation. Two deer raise their heads and antlers behind the crowd. Three raccoons sing in unison. The dark rich mud at the water's edge is in motion — low curved walls forming, a small channel beginning to open toward the left. Lantern mushrooms on stems and carried by creatures light the whole scene in warm amber. In the background on higher ground, a mouse family watches: the mother's hand on her young son's shoulder, the father holding a sleeping baby, the daughter writing in a notebook. Framed painting propped against a tree root. Night forest, chaotic and warm, community magic. Sharp editorial linework, rich colors, clean edges.
 
 ---
 
@@ -309,7 +310,7 @@ Morning in an enchanted forest clearing. A mouse family has settled in a tempora
 **Style note:** Sharp editorial linework, rich forest colors, clean edges, anthropomorphic animals legible at thumbnail size.
 
 **Full prompt:**
-The closing image of the series, first instance. A forest path through a dappled morning canopy in Whisperwood. A young grey squirrel boy (Pip) marches at the front, holding a small amber-glowing lantern mushroom in each raised hand like tiny torches — cheerful, unbothered by the full daylight, leading. Half a step behind on his right, a young female fox (Vera) watches him with an expression of complicated warm exasperation — satchel on shoulder, ears forward, recognizing something. Half a step behind on his left, a young female turtle (Sage) walks one steady deliberate step at a time, looking ahead down the path with quiet satisfaction; long eyelashes are her only feminine marker. Lantern mushrooms grow in clusters along both edges of the path, their amber glow warm against the cool green dappled shade. In the far background the great Mapleaf tree is visible, its leaf-veins returned to soft gold-green — calm and restored. Faintly visible through the trees: a small above-ground shelter with a tiny framed painting on its bark wall. Morning forest light, gold-green, peaceful. The quiet good feeling of going home. Sharp editorial linework, rich forest colors and warm gold, clean edges, all three characters fully legible as their species at thumbnail size.
+The closing image of the series, first instance. A forest path through a dappled morning canopy in Whisperwood. A young warm brown squirrel boy (Pip) marches at the front, holding a small amber-glowing lantern mushroom in each raised hand like tiny torches — cheerful, unbothered by the full daylight, leading; a smear of mud on his nose from the night's work. Half a step behind on his right, a young female fox (Vera) watches him with an expression of complicated warm exasperation — satchel on shoulder, ears forward, recognizing something. Half a step behind on his left, a young female turtle (Sage) walks one steady deliberate step at a time, looking ahead down the path with quiet satisfaction; long eyelashes are her only feminine marker. Lantern mushrooms grow in clusters along both edges of the path, their amber glow warm against the cool green dappled shade. In the far background the great Mapleaf tree is visible, its leaf-veins returned to soft gold-green — calm and restored. Faintly visible through the trees: a small above-ground shelter with the mouse family in miniature — the mother mouse hanging a tiny framed painting on the exterior bark wall, the father mouse seated on a stump with a sleeping baby across his lap, a daughter mouse writing on the step, a young son mouse watching the trio walk away. Morning forest light, gold-green, peaceful. The quiet good feeling of going home. Sharp editorial linework, rich forest colors and warm gold, clean edges, all three characters fully legible as their species at thumbnail size.
 
 ---
 
@@ -320,10 +321,10 @@ The closing image of the series, first instance. A forest path through a dappled
 *Required spread checklist:*
 - *Opening establishing spread: Spread 1*
 - *The problem arriving: Spread 2 (Mapleaf warns) + Spread 3 (bellflower)*
-- *Vera's rush / Vera's wall: Spread 6*
-- *Sage's quiet observation moment: Spread 3 + Spread 5 (key image)*
+- *Vera's rush / Vera's wall: Spread 5*
+- *Sage's quiet observation moment: Spread 3 + Spread 6 (key image)*
 - *Pip with large stick: Spread 4*
-- *Key image (Sage hand on boulder, Pip nose-to-rock): Spread 5*
+- *Key image (Sage hand on boulder, Pip nose-to-rock): Spread 6*
 - *Community gathering: Spread 7*
 - *Resolution in action: Spread 8 (beavers at river bend)*
 - *Closing spread (trio walking home, lantern mushrooms): Spread 10*
