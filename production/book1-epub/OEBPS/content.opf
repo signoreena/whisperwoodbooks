@@ -63,11 +63,9 @@
     <item id="ch04c"    href="pages/ch04c.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch04c-r"  href="pages/ch04c-r.xhtml"     media-type="application/xhtml+xml"/>
     <item id="ch04d"    href="pages/ch04d.xhtml"       media-type="application/xhtml+xml"/>
-    <!-- Ch 5: illo 7 (left) + Ch 5 text (right) -->
-    <item id="ch05a"    href="pages/ch05a.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- Ch 5: text only (no illustration) -->
     <item id="ch05b"    href="pages/ch05b.xhtml"       media-type="application/xhtml+xml"/>
-    <!-- Ch 6: illo 8 (left) + Ch 6 text (right) -->
-    <item id="ch06a"    href="pages/ch06a.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- Ch 6: text only (no illustration) -->
     <item id="ch06b"    href="pages/ch06b.xhtml"       media-type="application/xhtml+xml"/>
     <!-- Ch 7: community singing full-bleed spread (3400px) + text + illo 10 -->
     <item id="ch07a"    href="pages/ch07a.xhtml"       media-type="application/xhtml+xml"/>
@@ -118,12 +116,8 @@
     <!-- Ch 4 boulder scene text continuation (right page, pairs with next illo) -->
     <itemref idref="ch04d"     properties="rendition:page-spread-right"/>
 
-    <!-- Ch 5 — Illo 7 left / Ch 5 text right -->
-    <itemref idref="ch05a"     properties="rendition:page-spread-left"/>
-    <itemref idref="ch05b"     properties="rendition:page-spread-right"/>
-
-    <!-- Ch 6 — Illo 8 left / Ch 6 text right -->
-    <itemref idref="ch06a"     properties="rendition:page-spread-left"/>
+    <!-- Ch 5/6 — text-only spread (no illustrations) -->
+    <itemref idref="ch05b"     properties="rendition:page-spread-left"/>
     <itemref idref="ch06b"     properties="rendition:page-spread-right"/>
 
     <!-- Ch 7 COMMUNITY SPREAD — singing mud full-bleed (both pages, Illo 9) -->
