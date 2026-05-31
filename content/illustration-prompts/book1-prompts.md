@@ -68,27 +68,27 @@ A young female fox (Vera) stands at the base of an enormous magical tree, lookin
 ## Spread 3 — Sage at the Water with the Bellflower
 **Chapter 2 · Full-bleed double-page spread**
 
-**Scene:** Sage has noticed the river is rising — wrong, slow, inexorable — and is ringing a bellflower to call the others.
+**Scene:** Sage has noticed the river is rising — wrong, slow, inexorable — and is calling the others using a two-bellflower telephone: two bellflower stems held together in one hand, one bell cupped to her mouth and one cupped to her ear, like an old-fashioned handset.
 
 **Characters present:**
-- Sage (left-center, foreground): Standing at the very edge of the water. One foot is just withdrawn from the current — still damp. Her posture is alert but not panicked; she has moved from watching to deciding. In her right hand she holds a bellflower stem, extended out over the water, mid-ring — the bell at the end is caught mid-sway. Her dark eyes are steady, watching the water level. She is the calmest creature in a scene that is not calm.
+- Sage (left-center, foreground): Standing at the very edge of the water. One foot is just withdrawn from the current — still damp. Her posture is alert but not panicked; she has moved from watching to deciding. In one hand she holds two bellflower stems side by side — one flower open against her mouth (mouthpiece), one flower open against her ear (earpiece), the whole thing held like an old-timey telephone handset. Her eyes are steady and focused, watching the water level even as she speaks. She is the calmest creature in a scene that is not calm.
 
 **Setting:** River's edge, mid-morning. The water is visibly higher than it should be — the waterline is a few inches above the usual mark on a mossy stone nearby (illustrator: this is a subtle detail, not dramatic flooding yet — the wrong-ness is in how still and high and purposeful the water looks). The far bank is reflected in the water. Bellflowers grow in small clusters along the bank on long trembling stems.
 
 **World elements shown:**
-- Bellflowers: delicate bell-shaped flowers on long stems, several visible along the bank. The one Sage holds is extended over the water — its bell mid-swing, a tiny implied ring-line visible around it.
+- Bellflower telephone: Sage holds two bellflower stems together in one hand, one flower cupped to her mouth (mouthpiece) and one cupped to her ear (earpiece) — the shape reads immediately as an old-fashioned telephone handset made of living flowers. Several more bellflowers grow in clusters along the bank.
 - The river: higher than normal. No churning, no white water — the wrongness is its quiet, inevitable rise. The waterline is visibly covering the roots of a riverside shrub that should be above water.
 
 **Mouse family placement:** Far background, right side. The mouse family is visible on the high path above the opposite bank — tiny, distant. Middle Son is pointing at the water. Ma Mouse has a firm hand on his shoulder without looking at him; her eyes are ahead. The framed painting is under her other arm.
 
 **Mood/lighting:** Mid-morning light, slightly cooler than Spread 1 — the forest senses something. The colors are still rich but the gold has faded slightly. The water has a grey-green tint to it rather than the clear-reflection warmth of Spread 1.
 
-**Action:** Sage holds the bellflower mid-ring, one foot just drawn back from the current, eyes on the water.
+**Action:** Sage holds two bellflower stems together like a telephone handset — one to her mouth, one to her ear — one foot just drawn back from the current, eyes on the water.
 
 **Style note:** Sharp editorial linework, rich forest colors, clean edges, anthropomorphic animals legible at thumbnail size.
 
 **Full prompt:**
-A young female turtle (Sage) stands alone at the edge of a river in a magical forest, holding a delicate bellflower on a long stem extended over the water — the bell caught mid-swing, just rung. One foot is still damp from the current she just stepped back from. Her dark eyes are calm and steady, fixed on the water level; long eyelashes are her only feminine feature. The river is visibly higher than it should be — still and purposeful, not churning, the roots of a riverside shrub submerged in water that should be air. Bellflowers grow in clusters along the bank. In the far background across the water, tiny figures of a mouse family on a high path — the mother carrying a small framed painting, a young son pointing at the water and being redirected by her hand. Mid-morning forest light, slightly cooler than morning gold. Sharp editorial linework, rich forest greens, clean edges, characters legible as their species.
+A young female turtle (Sage) stands alone at the edge of a river in a magical forest, holding two delicate bellflowers by their stems in one hand — one flower cupped to her mouth like a mouthpiece, one cupped to her ear like an earpiece, the pair held together like a tiny old-fashioned telephone handset made of living flowers. One foot is still damp from the current she just stepped back from. Her dark eyes are calm and steady, fixed on the water level; long eyelashes are her only feminine feature. The river is visibly higher than it should be — still and purposeful, not churning, the roots of a riverside shrub submerged in water that should be air. More bellflowers grow in clusters along the bank. In the far background across the water, tiny figures of a mouse family on a high path — the mother carrying a small framed painting, a young son pointing at the water and being redirected by her hand. Mid-morning forest light, slightly cooler than morning gold. Sharp editorial linework, rich forest greens, clean edges, characters legible as their species.
 
 ---
 
