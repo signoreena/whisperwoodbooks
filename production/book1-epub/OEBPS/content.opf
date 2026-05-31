@@ -30,6 +30,7 @@
     <!-- Stylesheet -->
     <item id="css"      href="css/fixed.css"           media-type="text/css"/>
     <!-- Images -->
+    <item id="cover-image" href="images/cover.png"     media-type="image/png" properties="cover-image"/>
     <item id="illo-01"  href="images/illo-01.png"      media-type="image/png"/>
     <item id="illo-02"  href="images/illo-02.png"      media-type="image/png"/>
     <item id="illo-03"  href="images/illo-03.png"      media-type="image/png"/>
