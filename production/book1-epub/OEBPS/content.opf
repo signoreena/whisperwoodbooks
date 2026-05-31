@@ -34,6 +34,7 @@
     <item id="titlepage"href="pages/titlepage.xhtml"   media-type="application/xhtml+xml"/>
     <!-- Ch 1: full-bleed establishing spread (3400px) -->
     <item id="ch01a"    href="pages/ch01a.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch01a-r"  href="pages/ch01a-r.xhtml"     media-type="application/xhtml+xml"/>
     <!-- Ch 1 continued: illo 2 (left) + text (right) -->
     <item id="ch01b"    href="pages/ch01b.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch01c"    href="pages/ch01c.xhtml"       media-type="application/xhtml+xml"/>
@@ -48,6 +49,7 @@
     <item id="ch04b"    href="pages/ch04b.xhtml"       media-type="application/xhtml+xml"/>
     <!-- Ch 4 key spread: Sage/boulder full-bleed (3400px) + text continuation -->
     <item id="ch04c"    href="pages/ch04c.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch04c-r"  href="pages/ch04c-r.xhtml"     media-type="application/xhtml+xml"/>
     <item id="ch04d"    href="pages/ch04d.xhtml"       media-type="application/xhtml+xml"/>
     <!-- Ch 5: illo 7 (left) + Ch 5 text (right) -->
     <item id="ch05a"    href="pages/ch05a.xhtml"       media-type="application/xhtml+xml"/>
@@ -57,6 +59,7 @@
     <item id="ch06b"    href="pages/ch06b.xhtml"       media-type="application/xhtml+xml"/>
     <!-- Ch 7: community singing full-bleed spread (3400px) + text + illo 10 -->
     <item id="ch07a"    href="pages/ch07a.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch07a-r"  href="pages/ch07a-r.xhtml"     media-type="application/xhtml+xml"/>
     <item id="ch07b"    href="pages/ch07b.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch07c"    href="pages/ch07c.xhtml"       media-type="application/xhtml+xml"/>
     <!-- Ch 8: illo 11 (left) + Ch 8 text (right) -->
@@ -66,6 +69,7 @@
     <item id="ch09a"    href="pages/ch09a.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch09b"    href="pages/ch09b.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch09c"    href="pages/ch09c.xhtml"       media-type="application/xhtml+xml"/>
+    <item id="ch09c-r"  href="pages/ch09c-r.xhtml"     media-type="application/xhtml+xml"/>
     <!-- End page -->
     <item id="endpage"  href="pages/endpage.xhtml"     media-type="application/xhtml+xml"/>
   </manifest>
@@ -77,6 +81,7 @@
 
     <!-- Ch 1 — full-bleed establishing spread (both pages, Illo 1) -->
     <itemref idref="ch01a"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch01a-r"   properties="rendition:page-spread-right"/>
 
     <!-- Ch 1 continued — Illo 2 left / text right -->
     <itemref idref="ch01b"     properties="rendition:page-spread-left"/>
@@ -96,6 +101,7 @@
 
     <!-- Ch 4 KEY SPREAD — Sage/boulder full-bleed (both pages, Illo 6) -->
     <itemref idref="ch04c"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch04c-r"   properties="rendition:page-spread-right"/>
 
     <!-- Ch 4 boulder scene text continuation (right page, pairs with next illo) -->
     <itemref idref="ch04d"     properties="rendition:page-spread-right"/>
@@ -110,6 +116,7 @@
 
     <!-- Ch 7 COMMUNITY SPREAD — singing mud full-bleed (both pages, Illo 9) -->
     <itemref idref="ch07a"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch07a-r"   properties="rendition:page-spread-right"/>
 
     <!-- Ch 7 continued — text left / Illo 10 right -->
     <itemref idref="ch07b"     properties="rendition:page-spread-left"/>
@@ -125,6 +132,7 @@
 
     <!-- FINAL SPREAD — trio walking home, full-bleed (both pages, Illo 12) -->
     <itemref idref="ch09c"     properties="rendition:page-spread-left"/>
+    <itemref idref="ch09c-r"   properties="rendition:page-spread-right"/>
 
     <!-- End page -->
     <itemref idref="endpage"   properties="rendition:page-spread-right"/>
