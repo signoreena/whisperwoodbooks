@@ -32,6 +32,14 @@
     <!-- Images -->
     <item id="illo-01"  href="images/illo-01.png"      media-type="image/png"/>
     <item id="illo-02"  href="images/illo-02.png"      media-type="image/png"/>
+    <item id="illo-03"  href="images/illo-03.png"      media-type="image/png"/>
+    <item id="illo-04"  href="images/illo-04.png"      media-type="image/png"/>
+    <item id="illo-05"  href="images/illo-05.png"      media-type="image/png"/>
+    <item id="illo-06"  href="images/illo-06.png"      media-type="image/png"/>
+    <item id="illo-07"  href="images/illo-07.png"      media-type="image/png"/>
+    <item id="illo-08"  href="images/illo-08.png"      media-type="image/png"/>
+    <item id="illo-09"  href="images/illo-09.png"      media-type="image/png"/>
+    <item id="illo-10"  href="images/illo-10.png"      media-type="image/png"/>
     <!-- Pages -->
     <item id="cover"    href="pages/cover.xhtml"       media-type="application/xhtml+xml" properties="svg"/>
     <item id="titlepage"href="pages/titlepage.xhtml"   media-type="application/xhtml+xml"/>
