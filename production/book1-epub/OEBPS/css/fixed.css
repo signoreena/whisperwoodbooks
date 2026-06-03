@@ -3,9 +3,16 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+html, body {
+  width: 1700px;
+  height: 1700px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: #2d5a27;
-  overflow: hidden;
 }
 
 /* ── Single page (1700 × 1700) ─────────────────── */
