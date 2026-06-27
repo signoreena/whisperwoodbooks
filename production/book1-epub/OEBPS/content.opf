@@ -15,8 +15,8 @@
 
     <!-- Fixed layout metadata — required for Kindle children's books -->
     <meta property="rendition:layout">pre-paginated</meta>
-    <meta property="rendition:spread">none</meta>
-    <meta property="rendition:orientation">portrait</meta>
+    <meta property="rendition:spread">landscape</meta>
+    <meta property="rendition:orientation">auto</meta>
 
     <!-- Series metadata -->
     <meta property="belongs-to-collection" id="series">Whisperwood</meta>
