@@ -89,7 +89,7 @@ She was already talking before she reached the bank. "Flooding. The Mapleaf show
 
 Sage opened her mouth.
 
-"The mouse families' burrows will flood," said Vera, before Sage could speak. "I'll go find the beavers."
+"The mouse family's burrows will flood," said Vera, before Sage could speak. "I'll go find the beavers."
 
 Sage closed her mouth.
 
@@ -344,12 +344,6 @@ Sage nodded. She filed it away.
 Pip looked at her.
 
 "I have a feeling you'll be saying that a lot," he said cheerfully.
-
-Vera stared at him.
-
-"This is the first time something has gone wrong."
-
-"I know," said Pip. "But I have a feeling it won't be the last."
 
 He held up both lantern mushrooms like tiny torches and marched off down the path toward home.
 

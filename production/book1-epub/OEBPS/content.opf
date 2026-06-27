@@ -15,8 +15,8 @@
 
     <!-- Fixed layout metadata — required for Kindle children's books -->
     <meta property="rendition:layout">pre-paginated</meta>
-    <meta property="rendition:spread">auto</meta>
-    <meta property="rendition:orientation">auto</meta>
+    <meta property="rendition:spread">none</meta>
+    <meta property="rendition:orientation">portrait</meta>
 
     <!-- Series metadata -->
     <meta property="belongs-to-collection" id="series">Whisperwood</meta>
@@ -44,7 +44,7 @@
     <!-- Pages -->
     <item id="cover"    href="pages/cover.xhtml"       media-type="application/xhtml+xml" properties="svg"/>
     <item id="titlepage"href="pages/titlepage.xhtml"   media-type="application/xhtml+xml"/>
-    <!-- Ch 1: full-bleed establishing spread (3400px) -->
+    <!-- Ch 1: full-bleed establishing spread (3036px) -->
     <item id="ch01a"    href="pages/ch01a.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch01a-r"  href="pages/ch01a-r.xhtml"     media-type="application/xhtml+xml"/>
     <!-- Ch 1 continued: illo 2 (left) + text (right) + overflow (right) -->
@@ -60,7 +60,7 @@
     <!-- Ch 4 opening: illo 5 (left) + Ch 4 text (right) -->
     <item id="ch04a"    href="pages/ch04a.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch04b"    href="pages/ch04b.xhtml"       media-type="application/xhtml+xml"/>
-    <!-- Ch 4 key spread: Sage/boulder full-bleed (3400px) + text continuation -->
+    <!-- Ch 4 key spread: Sage/boulder full-bleed (3036px) + text continuation -->
     <item id="ch04c"    href="pages/ch04c.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch04c-r"  href="pages/ch04c-r.xhtml"     media-type="application/xhtml+xml"/>
     <item id="ch04d"    href="pages/ch04d.xhtml"       media-type="application/xhtml+xml"/>
@@ -69,7 +69,7 @@
     <item id="ch05c"    href="pages/ch05c.xhtml"       media-type="application/xhtml+xml"/>
     <!-- Ch 6: text only (no illustration) -->
     <item id="ch06b"    href="pages/ch06b.xhtml"       media-type="application/xhtml+xml"/>
-    <!-- Ch 7: community singing full-bleed spread (3400px) + text + overflow + illo 10 -->
+    <!-- Ch 7: community singing full-bleed spread (3036px) + text + overflow + illo 10 -->
     <item id="ch07a"    href="pages/ch07a.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch07a-r"  href="pages/ch07a-r.xhtml"     media-type="application/xhtml+xml"/>
     <item id="ch07b"    href="pages/ch07b.xhtml"       media-type="application/xhtml+xml"/>
@@ -78,7 +78,7 @@
     <!-- Ch 8: illo 11 (left) + Ch 8 text (right) -->
     <item id="ch08a"    href="pages/ch08a.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch08b"    href="pages/ch08b.xhtml"       media-type="application/xhtml+xml"/>
-    <!-- Ch 9: text left + text right + final full-bleed spread (3400px) -->
+    <!-- Ch 9: text left + text right + final full-bleed spread (3036px) -->
     <item id="ch09a"    href="pages/ch09a.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch09b"    href="pages/ch09b.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch09c"    href="pages/ch09c.xhtml"       media-type="application/xhtml+xml"/>

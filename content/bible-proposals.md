@@ -233,3 +233,18 @@ Change: `Book 1 is an approved exception at 8 chapters.`
 To: `Book 1 is an approved exception at 9 chapters.`
 
 No other changes are required. The word-count range (1,050–1,750 words) and the "approximately 7 chapters" norm for the series are unchanged.
+
+---
+
+## Proposal 12 — 2026-06-26
+
+**Proposed by:** Coordinator (direct instruction)
+**Regarding:** Section 5, Book 2 outline — resolution description in worktree bible copy
+**Summary of change:** Remove "owl-brewed settling potion" and "Sage negotiating with the songbirds to relay news in quieter shifts" from the Book 2 outline in the worktree copy of the bible; replace with accurate description of the finished book's resolution: Sage identifies three intersection nodes by pressing her hand against bark at each relay point (the forked elm above the owl's library tree, the western oak, the path bend by the brook), and the trio together with Oswin's owl apprentices place quietcap mushrooms at all three crossing points.
+**Reason given:** The worktree copy at `.claude/worktrees/tender-swartz-09f574/content/Whisperwood Series Bible.html` still carried the outdated Book 2 resolution language. The canonical `content/Whisperwood Series Bible.html` and `content/series-bible.md` were already correct (corrected under Proposal 7, 2026-05-23). This edit brings the worktree copy into alignment with the canonical files and the finished book.
+
+**Emily's decision:** APPROVED — change applied directly
+
+**Reasoning:** Investigation confirmed that the canonical bible files are correct and the worktree copy was the only remaining instance of the outdated text. The proposed replacement language exactly matches the canonical bible and is the correct description of the finished book: Sage's physical bark-touch method of identifying relay intersection nodes is consistent with her gift (deep listening through physical contact), the quietcap mushroom placement is consistent with world mechanics (mushrooms have one purpose; quietcap absorbs sound), and the community-effort framing (trio plus Oswin's owl apprentices) is consistent with the series promise. No owl-brewed potion is warranted — sound dampening is quietcap's job, not a potion's. No songbird negotiation is appropriate — that is Vera's register, not Sage's. The finished solution is better aligned with all established canon on every axis. This is a factual sync, not an editorial judgment call.
+
+**What Reena must do:** Nothing. The change has been applied directly to the worktree file. The canonical bible is already correct. When the worktree is merged or closed, Reena should confirm no stale content from this worktree overwrites the canonical file.

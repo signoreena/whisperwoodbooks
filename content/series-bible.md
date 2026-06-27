@@ -509,7 +509,7 @@ Running underneath all eight books is a second, silent story — visible only in
 
 ### Format Specifications
 
-Each book targets **32–40 interior pages** including illustrations, consistent with standard picture book / early-reader KDP trim sizes. Recommended trim: **6" × 9"** (portrait). Bleed: 0.125" on all sides if using full-bleed illustration spreads.
+Each book targets **32–40 interior pages** including illustrations. Trim size: **5.06" × 7.81"** (portrait) — the KDP equivalent of the I Can Read / Frog and Toad format. No bleed. Illustrations fade to white at the page edges (vignette), so hard bleed is not used. All illustration compositions should be designed with the central action in the middle third of the frame, allowing the edges to dissolve naturally to white.
 
 ### Series Branding
 
@@ -519,11 +519,12 @@ Every cover should carry the **WHISPERWOOD** series name prominently above or be
 
 The following applies to all 8 books:
 
-- Sharp, editorial linework. Not soft watercolor. Rich color, clean edges.
+- Sharp, editorial linework. Not soft watercolor. Rich color — but illustrations fade to white at the page edges (vignette effect). The central action is always in the middle of the frame; the edges dissolve naturally to the white page. No hard borders, no bleed, no full-bleed spreads.
 - Characters are anthropomorphic but maintain animal silhouettes — Vera reads as a fox, Pip as a squirrel, Sage as a turtle from across a thumbnail.
 - The world detail lives in illustration: the veins of the Mapleaf, the texture of singing mud, the glow of lantern mushrooms. The prose does not describe these; the illustrator must know the world rules.
 - Each book's featured creature gets a character-defining illustration moment in the book.
-- The final spread of every book should echo Book 1's closing image: the trio walking home together, lantern mushrooms lighting the path.
+- The mouse family must appear in the background of every book per the Mouse Family Thread (Section 6). Their placement, expressions, and props must match the per-book notes in that section exactly.
+- The final spread of every book should echo Book 1's closing image: the trio walking home together, lantern mushrooms lighting the path. The mouse family's window is lit in the distance.
 
 ### Series Bible Maintenance
 

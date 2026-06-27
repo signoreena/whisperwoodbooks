@@ -105,8 +105,6 @@ Vera was very still. The Mapleaf had shown her something wrong, but not why. She
 
 "The problem is not the schedule," said Oswin. "The birds are already trying to be organized. Every bird works harder so the news reaches the next bird clearly. The harder they work, the louder it gets. The louder it gets, the harder each bird works. It is a loop. You cannot fix a loop by adding more order to it. You need to find where the loop crosses itself — and interrupt it there."
 
-*Illustrator note: Show the relay loop as a circular chain of birds, each one slightly louder than the last, arrows flowing around and back. The crossing point where the chain overlaps should be visually distinct — a tangle or knot in the line.*
-
 Vera's list was in her paw.
 
 She looked at it for a long moment.
@@ -173,9 +171,7 @@ The first relay point made her stop on the path. The second made her close her e
 
 At the base of the forked elm, Pip had stopped leaping between branches. He stood still on the path below, both paws around the same stick, not saying anything.
 
-At the base of the elm, the mouse family had made a small shelter for the night.
-
-*Illustrator note: Pa is very calm; Ma holds a framed painting close. Big Daughter has her notebook open. Baby is asleep.*
+At the base of the elm, the mouse family had made a small shelter for the night — Pa holding the framed painting, Big Daughter bent over her notebook, Baby asleep on his back.
 
 Sage breathed in. She breathed out. She stayed.
 
@@ -219,7 +215,7 @@ Sage looked at the path. "There are rolls to think about."
 
 "Let's place them," said Vera.
 
-She folded her list once more, small and flat, and tucked it not in her bag but into the notch of a nearby tree — where someone else might find it, or where the bark might keep it.
+She folded her list once more, small and flat, and tucked it not in her bag but into the notch of a nearby tree. It had been the wrong list anyway.
 
 They moved through Whisperwood in the dark, quietcap mushrooms in their arms. Sage led to each spot. Oswin's apprentices arranged them at the forked elm, the western oak, the path bend by the brook.
 
@@ -252,6 +248,16 @@ They walked home, lantern mushrooms lighting the path. In the forked elm, a song
 
 ---
 
+## Production Notes
+
+*These notes are for the illustrator only and should not appear in the reader-facing text.*
+
+**Chapter 4 — The Relay Loop:** Show the relay loop as a circular chain of birds, each one slightly louder than the last, arrows flowing around and back. The crossing point where the chain overlaps should be visually distinct — a tangle or knot in the line.
+
+**Chapter 6 — The Mouse Family at the Elm:** Pa holds the framed painting close. Big Daughter has her notebook open. Baby is asleep on Pa's back. Pa is very calm.
+
+---
+
 ## About Whisperwood
 
 Whisperwood is an enchanted forest where the enchantment is part of everyday life. Three friends — Vera the fox, Pip the squirrel, and Sage the turtle — solve problems the only way anything ever gets solved here: together, with the right creature, in the right order, one careful step at a time.
@@ -260,13 +266,15 @@ Whisperwood is an enchanted forest where the enchantment is part of everyday lif
 
 ## Coming Next
 
-**Book 3: The Missing Acorns**
+**Book 3: The Missing Mole**
 
-*Someone is taking the village stores. The songbirds say so. Pip is already sure he knows who — and he might be very, very wrong.*
+*A young mole went into the tunnels before breakfast and has not come back. Pip runs straight for the eastern branch. He is going the wrong way.*
 
 ---
 
 ## The World of Whisperwood
+
+**Hazel (Hedgehog Baker):** Whisperwood's baker. When Hazel cannot bake, the whole forest knows something has gone wrong.
 
 **Quietcap Mushrooms**
 Round, pale mushrooms that absorb sound. Each one works quietly and completely. They cannot make noise; they can only take it away.
