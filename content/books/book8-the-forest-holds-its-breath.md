@@ -202,7 +202,7 @@ Moss is lost in the tunnels. Pip runs straight for the eastern branch. He is goi
 **Book 4: The Deep Dark Dive**
 The lantern mushroom is at the bottom of the deep pool. The Otter says no.
 
-**Book 5: Bram's Big Blunder**
+**Book 5: The Builder's Big Blunder**
 Something Bram built has fallen down. He knows exactly why. He isn't saying.
 
 **Book 6: The Frightened Fawn**

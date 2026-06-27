@@ -1,10 +1,10 @@
-# Book 5: Bram's Big Blunder — Illustration Prompts
+# Book 5: The Builder's Big Blunder — Illustration Prompts
 
 *Trim size: 5.06" × 7.81" (I Can Read / Frog and Toad format). Portrait orientation. No bleed. Vignette edges: central action in middle third, edges dissolve softly to white. Sharp editorial linework with warmth — Quentin Blake energy meets Edward Ardizzone warmth. 7 chapters — 8 illustration spreads plus cover.*
 
 ---
 
-## Bram's Big Blunder — Cover: The Structure Falls
+## The Builder's Big Blunder — Cover: The Structure Falls
 
 **Page location:** Cover
 **Scene:** The storage structure is in the moment of collapse — the central beam cracking, one wall leaning, the roof beginning to drop. The meadow birds stand in a circle watching. Bram stands at the edge of the scene, very still. The cover conveys the moment just after something has gone wrong.
@@ -13,7 +13,7 @@
 
 ---
 
-## Bram's Big Blunder — Spread 1: The New Structure — The First Morning
+## The Builder's Big Blunder — Spread 1: The New Structure — The First Morning
 
 **Page location:** Chapter 1 — Bram finishes the structure; the meadow birds are pleased; the half-built mouse home is in background
 **Scene:** Bram stands back from his completed storage structure in the meadow, looking at it. It stands straight and tight-jointed, the curved roof exactly as planned. Meadow birds carry small bundles of seeds and dried berries in through the door. In the background, the half-built mouse-family frame sits against a tree.
@@ -31,7 +31,7 @@
 
 ---
 
-## Bram's Big Blunder — Spread 3: The Collapse
+## The Builder's Big Blunder — Spread 3: The Collapse
 
 **Page location:** Chapter 3 — the structure falls; Bram arrives to find the wreckage
 **Scene:** The structure has collapsed. Bram stands at the edge of the meadow looking at the pile of carefully-made pieces on the grass. The meadow birds stand in a circle around the wreckage. The winter stores are scattered across the ground.
@@ -40,7 +40,7 @@
 
 ---
 
-## Bram's Big Blunder — Spread 4: Vera's Plan — Bram Walks Away
+## The Builder's Big Blunder — Spread 4: Vera's Plan — Bram Walks Away
 
 **Page location:** Chapter 4 — Vera presents her thorough plan; Bram says he'll get to it; walks away
 **Scene:** Vera holds her plan — timber lists, rebuild sequence, interim storage notes — extended toward Bram. Bram looks at it for a long moment. Then he walks away toward a fence post on the far side of the meadow. Vera stands holding the plan with her ears going back.
@@ -49,7 +49,7 @@
 
 ---
 
-## Bram's Big Blunder — Spread 5: Pip's Wrong Rebuild / Middle Son Riveted
+## The Builder's Big Blunder — Spread 5: Pip's Wrong Rebuild / Middle Son Riveted
 
 **Page location:** Chapter 5 — Pip starts rebuilding wrong; Bram watches from behind a tree; middle son riveted
 **Scene:** Pip at the meadow, laying a foundation in the wrong place with the wrong timber — green, sap-wet wood — hammering with complete confidence. Bram watches from behind a tree at the meadow's edge, not correcting, not moving. Middle Son of the mouse family leans forward watching with absolute fascination.
@@ -58,7 +58,7 @@
 
 ---
 
-## Bram's Big Blunder — Spread 6: Sage Finds Bram — The One Question
+## The Builder's Big Blunder — Spread 6: Sage Finds Bram — The One Question
 
 **Page location:** Chapter 6 — Sage finds Bram behind the tree; asks the one question; he picks up his tools
 **Scene:** Sage stands beside Bram behind the tree at the meadow's edge. Both look at the meadow. Sage has said something. Bram is quiet, looking at the ground. Then the moment — his tools come up from the ground. He is going back.
@@ -67,7 +67,7 @@
 
 ---
 
-## Bram's Big Blunder — Spread 7: The Rebuild — Closing Spread
+## The Builder's Big Blunder — Spread 7: The Rebuild — Closing Spread
 
 **Page location:** Chapter 7 — the proper rebuild; the structure complete; trio walks home
 **Scene:** The new structure stands in the meadow, complete and correct — better than the original. Meadow birds are moving their stores back in. Bram looks at it with a different expression than before. Then: the trio walks home on the lantern-mushroom path, Pip tired and satisfied, Vera and Sage beside him.

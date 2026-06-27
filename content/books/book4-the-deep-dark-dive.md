@@ -168,7 +168,7 @@ Whisperwood is an enchanted forest where the enchantment is part of everyday lif
 
 ## Coming Next
 
-**Book 5: Bram's Big Blunder**
+**Book 5: The Builder's Big Blunder**
 
 *Something Bram built has fallen down. He knows exactly why. He isn't saying.*
 

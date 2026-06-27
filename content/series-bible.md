@@ -219,7 +219,7 @@ The series runs eight books. Books 1–4 are **natural crisis** stories: somethi
 | 2 | The Noisy Night | Quietcap mushrooms, Songbirds, Owls | Sage's sensitivity becomes the solution | What feels like a weakness can be the gift. |
 | 3 | The Missing Mole | Underground tunnels, Mapleaf, Raccoons, Bunnies | Pip rushes the wrong tunnel; Sage notices what no one else did | Moving fast in the wrong direction takes you further away. |
 | 4 | The Deep Dark Dive | Deep river, Otter, Lantern mushroom | Pip builds contraptions; Sage stays; the Otter chooses to go | Some help means staying, not pushing. |
-| 5 | Bram's Big Blunder | Structural failure, Construction | Sage asks the one question; Bram admits and leads the fix | Admitting a mistake is the first step to fixing it. |
+| 5 | The Builder's Big Blunder | Structural failure, Construction | Sage asks the one question; Bram admits and leads the fix | Admitting a mistake is the first step to fixing it. |
 | 6 | The Frightened Fawn | Antler vibrations, Owls, Bunnies, Evacuation routes | Dallas must rest before she can help; Sage is the one who sees it | The sensor can't sense if it's not rested. |
 | 7 | Two Telling Truths | Songbirds (two versions), Raccoons (third account) | Vera can't logic it; Sage notices what both stories share | You can both be right about what you saw and still be telling different stories. |
 | 8 | The Forest Holds Its Breath | All resources & all specialists | Every gift, in its right moment | Nothing is solved alone. Every role matters. |
@@ -330,7 +330,7 @@ The series runs eight books. Books 1–4 are **natural crisis** stories: somethi
 
 ---
 
-#### Book 5: Bram's Big Blunder
+#### Book 5: The Builder's Big Blunder
 *Resources: Structural failure · Construction | Lesson: Admitting a mistake is the first step to fixing it.*
 
 **OPENING:** An ordinary morning. Bram has just finished a new storage structure for the meadow birds — the largest thing he has built in a long while. He is proud of it. The birds move their winter stores in.
