@@ -7,8 +7,8 @@
   ══════════════════════════════════════════════════════════
   KDP PRINT INTERIOR — Whisperwood Book 2: The Noisy Night
   ══════════════════════════════════════════════════════════
-  Trim size:    8.5" × 8.5"
-  Bleed:        0.125" on all sides (set file to 8.75" × 8.75")
+  Trim size:    5.06" × 7.81"
+  Bleed:        0.125" on all sides (set file to 5.31" × 8.06")
   Gutter:       0.5" (spine side — left on right pages, right on left pages)
   Safe zone:    All text/important content 0.375" from trim edge
   Resolution:   300 DPI for images
@@ -19,21 +19,21 @@
   1. Open this file in Google Chrome
   2. File → Print (Cmd+P / Ctrl+P)
   3. Destination: Save as PDF
-  4. Paper size: Custom — 8.75 in × 8.75 in
+  4. Paper size: Custom — 5.31 in × 8.06 in
   5. Margins: None
   6. Options: Background graphics ON
   7. Save the PDF — this is your KDP interior file
 
   COVER: Submit separately via KDP's cover creator or a separate
-  8.75" × 8.75" + spine PDF. KDP calculates spine width from page count.
+  5.31" × 8.06" + spine PDF. KDP calculates spine width from page count.
   Use KDP's cover calculator for spine width.
 
   REPLACING PLACEHOLDERS: When final artwork is ready, replace each
   .illo-placeholder div with an <img> tag:
     <img src="images/illo-01.jpg" class="illo-img" alt="..."/>
   Images must be 300 DPI at print size. For a full-page image on an
-  8.5" × 8.5" page with bleed: 2625 × 2625 px minimum at 300 DPI.
-  For a full spread: 5250 × 2625 px minimum.
+  5.06" × 7.81" page with bleed: 1593 × 2418 px minimum at 300 DPI.
+  For a full spread (two portrait pages): 3186 × 2418 px minimum.
   ══════════════════════════════════════════════════════════
 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,14 +46,14 @@
 
   /* ── Page setup ─────────────────────────────── */
   @page {
-    size: 8.75in 8.75in; /* trim + bleed */
+    size: 5.31in 8.06in; /* trim + bleed */
     margin: 0;
   }
 
   /* ── Single page container ───────────────────── */
   .pg-container {
-    width: 8.75in;
-    height: 8.75in;
+    width: 5.31in;
+    height: 8.06in;
     position: relative;
     overflow: hidden;
     background: #f9f7f2;
@@ -87,13 +87,13 @@
   }
   .illo-placeholder .illo-num {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 28pt;
+    font-size: 20pt;
     color: #fce070;
     font-weight: bold;
   }
   .illo-placeholder .illo-desc {
     font-family: 'EB Garamond', Georgia, serif;
-    font-size: 12pt;
+    font-size: 11pt;
     color: #c8e6c2;
     line-height: 1.5;
     max-width: 90%;
@@ -161,7 +161,7 @@
       box-shadow: 0 2px 16px rgba(0,0,0,0.25);
     }
     .print-note {
-      max-width: 8.75in;
+      max-width: 5.31in;
       margin: 0 auto 0.3in;
       background: #fdf3e7;
       border-left: 4px solid #c8860a;
@@ -177,7 +177,7 @@
 <body>
 
 <div class="print-note">
-  <strong>Print preview:</strong> This file renders each page as a card on screen. To export to PDF for KDP, open in Chrome &rarr; File &rarr; Print &rarr; Save as PDF &rarr; Custom paper size 8.75&quot; &times; 8.75&quot; &rarr; Margins: None &rarr; Background graphics: ON. See the file header comments for full submission guidance.
+  <strong>Print preview:</strong> This file renders each page as a card on screen. To export to PDF for KDP, open in Chrome &rarr; File &rarr; Print &rarr; Save as PDF &rarr; Custom paper size 5.31&quot; &times; 8.06&quot; &rarr; Margins: None &rarr; Background graphics: ON. See the file header comments for full submission guidance.
 </div>
 
 <!-- ══════════════════════════════════════
@@ -187,8 +187,8 @@
 <div class="pg-container pg-right" style="background:#f9f7f2;">
   <div class="text-safe" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
     <div style="font-family:'EB Garamond',Georgia,serif;font-size:9pt;letter-spacing:4px;text-transform:uppercase;color:#4a7c59;margin-bottom:16pt;">Whisperwood &middot; Book Two</div>
-    <div style="font-family:'Playfair Display',Georgia,serif;font-size:52pt;font-weight:bold;color:#2d5a27;line-height:1.1;margin-bottom:12pt;">The Noisy<br/>Night</div>
-    <div style="font-family:'EB Garamond',Georgia,serif;font-size:20pt;font-style:italic;color:#4a7c59;">A Whisperwood Story</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:18pt;font-weight:bold;color:#2d5a27;line-height:1.1;margin-bottom:12pt;">The Noisy<br/>Night</div>
+    <div style="font-family:'EB Garamond',Georgia,serif;font-size:15pt;font-style:italic;color:#4a7c59;">A Whisperwood Story</div>
   </div>
 </div>
 
@@ -198,10 +198,10 @@
 <div class="pg-container pg-left" style="background:#f9f7f2;">
   <div class="text-safe" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
     <div style="font-family:'EB Garamond',Georgia,serif;font-size:9pt;letter-spacing:4px;text-transform:uppercase;color:#4a7c59;margin-bottom:20pt;">Whisperwood &middot; Book Two</div>
-    <div style="font-family:'Playfair Display',Georgia,serif;font-size:48pt;font-weight:bold;color:#2d5a27;line-height:1.1;margin-bottom:12pt;">The Noisy<br/>Night</div>
-    <div style="font-family:'EB Garamond',Georgia,serif;font-size:18pt;font-style:italic;color:#4a7c59;margin-bottom:50pt;">A Whisperwood Story</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:34pt;font-weight:bold;color:#2d5a27;line-height:1.1;margin-bottom:12pt;">The Noisy<br/>Night</div>
+    <div style="font-family:'EB Garamond',Georgia,serif;font-size:14pt;font-style:italic;color:#4a7c59;margin-bottom:50pt;">A Whisperwood Story</div>
     <div style="width:1.5in;height:2pt;background:#c8860a;margin-bottom:50pt;"></div>
-    <div style="font-family:'Playfair Display',Georgia,serif;font-size:16pt;color:#1a1a1a;margin-bottom:8pt;">Reena Gellerup</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:14pt;color:#1a1a1a;margin-bottom:8pt;">Reena Gellerup</div>
     <div style="font-family:'EB Garamond',Georgia,serif;font-size:13pt;color:#777;font-style:italic;">Illustrations by [Artist Name]</div>
     <div style="position:absolute;bottom:0.5in;font-family:'EB Garamond',Georgia,serif;font-size:10pt;color:#aaa;letter-spacing:1px;text-align:center;">Whisperwood Books &bull; whisperwoodbooks.com &bull; 2026</div>
   </div>
@@ -213,8 +213,8 @@
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
   <!-- Illo 1 KEY SPREAD: full bleed left page -->
-  <!-- TO REPLACE: <img src="images/illo-01-left.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Wednesday evening in Whisperwood (left)"/> -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+  <!-- TO REPLACE: <img src="images/illo-01-left.jpg" class="illo-img" style="top:0;left:0;width:5.31in;height:8.06in;" alt="Wednesday evening in Whisperwood (left)"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:8.06in;">
     <div class="illo-num">Illustration 1 &mdash; KEY SPREAD (left page)</div>
     <div class="illo-desc">Wednesday evening in Whisperwood. The canopy is busy with songbirds in mid-relay. The village is mostly asleep: tree-homes with dark windows, a path lit by amber lantern mushrooms. One warm-lit window in the willow hollow &mdash; Sage&rsquo;s home. Left half of full-bleed spread.</div>
     <!-- Mouse family: in temporary lean-to shelter near the forked elm, mid-left background. Pa Mouse seated with practiced calm, Baby asleep on his back. Ma Mouse&rsquo;s framed painting propped against inner wall. Big Daughter with notebook. Middle Son tilting head toward canopy sounds. -->
@@ -224,13 +224,13 @@
 
 <div class="pg-container pg-right">
   <!-- Illo 1 KEY SPREAD continues (right half) with text band at bottom -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:5.5in;">
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:5.06in;">
     <div class="illo-num">Illustration 1 &mdash; KEY SPREAD (right page)</div>
     <div class="illo-desc">Continuation of Wednesday evening Whisperwood scene. Sage&rsquo;s willow hollow with warm-lit window &mdash; her silhouette visible, hands flat against the interior walls, listening. Songbirds overhead still passing the same note forward.</div>
     <!-- Mouse family: continuation of lean-to scene from left page. -->
     <div class="illo-note">Bleed to top, left, right edges. Text box at bottom. Mouse family continued from left page.</div>
   </div>
-  <div style="position:absolute;bottom:0;left:0;width:8.75in;height:3.25in;background:rgba(249,247,242,0.97);padding:0.45in 0.5in 0.45in 0.55in;">
+  <div style="position:absolute;bottom:0;left:0;width:5.31in;height:3.0in;background:rgba(249,247,242,0.97);padding:0.45in 0.5in 0.45in 0.55in;">
     <div class="chapter-label">Chapter 1</div>
     <div class="chapter-title" style="font-family:'Playfair Display',Georgia,serif;">Something Is Wrong with the Birds</div>
     <div class="story-text">
@@ -265,8 +265,8 @@
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
   <!-- Illo 2: Pip at the bakery, Hazel on her step, shutters closed -->
-  <!-- TO REPLACE: <img src="images/illo-02.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Pip crouches at the step of Hazel&rsquo;s closed bakery; Hazel sits with untied apron"/> -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+  <!-- TO REPLACE: <img src="images/illo-02.jpg" class="illo-img" style="top:0;left:0;width:5.31in;height:8.06in;" alt="Pip crouches at the step of Hazel&rsquo;s closed bakery; Hazel sits with untied apron"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:8.06in;">
     <div class="illo-num">Illustration 2</div>
     <div class="illo-desc">Early morning. Pip crouches at the stone step of the round-doored bakery, one foot mid-landing, bushy tail raised, a bellflower stem in one paw. Hazel the hedgehog baker sits on the step with her apron loose and untied in her lap, rings of exhaustion under her eyes, looking up at the canopy. The bakery shutters are closed; the stone counter is bare &mdash; no rolls.</div>
     <!-- Mouse family: not in this spread. -->
@@ -299,8 +299,8 @@
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
   <!-- Illo 3: Vera mid-stride toward the canopy, Pip running to keep up -->
-  <!-- TO REPLACE: <img src="images/illo-03.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Vera strides toward the canopy; Pip runs to keep up"/> -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+  <!-- TO REPLACE: <img src="images/illo-03.jpg" class="illo-img" style="top:0;left:0;width:5.31in;height:8.06in;" alt="Vera strides toward the canopy; Pip runs to keep up"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:8.06in;">
     <div class="illo-num">Illustration 3</div>
     <div class="illo-desc">Morning on the forest path. Vera at full decisive stride toward the canopy &mdash; satchel on shoulder, long list in paw, ears fully forward, chin slightly lifted, already decided. Pip runs half a step behind, tail streaming, one foot barely touching the ground, expression between enthusiasm and first flicker of uncertainty &mdash; he is carrying nothing. Songbirds in the mid-canopy. Mapleaf tree in far background with gold-green veins &mdash; calm, unhelpful.</div>
     <!-- Mouse family: not in this spread. -->
@@ -337,8 +337,8 @@
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
   <!-- Illo 4 KEY SPREAD: left page -->
-  <!-- TO REPLACE: <img src="images/illo-04-left.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Library tree interior (left) &mdash; shelves rising into shadow"/> -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+  <!-- TO REPLACE: <img src="images/illo-04-left.jpg" class="illo-img" style="top:0;left:0;width:5.31in;height:8.06in;" alt="Library tree interior (left) &mdash; shelves rising into shadow"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:8.06in;">
     <div class="illo-num">Illustration 4 &mdash; KEY SPREAD (left page)</div>
     <div class="illo-desc">Inside the library tree &mdash; the vast hollow interior lined with curved shelves rising twenty feet, packed with scrolls, sealed boxes, pressed objects. Amber lantern mushroom sconces at shelf-height; upper shelves fading into shadow. Entrance at far left as a shaft of daylight. Left half of full-bleed spread &mdash; showing the overwhelming scale of the library.</div>
     <!-- Mouse family: not in this spread. They are near the elm, not inside the library tree. -->
@@ -348,14 +348,14 @@
 
 <div class="pg-container pg-right">
   <!-- Illo 4 KEY SPREAD: right page with text band at bottom -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:5.75in;">
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:5.3in;">
     <div class="illo-num">Illustration 4 &mdash; KEY SPREAD (right page)</div>
     <div class="illo-desc">Vera stands completely still before Oswin at the center of the library. Her fox ears are back (the involuntary tell). She holds her handwritten list folded in half in her paw &mdash; not put away, just folded. Oswin: tiny, very old, bark spectacles on his beak, wings folded, expression patient and immovable. The room dwarfs them both, but Vera smaller.</div>
     <!-- Mouse family: not in this spread. -->
     <!-- Illustrator flag: the folded list is Vera&rsquo;s most important physical tell in this book. Must read clearly: she had the list open; now it is folded in half. She has not put it away. -->
     <div class="illo-note">Bleed top, left, right. Text box at bottom. Illustrator flag: folded list (not put away) is critical physical tell. No mouse family.</div>
   </div>
-  <div style="position:absolute;bottom:0;left:0;width:8.75in;height:3in;background:rgba(249,247,242,0.97);padding:0.4in 0.5in 0.4in 0.55in;">
+  <div style="position:absolute;bottom:0;left:0;width:5.31in;height:2.76in;background:rgba(249,247,242,0.97);padding:0.4in 0.5in 0.4in 0.55in;">
     <div class="chapter-label">Chapter 4</div>
     <div class="chapter-title" style="font-family:'Playfair Display',Georgia,serif;">The Owls Say Not That Way</div>
     <div class="story-text">
@@ -391,8 +391,8 @@
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
   <!-- Illo 5: Pip and Sage on the step of the willow hollow -->
-  <!-- TO REPLACE: <img src="images/illo-05.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Pip sits on Sage&rsquo;s step; stick beside him; Sage hands flat on boards, almost smiling"/> -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+  <!-- TO REPLACE: <img src="images/illo-05.jpg" class="illo-img" style="top:0;left:0;width:5.31in;height:8.06in;" alt="Pip sits on Sage&rsquo;s step; stick beside him; Sage hands flat on boards, almost smiling"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:8.06in;">
     <div class="illo-num">Illustration 5</div>
     <div class="illo-desc">Outside Sage&rsquo;s willow hollow &mdash; a worn wooden step, willow fronds to either side. Pip sits on the step (unusual for him), tail curled around himself, a stick beside him on the boards, sheepish and wondering, watching Sage. Sage sits with both hands flat on the wooden step-boards, not looking at Pip but forward and slightly down. The corners of her mouth are very slightly lifted. She is almost smiling. Dappled green-gold morning light through the willow fronds. Five or six songbirds visible in mid-relay above.</div>
     <!-- Mouse family: not in this spread. This is Sage&rsquo;s home area, away from the elm. -->
@@ -433,8 +433,8 @@
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
   <!-- Illo 6 KEY IMAGE: left page -->
-  <!-- TO REPLACE: <img src="images/illo-06-left.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Sage at the forked elm, hand on bark, eyes closed; three relay chains converging above"/> -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+  <!-- TO REPLACE: <img src="images/illo-06-left.jpg" class="illo-img" style="top:0;left:0;width:5.31in;height:8.06in;" alt="Sage at the forked elm, hand on bark, eyes closed; three relay chains converging above"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:8.06in;">
     <div class="illo-num">Illustration 6 &mdash; KEY IMAGE (left page)</div>
     <div class="illo-desc">The most important image in the book. Sage stands at the fork of the elm &mdash; one hand flat against the pale bark at the join, eyes closed, jaw set, shell visible from the side, both feet planted. Above her in the canopy: three relay chains of songbirds converging at this exact fork, birds from upper left, upper right, and far center, their arcing relay paths crossing and stacking in overlapping amber-orange spirals. The visual noise fills the upper two-thirds of the image.</div>
     <!-- Mouse family: at the base of the elm in their temporary shelter. Pa Mouse: sitting, deeply calm, Baby asleep on his back. He is not looking up. Ma Mouse: framed painting held to her chest. Big Daughter: notebook open, pen moving. Middle Son: the only one looking directly up at Sage &mdash; face tipped up, transfixed. Ma has not redirected him yet. -->
@@ -444,13 +444,13 @@
 
 <div class="pg-container pg-right">
   <!-- Illo 6 KEY IMAGE: right page with text band at bottom -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:5.75in;">
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:5.3in;">
     <div class="illo-num">Illustration 6 &mdash; KEY IMAGE (right page)</div>
     <div class="illo-desc">Continuation of the forked elm scene. Below the fork on the branch, Pip stands one step back &mdash; completely still, tail low, watching Sage with wide eyes and held breath. Awe, not movement. At the elm base, the mouse family in their shelter, continued from left page.</div>
     <!-- Mouse family: continuation from left page. Pip watching in awe from one step back on the branch. -->
     <div class="illo-note">Bleed top, left, right. Text box at bottom. Pip watching Sage with held-breath awe. Mouse family at base continued from left page.</div>
   </div>
-  <div style="position:absolute;bottom:0;left:0;width:8.75in;height:3in;background:rgba(249,247,242,0.97);padding:0.4in 0.5in 0.4in 0.55in;">
+  <div style="position:absolute;bottom:0;left:0;width:5.31in;height:2.76in;background:rgba(249,247,242,0.97);padding:0.4in 0.5in 0.4in 0.55in;">
     <div class="chapter-label">Chapter 6</div>
     <div class="chapter-title" style="font-family:'Playfair Display',Georgia,serif;">What Sage Heard</div>
     <div class="story-text">
@@ -488,8 +488,8 @@
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
   <!-- Illo 7: the quietcap mushroom grove; Oswin leads the group; Sage at grove edge breathing -->
-  <!-- TO REPLACE: <img src="images/illo-07.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Oswin leads the group to the quietcap grove; Sage stands at the edge, breathing"/> -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+  <!-- TO REPLACE: <img src="images/illo-07.jpg" class="illo-img" style="top:0;left:0;width:5.31in;height:8.06in;" alt="Oswin leads the group to the quietcap grove; Sage stands at the edge, breathing"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:8.06in;">
     <div class="illo-num">Illustration 7</div>
     <div class="illo-desc">A quietcap mushroom grove in Whisperwood. Pale, dome-shaped mushrooms in tight clusters &mdash; their matte surfaces slightly soft-edged, absorbing visual definition around them. Oswin leads from the front, wings slightly open, matter-of-fact. Vera behind him with a shorter list, coordinating. Pip carries two armloads, slightly unstable, concentrating. Sage stands at the grove&rsquo;s edge and has stopped &mdash; a different kind of stillness: release. Hands at her sides. Quieter expression than in any other spread. Two apprentice owls and three raccoons assessing clusters in background. Late-afternoon forest light, slightly muffled within the grove.</div>
     <!-- Mouse family: not in this spread. They are near the elm; this is the quietcap grove elsewhere. -->
@@ -521,8 +521,8 @@
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
   <!-- Illo 8 COMMUNITY IMAGE: left page -->
-  <!-- TO REPLACE: <img src="images/illo-08-left.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Sage leads group to path bend by the brook; Pip lowers mushroom cluster; Vera watches with respect"/> -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+  <!-- TO REPLACE: <img src="images/illo-08-left.jpg" class="illo-img" style="top:0;left:0;width:5.31in;height:8.06in;" alt="Sage leads group to path bend by the brook; Pip lowers mushroom cluster; Vera watches with respect"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:8.06in;">
     <div class="illo-num">Illustration 8 &mdash; COMMUNITY IMAGE (left page)</div>
     <div class="illo-desc">Early evening at the path bend by the brook. Sage at the front with one hand on the tree at the precise bend &mdash; other hand pointing directly to the ground, certain, leading. Pip carefully lowers a cluster of pale quietcap mushrooms to the spot Sage indicated &mdash; both hands steady, expression focused and genuinely careful. Vera watches with list in hand, pen lowered, ears forward, respectful. Above in the canopy: relay chains thinning, fewer birds, arcs lighter, some birds already folding their wings.</div>
     <!-- Mouse family: left background, small but visible. Middle Son stands at edge of their shelter, simply still, listening to the quiet arriving &mdash; first time his posture is not strained. Big Daughter has stopped writing and also looks up. Pa calm, Baby asleep, Ma holding framed painting. -->
@@ -532,13 +532,13 @@
 
 <div class="pg-container pg-right">
   <!-- Illo 8 COMMUNITY IMAGE: right page with text band at bottom -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:5.5in;">
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:5.06in;">
     <div class="illo-num">Illustration 8 &mdash; COMMUNITY IMAGE (right page)</div>
     <div class="illo-desc">Continuation of the path-bend scene. Two apprentice owls arranging the cluster in the background with precision. The brook visible at the bend. Canopy above showing thinning relay &mdash; the color temperature shifting from agitated amber toward cooler green-blue of ordinary Whisperwood nightfall. Lantern mushrooms glowing brighter as evening deepens.</div>
     <!-- Mouse family: continuation from left page &mdash; the arriving quiet is reaching them now. -->
     <div class="illo-note">Bleed top, left, right. Text box at bottom. Mouse family continued from left page.</div>
   </div>
-  <div style="position:absolute;bottom:0;left:0;width:8.75in;height:3.25in;background:rgba(249,247,242,0.97);padding:0.4in 0.5in 0.4in 0.55in;">
+  <div style="position:absolute;bottom:0;left:0;width:5.31in;height:3.0in;background:rgba(249,247,242,0.97);padding:0.4in 0.5in 0.4in 0.55in;">
     <div class="story-text">
       <p>They moved through Whisperwood in the dark, quietcap mushrooms in their arms. Sage led to each spot. Oswin&rsquo;s apprentices arranged them at the forked elm, the western oak, the path bend by the brook.</p>
       <p>The effect was gradual. Like a kettle coming off the heat.</p>
@@ -573,8 +573,8 @@
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left">
   <!-- Illo 9 FINAL SPREAD: left page -->
-  <!-- TO REPLACE: <img src="images/illo-09-left.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Trio walking home at night; lantern mushrooms lining the path"/> -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+  <!-- TO REPLACE: <img src="images/illo-09-left.jpg" class="illo-img" style="top:0;left:0;width:5.31in;height:8.06in;" alt="Trio walking home at night; lantern mushrooms lining the path"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:8.06in;">
     <div class="illo-num">Illustration 9 &mdash; FINAL SPREAD (left page)</div>
     <div class="illo-desc">The closing image of Book 2, echoing the series&rsquo; first. Night forest path in Whisperwood &mdash; deep blue-green canopy above, two rows of amber lantern mushrooms along both edges, lighting the way home. Pip walks half a step ahead at center &mdash; tail up, warm and present, listening to the quiet, not leaping, carrying nothing. Vera walks beside him on the right &mdash; satchel on shoulder, folded list in paw she is not looking at, ears forward, expression of someone who has learned something. Sage walks on the left, one deliberate step at a time, looking ahead, expression the quietest it has been in the whole book.</div>
     <!-- Illustrator note: series echo &mdash; same closing image as Book 1 but night instead of morning. No Pip holding mushrooms aloft. Lantern mushrooms do all the work in the dark. This is the same home, reached from a harder direction. -->
@@ -584,8 +584,8 @@
 
 <div class="pg-container pg-right">
   <!-- Illo 9 FINAL SPREAD: right page -->
-  <!-- TO REPLACE: <img src="images/illo-09-right.jpg" class="illo-img" style="top:0;left:0;width:8.75in;height:8.75in;" alt="Forked elm in background with sleeping songbird; bakery window lit far right"/> -->
-  <div class="illo-placeholder" style="top:0;left:0;width:8.75in;height:8.75in;">
+  <!-- TO REPLACE: <img src="images/illo-09-right.jpg" class="illo-img" style="top:0;left:0;width:5.31in;height:8.06in;" alt="Forked elm in background with sleeping songbird; bakery window lit far right"/> -->
+  <div class="illo-placeholder" style="top:0;left:0;width:5.31in;height:8.06in;">
     <div class="illo-num">Illustration 9 &mdash; FINAL SPREAD (right page)</div>
     <div class="illo-desc">Upper-left background: the forked elm, visible &mdash; a single small songbird folded in sleep in its fork. The relay is over. Far right background: a warm amber light in the bakery window &mdash; Hazel starting her dough. Near the elm, the mouse family&rsquo;s temporary shelter glows from a single interior lantern mushroom. Ma Mouse&rsquo;s framed painting is visible on the bark wall inside &mdash; she has hung it up. Middle Son is inside the shelter, not at the entrance, for the first time in the book. Baby asleep. Family settled for the night.</div>
     <!-- Mouse family note: this is the mouse family&rsquo;s version of resolution. Middle Son not at the entrance &mdash; it is quiet enough to sleep. The framed painting is on the wall. The shelter is finally a home for the night. -->
@@ -598,8 +598,8 @@
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left pg-end">
   <div style="text-align:center;padding:1in;">
-    <div style="font-family:'Playfair Display',Georgia,serif;font-size:36pt;font-weight:bold;color:#2d5a27;margin-bottom:12pt;">The End of Book Two</div>
-    <div style="font-family:'EB Garamond',Georgia,serif;font-size:20pt;font-style:italic;color:#4a7c59;margin-bottom:50pt;">The Noisy Night</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:18pt;font-weight:bold;color:#2d5a27;margin-bottom:12pt;">The End of Book Two</div>
+    <div style="font-family:'EB Garamond',Georgia,serif;font-size:15pt;font-style:italic;color:#4a7c59;margin-bottom:50pt;">The Noisy Night</div>
     <div style="font-family:'EB Garamond',Georgia,serif;font-size:13pt;color:#555;line-height:2;">
       <p>The story of Whisperwood continues in:</p>
       <p><em>Book Three: The Missing Acorns</em></p>
@@ -629,7 +629,7 @@
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left" style="background:#f9f7f2;">
   <div class="text-safe">
-    <div style="font-family:'Playfair Display',Georgia,serif;font-size:22pt;font-weight:bold;color:#2d5a27;margin-bottom:20pt;">About Whisperwood</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:14pt;font-weight:bold;color:#2d5a27;margin-bottom:20pt;">About Whisperwood</div>
     <div class="story-text" style="font-size:14pt;">
       <p>Whisperwood is an enchanted forest where the enchantment is part of everyday life. Three friends &mdash; Vera the fox, Pip the squirrel, and Sage the turtle &mdash; solve problems the only way anything ever gets solved here: together, with the right creature, in the right order, one careful step at a time.</p>
     </div>
@@ -638,7 +638,7 @@
 
 <div class="pg-container pg-right" style="background:#f9f7f2;">
   <div class="text-safe">
-    <div style="font-family:'Playfair Display',Georgia,serif;font-size:22pt;font-weight:bold;color:#2d5a27;margin-bottom:20pt;">Coming Next</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:14pt;font-weight:bold;color:#2d5a27;margin-bottom:20pt;">Coming Next</div>
     <div class="story-text" style="font-size:14pt;">
       <p><strong>Book 3: The Missing Acorns</strong></p>
       <p><em>Someone is taking the village stores. The songbirds say so. Pip is already sure he knows who &mdash; and he might be very, very wrong.</em></p>
@@ -651,7 +651,7 @@
      ══════════════════════════════════════ -->
 <div class="pg-container pg-left" style="background:#f9f7f2;">
   <div class="text-safe">
-    <div style="font-family:'Playfair Display',Georgia,serif;font-size:22pt;font-weight:bold;color:#2d5a27;margin-bottom:20pt;">The World of Whisperwood</div>
+    <div style="font-family:'Playfair Display',Georgia,serif;font-size:14pt;font-weight:bold;color:#2d5a27;margin-bottom:20pt;">The World of Whisperwood</div>
     <div class="story-text" style="font-size:13pt;line-height:1.6;">
       <p><strong>Quietcap Mushrooms</strong><br/>
       Round, pale mushrooms that absorb sound. Each one works quietly and completely. They cannot make noise; they can only take it away.<br/>
