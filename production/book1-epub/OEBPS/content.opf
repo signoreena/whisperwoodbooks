@@ -33,14 +33,12 @@
     <item id="cover-image" href="images/cover.png"     media-type="image/png" properties="cover-image"/>
     <item id="illo-01"  href="images/illo-01.png"      media-type="image/png"/>
     <item id="illo-02"  href="images/illo-02.png"      media-type="image/png"/>
-    <item id="illo-03"  href="images/illo-03.png"      media-type="image/png"/>
     <item id="illo-04"  href="images/illo-04.png"      media-type="image/png"/>
     <item id="illo-05"  href="images/illo-05.png"      media-type="image/png"/>
     <item id="illo-06"  href="images/illo-06.png"      media-type="image/png"/>
     <item id="illo-06b" href="images/illo-06b.png"     media-type="image/png"/>
     <item id="illo-07"  href="images/illo-07.png"      media-type="image/png"/>
     <item id="illo-08"  href="images/illo-08.png"      media-type="image/png"/>
-    <item id="illo-09"  href="images/illo-09.png"      media-type="image/png"/>
     <item id="illo-10"  href="images/illo-10.png"      media-type="image/png"/>
     <!-- Pages -->
     <item id="cover"    href="pages/cover.xhtml"       media-type="application/xhtml+xml" properties="svg"/>
@@ -52,8 +50,7 @@
     <item id="ch01b"    href="pages/ch01b.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch01c"    href="pages/ch01c.xhtml"       media-type="application/xhtml+xml"/>
     <item id="ch01d"    href="pages/ch01d.xhtml"       media-type="application/xhtml+xml"/>
-    <!-- Ch 2: illo 3 (left) + Ch 2 text (right) -->
-    <item id="ch02a"    href="pages/ch02a.xhtml"       media-type="application/xhtml+xml"/>
+    <!-- Ch 2: text only (illo-03 removed — duplicate of illo-02) -->
     <item id="ch02b"    href="pages/ch02b.xhtml"       media-type="application/xhtml+xml"/>
     <!-- Ch 3: illo 4 (left) + Ch 3 text (right) -->
     <item id="ch03a"    href="pages/ch03a.xhtml"       media-type="application/xhtml+xml"/>
@@ -102,9 +99,8 @@
     <itemref idref="ch01c"     properties="rendition:page-spread-right"/>
     <itemref idref="ch01d"     properties="rendition:page-spread-right"/>
 
-    <!-- Ch 2 — Illo 3 left / Ch 2 text right -->
-    <itemref idref="ch02a"     properties="rendition:page-spread-left"/>
-    <itemref idref="ch02b"     properties="rendition:page-spread-right"/>
+    <!-- Ch 2 — text only (illo-03 removed) -->
+    <itemref idref="ch02b"     properties="rendition:page-spread-left"/>
 
     <!-- Ch 3 — Illo 4 left / Ch 3 text right -->
     <itemref idref="ch03a"     properties="rendition:page-spread-left"/>
@@ -133,7 +129,6 @@
     <!-- Ch 7 continued — text left / overflow right / Illo 10 right -->
     <itemref idref="ch07b"     properties="rendition:page-spread-left"/>
     <itemref idref="ch07b-cont" properties="rendition:page-spread-right"/>
-    <itemref idref="ch07c"     properties="rendition:page-spread-right"/>
 
     <!-- Ch 8 — Illo 11 left / Ch 8 text right -->
     <itemref idref="ch08a"     properties="rendition:page-spread-left"/>
