@@ -1,4 +1,4 @@
-# Book 5: Bram's Big Blunder
+# Book 5: The Builder's Big Blunder
 ## A Whisperwood Story
 
 *Resources: Structural failure · Construction | Theme: Admitting a mistake is the first step to fixing it.*
@@ -154,7 +154,7 @@ Pip was tired, which was unusual. "The rebuild was faster than the waiting," he 
 They walked home together, lantern mushrooms lighting the path.
 
 ---
-*End of Book 5: Bram's Big Blunder*
+*End of Book 5: The Builder's Big Blunder*
 
 ---
 
