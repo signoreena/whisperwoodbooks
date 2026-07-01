@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Rising River — Whisperwood Book 1</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --parchment: #f9f3e8;
+    --parchment-mid: #f0e8d5;
+    --forest-deep: #2d5a27;
+    --forest-mid: #4a7c59;
+    --gold: #c8860a;
+    --text: #1a1a1a;
+  }
+
+  body {
+    background: var(--parchment);
+    font-family: Georgia, 'Times New Roman', serif;
+    color: var(--text);
+    line-height: 1.75;
+    font-size: 18px;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 0 60px;
+  }
+
+  /* ── Cover ── */
+  .cover {
+    width: 100%;
+    aspect-ratio: 5.06 / 7.81;
+    overflow: hidden;
+    background: var(--forest-deep);
+  }
+  .cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  /* ── Title page ── */
+  .title-page {
+    padding: 56px 28px 48px;
+    text-align: center;
+    border-bottom: 1px solid var(--parchment-mid);
+  }
+  .series-label {
+    font-size: 11px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--forest-mid);
+    margin-bottom: 20px;
+  }
+  .book-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--forest-deep);
+    line-height: 1.1;
+    margin-bottom: 14px;
+  }
+  .book-subtitle {
+    font-size: 16px;
+    font-style: italic;
+    color: var(--forest-mid);
+    margin-bottom: 40px;
+  }
+  .title-rule {
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin: 0 auto 40px;
+  }
+  .author-name {
+    font-size: 17px;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .author-note {
+    font-size: 13px;
+    font-style: italic;
+    color: #888;
+  }
+
+  /* ── Illustration ── */
+  .illo {
+    width: 100%;
+    background: var(--forest-deep);
+  }
+  .illo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .illo-placeholder-mobile {
+    width: 100%;
+    aspect-ratio: 5.06 / 3.5;
+    background: var(--forest-deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+  }
+  .illo-placeholder-mobile span {
+    font-size: 13px;
+    color: #4a7c59;
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  /* ── Chapter sections ── */
+  .chapter {
+    padding: 44px 28px 0;
+  }
+  .chapter-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--forest-mid);
+    margin-bottom: 8px;
+  }
+  .chapter-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--forest-deep);
+    line-height: 1.15;
+    margin-bottom: 28px;
+  }
+  .chapter-break {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 28px;
+    background: var(--parchment-mid);
+  }
+
+  /* ── Story text ── */
+  .story-text p {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 1.75;
+  }
+  .story-text p:last-child { margin-bottom: 0; }
+  .story-text em { font-style: italic; }
+  .story-text strong { font-weight: bold; }
+
+  /* ── Section divider ── */
+  .divider {
+    margin: 44px 28px 0;
+    height: 1px;
+    background: var(--parchment-mid);
+  }
+
+  /* ── Back matter ── */
+  .back-matter {
+    padding: 44px 28px 0;
+  }
+  .back-matter h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--forest-deep);
+    margin-bottom: 20px;
+  }
+  .back-matter p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 14px;
+    color: var(--text);
+  }
+  .back-matter p strong { font-weight: bold; }
+
+  /* ── End page ── */
+  .end-page {
+    text-align: center;
+    padding: 60px 28px;
+  }
+  .end-page .end-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--forest-deep);
+    margin-bottom: 10px;
+  }
+  .end-page .end-subtitle {
+    font-size: 16px;
+    font-style: italic;
+    color: var(--forest-mid);
+    margin-bottom: 36px;
+  }
+  .end-page p {
+    font-size: 15px;
+    color: #555;
+    line-height: 2;
+  }
+
+  /* ── Copyright ── */
+  .copyright {
+    text-align: center;
+    padding: 40px 28px;
+    border-top: 1px solid var(--parchment-mid);
+    font-size: 13px;
+    color: #aaa;
+    line-height: 2.2;
+  }
+
+  /* ── Series list ── */
+  .series-list {
+    text-align: center;
+    padding: 36px 28px;
+    font-size: 13px;
+    color: #777;
+    font-style: italic;
+    line-height: 2.2;
+    border-top: 1px solid var(--parchment-mid);
+  }
+</style>
+</head>
+<body>
+
+<!-- Cover -->
+<div class="cover">
+  <img src="images/book1coverart.png" alt="The Rising River — cover"/>
+</div>
+
+<!-- Title page -->
+<div class="title-page">
+  <div class="series-label">Whisperwood &middot; Book One</div>
+  <div class="book-title">The Rising<br/>River</div>
+  <div class="book-subtitle">A Whisperwood Story</div>
+  <div class="title-rule"></div>
+  <div class="author-name">Reena Gellerup</div>
+  <div class="author-note">Illustrated by Reena Gellerup with AI</div>
+</div>
+
+<!-- Ch 1 illustration -->
+<div class="illo">
+  <img src="images/illo-01.png" alt="Ordinary Tuesday in Whisperwood"/>
+</div>
+
+<!-- Chapter 1 -->
+<div class="chapter">
+  <div class="chapter-label">Chapter 1</div>
+  <div class="chapter-title">The Mapleaf Knows</div>
+  <div class="story-text">
+    <p>Vera sat with her back against the Mapleaf tree, adding to her list.</p>
+    <p>It was a very long list.</p>
+    <p>She glanced up at the Mapleaf&rsquo;s veins the way she always did &mdash; just to check. They were golden and calm.</p>
+    <p>Good.</p>
+    <p>It was an ordinary Tuesday in Whisperwood. The herons were fishing. The mill wheel was turning. Two sparrows in the upper branches were having a very loud argument that had clearly been going on since Monday.</p>
+    <p>She looked back at her list.</p>
+    <p>Then she looked up again.</p>
+    <p>The veins had gone dark.</p>
+  </div>
+</div>
+
+<!-- Ch 2 illustration -->
+<div class="illo" style="margin-top:44px;">
+  <img src="images/illo-02.png" alt="Mapleaf veins go dark; Pip lands on Vera"/>
+</div>
+
+<div class="chapter">
+  <div class="story-text">
+    <p>By the river, Sage was watching tadpoles.</p>
+    <p>She did this most mornings.</p>
+    <p>She never got bored of it.</p>
+    <p>In the branches above her, Pip was trying to leap from one tree to the next without using his hands.</p>
+    <p>He had already fallen twice.</p>
+    <p>The second time, he had taken a large branch with him.</p>
+    <p>He was going to try a third time.</p>
+    <p>Today&rsquo;s entries on Vera&rsquo;s list so far included: <em>river current (normal), beaver morning shift (started),</em> and <em>Pip (falling, probably fine).</em></p>
+    <p>The village of Whisperwood had a rule. When the Mapleaf tree&rsquo;s veins turned dark, something was coming.</p>
+    <p>Vera was already on her feet &mdash; list still in her paw, already facing the direction of the beavers&rsquo; dam &mdash; when Pip landed on her head.</p>
+    <p>&ldquo;Something is coming,&rdquo; said Pip.</p>
+    <p>&ldquo;I know,&rdquo; said Vera.</p>
+    <p>&ldquo;The Mapleaf&mdash;&rdquo;</p>
+    <p>&ldquo;I know.&rdquo;</p>
+    <p>&ldquo;But did you see how dark the veins are? They&rsquo;re almost&mdash;&rdquo;</p>
+    <p>&ldquo;Pip.&rdquo;</p>
+    <p>&ldquo;Yes?&rdquo;</p>
+    <p>&ldquo;I know.&rdquo;</p>
+    <p>Pip flicked his tail. He did not look convinced.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Chapter 2 -->
+<div class="chapter">
+  <div class="chapter-label">Chapter 2</div>
+  <div class="chapter-title">Wait</div>
+  <div class="story-text">
+    <p>Sage was no longer watching tadpoles.</p>
+    <p>She was watching the water.</p>
+    <p>It was higher than it should be. Not fast. Not churning. Just&hellip; rising. Slowly and steadily and wrong.</p>
+    <p>She placed one foot in the current. Then she took it back out.</p>
+    <p>She reached for a bellflower growing near the bank.</p>
+    <p>She rang it.</p>
+    <p>And kept ringing until they came.</p>
+  </div>
+</div>
+
+<!-- Ch 3 illustration -->
+<div class="illo" style="margin-top:44px;">
+  <img src="images/illo-04.png" alt="Pip with stick; Vera's retreating silhouette; Sage gone still"/>
+</div>
+
+<!-- Chapter 3 -->
+<div class="chapter">
+  <div class="chapter-label">Chapter 3</div>
+  <div class="chapter-title">I Already Know the Plan</div>
+  <div class="story-text">
+    <p>Vera arrived first.</p>
+    <p>She was already talking before she reached the bank. &ldquo;Flooding. The Mapleaf showed dark veins. River&rsquo;s rising &mdash; we need the beavers.&rdquo; She was already turning to go.</p>
+    <p>Sage opened her mouth.</p>
+    <p>&ldquo;The mouse families&rsquo; burrows will flood,&rdquo; said Vera, before Sage could speak. &ldquo;I&rsquo;ll go find the beavers.&rdquo;</p>
+    <p>Sage closed her mouth.</p>
+    <p>Pip arrived second. He was out of breath and had a leaf stuck to his ear and was already holding a large stick he&rsquo;d found on the way over, in case it was useful.</p>
+    <p>&ldquo;What did I miss?&rdquo; he said.</p>
+    <p>&ldquo;Vera already knows the plan,&rdquo; said Sage.</p>
+    <p>Pip looked at the river. He looked at his stick. He looked at the direction Vera had already run.</p>
+    <p>&ldquo;Does she know <em>why</em> the river is rising?&rdquo;</p>
+    <p>Sage went still. She looked at the water. She looked at where Vera had been.</p>
+    <p>&ldquo;&hellip;I don&rsquo;t think she asked,&rdquo; said Sage.</p>
+  </div>
+</div>
+
+<!-- Ch 4 illustration -->
+<div class="illo" style="margin-top:44px;">
+  <img src="images/illo-05.png" alt="Vera stands before Bram the beaver"/>
+</div>
+
+<!-- Chapter 4 -->
+<div class="chapter">
+  <div class="chapter-label">Chapter 4</div>
+  <div class="chapter-title">What the Rock Remembered</div>
+  <div class="story-text">
+    <p>The beavers were busy. They were always busy.</p>
+    <p>&ldquo;Flooding?&rdquo; said Bram. He had a hard hat made of bark and an expression that suggested he had seen many floods. &ldquo;Where?&rdquo;</p>
+    <p>&ldquo;The burrows,&rdquo; said Vera. &ldquo;River&rsquo;s rising. We need to redirect it.&rdquo;</p>
+    <p>Bram stroked his chin.</p>
+    <p>&ldquo;Can&rsquo;t,&rdquo; he said. &ldquo;Not safely. Not quickly. Something&rsquo;s come down at the river bend &mdash; blocking the channel. Until we can get eyes on it in daylight, we don&rsquo;t touch a thing.&rdquo;</p>
+    <p>Vera&rsquo;s mouth opened. Then it closed.</p>
+    <p>Her ears went back. Just slightly.</p>
+    <p>She stood very still for exactly one breath.</p>
+    <p>&ldquo;What if we&mdash;&rdquo;</p>
+    <p>&ldquo;Not safely,&rdquo; said Bram. &ldquo;Not tonight.&rdquo;</p>
+  </div>
+</div>
+
+<!-- Ch 4 key image -->
+<div class="illo" style="margin-top:44px;">
+  <img src="images/illo-06.png" alt="Sage hand on boulder; Pip nose-first"/>
+</div>
+
+<div class="chapter">
+  <div class="story-text">
+    <p>Back at the river, Pip was doing what Pip always did when there was a problem. He was trying to help. He had his large stick. He had wedged one end in the bank. He was not entirely sure what he expected to happen next. But it felt better than standing still.</p>
+    <p>&ldquo;Pip,&rdquo; said Sage. &ldquo;What are you doing?&rdquo;</p>
+    <p>&ldquo;Helping,&rdquo; said Pip.</p>
+    <p>&ldquo;With a stick.&rdquo;</p>
+    <p>&ldquo;It&rsquo;s a big stick.&rdquo;</p>
+    <p>Sage watched the water rise another inch.</p>
+    <p>&ldquo;Come with me,&rdquo; she said.</p>
+    <p>Pip looked at the stick. He set it down.</p>
+    <p>She led him to the oldest boulder at the river&rsquo;s edge. Sage pressed her hand flat against it and closed her eyes. &ldquo;Excuse me,&rdquo; she said quietly.</p>
+    <p>Pip watched her face.</p>
+    <p>A mouse family hurried past below, bundles on their backs, moving fast and quiet.</p>
+    <p>&ldquo;&hellip;Tree,&rdquo; said the boulder, very slowly.</p>
+    <p>Pip leaned in. His nose was now very close to the rock. He wasn&rsquo;t sure why. It just seemed like the right thing to do.</p>
+    <p>&ldquo;Tree? What tree?&rdquo;</p>
+    <p>Sage put one hand on his shoulder, gently. He went still.</p>
+    <p>They waited.</p>
+    <p>&ldquo;&hellip;Fell,&rdquo; said the boulder.</p>
+    <p>Sage lifted her hand. &ldquo;A tree fell,&rdquo; she said. &ldquo;That&rsquo;s why the water can&rsquo;t go anywhere.&rdquo;</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Chapter 5 chapter break -->
+<div class="chapter-break">
+  <div class="chapter-label">Chapter 5</div>
+  <div class="chapter-title" style="font-size:22px;">Fox Was Wrong<br/>(Sort Of)</div>
+</div>
+
+<!-- Chapter 5 text -->
+<div class="chapter">
+  <div class="story-text">
+    <p>Vera came back without the beavers.</p>
+    <p>She stood at the river&rsquo;s edge and looked at it.</p>
+    <p>&ldquo;There&rsquo;s a fallen tree,&rdquo; said Sage. &ldquo;Blocking the channel. That&rsquo;s why the water can&rsquo;t go anywhere. That&rsquo;s why it&rsquo;s rising.&rdquo;</p>
+    <p>Vera&rsquo;s ears went back. Just slightly.</p>
+    <p>&ldquo;At the river bend,&rdquo; said Vera. &ldquo;That&rsquo;s what Bram said.&rdquo;</p>
+    <p>Vera was silent for a moment. &ldquo;A tree,&rdquo; she said. &ldquo;That&rsquo;s what Bram could see from his end. He just didn&rsquo;t say it.&rdquo;</p>
+    <p>A silence.</p>
+    <p>&ldquo;I knew it was flooding,&rdquo; she said.</p>
+    <p>&ldquo;You did,&rdquo; said Sage.</p>
+    <p>&ldquo;I just didn&rsquo;t know why.&rdquo;</p>
+    <p>&ldquo;No,&rdquo; said Sage. &ldquo;You didn&rsquo;t ask.&rdquo;</p>
+    <p>A silence.</p>
+    <p>&ldquo;&hellip;I should have asked why,&rdquo; said Vera.</p>
+    <p>She looked at the water. Her ears stayed back.</p>
+    <p>Then, quietly: &ldquo;I was already running.&rdquo;</p>
+    <p>Pip patted her on the shoulder. &ldquo;You got us to the beavers though! That&rsquo;s still good.&rdquo;</p>
+    <p>&ldquo;The beavers said they can&rsquo;t help yet.&rdquo;</p>
+    <p>&ldquo;Oh.&rdquo; Pip thought about this. &ldquo;Well. You got us <em>to</em> the beavers. That counts.&rdquo;</p>
+    <p>Vera looked at him. Pip smiled his enormous Pip smile. Vera sighed. But her ears came back up.</p>
+  </div>
+</div>
+
+<!-- Ch 6 illustration -->
+<div class="illo" style="margin-top:44px;">
+  <img src="images/illo-06b.png" alt="Bunnies guiding mouse families along lantern-lit high paths at night"/>
+</div>
+
+<!-- Chapter 6 -->
+<div class="chapter">
+  <div class="chapter-label">Chapter 6</div>
+  <div class="chapter-title">Night Work</div>
+  <div class="story-text">
+    <p>By the time the sun went down, the burrows were knee-deep in water.</p>
+    <p>The bunnies had already begun.</p>
+    <p>They moved fast and quiet along the high paths, guiding mouse families out one by one &mdash; every safe step, every dry patch of ground, every piece of higher land known. No panic. No pushing. Just small paws and calm voices and knowing exactly where to go.</p>
+    <p>&ldquo;This way, please.&rdquo;</p>
+    <p>&ldquo;Mind your step.&rdquo;</p>
+    <p>&ldquo;You&rsquo;re safe now.&rdquo;</p>
+    <p>Above ground, Vera looked up at the Mapleaf.</p>
+    <p>Its veins were dark &mdash; but now they pointed. One branch angled left, toward the mossy clearing.</p>
+    <p>Lantern mushrooms glowed along the bank where the group would gather.</p>
+    <p>A redirect. The mud at the bank &mdash; if everyone sang, they could open a channel pointing that way.</p>
+    <p>She was already walking toward Pip before she finished looking.</p>
+    <p>&ldquo;Pip,&rdquo; she said. &ldquo;I need everyone who can sing.&rdquo;</p>
+    <p>Pip&rsquo;s eyes went wide. &ldquo;Everyone?&rdquo;</p>
+    <p>&ldquo;Everyone.&rdquo;</p>
+    <p>Pip was already gone before she&rsquo;d finished the word.</p>
+  </div>
+</div>
+
+<!-- Ch 7 illustration -->
+<div class="illo" style="margin-top:44px;">
+  <img src="images/illo-07.png" alt="Whole community at river's edge, singing together; mud starting to move"/>
+</div>
+
+<!-- Chapter 7 -->
+<div class="chapter">
+  <div class="chapter-label">Chapter 7</div>
+  <div class="chapter-title">Singing to the Mud</div>
+  <div class="story-text">
+    <p>They gathered at the river&rsquo;s edge.</p>
+    <p>Vera. Pip. Sage. Bram and two other beavers. A family of deer. Three raccoons. The otter from the slide, who had been asked twice and complained once and showed up anyway.</p>
+    <p>It was loud. It was a lot of creatures moving in a lot of directions at once.</p>
+    <p>At the back of the crowd, Sage took a slow breath. She took a step back from the noise.</p>
+    <p>Then she looked at the mud. She looked at where the water needed to go.</p>
+    <p>She took a step forward.</p>
+    <p>She knew what her part was.</p>
+    <p>&ldquo;We&rsquo;re going to redirect the water,&rdquo; said Vera, at the front. &ldquo;Just to the mossy clearing. Just for tonight. The beavers will fix the tree tomorrow when it&rsquo;s safe.&rdquo;</p>
+    <p>Bram nodded. &ldquo;We&rsquo;ll be there at first light.&rdquo;</p>
+    <p>&ldquo;Low and slow,&rdquo; said Vera. &ldquo;On my count. Like this&mdash;&rdquo;</p>
+    <p>She hummed a single note.</p>
+    <p>The mud did not move.</p>
+    <p>The deer picked it up. Then the raccoons. Then Pip &mdash; loudly and slightly to the left of the correct note, but with his whole entire body.</p>
+    <p>Sage, at the edge of the group, found the note and held it.</p>
+    <p>The mud at the river&rsquo;s edge began to shift.</p>
+    <p>Slowly at first. Then more.</p>
+    <p>A small channel opened, curving left toward the clearing.</p>
+    <p>The water followed.</p>
+    <p>It was not elegant. It was not permanent.</p>
+    <p>But the river slowed.</p>
+    <p>And the burrows held.</p>
+  </div>
+</div>
+
+<!-- Ch 8 illustration -->
+<div class="illo" style="margin-top:44px;">
+  <img src="images/illo-08.png" alt="Four beavers moving the great fallen oak at first light; dawn light"/>
+</div>
+
+<!-- Chapter 8 -->
+<div class="chapter">
+  <div class="chapter-label">Chapter 8</div>
+  <div class="chapter-title">First Light</div>
+  <div class="story-text">
+    <p>By midnight, the mouse families were safe in temporary nests above ground.</p>
+    <p>When morning came, Bram and three other beavers arrived at the river bend at first light. The fallen tree &mdash; a great old oak, broken at the root &mdash; lay heavy across the channel.</p>
+    <p>It took four beavers and two hours.</p>
+    <p>But they moved it.</p>
+    <p>The water rushed through the cleared channel with a sound like relief. The singing mud settled quietly back into the riverbank, as if it had never moved. The redirect was gone.</p>
+    <p>By the time the sun was fully up, the burrows were draining. The herons were back at their posts. The mill wheel was turning again. The sparrows had either resolved their argument or simply started a different one.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- Chapter 9 -->
+<div class="chapter">
+  <div class="chapter-label">Chapter 9</div>
+  <div class="chapter-title">The River Runs</div>
+  <div class="story-text">
+    <p>Vera sat on a rock by the river, watching the water run clear and calm.</p>
+    <p>Pip flopped down next to her. He had mud on his nose and the large stick still in one paw, held up like a tiny torch. It was broad daylight.</p>
+    <p>Sage settled beside them both, slowly, the way Sage did everything.</p>
+    <p>&ldquo;We fixed it,&rdquo; said Pip.</p>
+    <p>&ldquo;We fixed it,&rdquo; said Vera. &ldquo;Properly.&rdquo;</p>
+    <p>Sage was quiet for a moment. She was looking back toward the river bend.</p>
+    <p>&ldquo;The tree,&rdquo; she said. &ldquo;Did it fall on its own?&rdquo;</p>
+    <p>Bram, still at the water&rsquo;s edge, turned back toward them.</p>
+    <p>&ldquo;Hard to say. The roots let go. But the damage to those roots was old. Very old.&rdquo; He shook his head slowly. &ldquo;I&rsquo;ll remember it.&rdquo;</p>
+    <p>Sage nodded. She filed it away.</p>
+    <p>&ldquo;Next time,&rdquo; said Vera quietly, &ldquo;I&rsquo;ll ask before I run.&rdquo;</p>
+    <p>Pip looked at her.</p>
+    <p>&ldquo;I have a feeling you&rsquo;ll be saying that a lot,&rdquo; he said cheerfully.</p>
+    <p>Vera stared at him.</p>
+    <p>&ldquo;This is the first time something has gone wrong.&rdquo;</p>
+    <p>&ldquo;I know,&rdquo; said Pip. &ldquo;But I have a feeling it won&rsquo;t be the last.&rdquo;</p>
+    <p>Vera turned to Sage.</p>
+    <p>&ldquo;You knew,&rdquo; she said.</p>
+    <p>Sage said nothing. She nodded once.</p>
+    <p>Pip was already on his feet, stick in paw, marching off down the path toward home. The lantern mushrooms along the path glowed softly as they went.</p>
+  </div>
+</div>
+
+<!-- Final spread illustration -->
+<div class="illo" style="margin-top:44px;">
+  <img src="images/illo-10.png" alt="Pip leads the trio home through morning forest"/>
+</div>
+
+<!-- End page -->
+<div class="end-page" style="margin-top:44px;">
+  <div class="end-title">The End of Book One</div>
+  <div class="end-subtitle">The Rising River</div>
+  <p>The story of Whisperwood continues in:</p>
+  <p><em>Book Two: The Noisy Night</em></p>
+  <p style="margin-top:20px;">&mdash;</p>
+  <p>Collect all eight Whisperwood books.</p>
+</div>
+
+<!-- Back matter -->
+<div class="back-matter">
+  <h2>About Whisperwood</h2>
+  <p>Whisperwood is an enchanted forest village where the magic is simply the way things work. Vera the fox knows every system. Pip the squirrel helps first and asks questions later. Sage the turtle notices what everyone else rushes past. In every book, a problem arrives &mdash; a rising river, a noisy night, a missing delivery &mdash; and the whole community must work together to solve it. No single creature, and no single plan, is ever enough on its own.</p>
+  <p>Eight books. One forest. Every problem requires everyone.</p>
+</div>
+
+<div class="back-matter" style="margin-top:36px;">
+  <h2>The World of Whisperwood</h2>
+  <p>Every element in Whisperwood has exactly one rule. Here are the four you met in this book.</p>
+  <p><strong>The Mapleaf</strong> &mdash; A giant tree whose veins glow golden when all is well. When its veins go dark, something is coming. It reads like a living map of the forest.</p>
+  <p><strong>Singing Mud</strong> &mdash; Mud that moves when a group sings together. One voice does nothing. But when the whole community hums in a low, steady tone, the mud shifts and channels itself wherever it is needed. When the singing stops, the mud slowly settles back.</p>
+  <p><strong>Bellflowers</strong> &mdash; Small cup-shaped flowers that work like a telephone. Ring one and keep ringing until someone comes. They cannot send a message &mdash; only a call.</p>
+  <p><strong>Talking Rocks</strong> &mdash; Ancient boulders that remember everything. They speak one word at a time, very slowly. They never lie. But patience is required.</p>
+</div>
+
+<div class="back-matter" style="margin-top:36px;padding-bottom:0;">
+  <h2>Coming Next in Whisperwood</h2>
+  <p><strong>Book Two: The Noisy Night</strong></p>
+  <p>Something is keeping Whisperwood awake &mdash; and only Sage knows how loud it really is.</p>
+</div>
+
+<div class="series-list">
+  <p>Also in the Whisperwood series:</p>
+  <p>Book 1: The Rising River &bull; Book 2: The Noisy Night</p>
+  <p>Book 3: The Missing Acorns &bull; Book 4: Otter Won&rsquo;t Help</p>
+  <p>Book 5: The Too-Busy Beaver &bull; Book 6: Deer Says Yes</p>
+  <p>Book 7: The Quiet Argument &bull; Book 8: The Forest Holds Its Breath</p>
+</div>
+
+<div class="copyright">
+  <p>Text &copy; 2026 Reena Gellerup</p>
+  <p>Illustrations &copy; 2026 Reena Gellerup with AI</p>
+  <p>All rights reserved.</p>
+  <p>Published by Whisperwood Books &bull; whisperwoodbooks.com</p>
+  <p>First edition, 2026</p>
+</div>
+
+</body>
+</html>
